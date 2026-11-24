@@ -12,3 +12,14 @@ context.md                          --> Provides information about the fictional
 generator/                          --> Code to generate the data used for this project
 docs/                               --> Step-by-step guide on what we did and why
 ```
+
+## Generate the data
+
+From the `generator` folder, run:
+
+```shell
+python generate_data.py
+```
+
+The script asks for an absolute output folder. It can optionally load the generated CSV files into PostgreSQL; for that, install `psql` and have the
+database connection details ready. Confirming the PostgreSQL load drops and recreates the selected database before loading the data.

@@ -1,4 +1,4 @@
-# Kalkberg dbt project: builds the silver (and later gold) layer on top of the bronze schemas.
+# Kalkberg dbt project: builds the silver and gold layers on top of the bronze schemas.
 name: kalkberg
 version: "1.0.0"
 profile: kalkberg
@@ -18,14 +18,32 @@ vars:
   local_time_zone: "Europe/Brussels"
   # Influencer codes stay valid this many days after the contract ends (contracts sheet, confirmed by shop_17).
   influencer_code_grace_days: 14
+  # Gold: the calendar covers the budget years, also before the shop went live.
+  calendar_start_date: "2023-01-01"
+  calendar_end_date: "2026-12-31"
+  # Gold: a session counts as a touchpoint of an order when it started at most this many days before it.
+  attribution_lookback_days: 30
+  # Gold: an order is linked to an email when the customer clicked in it at most this many hours before.
+  email_attribution_hours: 72
+  # Gold: the affiliate network's commission on sales (context.md), on revenue excl. VAT and shipping.
+  affiliate_commission_rate: 0.08
 
 models:
   kalkberg:
+    # Fresh tables have no statistics yet; without them the planner can pick a very slow plan for
+    # the models that are built on top of them in the same run.
+    +post-hook: "ANALYZE {{ this }}"
     silver:
       +schema: silver
       +materialized: table
       +docs:
         node_color: "#a7a9ac"
+
+    gold:
+      +schema: gold
+      +materialized: table
+      +docs:
+        node_color: "#d4a017"
 
 seeds:
   kalkberg:

@@ -1,0 +1,266 @@
+version: 2
+
+models:
+  # ------------------------------------------------------------------
+  # Dimensions
+  # ------------------------------------------------------------------
+  - name: dim_date
+    description: Calendar 2023-2026, with the promotion periods. All dates in gold are Belgian dates.
+    columns:
+      - name: date
+        tests: [unique, not_null]
+      - name: is_in_data_period
+        description: The day lies between the first and the last order in the data.
+      - name: is_complete_month
+        description: The whole month lies within the data period. Use it to leave partial months out of trends.
+      - name: promotion_name
+        description: The automatic promotion running on this day (seed promotion_periods), if any.
+
+  - name: dim_channel
+    description: The one channel list (GA-01), shared with the budget sheets through budget_channel.
+    columns:
+      - name: channel_key
+        tests: [unique, not_null]
+
+  - name: dim_country
+    description: Countries; Kalkberg ships to the five with is_shipping_country (GA-04).
+    columns:
+      - name: country_code
+        tests: [unique, not_null]
+
+  - name: dim_product
+    description: One row per variant (size or colour) with product, brand and category.
+    columns:
+      - name: variant_id
+        tests: [unique, not_null]
+      - name: vat_class
+        tests:
+          - accepted_values:
+              arguments: {values: [standard, reduced, none]}
+      - name: current_unit_cost
+        description: Today's purchase cost excl. VAT; estimated where is_unit_cost_estimated (SH-14). No cost history exists.
+
+  - name: dim_campaign
+    description: Campaigns of every channel. Key '<channel_key> | <campaign name>'.
+    columns:
+      - name: campaign_key
+        tests: [unique, not_null]
+      - name: channel_key
+        tests:
+          - relationships: {arguments: {to: ref('dim_channel'), field: channel_key}}
+
+  - name: dim_customer
+    description: One row per person (decision 0004), test people left out. Customers, account holders without orders and subscribers.
+    columns:
+      - name: person_key
+        tests: [unique, not_null]
+      - name: person_type
+        tests:
+          - accepted_values:
+              arguments: {values: [customer, account without order, subscriber only]}
+      - name: acquisition_channel_key
+        description: Channel of the first order (order_channel_key). Basis for CAC and CLV per channel (M4, M6).
+        tests:
+          - not_null:
+              config: {where: "is_customer"}
+          - relationships: {arguments: {to: ref('dim_channel'), field: channel_key}}
+      - name: cohort_month
+        description: Month of the first order (C2).
+      - name: clv_12m_net_revenue
+        description: Net revenue in the 365 days from the first order. Compare only where is_clv_12m_complete.
+      - name: clv_24m_net_revenue
+        description: Net revenue in the 730 days from the first order. Compare only where is_clv_24m_complete.
+
+  - name: dim_email
+    description: One row per Marketing Cloud job (email per language, journey email per year and language).
+    columns:
+      - name: job_id
+        tests: [unique, not_null]
+      - name: campaign_key
+        tests:
+          - relationships: {arguments: {to: ref('dim_campaign'), field: campaign_key}}
+
+  - name: dim_subscriber
+    description: Marketing Cloud subscriber records. Count people with person_key (MC-03).
+    columns:
+      - name: subscriber_id
+        tests: [unique, not_null]
+      - name: person_key
+        tests:
+          - relationships: {arguments: {to: ref('dim_customer'), field: person_key}}
+
+  # ------------------------------------------------------------------
+  # Facts
+  # ------------------------------------------------------------------
+  - name: fct_orders
+    description: One row per real order. The shop is the source of truth for orders and revenue (X-01).
+    columns:
+      - name: order_id
+        tests: [unique, not_null]
+      - name: order_date
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('dim_date'), field: date}}
+      - name: person_key
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('dim_customer'), field: person_key}}
+      - name: order_channel_key
+        description: The order's channel. Discount code first, then the last non-direct GA4 click, then direct, else unattributed.
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('dim_channel'), field: channel_key}}
+      - name: order_campaign_key
+        tests:
+          - relationships: {arguments: {to: ref('dim_campaign'), field: campaign_key}}
+      - name: shipping_country_code
+        tests:
+          - relationships: {arguments: {to: ref('dim_country'), field: country_code}}
+      - name: discount_type
+        tests:
+          - accepted_values:
+              arguments: {values: [automatic, welcome, affiliate, customer_service, influencer]}
+      - name: customer_order_number
+        description: 1 for the person's first order that was not cancelled, 2 for the second, ...
+      - name: net_revenue
+        description: order_total - refund_amount, incl. VAT and shipping.
+      - name: gross_margin
+        description: Product margin (excl. VAT, after refunds, today's purchase cost) + shipping fee excl. VAT. Gift cards have no margin.
+
+  - name: fct_order_lines
+    description: One row per line of a real order, with VAT, returns, cost and margin.
+    columns:
+      - name: order_line_id
+        tests: [unique, not_null]
+      - name: order_id
+        tests:
+          - relationships: {arguments: {to: ref('fct_orders'), field: order_id}}
+      - name: variant_id
+        tests:
+          - relationships: {arguments: {to: ref('dim_product'), field: variant_id}}
+      - name: order_date
+        tests:
+          - relationships: {arguments: {to: ref('dim_date'), field: date}}
+      - name: returned_quantity
+        tests:
+          - expression_is_true:
+              arguments: {expression: "returned_quantity <= quantity"}
+
+  - name: fct_returns
+    description: One row per return request of a real order (C5, F4). Dates only (SH-03).
+    columns:
+      - name: return_id
+        tests: [unique, not_null]
+      - name: requested_date
+        tests:
+          - relationships: {arguments: {to: ref('dim_date'), field: date}}
+      - name: days_order_to_request
+        tests:
+          - expression_is_true:
+              arguments: {expression: "days_order_to_request >= 0"}
+
+  - name: fct_order_touchpoints
+    description: Journeys and attribution weights, one row per order and touchpoint (PM3, PM4).
+    columns:
+      - name: touchpoint_id
+        tests: [unique, not_null]
+      - name: order_id
+        tests:
+          - relationships: {arguments: {to: ref('fct_orders'), field: order_id}}
+      - name: channel_key
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('dim_channel'), field: channel_key}}
+      - name: campaign_key
+        tests:
+          - relationships: {arguments: {to: ref('dim_campaign'), field: campaign_key}}
+      - name: touchpoint_type
+        tests:
+          - accepted_values:
+              arguments: {values: [session, no session]}
+      - name: days_before_order
+        tests:
+          - expression_is_true:
+              arguments: {expression: "days_before_order <= {{ var('attribution_lookback_days') }}"}
+
+  - name: fct_customer_rfm_monthly
+    description: RFM scores and segment per customer at the end of every month (C3).
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [person_key, month_start]}
+    columns:
+      - name: person_key
+        tests:
+          - relationships: {arguments: {to: ref('dim_customer'), field: person_key}}
+      - name: snapshot_date
+        tests:
+          - relationships: {arguments: {to: ref('dim_date'), field: date}}
+      - name: segment
+        tests:
+          - accepted_values:
+              arguments:
+                values: [Champions, Loyal customers, New customers, Promising, Need attention, At risk, Hibernating, Lost]
+
+  - name: fct_ad_performance
+    description: Ad platform numbers per day, campaign and ad set. Platform conversions are the platform's own (X-01).
+    columns:
+      - name: report_date
+        tests:
+          - relationships: {arguments: {to: ref('dim_date'), field: date}}
+      - name: campaign_key
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('dim_campaign'), field: campaign_key}}
+
+  - name: fct_marketing_spend
+    description: Actual marketing cost per day, channel and campaign. Affiliate commission is an estimate.
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [spend_date, channel_key, campaign_key]}
+    columns:
+      - name: spend_date
+        tests:
+          - relationships: {arguments: {to: ref('dim_date'), field: date}}
+      - name: channel_key
+        tests:
+          - relationships: {arguments: {to: ref('dim_channel'), field: channel_key}}
+      - name: campaign_key
+        tests:
+          - relationships: {arguments: {to: ref('dim_campaign'), field: campaign_key}}
+
+  - name: fct_web_traffic
+    description: GA4 traffic per day, channel, campaign, device and country; purchases counted once (GA-05).
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [traffic_date, channel_key, campaign_key, device_category, country_code]}
+    columns:
+      - name: traffic_date
+        tests:
+          - relationships: {arguments: {to: ref('dim_date'), field: date}}
+      - name: channel_key
+        tests:
+          - relationships: {arguments: {to: ref('dim_channel'), field: channel_key}}
+      - name: campaign_key
+        tests:
+          - relationships: {arguments: {to: ref('dim_campaign'), field: campaign_key}}
+      - name: country_code
+        tests:
+          - relationships: {arguments: {to: ref('dim_country'), field: country_code}}
+
+  - name: fct_email_sends
+    description: One row per email send with delivery, opens, clicks, unsubscribes and the orders it led to (E2, E3).
+    columns:
+      - name: send_key
+        tests: [unique, not_null]
+      - name: job_id
+        tests:
+          - relationships: {arguments: {to: ref('dim_email'), field: job_id}}
+      - name: subscriber_id
+        tests:
+          - relationships: {arguments: {to: ref('dim_subscriber'), field: subscriber_id}}
+      - name: person_key
+        tests:
+          - relationships: {arguments: {to: ref('dim_customer'), field: person_key}}
+      - name: sent_date
+        tests:
+          - relationships: {arguments: {to: ref('dim_date'), field: date}}

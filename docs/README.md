@@ -59,8 +59,8 @@ flowchart LR
 | 1 | [Bronze: landing the raw data in PostgreSQL](01-bronze.md) | Done |
 | 2 | [Profiling: what is wrong with the raw data?](02-profiling.md) | Done |
 | 3 | [Silver: cleaning and connecting the data (dbt)](03-silver.md) | Done |
-| 4 | Gold: the star schema (dbt) | Next |
-| 5 | Connecting Power BI to the gold layer | Planned |
+| 4 | [Gold: the star schema (dbt)](04-gold.md) | Done |
+| 5 | Connecting Power BI to the gold layer | Next |
 | 6 | The budget medallion in Power Query | Planned |
 | 7 | Semantic model and DAX measures | Planned |
 | 8 | The report | Planned |
@@ -75,6 +75,7 @@ Larger choices are recorded as short decision records in [decisions/](decisions/
 | [0002](decisions/0002-raw-schemas-are-bronze.md) | The raw schemas are the bronze layer |
 | [0003](decisions/0003-influencer-contracts-in-postgres.md) | Land the influencer contracts in PostgreSQL, keep budget and targets in Power Query |
 | [0004](decisions/0004-person-key.md) | One person key across shop accounts, guest orders and subscribers |
+| [0005](decisions/0005-order-channel-and-attribution.md) | The channel of an order, and attribution on GA4 sessions |
 
 ## Conventions in these documents
 

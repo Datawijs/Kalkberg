@@ -95,7 +95,7 @@ dbt debug     # checks the connection
 dbt build     # seeds, models and tests
 ```
 
-`dbt build` creates the `silver` schema and ends with a summary line; every test must pass. See [step 3](03-silver.md#2-building-silver).
+`dbt build` creates the `silver` and `gold` schemas and ends with a summary line; every test must pass. See [step 3](03-silver.md#2-building-silver) and [step 4](04-gold.md#1-building-gold).
 
 ## Running the tests
 

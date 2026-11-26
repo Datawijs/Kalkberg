@@ -75,3 +75,29 @@ seeds:
         tests: [unique, not_null]
       - name: utm_campaign
         tests: [unique, not_null]
+
+  - name: vat_rates
+    description: >
+      VAT rates per destination country (one-stop shop: an EU web shop charges the VAT of the customer's
+      country). Prices in the shop include VAT; costs don't. Used to compare revenue and cost on the same
+      basis. 'reduced' applies to books, 'none' to gift cards (VAT is due when the card is used).
+      Assumption: the rates were constant over the data period. To be confirmed by Finance.
+    config:
+      column_types: {vat_rate: "numeric(5, 4)"}
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [country_code, vat_class]}
+
+  - name: promotion_periods
+    description: >
+      The automatic promotions (M7, C7). Not written down anywhere in the sources: derived from the days
+      on which orders without a discount code got a line discount (see docs/04-gold.md).
+    config:
+      column_types: {start_date: date, end_date: date}
+    columns:
+      - name: promotion_name
+        tests: [unique, not_null]
+      - name: end_date
+        tests:
+          - expression_is_true:
+              arguments: {expression: "end_date >= start_date"}

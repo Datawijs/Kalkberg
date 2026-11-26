@@ -6,11 +6,18 @@
       net_amount              what the customer paid for the line, incl. VAT
       net_amount_excl_vat     idem, excl. VAT: the basis for margin
       refund_amount(_excl_vat) refunded through returns
-      cost_amount             quantity x purchase cost (excl. VAT)
-      cost_amount_after_returns  cost of the items the customer kept: refunded items go back in stock
+      unit_cost               purchase cost (excl. VAT) at the time of sale, see below
+      cost_amount             quantity x unit_cost
+      cost_amount_after_returns  cost of the items that did not come back into stock: refunded items
+                              go back in stock, except returns with reason 'Defective'
       gross_margin            net_amount_excl_vat - refund_amount_excl_vat - cost_amount_after_returns
     Gift cards (F6) are not revenue until used: is_gift_card, and they have no margin.
-    Costs are today's purchase costs; the source has no cost history (SH-14).
+
+    Purchase cost at the time of sale: the shop only has today's cost (SH-14), while sale prices rise
+    every 15 January. The cost of an older sale is today's cost scaled by the price level at the time:
+    current_unit_cost x unit_price / current_list_price. In other words, the markup stays constant.
+    is_unit_cost_estimated is true when the cost is indexed or estimated (decided with the business,
+    see docs/04-gold.md).
 -#}
 WITH orders AS (
     SELECT *
@@ -23,6 +30,7 @@ returns AS (
         order_line_id,
         count(*)                                                       AS return_requests,
         coalesce(sum(quantity) FILTER (WHERE status = 'refunded'), 0)  AS returned_quantity,
+        coalesce(sum(quantity) FILTER (WHERE status = 'refunded' AND reason <> 'Defective'), 0) AS restocked_quantity,
         sum(refund_amount)                                             AS refund_amount,
         string_agg(DISTINCT reason, ', ' ORDER BY reason)              AS return_reasons
     FROM {{ ref('shop_returns') }}
@@ -40,11 +48,17 @@ lines AS (
         p.product_id,
         p.vat_class,
         p.is_gift_card,
-        p.current_unit_cost          AS unit_cost,
-        p.is_unit_cost_estimated,
+        p.current_unit_cost,
+        CASE
+            WHEN p.current_list_price > 0
+            THEN round(p.current_unit_cost * l.unit_price / p.current_list_price, 2)
+        END                               AS unit_cost,
+        p.current_unit_cost IS NOT NULL AND (p.is_unit_cost_estimated
+            OR (p.current_list_price > 0 AND l.unit_price <> p.current_list_price)) AS is_unit_cost_estimated,
         vr.vat_rate,
         coalesce(r.return_requests, 0)    AS return_requests,
         coalesce(r.returned_quantity, 0)  AS returned_quantity,
+        coalesce(r.restocked_quantity, 0) AS restocked_quantity,
         coalesce(r.refund_amount, 0)      AS refund_amount,
         r.return_reasons
     FROM {{ ref('shop_order_lines') }} AS l
@@ -78,16 +92,18 @@ SELECT
     {{ excl_vat('line_total', 'vat_rate') }}                    AS net_amount_excl_vat,
     return_requests,
     returned_quantity,
+    restocked_quantity,
     return_reasons,
     refund_amount,
     {{ excl_vat('refund_amount', 'vat_rate') }}                 AS refund_amount_excl_vat,
+    current_unit_cost,
     unit_cost,
     is_unit_cost_estimated,
     CASE WHEN NOT is_gift_card THEN quantity * unit_cost END    AS cost_amount,
-    CASE WHEN NOT is_gift_card THEN (quantity - returned_quantity) * unit_cost END AS cost_amount_after_returns,
+    CASE WHEN NOT is_gift_card THEN (quantity - restocked_quantity) * unit_cost END AS cost_amount_after_returns,
     CASE
         WHEN NOT is_gift_card AND unit_cost IS NOT NULL
         THEN {{ excl_vat('line_total', 'vat_rate') }} - {{ excl_vat('refund_amount', 'vat_rate') }}
-             - (quantity - returned_quantity) * unit_cost
+             - (quantity - restocked_quantity) * unit_cost
     END                                                         AS gross_margin
 FROM lines

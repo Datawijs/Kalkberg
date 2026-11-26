@@ -4,7 +4,7 @@
 
     Acquisition (M4, M6, PM9): the channel, campaign and discount type of the person's first order.
     Cohort (C2): the month of the first order.
-    Lifetime value (M6): net revenue and gross margin in the first 12 and 24 months after the first
+    Lifetime value (M6): net revenue and gross margin (before shipping costs) in the first 12 and 24 months after the first
     order, counted from the first order date. is_clv_12m_complete is false when the first order is less
     than 12 months before the end of the data, so the value can't be compared yet.
 -#}
@@ -39,8 +39,8 @@ lifetime AS (
         sum(o.net_revenue)                                                       AS lifetime_net_revenue,
         sum(o.net_revenue)  FILTER (WHERE o.order_date < f.order_date + 365)     AS clv_12m_net_revenue,
         sum(o.net_revenue)  FILTER (WHERE o.order_date < f.order_date + 730)     AS clv_24m_net_revenue,
-        sum(o.gross_margin) FILTER (WHERE o.order_date < f.order_date + 365)     AS clv_12m_gross_margin,
-        sum(o.gross_margin) FILTER (WHERE o.order_date < f.order_date + 730)     AS clv_24m_gross_margin,
+        sum(o.gross_margin_before_shipping_cost) FILTER (WHERE o.order_date < f.order_date + 365) AS clv_12m_gross_margin,
+        sum(o.gross_margin_before_shipping_cost) FILTER (WHERE o.order_date < f.order_date + 730) AS clv_24m_gross_margin,
         count(*)            FILTER (WHERE o.order_date < f.order_date + 365)     AS orders_first_12m
     FROM orders AS o
     JOIN first_orders AS f USING (person_key)

@@ -38,7 +38,7 @@ models:
           - accepted_values:
               arguments: {values: [standard, reduced, none]}
       - name: current_unit_cost
-        description: Today's purchase cost excl. VAT; estimated where is_unit_cost_estimated (SH-14). No cost history exists.
+        description: Today's purchase cost excl. VAT; estimated where is_unit_cost_estimated (SH-14). fct_order_lines.unit_cost has the cost at the time of sale.
 
   - name: dim_campaign
     description: Campaigns of every channel. Key '<channel_key> | <campaign name>'.
@@ -124,8 +124,10 @@ models:
         description: 1 for the person's first order that was not cancelled, 2 for the second, ...
       - name: net_revenue
         description: order_total - refund_amount, incl. VAT and shipping.
-      - name: gross_margin
-        description: Product margin (excl. VAT, after refunds, today's purchase cost) + shipping fee excl. VAT. Gift cards have no margin.
+      - name: gross_margin_before_shipping_cost
+        description: >
+          Product margin (excl. VAT, after refunds, purchase cost indexed to the time of sale, defective returns
+          as a loss) + shipping fee charged excl. VAT. Carrier costs are not in any source. Gift cards have no margin.
 
   - name: fct_order_lines
     description: One row per line of a real order, with VAT, returns, cost and margin.
@@ -141,6 +143,13 @@ models:
       - name: order_date
         tests:
           - relationships: {arguments: {to: ref('dim_date'), field: date}}
+      - name: unit_cost
+        description: Purchase cost at the time of sale - today's cost x unit_price / current list price.
+      - name: restocked_quantity
+        description: Refunded items that went back in stock - every refunded item except reason 'Defective'.
+        tests:
+          - expression_is_true:
+              arguments: {expression: "restocked_quantity <= returned_quantity"}
       - name: returned_quantity
         tests:
           - expression_is_true:

@@ -7,8 +7,10 @@
       refund_amount          refunded through returns
       net_revenue            order_total - refund_amount
       *_excl_vat             the same amounts without VAT, for margin and finance
-      gross_margin           product margin of the lines + shipping fee (excl. VAT). The cost of shipping
-                             is not in any source.
+      gross_margin_before_shipping_cost
+                             product margin of the lines + shipping fee charged (excl. VAT). What the
+                             carrier costs is not in any source, so the margin is before shipping costs
+                             (decided with the business, see docs/04-gold.md).
 
     Customer:
       customer_order_number  1 for the person's first order, 2 for the second, ... (cancelled orders: NULL)
@@ -153,7 +155,7 @@ SELECT
     {{ excl_vat('o.shipping_fee', 'vs.vat_rate') }}                  AS shipping_fee_excl_vat,
     coalesce(l.refund_amount_excl_vat, 0)                            AS refund_amount_excl_vat,
     coalesce(l.cost_amount_after_returns, 0)                         AS cost_amount_after_returns,
-    l.product_margin + {{ excl_vat('o.shipping_fee', 'vs.vat_rate') }} AS gross_margin,
+    l.product_margin + {{ excl_vat('o.shipping_fee', 'vs.vat_rate') }} AS gross_margin_before_shipping_cost,
     coalesce(l.has_estimated_cost, false)                            AS has_estimated_cost,
     coalesce(l.has_unknown_cost, false)                              AS has_unknown_cost
 FROM sequenced AS o

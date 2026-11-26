@@ -81,7 +81,8 @@ seeds:
       VAT rates per destination country (one-stop shop: an EU web shop charges the VAT of the customer's
       country). Prices in the shop include VAT; costs don't. Used to compare revenue and cost on the same
       basis. 'reduced' applies to books, 'none' to gift cards (VAT is due when the card is used).
-      Assumption: the rates were constant over the data period. To be confirmed by Finance.
+      Assumption, confirmed with the business: the rates were constant over the data period. The shop charges
+      the same price in every country (checked), so the VAT difference is carried by Kalkberg.
     config:
       column_types: {vat_rate: "numeric(5, 4)"}
     tests:

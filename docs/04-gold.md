@@ -93,7 +93,8 @@ These definitions are the heart of gold. They are written in the model comments,
 | `net_revenue` | `order_total` minus refunds. |
 | `gift_card_amount` | The part of the order that is a gift card. Not revenue until the card is used (F6); reports can leave it out. |
 | `*_excl_vat` | The same amounts without VAT, using the VAT rate of the destination country (seed `vat_rates`). |
-| `gross_margin` | Revenue excl. VAT, minus refunds excl. VAT, minus the purchase cost of the items the customer kept, plus the shipping fee excl. VAT. Gift cards have no margin. |
+| `gross_margin_before_shipping_cost` | Revenue excl. VAT, minus refunds excl. VAT, minus the purchase cost of the items that didn't go back into stock, plus the shipping fee charged excl. VAT. Before shipping costs: what the carrier costs is not in any source. Gift cards have no margin. |
+| Purchase cost | The cost at the time of sale: today's cost scaled by the price level then (see [the decisions below](#3-decisions-on-the-open-questions)). |
 | Cancelled orders | Kept in `fct_orders` with `is_cancelled`, but not counted as orders or revenue. |
 
 #### Customers
@@ -140,7 +141,7 @@ An order without sessions gets one touchpoint *no session* with its own channel.
 | Paid search, paid social | Daily cost per campaign | Google Ads and Meta reports |
 | Influencers | Monthly fee per contract, spread over the days the contract runs | Contracts sheet |
 | Affiliates | **Estimate**: 8% of the affiliate orders' revenue excl. VAT and shipping | `fct_orders` × commission rate from *context.md* |
-| Email, SEO | No actual cost in any source | Budget only (step 6) |
+| Email, SEO | No actual cost in any source. Both are fixed monthly fees, so the budget amount counts as the actual cost, marked as an estimate. | Budget sheets, added in Power BI (step 6) |
 
 #### Email revenue
 
@@ -175,16 +176,21 @@ The monetary thresholds are the rounded quintiles of the revenue per customer ov
 
 The automatic promotions are not written down in any source. They show up clearly in the data as runs of days on which orders *without* a discount code got a line discount: almost every order in the Black Friday weeks, about a quarter to a third during the January and summer sales, and crash pads and ropes from 20/03 to 05/04 (the spring promotion, 2025 and 2026). These periods are in the seed `promotion_periods` and in `dim_date.promotion_name`.
 
-### 3. Assumptions to confirm with the business
+### 3. Decisions on the open questions
 
-| Assumption | Why it matters | Where |
-| --- | --- | --- |
-| VAT rates per destination country were constant over the period, books at the reduced rate, gift cards without VAT | Revenue excl. VAT and margin | Seed `vat_rates` |
-| Purchase costs are today's costs: the shop keeps no history | Margin trends over time, the effect of the yearly price increase (F5) | `dim_product.current_unit_cost` |
-| Refunded items go back into stock | Cost of returned items is not a loss | `fct_order_lines.cost_amount_after_returns` |
-| Affiliate commission is 8% of revenue excl. VAT and shipping, also for orders that were later refunded | Affiliate cost and profitability (PM8) | `fct_marketing_spend` |
-| An influencer's fee is paid for every month of the contract, pro rata for partial months | Influencer cost and payback (PM7) | `fct_marketing_spend` |
-| Shipping costs are not in any source | Gross margin includes the shipping fee charged, not the shipping cost | `fct_orders.gross_margin` |
+The first version of gold rested on a few assumptions that only the business can confirm. We checked what the data could tell us first, and then decided each one together with the business on 26/11/2026.
+
+| Question | What the data shows | Decision | Where |
+| --- | --- | --- | --- |
+| Which VAT rate applies? | Every product has the same price in every country on the same day, so Kalkberg carries the VAT difference between countries. | **The rate of the destination country**, constant over the period: standard rate, reduced rate for books, no VAT on gift cards (due when the card is used). | Seed `vat_rates` |
+| Which purchase cost applies to older sales? | The shop only keeps today's cost. Sale prices rise on 15 January: sales before 15/01/2026 were 1,3% cheaper than today, before 15/01/2025 about 5,7%. | **Index today's cost to the price level at the time of sale** (constant markup): `current_unit_cost × unit_price / current list price`. Marked as an estimate. | `fct_order_lines.unit_cost` |
+| Do returned items go back into stock? | 37.364 returns were refunded, 5.166 of them with reason *Defective*. | **Yes, except defective items**: their purchase cost stays a cost. | `fct_order_lines.restocked_quantity` |
+| On which amount is the 8% affiliate commission? | For 2025: €43.338 on revenue excl. VAT and shipping, €54.247 incl. VAT, €40.225 after refunds. The budget planned €56.750, but a budget is not an invoice. | **Revenue excl. VAT and shipping, before refunds**, the usual basis for affiliate networks. Marked as an estimate. | `fct_marketing_spend` |
+| What does an influencer cost in a partial month? | lena.sends started on 15/01/2024; the other contracts start on the 1st. | **Pro rata**: the monthly fee × the contract days in that month / the days in the month. | `fct_marketing_spend` |
+| What is the actual cost of email and SEO? | No source has it. Both are fixed monthly fees (Marketing Cloud licence, SEO agency). | **The budget amount counts as the actual cost**, marked as an estimate. Added in Power BI, where the budget lives (step 6). | Step 6 |
+| What does shipping cost? | No source has what the carrier is paid. | **Not estimated.** Margin is explicitly *before shipping costs*: in the column name and with a warning label in the report. | `fct_orders.gross_margin_before_shipping_cost` |
+
+The two cost decisions change the margin trend noticeably. With today's costs for every sale, the gross margin seemed to rise from 46,6% (2023) to 53,4% (2026). With costs indexed to the time of sale and defective returns as a loss, it goes from 49,9% to 53,0%: most of the apparent improvement came from using the wrong cost for older sales.
 
 ### 4. Tests
 

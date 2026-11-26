@@ -57,8 +57,8 @@ flowchart LR
 | --- | --- | --- |
 | 0 | [Setup: tools and how to reproduce the project](00-setup.md) | Done |
 | 1 | [Bronze: landing the raw data in PostgreSQL](01-bronze.md) | Done |
-| 2 | [Profiling: what is wrong with the raw data?](02-profiling.md) | In progress |
-| 3 | Silver: cleaning and connecting the data (dbt) | Planned |
+| 2 | [Profiling: what is wrong with the raw data?](02-profiling.md) | Done |
+| 3 | Silver: cleaning and connecting the data (dbt) | Next |
 | 4 | Gold: the star schema (dbt) | Planned |
 | 5 | Connecting Power BI to the gold layer | Planned |
 | 6 | The budget medallion in Power Query | Planned |

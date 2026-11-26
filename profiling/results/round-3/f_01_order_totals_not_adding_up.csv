@@ -1,0 +1,87 @@
+period,status,payment_method,has_discount_code,has_gift_card_line,direction,orders,min_difference,max_difference,example_order
+from 2024-09-02,completed,Bancontact,f,f,total lower,77,-0.05,-0.01,KB-24-002486
+from 2024-09-02,completed,Credit card,f,f,total lower,74,-0.05,-0.01,KB-24-015825
+from 2024-09-02,completed,PayPal,f,f,total lower,66,-0.05,-0.01,KB-24-006369
+from 2024-09-02,completed,iDEAL,f,f,total lower,65,-0.05,-0.01,KB-24-005604
+from 2024-09-02,completed,Bancontact,f,f,total higher,55,0.01,0.02,KB-24-003326
+from 2024-09-02,completed,Credit card,f,f,total higher,53,0.01,0.02,KB-24-007194
+from 2024-09-02,completed,iDEAL,f,f,total higher,50,0.01,0.02,KB-24-002070
+from 2024-09-02,completed,PayPal,f,f,total higher,43,0.01,0.02,KB-24-010378
+from 2024-09-02,completed,Klarna,f,f,total lower,36,-0.05,-0.01,KB-24-011036
+before 2024-09-02,completed,Bancontact,f,f,total lower,17,-0.05,-0.01,KB106892
+from 2024-09-02,partially_refunded,Bancontact,f,f,total lower,17,-0.05,-0.01,KB-24-023217
+from 2024-09-02,completed,Klarna,f,f,total higher,16,0.01,0.02,KB-24-006835
+from 2024-09-02,completed,Apple Pay,f,f,total lower,15,-0.05,-0.01,KB-24-002519
+before 2024-09-02,completed,Bancontact,f,f,total higher,14,0.01,0.02,KB100238
+before 2024-09-02,completed,iDEAL,f,f,total lower,14,-0.05,-0.01,KB106332
+before 2024-09-02,completed,Credit card,f,f,total lower,12,-0.05,-0.01,KB101937
+before 2024-09-02,completed,Credit card,f,f,total higher,10,0.01,0.02,KB101376
+from 2024-09-02,completed,Apple Pay,f,f,total higher,9,0.01,0.02,KB-24-010824
+before 2024-09-02,completed,iDEAL,f,f,total higher,8,0.01,0.02,KB108460
+from 2024-09-02,partially_refunded,iDEAL,f,f,total lower,7,-0.05,-0.02,KB-24-022577
+before 2024-09-02,completed,PayPal,f,f,total higher,7,0.01,0.02,KB105052
+before 2024-09-02,completed,PayPal,f,f,total lower,6,-0.05,-0.01,KB100026
+from 2024-09-02,partially_refunded,Bancontact,f,f,total higher,6,0.01,0.02,KB-24-028500
+before 2024-09-02,partially_refunded,Bancontact,f,f,total lower,5,-0.05,-0.02,KB112049
+from 2024-09-02,completed,Bancontact,t,f,total lower,5,-0.05,-0.02,KB-24-034411
+from 2024-09-02,completed,Credit card,t,f,total lower,5,-0.05,-0.02,KB-24-041077
+from 2024-09-02,completed,PayPal,f,t,total higher,5,0.01,0.02,KB-25-053838
+from 2024-09-02,partially_refunded,Klarna,f,f,total lower,5,-0.05,-0.01,KB-25-070270
+before 2024-09-02,completed,Apple Pay,f,f,total lower,4,-0.05,-0.01,KB107271
+before 2024-09-02,completed,Klarna,f,f,total higher,4,0.01,0.02,KB119003
+from 2024-09-02,completed,Bancontact,f,t,total lower,4,-0.05,-0.01,KB-25-066109
+from 2024-09-02,completed,iDEAL,t,f,total lower,4,-0.05,-0.02,KB-24-003798
+from 2024-09-02,partially_refunded,PayPal,f,f,total lower,4,-0.05,-0.02,KB-24-024735
+from 2024-09-02,completed,PayPal,t,f,total lower,4,-0.05,-0.01,KB-24-001569
+from 2024-09-02,partially_refunded,Credit card,f,f,total higher,4,0.01,0.02,KB-25-086601
+from 2024-09-02,partially_refunded,iDEAL,f,f,total higher,4,0.01,0.02,KB-25-050432
+before 2024-09-02,completed,Credit card,t,f,total lower,3,-0.02,-0.02,KB114617
+from 2024-09-02,completed,iDEAL,t,f,total higher,3,0.01,0.02,KB-25-072516
+from 2024-09-02,partially_refunded,PayPal,f,f,total higher,3,0.01,0.02,KB-25-123970
+from 2024-09-02,partially_refunded,Credit card,f,f,total lower,3,-0.05,-0.01,KB-24-046059
+from 2024-09-02,cancelled,Bancontact,f,f,total higher,3,0.01,0.02,KB-25-137999
+before 2024-09-02,completed,Klarna,f,f,total lower,2,-0.05,-0.01,KB105565
+before 2024-09-02,completed,PayPal,t,f,total lower,2,-0.05,-0.01,KB107839
+before 2024-09-02,partially_refunded,iDEAL,f,f,total lower,2,-0.05,-0.01,KB103005
+before 2024-09-02,refunded,Credit card,f,f,total lower,2,-0.05,-0.05,KB105976
+from 2024-09-02,refunded,Bancontact,f,f,total higher,2,0.01,0.01,KB-25-157049
+from 2024-09-02,refunded,Credit card,f,f,total higher,2,0.01,0.02,KB-25-126548
+from 2024-09-02,refunded,iDEAL,f,f,total higher,2,0.02,0.02,KB-25-173180
+from 2024-09-02,refunded,PayPal,f,f,total higher,2,0.02,0.02,KB-24-012248
+from 2024-09-02,shipped,Credit card,f,f,total lower,2,-0.02,-0.02,KB-26-338772
+from 2024-09-02,partially_refunded,Apple Pay,f,f,total lower,2,-0.02,-0.01,KB-25-133358
+from 2024-09-02,completed,Credit card,t,f,total higher,2,0.01,0.01,KB-26-253981
+from 2024-09-02,partially_refunded,Klarna,f,f,total higher,2,0.01,0.01,KB-25-121021
+from 2024-09-02,completed,Credit card,f,t,total lower,2,-0.05,-0.02,KB-24-008617
+from 2024-09-02,partially_refunded,Apple Pay,f,f,total higher,2,0.01,0.02,KB-25-134053
+before 2024-09-02,cancelled,Credit card,t,f,total higher,1,0.01,0.01,KB102967
+before 2024-09-02,cancelled,iDEAL,f,f,total lower,1,-0.01,-0.01,KB127036
+before 2024-09-02,completed,Apple Pay,f,f,total higher,1,0.01,0.01,KB158235
+before 2024-09-02,completed,Apple Pay,f,t,total lower,1,-0.02,-0.02,KB125621
+before 2024-09-02,completed,Bancontact,t,f,total lower,1,-0.05,-0.05,KB130315
+before 2024-09-02,completed,Credit card,t,f,total higher,1,0.01,0.01,KB117561
+before 2024-09-02,partially_refunded,Credit card,f,f,total higher,1,0.01,0.01,KB126604
+before 2024-09-02,partially_refunded,PayPal,f,f,total lower,1,-0.05,-0.05,KB107833
+before 2024-09-02,refunded,iDEAL,f,f,total higher,1,0.02,0.02,KB114329
+from 2024-09-02,cancelled,Credit card,f,f,total higher,1,0.01,0.01,KB-25-117742
+from 2024-09-02,cancelled,PayPal,f,f,total higher,1,0.02,0.02,KB-26-323051
+from 2024-09-02,cancelled,PayPal,f,f,total lower,1,-0.01,-0.01,KB-25-079433
+from 2024-09-02,cancelled,PayPal,t,f,total lower,1,-0.05,-0.05,KB-25-196950
+from 2024-09-02,completed,Bancontact,t,f,total higher,1,0.02,0.02,KB-26-283520
+from 2024-09-02,completed,Klarna,t,t,total lower,1,-0.01,-0.01,KB-25-085277
+from 2024-09-02,partially_refunded,PayPal,t,f,total lower,1,-0.01,-0.01,KB-25-169967
+from 2024-09-02,processing,Bancontact,f,f,total higher,1,0.01,0.01,KB-26-340390
+from 2024-09-02,processing,Credit card,f,f,total higher,1,0.02,0.02,KB-26-340717
+from 2024-09-02,refunded,Apple Pay,f,f,total lower,1,-0.05,-0.05,KB-25-172342
+from 2024-09-02,refunded,Bancontact,f,f,total lower,1,-0.01,-0.01,KB-26-217120
+from 2024-09-02,refunded,Credit card,f,f,total lower,1,-0.05,-0.05,KB-26-277018
+from 2024-09-02,refunded,iDEAL,f,f,total lower,1,-0.05,-0.05,KB-25-069386
+from 2024-09-02,shipped,Bancontact,f,f,total lower,1,-0.02,-0.02,KB-26-339739
+from 2024-09-02,shipped,PayPal,f,f,total lower,1,-0.02,-0.02,KB-26-339357
+from 2024-09-02,completed,PayPal,f,t,total lower,1,-0.02,-0.02,KB-25-084884
+before 2024-09-02,partially_refunded,Credit card,f,f,total lower,1,-0.02,-0.02,KB108363
+before 2024-09-02,completed,PayPal,t,f,total higher,1,0.02,0.02,KB115830
+from 2024-09-02,completed,PayPal,t,f,total higher,1,0.02,0.02,KB-25-095893
+from 2024-09-02,partially_refunded,Credit card,t,f,total lower,1,-0.05,-0.05,KB-24-043088
+before 2024-09-02,partially_refunded,Bancontact,t,f,total higher,1,0.02,0.02,KB117196
+from 2024-09-02,cancelled,Bancontact,f,f,total lower,1,-0.01,-0.01,KB-26-313481

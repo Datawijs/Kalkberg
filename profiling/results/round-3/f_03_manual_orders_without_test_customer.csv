@@ -1,0 +1,15 @@
+order_number,created_at,customer_id,guest_email,status,discount_code,subtotal,discount_total,shipping_fee,order_total,first_name,last_name,email
+KB117701,2024-03-01 12:46:46,105570,,completed,TEST100,25.98,25.98,0.00,0.00,QA,Order,qa.kalkberg+21@gmail.com
+KB157555,2024-08-26 10:03:20,105570,,completed,TEST100,27.99,27.99,0.00,0.00,QA,Order,qa.kalkberg+21@gmail.com
+KB-24-020349,2024-11-03 09:53:35,104320,,completed,TEST100,25.98,25.98,0.00,0.00,QA,Order,qa.kalkberg+24@gmail.com
+KB-25-080275,2025-03-23 14:24:30,104320,,completed,,66.99,0.00,0.00,66.99,QA,Order,qa.kalkberg+24@gmail.com
+KB-25-152080,2025-09-28 08:49:44,151656,,completed,TEST100,126.99,126.99,0.00,0.00,QA,Order,qa.kalkberg+6@gmail.com
+KB-25-175227,2025-11-16 10:03:40,151656,,completed,TEST100,6.99,6.99,0.00,0.00,QA,Order,qa.kalkberg+6@gmail.com
+KB-26-210473,2026-01-10 15:48:08,105570,,completed,TEST100,147.99,22.20,0.00,125.79,QA,Order,qa.kalkberg+21@gmail.com
+KB-26-242680,2026-03-23 11:22:47,142158,,cancelled,,54.99,0.00,0.00,54.99,QA,Order,qa.kalkberg+27@gmail.com
+KB-26-259398,2026-04-25 07:17:48,142158,,completed,,27.98,0.00,0.00,27.98,QA,Order,qa.kalkberg+27@gmail.com
+KB-26-264249,2026-05-05 08:01:10,142158,,completed,TEST100,92.99,92.99,0.00,0.00,QA,Order,qa.kalkberg+27@gmail.com
+KB-26-285163,2026-06-24 10:19:02,151656,,completed,TEST100,35.98,35.98,0.00,0.00,QA,Order,qa.kalkberg+6@gmail.com
+KB-26-286294,2026-06-27 10:04:52,105570,,completed,TEST100,29.98,29.98,0.00,0.00,QA,Order,qa.kalkberg+21@gmail.com
+KB-26-295883,2026-07-19 10:03:55,151656,,completed,TEST100,27.99,27.99,0.00,0.00,QA,Order,qa.kalkberg+6@gmail.com
+KB-26-301243,2026-08-03 14:51:14,151656,,completed,TEST100,122.99,122.99,0.00,0.00,QA,Order,qa.kalkberg+6@gmail.com

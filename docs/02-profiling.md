@@ -95,7 +95,9 @@ Two checks deserve a closer look, because they turned a vague suspicion into har
 
 ### Round 3: follow-up checks
 
-Round 2 left a few questions open: findings that are clearly real, but where we can't decide what to do until we understand them. Round 3 ([`checks/follow_up.sql`](../profiling/checks/follow_up.sql)) checks them one by one. They're listed under [Open questions](#open-questions) below.
+Round 2 left six questions open: findings that were clearly real, but where we couldn't decide what to do until we understood them. Round 3 ([`checks/follow_up.sql`](../profiling/checks/follow_up.sql)) checks them one by one; the answers are listed under [Questions answered in round 3](#questions-answered-in-round-3) below.
+
+Round 3 is a good example of why you don't decide too early. Three of the six "problems" turned out to be no problem at all: rounding differences of a few cents, a purchase value that is consistent once you know free shipping exists, and "duplicate" sends that are in fact automated emails going out repeatedly. Fixing them after round 2 would have broken correct data.
 
 ## Why
 
@@ -137,7 +139,6 @@ A generic profile has no blind spots caused by our own expectations: it runs the
 | **Flag** | Kept as it is, but marked, so reports can show or exclude it and explain it with a warning label. |
 | **Exclude** | Removed from reporting in silver or gold. |
 | **Accept** | No action needed, but documented so nobody is surprised. |
-| **Open** | Not decided yet: waiting for round 3. |
 
 **Affects** refers to the questions in [context.md](../context.md): **M** = Management, **PM** = Performance marketing, **E** = Email and CRM, **C** = Customers and products, **F** = Finance, **D** = Data and trust. *PM3* is the third question of Performance marketing.
 
@@ -149,14 +150,14 @@ A generic profile has no blind spots caused by our own expectations: it runs the
 | SH-02 | **Time zone changed at the platform migration.** Timestamps before 02/09/2024 are Belgian local time, from 02/09/2024 they are UTC. Applies to orders and customer accounts. | `shop_12`, `shop_13` | M1, M7, C1, C2, D3 and every time-of-day or day-boundary analysis | **Fix**: interpret timestamps before the migration as Europe/Brussels and after it as UTC. Store one UTC timestamp plus the Belgian local date and time. |
 | SH-03 | **Return timestamps have no daily rhythm.** Every hour of the day has about 4% of the return requests, before and after the migration. The time of day carries no information. | `shop_13` | F4 | **Accept**: use the date of a return only, never the time. Durations are counted in days. |
 | SH-04 | **Two order number formats.** `KB100001` to `KB159140` on the old platform (up to 01/09/2024), `KB-24-000001` and on (year + number) on the new platform. Both are unique, and GA4 uses the same numbers. | `shop_11`, `ga4_05` | D3 | **Accept**: keep `order_number` as the business key. Add the platform (old/new) as an attribute. |
-| SH-05 | **Test data in production.** 31 test customers (names like *Test*, *QA*, *Test Klant*; emails like `test+N@kalkberg.example` and `qa.kalkberg+N@gmail.com`). All 101 orders paid with `Manual` look like test orders: they include all 71 `TEST100` orders and all 68 orders with a total of 0,00. | `shop_05` to `shop_07`, `f_03` | Every count of customers, orders and revenue | **Exclude**: mark customers and orders as test in silver and leave them out of gold. The 13 `Manual` orders without a test customer are checked in round 3 (`f_03`). |
+| SH-05 | **Test data in production.** 35 test customers: first names like *Test*, *QA* and *Test Klant*, emails like `test+N@kalkberg.example` and `qa.kalkberg+N@gmail.com`. All 101 orders paid with `Manual` are test orders: they include all 71 `TEST100` orders and all 68 orders with a total of 0,00, and every one of them belongs to a test customer. Round 2 found 31 test customers; round 3 showed that the remaining `Manual` orders come from 4 more QA accounts (`QA Order`, `qa.kalkberg+N@gmail.com`). | `shop_05` to `shop_07`, `f_03` | Every count of customers, orders and revenue | **Exclude**: mark customers as test on their name or email pattern, and orders as test when the customer is a test customer or the payment method is `Manual`. Leave both out of gold. |
 | SH-06 | **Duplicate accounts.** 376 accounts share an email address with another account once uppercase is ignored (the shop's uniqueness check is case-sensitive). 1.093 people have 2 accounts with the same name, birth date and postal code, usually with an email that only differs in case or has an extra number. | `shop_02` to `shop_04` | C1, C2, M1, M4, M5, M6 | **Fix**: build a *person* key in silver. Match on the normalised email first, then on name + birth date + postal code (placeholder birth dates excluded). Keep the account ids for traceability. |
 | SH-07 | **Guest orders are not always new customers.** 24.000 orders were placed without an account, by 23.755 email addresses. 7.077 of those orders (6.832 email addresses) come from people who also have an account. | `shop_16` | C9, M1, M5 | **Fix**: link guest orders to the same person key via the normalised email (see SH-06). |
 | SH-08 | **Names written inconsistently.** 1.034 first names with leading or trailing spaces; about 1.600 first and last names in all lowercase and 2.000 to 2.500 in all uppercase. | `shop_08` | None (display only) | **Fix**: trim spaces. Names are personal data and aren't needed in reports, so they don't go to gold. |
 | SH-09 | **Phone numbers in 15 notations**, 30.458 empty. | `shop_09` | None | **Accept**: not used in any analysis and not carried to gold. |
 | SH-10 | **Placeholder and impossible birth dates.** 1.010 customers born on 01/01/1900; 291 younger than 14 at sign-up (birth dates between 2023 and 2026); 3 born after their account was created. 25.042 are empty. | `shop_10` | SH-06 matching; any age analysis | **Fix**: set placeholder and impossible birth dates to empty. |
 | SH-11 | **Discount codes in several notations.** `WELCOME10` appears in 4 notations (including one with a leading space), every influencer code also in lowercase. | `shop_17` | F3, PM7, PM8 | **Fix**: trim and uppercase every code before using it. |
-| SH-12 | **Order totals that don't add up** for 808 orders: `order_total` is not `subtotal - discount_total + shipping_fee`. Everywhere else, `subtotal` is the sum of quantity × price and `discount_total` the sum of the line discounts. | `shop_15`, `f_01`, `f_02` | M1, F2 | **Open**: round 3. |
+| SH-12 | **Rounding differences in order totals.** For 808 orders, `order_total` is not exactly `subtotal - discount_total + shipping_fee`: it is 1 to 5 cents lower or 1 to 2 cents higher. The differences occur in every period, payment method and status, with or without a discount code. Everywhere else, `subtotal` is the sum of quantity × price and `discount_total` the sum of the line discounts. | `shop_15`, `f_01`, `f_02` | M1, F2 | **Accept**: `order_total` is what the customer paid, so it stays the revenue amount. Silver tests that the difference is never more than 0,05. |
 | SH-13 | **Duplicate products.** 5 pairs of products with the same name: 2 pairs only differ by a trailing space, 3 have exactly the same name. 3 variants were sold before their product's launch date. | `shop_21`, `shop_22` | C4, C6 | **Fix**: trim product names. Keep both products of a pair (each has its own sales history), and report on the cleaned name where it matters. **Accept** the 3 early sales. |
 | SH-14 | **Variants without a purchase cost.** 39 variants have no `unit_cost`, mostly sizes of climbing shoes; for most of them the other sizes of the same product do have a cost. | `shop_21`, `shop_22` | C6, F2 | **Fix**: use the median cost of the other sizes of the same product, and mark the cost as estimated. Products without any known cost keep an unknown margin. |
 
@@ -179,7 +180,7 @@ A generic profile has no blind spots caused by our own expectations: it runs the
 | GA-04 | **Traffic from the United States and the United Kingdom without any purchase**: 973.695 sessions (5,8% of all sessions in the traffic report), 0 purchases, slightly lower engagement. Kalkberg doesn't ship there. `(not set)` has 333.600 sessions and does convert (0,99%). | `ga4_09` | PM10, conversion rates in general | **Exclude** US and UK from conversion rates and traffic KPIs, show them separately. **Accept** `(not set)` as country *Unknown*. |
 | GA-05 | **Purchases sent twice.** 6.568 transactions have 2 purchase events, from the same device and session, with the same value, mostly within a minute (probably a reload of the confirmation page). The traffic report counts the duplicates too. | `ga4_03`, `ga4_10` | PM2, D1 | **Fix**: keep one purchase per `transaction_id`. Take GA4 purchases and revenue from the deduplicated events, not from the traffic report. |
 | GA-06 | **GA4 sees about 82% of the shop's orders**, every month, before and after the migration. That fits the cookie consent described in *context.md*. | `ga4_04` | PM2, PM3, D1, D2 | **Flag**: the shop is the source of truth for orders and revenue. GA4 is used for behaviour and channel *shares*, with a warning label. |
-| GA-07 | **The GA4 purchase value doesn't have one definition**: it equals `order_total` for 185.376 transactions and `order_total - shipping_fee` for 143.059 transactions. | `ga4_06`, `f_04` | D1 | **Open**: round 3. |
+| GA-07 | **The GA4 purchase value excludes shipping.** At first sight it had two definitions (equal to `order_total` for 185.376 transactions, to `order_total - shipping_fee` for 143.059). Round 3 showed that every transaction where it equals `order_total` had free shipping: the value is always the order total without shipping. The 1% that matches neither is explained by the rounding differences of SH-12. | `ga4_06`, `f_04` | D1, PM2 | **Accept**: when comparing with GA4, compare with the shop's revenue *without* shipping. |
 | GA-08 | **The event export is not all traffic.** It only contains 4 events (`session_start`, `add_to_cart`, `begin_checkout`, `purchase`) and about 20 times fewer sessions than the traffic report, while the number of purchases is the same. It looks like an export of sessions with shopping activity only. | `ga4_01`, `ga4_10` | PM4, PM10 | **Accept**, with a warning: sessions and conversion rates come from the traffic report; journeys and attribution come from the events, and only cover sessions with shopping activity. |
 
 ### Marketing Cloud (sfmc)
@@ -189,10 +190,10 @@ A generic profile has no blind spots caused by our own expectations: it runs the
 | MC-01 | **Timestamps in US notation** `M/D/YYYY h:mm:ss AM/PM` in all 11 timestamp columns (the second number goes above 12, the first never does). | `sfmc_01` | All email questions | **Fix**: read with the explicit US format. |
 | MC-02 | **Timestamps 6 hours behind UTC, all year round** (fixed UTC−6, no summer time). | `sfmc_02`, `sfmc_03` | E4, E8, D4 | **Fix**: add 6 hours to get UTC, then convert to Belgian time like every other source. |
 | MC-03 | **More subscriber records than people.** 94.497 records for 89.582 email addresses. For 3.230 addresses there is one record keyed on the customer number and a second one with another key: the person subscribed twice. | `sfmc_04`, `sfmc_05` | E1, E7 | **Fix**: count people, not records: one person per normalised email address. A person counts as reachable when at least one of their records is active. |
-| MC-04 | **Three kinds of subscriber key.** 41.654 keys are a shop customer number (all of them exist in the shop), 22.006 are an email address, and 30.837 are neither. | `sfmc_04`, `f_06` | E7, D4 | **Open**: round 3, for the third kind. |
+| MC-04 | **Three kinds of subscriber key.** 41.654 keys are a shop customer number (all of them exist in the shop), 22.006 are an email address, and 30.837 follow the pattern two letters, hyphen, six digits (such as `NL-100022`). The numbers in that last kind are not customer numbers: they are newsletter sign-ups without a shop account. 5.889 of those email addresses do appear in the shop. | `sfmc_04`, `f_06` | E7, D4 | **Accept**: the key can't be used to link to the shop. Link subscribers to customers by person, through the normalised email address (see MC-03 and X-02). |
 | MC-05 | **Typos in email domains**: `gmial.com`, `hotmial.com`, `icloud.co`, `outlok.com` and `telnet.be`. 644 subscribers (exactly the ones with status *Held*) and 1.034 shop customers. Every send to these addresses bounces. | `sfmc_06`, `sfmc_09` | E1 | **Flag**: don't correct email addresses (we can't be sure what was meant), but report them as undeliverable. Recommendation for the business: validate email addresses at sign-up. |
 | MC-06 | **Machine opens.** `icloud.com` addresses have an open rate of 88,4%, against 52% to 58% for every other domain, while their click rate is normal. This is typical for Apple Mail Privacy Protection, which opens every email automatically. | `sfmc_09`, `sfmc_08` | E2, E5, E6 | **Flag**: report opens with and without `icloud.com`, and use clicks as the main engagement measure. |
-| MC-07 | **Duplicate sends.** For 63.488 combinations of email and subscriber there is more than one send row. | `sfmc_07`, `f_05` | E2, E5 | **Open**: round 3. |
+| MC-07 | **Repeated sends of journey emails.** For 63.488 combinations of email job and subscriber there is more than one send row. All of them are automated journey emails (*TriggeredSend*), almost always sent on different days, up to 57 times to the same person. An abandoned-cart email, for example, is one job that goes out every time someone leaves a cart. These are real, separate sends, not duplicates. | `sfmc_07`, `f_05` | E2, E3, E5 | **Accept**: one send is identified by job, subscriber *and* send time. Opens and clicks are linked to the send that came just before them. |
 
 ### Across sources
 
@@ -217,19 +218,32 @@ Just as useful as the issues: what we checked and found to be fine. Silver can r
 | GA4 `user_id` | Always an existing shop customer number | `ga4_07` |
 | GA4 `event_date` | The Belgian date of the event (97.628 events fall on another date in UTC) | `ga4_02` |
 | GA4 traffic source | Only filled on `session_start`; other events get it through their session | `ga4_01` |
+| GA4 logged-in customers | `user_id` is filled from the first month of data | `f_07` |
 | Ad reports | One row per day and campaign (Google) or per day, campaign and ad set (Meta); no gaps in any campaign's period | `ads_03`, `ads_05` |
 | Campaign changes | Google Shopping stops on 31/01/2025 and Performance Max starts on 01/02/2025; the Meta campaign structure changes around the agency switch. Both match *context.md*. | `ads_05` |
 | Marketing Cloud links | Every send, open and click points to an existing job and subscriber; statuses match the unsubscribe events. Only 24 clicks have no open (normal when images are blocked). | `sfmc_07` |
 
-## Open questions
+## Questions answered in round 3
 
-These issues are real, but the right decision depends on the answer to a round 3 check.
+| Issue | Question after round 2 | Answer from round 3 | Check |
+| --- | --- | --- | --- |
+| SH-05 | Are the `Manual` orders without a test customer test orders as well? | Yes. They belong to 4 QA accounts that the first test rule missed, because their email address is on gmail.com. | `f_03` |
+| SH-12 | What do the 808 orders whose total doesn't add up have in common? | Nothing, except that the difference is never more than a few cents: rounding. | `f_01`, `f_02` |
+| GA-07 | Does the GA4 purchase value include shipping in some periods and not in others? | No, it never includes shipping. Where it equals the order total, shipping was free. | `f_04` |
+| MC-04 | What are the subscriber keys that are neither a customer number nor an email address? | Newsletter sign-ups without a shop account, with keys like `NL-100022`. | `f_06` |
+| MC-07 | What differs between duplicate send rows? | The send time: they are automated journey emails sent to the same person on different days. | `f_05` |
+| — | From when does GA4 know the logged-in customer (`user_id`)? Email clicks could only be matched to GA4 sessions from September 2024. | From the start: every month, about 1 in 4 sessions and 5 in 6 purchases have a `user_id`. The September 2024 limit comes from Marketing Cloud, where only part of the subscribers carry a customer number as key. Linking subscribers to customers by email address (MC-03, X-02) removes that limit. | `f_07` |
 
-| Issue | Question | Round 3 check |
-| --- | --- | --- |
-| SH-05 | Are the 13 `Manual` orders without a test customer test orders as well? | `f_03` |
-| SH-12 | What do the 808 orders whose total doesn't add up have in common? | `f_01`, `f_02` |
-| GA-07 | Does the GA4 purchase value include shipping in some periods and not in others? | `f_04` |
-| MC-04 | What are the 30.837 subscriber keys that are neither a customer number nor an email address? | `f_06` |
-| MC-07 | What differs between duplicate send rows: time, batch, list? | `f_05` |
-| — | From when does GA4 know the logged-in customer (`user_id`)? Email clicks could only be matched to GA4 sessions from September 2024. | `f_07` |
+## What this means for silver
+
+The register gives silver a clear list of work. In broad lines:
+
+- **One way of writing everything**: countries, discount codes, numbers and timestamps get one notation and one time zone (SH-01, SH-02, SH-11, AD-02, MC-01, MC-02).
+- **People instead of records**: one person key across shop accounts, guest orders and Marketing Cloud subscribers (SH-06, SH-07, MC-03, MC-04, X-02).
+- **One channel list**: every source, medium and campaign spelling mapped to one channel and campaign, shared with the budget (GA-01 to GA-03).
+- **Remove what isn't real**: test data, total rows and duplicate purchases (SH-05, AD-01, GA-05).
+- **Mark what can't be fully trusted**: machine opens, GA4 coverage, platform conversions, traffic from countries without deliveries (MC-06, GA-04, GA-06, X-01). These become the warning labels on the dashboard that *context.md* asks for (D6).
+
+## Next step
+
+Step 3: building the silver layer with dbt, issue by issue.

@@ -1,0 +1,45 @@
+category,job_type,rows_per_pair,distinct_event_dates,distinct_batches,distinct_lists,time_between_sends,pairs,jobs
+Journeys,TriggeredSend,2,2,1,1,1 day or more,36856,32
+Journeys,TriggeredSend,3,3,1,1,1 day or more,9155,24
+Journeys,TriggeredSend,4,4,1,1,1 day or more,5694,24
+Journeys,TriggeredSend,5,5,1,1,1 day or more,3639,24
+Journeys,TriggeredSend,6,6,1,1,1 day or more,2412,22
+Journeys,TriggeredSend,7,7,1,1,1 day or more,1636,22
+Journeys,TriggeredSend,8,8,1,1,1 day or more,1109,18
+Journeys,TriggeredSend,9,9,1,1,1 day or more,782,19
+Journeys,TriggeredSend,10,10,1,1,1 day or more,564,19
+Journeys,TriggeredSend,11,11,1,1,1 day or more,377,15
+Journeys,TriggeredSend,12,12,1,1,1 day or more,272,17
+Journeys,TriggeredSend,13,13,1,1,1 day or more,192,14
+Journeys,TriggeredSend,2,2,1,1,< 1 day,149,22
+Journeys,TriggeredSend,14,14,1,1,1 day or more,140,13
+Journeys,TriggeredSend,15,15,1,1,1 day or more,115,13
+Journeys,TriggeredSend,16,16,1,1,1 day or more,82,14
+Journeys,TriggeredSend,17,17,1,1,1 day or more,61,10
+Journeys,TriggeredSend,18,18,1,1,1 day or more,57,10
+Journeys,TriggeredSend,19,19,1,1,1 day or more,41,11
+Journeys,TriggeredSend,21,21,1,1,1 day or more,32,7
+Journeys,TriggeredSend,20,20,1,1,1 day or more,22,8
+Journeys,TriggeredSend,24,24,1,1,1 day or more,16,7
+Journeys,TriggeredSend,22,22,1,1,1 day or more,15,6
+Journeys,TriggeredSend,23,23,1,1,1 day or more,11,7
+Journeys,TriggeredSend,26,26,1,1,1 day or more,8,5
+Journeys,TriggeredSend,29,29,1,1,1 day or more,8,5
+Journeys,TriggeredSend,25,25,1,1,1 day or more,7,4
+Journeys,TriggeredSend,27,27,1,1,1 day or more,6,3
+Journeys,TriggeredSend,30,30,1,1,1 day or more,5,3
+Journeys,TriggeredSend,31,31,1,1,1 day or more,4,4
+Journeys,TriggeredSend,2,2,1,1,< 1 hour,3,3
+Journeys,TriggeredSend,36,36,1,1,1 day or more,2,2
+Journeys,TriggeredSend,35,35,1,1,1 day or more,2,2
+Journeys,TriggeredSend,39,39,1,1,1 day or more,2,2
+Journeys,TriggeredSend,42,42,1,1,1 day or more,2,2
+Journeys,TriggeredSend,32,32,1,1,1 day or more,2,2
+Journeys,TriggeredSend,57,57,1,1,1 day or more,1,1
+Journeys,TriggeredSend,3,3,1,1,< 1 day,1,1
+Journeys,TriggeredSend,34,34,1,1,1 day or more,1,1
+Journeys,TriggeredSend,41,41,1,1,1 day or more,1,1
+Journeys,TriggeredSend,43,43,1,1,1 day or more,1,1
+Journeys,TriggeredSend,50,50,1,1,1 day or more,1,1
+Journeys,TriggeredSend,52,52,1,1,1 day or more,1,1
+Journeys,TriggeredSend,4,4,1,1,< 1 day,1,1

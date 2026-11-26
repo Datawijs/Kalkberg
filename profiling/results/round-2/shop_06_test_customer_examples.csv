@@ -1,0 +1,32 @@
+customer_id,first_name,last_name,email,created_at,orders,order_total_sum,payment_methods,discount_codes
+105378,Test Klant,Order,qa.kalkberg+3@gmail.com,2023-12-21 08:53:28,2,12.99,Manual,TEST100
+109797,Test,Order,test+34@kalkberg.example,2024-02-12 09:51:28,2,155.99,Manual,TEST100
+114562,QA,Account,test+1@kalkberg.example,2024-04-08 08:19:20,2,0.00,Manual,TEST100
+116813,Test Klant,Kalkberg,qa.kalkberg+12@gmail.com,2024-05-02 08:13:44,4,0.00,Manual,TEST100
+118151,Test,Kalkberg,test+14@kalkberg.example,2024-05-17 15:39:41,1,0.00,Manual,TEST100
+125653,QA,Account,test+19@kalkberg.example,2024-08-18 09:53:48,3,72.99,Manual,TEST100
+125925,test,Account,qa.kalkberg+15@gmail.com,2024-08-21 12:24:35,1,0.00,Manual,TEST100
+134123,QA,Account,test+8@kalkberg.example,2024-11-10 16:41:07,3,94.97,Manual,TEST100
+137551,Test Klant,Account,test+2@kalkberg.example,2024-12-02 14:25:21,1,15.99,Manual,
+147148,Test,Account,test+4@kalkberg.example,2025-03-05 07:44:59,1,0.00,Manual,TEST100
+147765,QA,Order,test+10@kalkberg.example,2025-03-11 15:59:53,1,0.00,Manual,TEST100
+149685,QA,Order,test+25@kalkberg.example,2025-03-30 13:06:18,5,0.00,Manual,TEST100
+151057,Test,Account,test+17@kalkberg.example,2025-04-12 15:24:59,2,41.98,Manual,
+155251,Test,Kalkberg,qa.kalkberg+0@gmail.com,2025-05-29 07:37:47,5,56.96,Manual,TEST100
+156236,Test Klant,Account,test+13@kalkberg.example,2025-06-11 08:46:16,3,120.99,Manual,TEST100
+156594,test,Account,qa.kalkberg+18@gmail.com,2025-06-16 06:35:24,1,7.49,Manual,
+158428,QA,Account,test+22@kalkberg.example,2025-07-08 14:23:55,2,59.99,Manual,TEST100
+162979,test,Account,test+32@kalkberg.example,2025-09-07 06:39:23,1,104.99,Manual,
+165707,Test Klant,Test,test+28@kalkberg.example,2025-10-04 11:49:13,5,147.98,Manual,TEST100
+169950,test,Kalkberg,qa.kalkberg+30@gmail.com,2025-11-13 08:43:16,3,39.87,Manual,TEST100
+170911,QA,Kalkberg,Test+29@kalkberg.example,2025-11-21 11:43:51,5,64.59,Manual,TEST100
+174376,QA,Order,test+31@kalkberg.example,2025-12-13 08:52:04,1,0.00,Manual,TEST100
+175822,Test,Order,qa.kalkberg+33@gmail.com,2025-12-26 10:16:14,5,158.97,Manual,TEST100
+179221,Test Klant,Account,test+7@kalkberg.example,2026-01-30 11:31:33,3,17.99,Manual,TEST100
+179241,Test Klant,Order,test+11@kalkberg.example,2026-01-30 16:10:00,5,151.99,Manual,TEST100
+186280,Test,Order,test+5@kalkberg.example,2026-04-20 12:47:45,5,29.98,Manual,TEST100
+189272,Test Klant,Account,test+16@kalkberg.example,2026-05-26 12:50:21,3,19.99,Manual,TEST100
+192369,Test Klant,Test,test+23@kalkberg.example,2026-07-06 08:43:29,3,0.00,Manual,TEST100
+193128,QA,Account,qa.kalkberg+9@gmail.com,2026-07-16 12:03:21,1,192.99,Manual,
+193812,test,Account,test+26@kalkberg.example,2026-07-26 07:16:30,3,0.00,Manual,TEST100
+197043,QA,Test,test+20@kalkberg.example,2026-09-08 08:05:00,5,0.00,Manual,TEST100

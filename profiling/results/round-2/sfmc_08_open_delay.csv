@@ -1,0 +1,101 @@
+domain,time_after_send,opens,unique_opens
+free.fr,< 10 seconds,101,101
+free.fr,1 day or more,3382,777
+free.fr,1 hour - 1 day,13158,8169
+free.fr,1 minute - 1 hour,22281,20993
+free.fr,10 seconds - 1 minute,1075,1075
+gmail.com,< 10 seconds,7385,7380
+gmail.com,1 day or more,115242,27261
+gmail.com,1 hour - 1 day,455758,298188
+gmail.com,1 minute - 1 hour,725171,680327
+gmail.com,10 seconds - 1 minute,34569,34482
+gmx.de,< 10 seconds,316,316
+gmx.de,1 day or more,4625,1127
+gmx.de,1 hour - 1 day,18642,12334
+gmx.de,1 minute - 1 hour,28609,26823
+gmx.de,10 seconds - 1 minute,1418,1411
+hotmail.com,< 10 seconds,1716,1716
+hotmail.com,1 day or more,29000,7007
+hotmail.com,1 hour - 1 day,113828,74707
+hotmail.com,1 minute - 1 hour,179943,169002
+hotmail.com,10 seconds - 1 minute,8556,8545
+hotmail.fr,< 10 seconds,275,275
+hotmail.fr,1 day or more,3503,831
+hotmail.fr,1 hour - 1 day,14246,9551
+hotmail.fr,1 minute - 1 hour,23021,21689
+hotmail.fr,10 seconds - 1 minute,1099,1090
+icloud.com,< 10 seconds,2713,2710
+icloud.com,1 day or more,30334,1198
+icloud.com,1 hour - 1 day,96244,12518
+icloud.com,1 minute - 1 hour,374331,348575
+icloud.com,10 seconds - 1 minute,20484,20448
+kpnmail.nl,< 10 seconds,268,268
+kpnmail.nl,1 day or more,5344,1326
+kpnmail.nl,1 hour - 1 day,22003,14555
+kpnmail.nl,1 minute - 1 hour,34900,32868
+kpnmail.nl,10 seconds - 1 minute,1672,1672
+laposte.net,< 10 seconds,56,56
+laposte.net,1 day or more,2051,455
+laposte.net,1 hour - 1 day,7682,4898
+laposte.net,1 minute - 1 hour,12809,12010
+laposte.net,10 seconds - 1 minute,632,632
+orange.fr,< 10 seconds,324,324
+orange.fr,1 day or more,5207,1233
+orange.fr,1 hour - 1 day,19788,12848
+orange.fr,1 minute - 1 hour,30639,28623
+orange.fr,10 seconds - 1 minute,1385,1385
+outlook.com,< 10 seconds,1112,1111
+outlook.com,1 day or more,21420,5001
+outlook.com,1 hour - 1 day,85181,56187
+outlook.com,1 minute - 1 hour,132186,123964
+outlook.com,10 seconds - 1 minute,6354,6343
+outlook.de,< 10 seconds,101,101
+outlook.de,1 day or more,1665,437
+outlook.de,1 hour - 1 day,6403,4224
+outlook.de,1 minute - 1 hour,9503,8840
+outlook.de,10 seconds - 1 minute,425,421
+outlook.fr,< 10 seconds,34,34
+outlook.fr,1 day or more,1309,324
+outlook.fr,1 hour - 1 day,5489,3747
+outlook.fr,1 minute - 1 hour,8545,8075
+outlook.fr,10 seconds - 1 minute,402,402
+proximus.be,< 10 seconds,249,249
+proximus.be,1 day or more,3442,921
+proximus.be,1 hour - 1 day,13698,9025
+proximus.be,1 minute - 1 hour,21516,20296
+proximus.be,10 seconds - 1 minute,1043,1043
+pt.lu,< 10 seconds,172,172
+pt.lu,1 day or more,2171,511
+pt.lu,1 hour - 1 day,8656,5573
+pt.lu,1 minute - 1 hour,14402,13569
+pt.lu,10 seconds - 1 minute,686,684
+skynet.be,< 10 seconds,433,433
+skynet.be,1 day or more,6334,1544
+skynet.be,1 hour - 1 day,24589,16727
+skynet.be,1 minute - 1 hour,38037,35735
+skynet.be,10 seconds - 1 minute,1811,1803
+t-online.de,< 10 seconds,220,220
+t-online.de,1 day or more,2442,572
+t-online.de,1 hour - 1 day,9205,6091
+t-online.de,1 minute - 1 hour,14228,13355
+t-online.de,10 seconds - 1 minute,673,673
+telenet.be,< 10 seconds,964,962
+telenet.be,1 day or more,17121,3918
+telenet.be,1 hour - 1 day,68108,43885
+telenet.be,1 minute - 1 hour,111512,104757
+telenet.be,10 seconds - 1 minute,5238,5233
+web.de,< 10 seconds,459,459
+web.de,1 day or more,4980,1156
+web.de,1 hour - 1 day,18926,12750
+web.de,1 minute - 1 hour,28817,26988
+web.de,10 seconds - 1 minute,1369,1366
+xs4all.nl,< 10 seconds,288,287
+xs4all.nl,1 day or more,3066,734
+xs4all.nl,1 hour - 1 day,11867,8015
+xs4all.nl,1 minute - 1 hour,17772,16629
+xs4all.nl,10 seconds - 1 minute,823,817
+ziggo.nl,< 10 seconds,600,598
+ziggo.nl,1 day or more,7699,1863
+ziggo.nl,1 hour - 1 day,30342,19937
+ziggo.nl,1 minute - 1 hour,48593,45545
+ziggo.nl,10 seconds - 1 minute,2349,2345

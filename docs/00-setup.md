@@ -43,7 +43,7 @@ The script asks for:
 
 The generator ends by printing a row count per table. Compare it with the counts the generator printed while writing the files.
 
-![Terminal output of the generator's row check: a table of the 19 bronze tables and their row counts, from 9 rows in shop.brands to 4,454,934 rows in sfmc.sent](img/00-generator-row-check.png)
+![Terminal output of the generator's row check: a table of the 19 bronze tables and their row counts, from 9 rows in shop.brands to 4.454.934 rows in sfmc.sent](img/00-generator-row-check.png)
 
 ### 2. Land the influencer contracts
 

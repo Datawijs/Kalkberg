@@ -1,0 +1,212 @@
+table_schema,table_name,column_name,ordinal_position,data_type,row_count,null_count,empty_count,distinct_count,min_value,max_value,min_length,max_length,untrimmed_count,has_uppercase_count,has_lowercase_count,integer_count,decimal_point_count,decimal_comma_count,iso_date_count,iso_datetime_count,other_date_count,profiled_at
+ads,google_ads_campaign_report,day,1,text,5469,0,0,1100,2023-11-01,Total: Shopping,10,22,0,4,4,0,0,0,5465,0,0,2026-11-26 13:21:30.530893+01
+ads,google_ads_campaign_report,campaign,2,text,5469,0,0,13,--,Shopping - All Products,2,33,0,5465,5465,0,0,0,0,0,0,2026-11-26 13:21:30.530893+01
+ads,google_ads_campaign_report,campaign_type,3,text,5469,0,0,4,--,Shopping,2,15,0,5465,5465,0,0,0,0,0,0,2026-11-26 13:21:30.530893+01
+ads,google_ads_campaign_report,currency_code,4,text,5469,0,0,1,EUR,EUR,3,3,0,5469,0,0,0,0,0,0,0,2026-11-26 13:21:30.530893+01
+ads,google_ads_campaign_report,cost,5,text,5469,0,0,5277,"1,000.25",998.91,5,12,0,0,0,0,5298,0,0,0,0,2026-11-26 13:21:30.530893+01
+ads,google_ads_campaign_report,impressions,6,text,5469,0,0,4629,"1,028","99,652",3,11,0,0,0,9,0,5456,0,0,0,2026-11-26 13:21:30.530893+01
+ads,google_ads_campaign_report,clicks,7,text,5469,0,0,1586,"1,000",999,2,9,0,0,0,4120,0,1347,0,0,0,2026-11-26 13:21:30.530893+01
+ads,google_ads_campaign_report,conversions,8,text,5469,0,0,2314,0.00,9.99,4,9,0,0,0,0,5465,0,0,0,0,2026-11-26 13:21:30.530893+01
+ads,google_ads_campaign_report,conv_value,9,text,5469,0,0,5349,0.00,999.50,4,12,0,0,0,0,2521,0,0,0,0,2026-11-26 13:21:30.530893+01
+ads,meta_ads_report,reporting_starts,1,text,6086,0,0,1096,2023-11-01,2026-10-31,10,10,0,0,0,0,0,0,6086,0,0,2026-11-26 13:21:30.76909+01
+ads,meta_ads_report,reporting_ends,2,text,6086,0,0,1096,2023-11-01,2026-10-31,10,10,0,0,0,0,0,0,6086,0,0,2026-11-26 13:21:30.76909+01
+ads,meta_ads_report,campaign_name,3,text,6086,0,0,12,BF 2023 - Prospecting,Summer Sale 2026 - Retargeting,19,33,0,6086,6086,0,0,0,0,0,0,2026-11-26 13:21:30.76909+01
+ads,meta_ads_report,ad_set_name,4,text,6086,0,0,13,Advantage+ | All countries,Sale | Past buyers 365d,10,30,0,6086,5570,0,0,0,0,0,0,2026-11-26 13:21:30.76909+01
+ads,meta_ads_report,amount_spent_eur,5,text,6086,0,0,5735,100.03,995.94,4,7,0,0,0,0,6086,0,0,0,0,2026-11-26 13:21:30.76909+01
+ads,meta_ads_report,impressions,6,text,6086,0,0,5782,100002,99986,4,6,0,0,0,6086,0,0,0,0,0,2026-11-26 13:21:30.76909+01
+ads,meta_ads_report,reach,7,text,6086,0,0,5600,10000,9996,4,6,0,0,0,6086,0,0,0,0,0,2026-11-26 13:21:30.76909+01
+ads,meta_ads_report,link_clicks,8,text,6086,0,0,1417,100,999,2,4,0,0,0,6086,0,0,0,0,0,2026-11-26 13:21:30.76909+01
+ads,meta_ads_report,purchases,9,text,6086,6,0,105,1,99,1,3,0,0,0,6080,0,0,0,0,0,2026-11-26 13:21:30.76909+01
+ads,meta_ads_report,purchases_conversion_value,10,text,6086,0,0,6016,10.52,999.62,4,8,0,0,0,0,6086,0,0,0,0,2026-11-26 13:21:30.76909+01
+budget,influencer_contracts,creator,1,text,5,0,0,5,bloc_brothers,slab_sophie,9,13,0,0,5,0,0,0,0,0,0,2026-11-26 13:21:31.086845+01
+budget,influencer_contracts,platform,2,text,5,0,0,3,Instagram,YouTube,6,9,0,5,5,0,0,0,0,0,0,2026-11-26 13:21:31.086845+01
+budget,influencer_contracts,discount_code,3,text,5,0,0,5,BLOCBROS,SOPHIE15,6,8,0,5,0,0,0,0,0,0,0,2026-11-26 13:21:31.086845+01
+budget,influencer_contracts,start_date,4,text,5,0,0,5,2024-01-15,2025-10-01,10,10,0,0,0,0,0,0,5,0,0,2026-11-26 13:21:31.086845+01
+budget,influencer_contracts,end_date,5,text,5,0,0,4,2024-12-31,2026-10-31,10,10,0,0,0,0,0,0,5,0,0,2026-11-26 13:21:31.086845+01
+budget,influencer_contracts,monthly_fee_eur,6,text,5,0,0,5,1200,900,3,4,0,0,0,5,0,0,0,0,0,2026-11-26 13:21:31.086845+01
+budget,influencer_contracts,remarks,7,text,5,0,0,1,code valid 14 days after contract end,code valid 14 days after contract end,37,37,0,0,5,0,0,0,0,0,0,2026-11-26 13:21:31.086845+01
+budget,influencer_contracts,_source_file,8,text,5,0,0,1,marketing_budget.xlsx,marketing_budget.xlsx,21,21,0,0,5,0,0,0,0,0,0,2026-11-26 13:21:31.086845+01
+budget,influencer_contracts,_sheet_name,9,text,5,0,0,1,Influencer contracts,Influencer contracts,20,20,0,5,5,0,0,0,0,0,0,2026-11-26 13:21:31.086845+01
+budget,influencer_contracts,_row_number,10,integer,5,0,0,5,2,6,1,1,0,0,0,5,0,0,0,0,0,2026-11-26 13:21:31.086845+01
+budget,influencer_contracts,_loaded_at,11,timestamp with time zone,5,0,0,1,2026-11-26 12:57:24.589655+01,2026-11-26 12:57:24.589655+01,29,29,0,0,0,0,0,0,0,5,0,2026-11-26 13:21:31.086845+01
+ga4,daily_traffic,date,1,text,1001977,0,0,1096,20231101,20261031,8,8,0,0,0,1001977,0,0,0,0,0,2026-11-26 13:21:31.098052+01
+ga4,daily_traffic,session_source_medium,2,text,1001977,0,0,46,(direct) / (none),youtube.com / referral,8,31,0,54605,1001977,0,0,0,0,0,0,2026-11-26 13:21:31.098052+01
+ga4,daily_traffic,session_campaign,3,text,1001977,0,0,158,(direct),welcome_2,8,33,0,257650,1001977,0,0,0,0,0,0,2026-11-26 13:21:31.098052+01
+ga4,daily_traffic,device_category,4,text,1001977,0,0,3,desktop,tablet,6,7,0,0,1001977,0,0,0,0,0,0,2026-11-26 13:21:31.098052+01
+ga4,daily_traffic,country,5,text,1001977,0,0,8,(not set),United States,6,14,0,923106,1001977,0,0,0,0,0,0,2026-11-26 13:21:31.098052+01
+ga4,daily_traffic,sessions,6,text,1001977,0,0,1454,1,999,1,4,0,0,0,1001977,0,0,0,0,0,2026-11-26 13:21:31.098052+01
+ga4,daily_traffic,total_users,7,text,1001977,0,0,1256,1,999,1,4,0,0,0,1001977,0,0,0,0,0,2026-11-26 13:21:31.098052+01
+ga4,daily_traffic,new_users,8,text,1001977,0,0,784,0,99,1,4,0,0,0,1001977,0,0,0,0,0,2026-11-26 13:21:31.098052+01
+ga4,daily_traffic,engaged_sessions,9,text,1001977,0,0,987,0,999,1,4,0,0,0,1001977,0,0,0,0,0,2026-11-26 13:21:31.098052+01
+ga4,daily_traffic,add_to_carts,10,text,1001977,0,0,169,0,99,1,3,0,0,0,1001977,0,0,0,0,0,2026-11-26 13:21:31.098052+01
+ga4,daily_traffic,checkouts,11,text,1001977,0,0,79,0,95,1,3,0,0,0,1001977,0,0,0,0,0,2026-11-26 13:21:31.098052+01
+ga4,daily_traffic,ecommerce_purchases,12,text,1001977,0,0,68,0,9,1,3,0,0,0,1001977,0,0,0,0,0,2026-11-26 13:21:31.098052+01
+ga4,daily_traffic,purchase_revenue,13,text,1001977,0,0,29691,0.0,999.84,3,8,0,0,0,0,1001977,0,0,0,0,2026-11-26 13:21:31.098052+01
+ga4,events,event_date,1,text,2740927,0,0,1097,20231101,20261101,8,8,0,0,0,2740927,0,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,event_timestamp,2,text,2740927,0,0,2740926,1698793212000534,1793488050063307,16,16,0,0,0,2740927,0,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,event_name,3,text,2740927,0,0,4,add_to_cart,session_start,8,14,0,0,2740927,0,0,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,user_pseudo_id,4,text,2740927,0,0,525371,1000000738.1709398978,999998043.1731935648,20,21,0,0,0,0,2740927,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,user_id,5,text,2740927,1259588,0,88110,100001,201535,6,6,0,0,0,1481339,0,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,ga_session_id,6,text,2740927,0,0,846004,1698793212,1793487072,10,10,0,0,0,2740927,0,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,ga_session_number,7,text,2740927,0,0,61,1,9,1,2,0,0,0,2740927,0,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,source,8,text,2740927,1890313,0,25,(direct),youtube.com,2,20,0,7307,846321,0,0,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,medium,9,text,2740927,1890313,0,14,(none),social,3,11,0,5895,850614,0,0,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,campaign,10,text,2740927,1890313,0,158,(direct),welcome_2,8,33,0,201902,850614,0,0,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,page_location,11,text,2740927,1890313,0,89047,https://www.kalkberg.example/,https://www.kalkberg.example/sale?utm_source=SFMC&utm_medium=email&utm_campaign=nl_2026-09-24_biweekly,29,176,0,223951,850614,0,0,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,device_category,12,text,2740927,0,0,3,desktop,tablet,6,7,0,0,2740927,0,0,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,country,13,text,2740927,0,0,8,(not set),United States,6,14,0,2703101,2740927,0,0,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,transaction_id,14,text,2740927,2405281,0,329078,KB-24-000001,KB159140,8,12,0,335646,0,0,0,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,value,15,text,2740927,1281488,0,29012,10.0,99.99,3,7,0,0,0,0,1459439,0,0,0,0,2026-11-26 13:22:08.544149+01
+ga4,events,currency,16,text,2740927,1281488,0,1,EUR,EUR,3,3,0,1459439,0,0,0,0,0,0,0,2026-11-26 13:22:08.544149+01
+sfmc,bounces,account_id,1,text,18894,0,0,1,518000123,518000123,9,9,0,0,0,18894,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,bounces,oyb_account_id,2,text,18894,18894,0,0,,,,,0,0,0,0,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,bounces,job_id,3,text,18894,0,0,479,412300,470055,6,6,0,0,0,18894,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,bounces,list_id,4,text,18894,0,0,2,1047,1052,4,4,0,0,0,18894,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,bounces,batch_id,5,text,18894,0,0,12,1,9,1,2,0,0,0,18894,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,bounces,subscriber_id,6,text,18894,0,0,15818,1000002,1094470,7,7,0,0,0,18894,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,bounces,subscriber_key,7,text,18894,0,0,15739,126845,zoethiry68@icloud.com,6,32,0,4230,7300,7525,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,bounces,event_date,8,text,18894,0,0,18256,1/1/2025 12:38:01 PM,9/9/2026 9:12:04 AM,19,22,0,18894,0,0,0,0,0,0,18894,2026-11-26 13:24:34.14698+01
+sfmc,bounces,domain,9,text,18894,0,0,25,free.fr,ziggo.nl,5,11,0,0,18894,0,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,bounces,bounce_category,10,text,18894,0,0,2,Hard bounce,Soft bounce,11,11,0,18894,18894,0,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,bounces,bounce_subcategory,11,text,18894,0,0,2,Mailbox Full,User Unknown,12,12,0,18894,18894,0,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,bounces,bounce_type,12,text,18894,0,0,2,delayed,immediate,7,9,0,0,18894,0,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,bounces,smtp_bounce_reason,13,text,18894,0,0,2,452 4.2.2 The email account that you tried to reach is over quota,550 5.1.1 The email account that you tried to reach does not exist,65,66,0,18894,18894,0,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,bounces,is_unique,14,text,18894,0,0,2,False,True,4,5,0,18894,18894,0,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,bounces,triggerer_send_definition_object_id,15,text,18894,16425,0,5,0be69d8a-d936-8add-24c9-8fea275deaeb,6b9e2c7d-d49a-a02d-3eda-1d2603f10ae0,36,36,0,0,2469,0,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,bounces,triggered_send_customer_key,16,text,18894,16425,0,5,TS_AbandonedCart,TS_Winback,10,22,0,2469,2469,0,0,0,0,0,0,2026-11-26 13:24:34.14698+01
+sfmc,clicks,account_id,1,text,238185,0,0,1,518000123,518000123,9,9,0,0,0,238185,0,0,0,0,0,2026-11-26 13:24:35.16843+01
+sfmc,clicks,oyb_account_id,2,text,238185,238185,0,0,,,,,0,0,0,0,0,0,0,0,0,2026-11-26 13:24:35.16843+01
+sfmc,clicks,job_id,3,text,238185,0,0,496,412300,470055,6,6,0,0,0,238185,0,0,0,0,0,2026-11-26 13:24:35.16843+01
+sfmc,clicks,list_id,4,text,238185,0,0,2,1047,1052,4,4,0,0,0,238185,0,0,0,0,0,2026-11-26 13:24:35.16843+01
+sfmc,clicks,batch_id,5,text,238185,0,0,12,1,9,1,2,0,0,0,238185,0,0,0,0,0,2026-11-26 13:24:35.16843+01
+sfmc,clicks,subscriber_id,6,text,238185,0,0,58332,1000001,1094496,7,7,0,0,0,238185,0,0,0,0,0,2026-11-26 13:24:35.16843+01
+sfmc,clicks,subscriber_key,7,text,238185,0,0,57523,126845,zoethiry68@icloud.com,6,35,0,48446,88035,103822,0,0,0,0,0,2026-11-26 13:24:35.16843+01
+sfmc,clicks,event_date,8,text,238185,0,0,230116,1/1/2024 1:35:06 AM,9/9/2026 9:53:22 AM,19,22,0,238185,0,0,0,0,0,0,238185,2026-11-26 13:24:35.16843+01
+sfmc,clicks,domain,9,text,238185,0,0,20,free.fr,ziggo.nl,5,11,0,0,238185,0,0,0,0,0,0,2026-11-26 13:24:35.16843+01
+sfmc,clicks,url,10,text,238185,0,0,555,https://www.kalkberg.example/?utm_source=newsletter&utm_medium=email&utm_campaign=cmp_bf2023_launch,https://www.kalkberg.example/sale?utm_source=SFMC&utm_medium=email&utm_campaign=nl_2026-09-24_biweekly,93,133,0,26533,238185,0,0,0,0,0,0,2026-11-26 13:24:35.16843+01
+sfmc,clicks,link_name,11,text,238185,0,0,6,Blog teaser,Product block 2,8,15,0,238185,238185,0,0,0,0,0,0,2026-11-26 13:24:35.16843+01
+sfmc,clicks,link_content,12,text,238185,0,0,11,https://www.kalkberg.example/?utm_source=%%=v(@utm_source)=%%&utm_medium=email,https://www.kalkberg.example/sale?utm_source=%%=v(@utm_source)=%%&utm_medium=email,78,111,0,0,238185,0,0,0,0,0,0,2026-11-26 13:24:35.16843+01
+sfmc,clicks,is_unique,13,text,238185,0,0,2,False,True,4,5,0,238185,238185,0,0,0,0,0,0,2026-11-26 13:24:35.16843+01
+sfmc,clicks,triggerer_send_definition_object_id,14,text,238185,196268,0,5,0be69d8a-d936-8add-24c9-8fea275deaeb,6b9e2c7d-d49a-a02d-3eda-1d2603f10ae0,36,36,0,0,41917,0,0,0,0,0,0,2026-11-26 13:24:35.16843+01
+sfmc,clicks,triggered_send_customer_key,15,text,238185,196268,0,5,TS_AbandonedCart,TS_Winback,10,22,0,41917,41917,0,0,0,0,0,0,2026-11-26 13:24:35.16843+01
+sfmc,jobs,job_id,1,text,496,0,0,496,412300,470055,6,6,0,0,0,496,0,0,0,0,0,2026-11-26 13:24:47.690521+01
+sfmc,jobs,email_id,2,text,496,0,0,496,9100,9595,4,4,0,0,0,496,0,0,0,0,0,2026-11-26 13:24:47.690521+01
+sfmc,jobs,account_id,3,text,496,0,0,1,518000123,518000123,9,9,0,0,0,496,0,0,0,0,0,2026-11-26 13:24:47.690521+01
+sfmc,jobs,from_name,4,text,496,0,0,1,Kalkberg,Kalkberg,8,8,0,496,496,0,0,0,0,0,0,2026-11-26 13:24:47.690521+01
+sfmc,jobs,from_email,5,text,496,0,0,1,hello@kalkberg.example,hello@kalkberg.example,22,22,0,0,496,0,0,0,0,0,0,2026-11-26 13:24:47.690521+01
+sfmc,jobs,sched_time,6,text,496,56,0,110,1/1/2026 2:55:00 AM,9/4/2026 1:55:00 AM,19,22,0,440,0,0,0,0,0,0,440,2026-11-26 13:24:47.690521+01
+sfmc,jobs,pickup_time,7,text,496,0,0,165,1/1/2025 1:06:18 AM,9/4/2026 1:59:00 AM,19,22,0,496,0,0,0,0,0,0,496,2026-11-26 13:24:47.690521+01
+sfmc,jobs,delivered_time,8,text,496,0,0,165,1/1/2025 1:07:18 AM,9/4/2026 2:00:00 AM,19,22,0,496,0,0,0,0,0,0,496,2026-11-26 13:24:47.690521+01
+sfmc,jobs,job_type,9,text,496,0,0,2,Email,TriggeredSend,5,13,0,496,496,0,0,0,0,0,0,2026-11-26 13:24:47.690521+01
+sfmc,jobs,job_status,10,text,496,0,0,1,Complete,Complete,8,8,0,496,496,0,0,0,0,0,0,2026-11-26 13:24:47.690521+01
+sfmc,jobs,email_name,11,text,496,0,0,496,CMP_BF2023_Launch_DE,TS_Winback_2026_NL,18,30,0,496,496,0,0,0,0,0,0,2026-11-26 13:24:47.690521+01
+sfmc,jobs,email_subject,12,text,496,0,0,17,Black Friday is coming - get ready,You left something in your cart,21,43,0,496,496,0,0,0,0,0,0,2026-11-26 13:24:47.690521+01
+sfmc,jobs,category,13,text,496,0,0,3,Campaign,Newsletter,8,10,0,496,496,0,0,0,0,0,0,2026-11-26 13:24:47.690521+01
+sfmc,jobs,triggerer_send_definition_object_id,14,text,496,440,0,5,0be69d8a-d936-8add-24c9-8fea275deaeb,6b9e2c7d-d49a-a02d-3eda-1d2603f10ae0,36,36,0,0,56,0,0,0,0,0,0,2026-11-26 13:24:47.690521+01
+sfmc,jobs,triggered_send_customer_key,15,text,496,440,0,5,TS_AbandonedCart,TS_Winback,10,22,0,56,56,0,0,0,0,0,0,2026-11-26 13:24:47.690521+01
+sfmc,opens,account_id,1,text,3300814,0,0,1,518000123,518000123,9,9,0,0,0,3300814,0,0,0,0,0,2026-11-26 13:24:47.723353+01
+sfmc,opens,oyb_account_id,2,text,3300814,3300814,0,0,,,,,0,0,0,0,0,0,0,0,0,2026-11-26 13:24:47.723353+01
+sfmc,opens,job_id,3,text,3300814,0,0,496,412300,470055,6,6,0,0,0,3300814,0,0,0,0,0,2026-11-26 13:24:47.723353+01
+sfmc,opens,list_id,4,text,3300814,0,0,2,1047,1052,4,4,0,0,0,3300814,0,0,0,0,0,2026-11-26 13:24:47.723353+01
+sfmc,opens,batch_id,5,text,3300814,0,0,12,1,9,1,2,0,0,0,3300814,0,0,0,0,0,2026-11-26 13:24:47.723353+01
+sfmc,opens,subscriber_id,6,text,3300814,0,0,90997,1000001,1094497,7,7,0,0,0,3300814,0,0,0,0,0,2026-11-26 13:24:47.723353+01
+sfmc,opens,subscriber_key,7,text,3300814,0,0,89825,126844,zoethiry72@gmail.com,6,35,0,779917,1294117,1253862,0,0,0,0,0,2026-11-26 13:24:47.723353+01
+sfmc,opens,event_date,8,text,3300814,0,0,1651614,1/1/2024 1:23:48 AM,9/9/2026 9:55:47 PM,19,22,0,3300814,0,0,0,0,0,0,3300814,2026-11-26 13:24:47.723353+01
+sfmc,opens,domain,9,text,3300814,0,0,20,free.fr,ziggo.nl,5,11,0,0,3300814,0,0,0,0,0,0,2026-11-26 13:24:47.723353+01
+sfmc,opens,is_unique,10,text,3300814,0,0,2,False,True,4,5,0,3300814,3300814,0,0,0,0,0,0,2026-11-26 13:24:47.723353+01
+sfmc,opens,triggerer_send_definition_object_id,11,text,3300814,2943948,0,5,0be69d8a-d936-8add-24c9-8fea275deaeb,6b9e2c7d-d49a-a02d-3eda-1d2603f10ae0,36,36,0,0,356866,0,0,0,0,0,0,2026-11-26 13:24:47.723353+01
+sfmc,opens,triggered_send_customer_key,12,text,3300814,2943948,0,5,TS_AbandonedCart,TS_Winback,10,22,0,356866,356866,0,0,0,0,0,0,2026-11-26 13:24:47.723353+01
+sfmc,sent,account_id,1,text,4454934,0,0,1,518000123,518000123,9,9,0,0,0,4454934,0,0,0,0,0,2026-11-26 13:26:50.393501+01
+sfmc,sent,oyb_account_id,2,text,4454934,4454934,0,0,,,,,0,0,0,0,0,0,0,0,0,2026-11-26 13:26:50.393501+01
+sfmc,sent,job_id,3,text,4454934,0,0,496,412300,470055,6,6,0,0,0,4454934,0,0,0,0,0,2026-11-26 13:26:50.393501+01
+sfmc,sent,list_id,4,text,4454934,0,0,2,1047,1052,4,4,0,0,0,4454934,0,0,0,0,0,2026-11-26 13:26:50.393501+01
+sfmc,sent,batch_id,5,text,4454934,0,0,12,1,9,1,2,0,0,0,4454934,0,0,0,0,0,2026-11-26 13:26:50.393501+01
+sfmc,sent,subscriber_id,6,text,4454934,0,0,94497,1000001,1094497,7,7,0,0,0,4454934,0,0,0,0,0,2026-11-26 13:26:50.393501+01
+sfmc,sent,subscriber_key,7,text,4454934,0,0,93301,126844,zoethiry72@gmail.com,6,35,0,1056620,1775858,1660367,0,0,0,0,0,2026-11-26 13:26:50.393501+01
+sfmc,sent,event_date,8,text,4454934,0,0,659446,1/1/2025 1:01:08 AM,9/9/2026 9:54:35 AM,19,22,0,4454934,0,0,0,0,0,0,4454934,2026-11-26 13:26:50.393501+01
+sfmc,sent,domain,9,text,4454934,0,0,25,free.fr,ziggo.nl,5,11,0,0,4454934,0,0,0,0,0,0,2026-11-26 13:26:50.393501+01
+sfmc,sent,triggerer_send_definition_object_id,10,text,4454934,3993106,0,5,0be69d8a-d936-8add-24c9-8fea275deaeb,6b9e2c7d-d49a-a02d-3eda-1d2603f10ae0,36,36,0,0,461828,0,0,0,0,0,0,2026-11-26 13:26:50.393501+01
+sfmc,sent,triggered_send_customer_key,11,text,4454934,3993106,0,5,TS_AbandonedCart,TS_Winback,10,22,0,461828,461828,0,0,0,0,0,0,2026-11-26 13:26:50.393501+01
+sfmc,subscribers,subscriber_id,1,text,94497,0,0,94497,1000001,1094497,7,7,0,0,0,94497,0,0,0,0,0,2026-11-26 13:29:20.277272+01
+sfmc,subscribers,date_undeliverable,2,text,94497,93853,0,644,1/1/2026 11:23:48 AM,9/9/2025 9:58:39 AM,19,22,0,644,0,0,0,0,0,0,644,2026-11-26 13:29:20.277272+01
+sfmc,subscribers,date_joined,3,text,94497,0,0,94443,1/1/2024 1:06:23 PM,9/9/2026 9:54:04 AM,19,22,0,94497,0,0,0,0,0,0,94497,2026-11-26 13:29:20.277272+01
+sfmc,subscribers,date_unsubscribed,4,text,94497,89365,0,5127,1/1/2026 1:36:17 PM,9/8/2026 4:53:50 AM,19,22,0,5132,0,0,0,0,0,0,5132,2026-11-26 13:29:20.277272+01
+sfmc,subscribers,domain,5,text,94497,0,0,25,free.fr,ziggo.nl,5,11,0,0,94497,0,0,0,0,0,0,2026-11-26 13:29:20.277272+01
+sfmc,subscribers,email_address,6,text,94497,0,0,89843,a.aerts.686@outlook.com,zoethiry72@gmail.com,12,35,0,1900,94265,0,0,0,0,0,0,2026-11-26 13:29:20.277272+01
+sfmc,subscribers,bounce_count,7,text,94497,0,0,6,0,5,1,1,0,0,0,94497,0,0,0,0,0,2026-11-26 13:29:20.277272+01
+sfmc,subscribers,subscriber_key,8,text,94497,0,0,93301,126844,zoethiry72@gmail.com,6,35,0,31315,21983,41654,0,0,0,0,0,2026-11-26 13:29:20.277272+01
+sfmc,subscribers,subscriber_type,9,text,94497,0,0,1,Subscriber,Subscriber,10,10,0,94497,94497,0,0,0,0,0,0,2026-11-26 13:29:20.277272+01
+sfmc,subscribers,status,10,text,94497,0,0,3,Active,Unsubscribed,4,12,0,94497,94497,0,0,0,0,0,0,2026-11-26 13:29:20.277272+01
+sfmc,subscribers,locale,11,text,94497,0,0,9,de-BE,nl-NL,5,5,0,94497,94497,0,0,0,0,0,0,2026-11-26 13:29:20.277272+01
+sfmc,unsubscribes,account_id,1,text,5150,0,0,1,518000123,518000123,9,9,0,0,0,5150,0,0,0,0,0,2026-11-26 13:29:24.674187+01
+sfmc,unsubscribes,oyb_account_id,2,text,5150,5150,0,0,,,,,0,0,0,0,0,0,0,0,0,2026-11-26 13:29:24.674187+01
+sfmc,unsubscribes,job_id,3,text,5150,0,0,433,412305,470055,6,6,0,0,0,5150,0,0,0,0,0,2026-11-26 13:29:24.674187+01
+sfmc,unsubscribes,list_id,4,text,5150,0,0,2,1047,1052,4,4,0,0,0,5150,0,0,0,0,0,2026-11-26 13:29:24.674187+01
+sfmc,unsubscribes,batch_id,5,text,5150,0,0,12,1,9,1,2,0,0,0,5150,0,0,0,0,0,2026-11-26 13:29:24.674187+01
+sfmc,unsubscribes,subscriber_id,6,text,5150,0,0,5132,1000024,1094067,7,7,0,0,0,5150,0,0,0,0,0,2026-11-26 13:29:24.674187+01
+sfmc,unsubscribes,subscriber_key,7,text,5150,0,0,5126,126855,zoemathieu@gmail.com,6,32,0,1227,2034,1941,0,0,0,0,0,2026-11-26 13:29:24.674187+01
+sfmc,unsubscribes,event_date,8,text,5150,0,0,5144,1/1/2026 1:36:17 PM,9/8/2026 4:53:50 AM,19,22,0,5150,0,0,0,0,0,0,5150,2026-11-26 13:29:24.674187+01
+sfmc,unsubscribes,domain,9,text,5150,0,0,20,free.fr,ziggo.nl,5,11,0,0,5150,0,0,0,0,0,0,2026-11-26 13:29:24.674187+01
+sfmc,unsubscribes,is_unique,10,text,5150,0,0,1,True,True,4,4,0,5150,5150,0,0,0,0,0,0,2026-11-26 13:29:24.674187+01
+shop,brands,brand_id,1,integer,9,0,0,9,1,9,1,1,0,0,0,9,0,0,0,0,0,2026-11-26 13:29:24.889625+01
+shop,brands,brand_name,2,character varying,9,0,0,9,Arete Labs,Slabline,6,15,0,9,9,0,0,0,0,0,0,2026-11-26 13:29:24.889625+01
+shop,brands,is_own_brand,3,boolean,9,0,0,2,false,true,4,5,0,0,9,0,0,0,0,0,0,2026-11-26 13:29:24.889625+01
+shop,categories,category_id,1,integer,14,0,0,14,1,14,1,2,0,0,0,14,0,0,0,0,0,2026-11-26 13:29:24.894117+01
+shop,categories,category_name,2,character varying,14,0,0,14,Accessories,Training,5,23,0,14,14,0,0,0,0,0,0,2026-11-26 13:29:24.894117+01
+shop,categories,parent_category,3,character varying,14,0,0,6,Apparel,Training,5,10,0,14,14,0,0,0,0,0,0,2026-11-26 13:29:24.894117+01
+shop,customers,customer_id,1,integer,101535,0,0,101535,100001,201535,6,6,0,0,0,101535,0,0,0,0,0,2026-11-26 13:29:24.898454+01
+shop,customers,email,2,character varying,101535,0,0,101535,a.aerts.686@outlook.com,zoethiry72@gmail.com,12,35,0,3325,101159,0,0,0,0,0,0,2026-11-26 13:29:24.898454+01
+shop,customers,first_name,3,character varying,101535,0,0,590,adrien,Zoé ,2,10,1034,99934,99072,0,0,0,0,0,0,2026-11-26 13:29:24.898454+01
+shop,customers,last_name,4,character varying,101535,0,0,418,Account,ZIMMERMANN,3,14,0,99939,99500,0,0,0,0,0,0,2026-11-26 13:29:24.898454+01
+shop,customers,phone,5,character varying,101535,30458,0,70025,+31 6 00042715,621999513,9,17,0,0,0,14405,0,0,0,0,2875,2026-11-26 13:29:24.898454+01
+shop,customers,birth_date,6,date,101535,25042,0,11468,1900-01-01,2026-10-28,10,10,0,0,0,0,0,0,76493,0,0,2026-11-26 13:29:24.898454+01
+shop,customers,preferred_language,7,character varying,101535,0,0,4,de,nl,2,2,0,0,101535,0,0,0,0,0,0,2026-11-26 13:29:24.898454+01
+shop,customers,postal_code,8,character varying,101535,0,0,9455,01067,L-9001,4,7,0,32791,0,68744,0,0,0,0,0,2026-11-26 13:29:24.898454+01
+shop,customers,city,9,character varying,101535,0,0,55,Aachen,Wavre,4,20,0,101535,101535,0,0,0,0,0,0,2026-11-26 13:29:24.898454+01
+shop,customers,country_code,10,character varying,101535,0,0,28,be,NL,2,11,0,100544,27561,0,0,0,0,0,0,2026-11-26 13:29:24.898454+01
+shop,customers,marketing_opt_in,11,boolean,101535,0,0,2,false,true,4,5,0,0,101535,0,0,0,0,0,0,2026-11-26 13:29:24.898454+01
+shop,customers,created_at,12,timestamp without time zone,101535,0,0,101470,2023-11-01 00:15:29,2026-10-31 22:16:22,19,19,0,0,0,0,0,0,0,101535,0,2026-11-26 13:29:24.898454+01
+shop,order_lines,order_line_id,1,integer,785576,0,0,785576,1,785576,1,6,0,0,0,785576,0,0,0,0,0,2026-11-26 13:29:30.27271+01
+shop,order_lines,order_id,2,integer,785576,0,0,400893,1,400893,1,6,0,0,0,785576,0,0,0,0,0,2026-11-26 13:29:30.27271+01
+shop,order_lines,variant_id,3,integer,785576,0,0,1699,50000,51715,5,5,0,0,0,785576,0,0,0,0,0,2026-11-26 13:29:30.27271+01
+shop,order_lines,quantity,4,integer,785576,0,0,6,1,6,1,1,0,0,0,785576,0,0,0,0,0,2026-11-26 13:29:30.27271+01
+shop,order_lines,unit_price,5,numeric,785576,0,0,252,4.99,318.99,4,6,0,0,0,0,785576,0,0,0,0,2026-11-26 13:29:30.27271+01
+shop,order_lines,discount_amount,6,numeric,785576,0,0,597,0.00,238.99,4,6,0,0,0,0,785576,0,0,0,0,2026-11-26 13:29:30.27271+01
+shop,order_lines,line_total,7,numeric,785576,0,0,1432,0.00,731.97,4,6,0,0,0,0,785576,0,0,0,0,2026-11-26 13:29:30.27271+01
+shop,orders,order_id,1,integer,400893,0,0,400893,1,400893,1,6,0,0,0,400893,0,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,orders,order_number,2,character varying,400893,0,0,400893,KB-24-000001,KB159140,8,12,0,400893,0,0,0,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,orders,customer_id,3,integer,400893,24000,0,97455,100001,201535,6,6,0,0,0,376893,0,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,orders,guest_email,4,character varying,400893,376893,0,23755,a.bakker2@icloud.com,zoethiry72@gmail.com,13,35,0,0,24000,0,0,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,orders,created_at,5,timestamp without time zone,400893,0,0,399469,2023-11-01 06:21:21,2026-10-31 22:54:36,19,19,0,0,0,0,0,0,0,400893,0,2026-11-26 13:29:56.454881+01
+shop,orders,status,6,character varying,400893,0,0,6,cancelled,shipped,7,18,0,0,400893,0,0,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,orders,currency,7,character,400893,0,0,1,EUR,EUR,3,3,0,400893,0,0,0,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,orders,subtotal,8,numeric,400893,0,0,5891,4.99,1055.94,4,7,0,0,0,0,400893,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,orders,discount_total,9,numeric,400893,0,0,1966,0.00,238.99,4,6,0,0,0,0,400893,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,orders,shipping_fee,10,numeric,400893,0,0,6,0.00,8.95,4,4,0,0,0,0,400893,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,orders,order_total,11,numeric,400893,0,0,16500,0.00,1055.94,4,7,0,0,0,0,400893,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,orders,discount_code,12,character varying,400893,382844,0,17, WELCOME10,WELCOME10,6,12,191,15763,2980,0,0,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,orders,payment_method,13,character varying,400893,0,0,7,Apple Pay,PayPal,5,11,0,400893,400893,0,0,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,orders,shipping_country,14,character varying,400893,0,0,10,BE,NL,2,11,0,400893,59140,0,0,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,orders,shipping_postal_code,15,character varying,400893,0,0,9848,01067,L-9001,4,7,0,129900,0,270993,0,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,orders,shipping_city,16,character varying,400893,0,0,55,Aachen,Wavre,4,20,0,400893,400893,0,0,0,0,0,0,2026-11-26 13:29:56.454881+01
+shop,product_variants,variant_id,1,integer,1716,0,0,1716,50000,51715,5,5,0,0,0,1716,0,0,0,0,0,2026-11-26 13:30:21.346968+01
+shop,product_variants,product_id,2,integer,1716,0,0,346,1000,1345,4,4,0,0,0,1716,0,0,0,0,0,2026-11-26 13:30:21.346968+01
+shop,product_variants,sku,3,character varying,1716,0,0,1716,KB-A-1285,KB-T-1345,9,13,0,1716,0,0,0,0,0,0,0,2026-11-26 13:30:21.346968+01
+shop,product_variants,size_label,4,character varying,1716,186,0,36,60 m,XXL,1,7,0,1485,45,0,0,0,0,0,0,2026-11-26 13:30:21.346968+01
+shop,product_variants,list_price,5,numeric,1716,0,0,177,5.49,318.99,4,6,0,0,0,0,1716,0,0,0,0,2026-11-26 13:30:21.346968+01
+shop,product_variants,unit_cost,6,numeric,1716,39,0,1478,1.48,148.84,4,6,0,0,0,0,1677,0,0,0,0,2026-11-26 13:30:21.346968+01
+shop,products,product_id,1,integer,346,0,0,346,1000,1345,4,4,0,0,0,346,0,0,0,0,0,2026-11-26 13:30:21.410276+01
+shop,products,product_name,2,character varying,346,0,0,343,Arete Labs Boulder Brush,Train to Send (3nd edition),11,40,2,346,346,0,0,0,0,0,0,2026-11-26 13:30:21.410276+01
+shop,products,brand_id,3,integer,346,0,0,9,1,9,1,1,0,0,0,346,0,0,0,0,0,2026-11-26 13:30:21.410276+01
+shop,products,category_id,4,integer,346,0,0,14,1,14,1,2,0,0,0,346,0,0,0,0,0,2026-11-26 13:30:21.410276+01
+shop,products,launched_at,5,date,346,0,0,98,2023-10-15,2026-09-18,10,10,0,0,0,0,0,0,346,0,0,2026-11-26 13:30:21.410276+01
+shop,products,discontinued_at,6,date,346,300,0,44,2024-06-11,2026-08-25,10,10,0,0,0,0,0,0,46,0,0,2026-11-26 13:30:21.410276+01
+shop,products,is_active,7,boolean,346,0,0,2,false,true,4,5,0,0,346,0,0,0,0,0,0,2026-11-26 13:30:21.410276+01
+shop,returns,return_id,1,integer,38777,0,0,38777,1,38777,1,5,0,0,0,38777,0,0,0,0,0,2026-11-26 13:30:21.425284+01
+shop,returns,order_line_id,2,integer,38777,0,0,38777,11,779756,2,6,0,0,0,38777,0,0,0,0,0,2026-11-26 13:30:21.425284+01
+shop,returns,requested_at,3,timestamp without time zone,38777,0,0,38765,2023-11-05 07:08:16,2026-10-30 22:08:11,19,19,0,0,0,0,0,0,0,38777,0,2026-11-26 13:30:21.425284+01
+shop,returns,received_at,4,timestamp without time zone,38777,202,0,38566,2023-11-10 11:07:42,2026-10-30 22:22:35,19,19,0,0,0,0,0,0,0,38575,0,2026-11-26 13:30:21.425284+01
+shop,returns,quantity,5,integer,38777,0,0,4,1,4,1,1,0,0,0,38777,0,0,0,0,0,2026-11-26 13:30:21.425284+01
+shop,returns,reason,6,character varying,38777,0,0,6,Changed mind,Wrong item received,7,19,0,38777,38777,0,0,0,0,0,0,2026-11-26 13:30:21.425284+01
+shop,returns,status,7,character varying,38777,0,0,3,in_transit,rejected,8,10,0,0,38777,0,0,0,0,0,0,2026-11-26 13:30:21.425284+01
+shop,returns,refund_amount,8,numeric,38777,0,0,845,0.00,318.99,4,6,0,0,0,0,38777,0,0,0,0,2026-11-26 13:30:21.425284+01

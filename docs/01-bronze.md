@@ -52,7 +52,7 @@ The generator writes the exports to `data/` and, if you ask it to, loads them wi
 
 ### Why the raw schemas are the bronze layer
 
-The generator already lands every export as-is: one table per file, every column as delivered. That is exactly what bronze should be. Copying ~1.3 GB into a separate `bronze` schema would only double the storage and add a step that can go wrong, without adding any information. See [decision 0002](decisions/0002-raw-schemas-are-bronze.md).
+The generator already lands every export as-is: one table per file, every column as delivered. That is exactly what bronze should be. Copying about 1,3 GB into a separate `bronze` schema would only double the storage and add a step that can go wrong, without adding any information. See [decision 0002](decisions/0002-raw-schemas-are-bronze.md).
 
 ### Why most columns are `text`, but `shop` is typed
 
@@ -106,7 +106,7 @@ FROM budget.influencer_contracts
 GROUP BY _source_file;
 ```
 
-![Result of the "last loaded" query: one row with _source_file marketing_budget.xlsx, last_loaded 2026-11-26 12:57:24, and row_count 5](img/01-last-loaded.png)
+![Result of the "last loaded" query: one row with _source_file marketing_budget.xlsx, last_loaded 26/11/2026 at 12:57:24, and row_count 5](img/01-last-loaded.png)
 
 ## Next step
 

@@ -1,0 +1,2 @@
+subscribers,distinct_subscriber_keys,distinct_normalised_emails,numeric_keys,email_keys,other_keys,numeric_keys_matching_a_customer_id,emails_matching_a_customer,email_key_differs_from_email_address
+94497,93301,89582,41654,22006,30837,41654,64497,0

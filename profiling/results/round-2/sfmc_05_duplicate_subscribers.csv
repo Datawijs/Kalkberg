@@ -1,0 +1,17 @@
+subscribers_per_email,with_numeric_key,distinct_keys,statuses,email_addresses
+2,1,2,Active,3230
+2,0,1,Active,972
+2,1,2,Active + Unsubscribed,299
+2,0,1,Active + Unsubscribed,205
+2,2,2,Active,70
+2,0,2,Active,51
+2,1,2,Held,28
+2,0,2,Active + Unsubscribed,15
+2,0,1,Held,12
+2,1,2,Unsubscribed,8
+2,2,2,Active + Unsubscribed,6
+2,0,1,Unsubscribed,6
+3,2,3,Active,4
+2,0,2,Unsubscribed,1
+3,1,2,Active,1
+3,2,3,Active + Unsubscribed,1

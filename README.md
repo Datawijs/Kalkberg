@@ -11,6 +11,7 @@ README.md                           --> Explains how to use this project
 context.md                          --> Provides information about the fictional company and its requests
 generator/                          --> Code to generate the data used for this project (plays the source systems)
 ingestion/                          --> Loads the influencer contracts from the budget workbook into PostgreSQL
+profiling/                          --> SQL to profile the raw data, and the results it produced
 docs/                               --> Step-by-step guide on what we did, how and why
 ```
 

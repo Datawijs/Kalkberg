@@ -1,0 +1,5 @@
+ga4_value,transactions,ga4_value_sum,shop_order_total_sum
+equals order_total,185376,29262249.44,29262249.44
+equals order_total - shipping_fee,143059,5132752.33,6059529.38
+equals subtotal,562,61424.56,62950.40
+other,81,9130.50,9312.90

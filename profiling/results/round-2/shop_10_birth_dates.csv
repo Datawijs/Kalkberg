@@ -1,0 +1,6 @@
+bucket,customers,min_birth_date,max_birth_date
+plausible,75189,1937-01-12,2006-10-25
+missing,25042,,
+1900-01-01,1010,1900-01-01,1900-01-01
+younger than 14 at sign-up,291,2023-11-01,2026-10-28
+after account creation,3,2025-05-01,2026-09-16

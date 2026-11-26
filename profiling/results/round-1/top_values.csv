@@ -1,0 +1,3377 @@
+table_schema,table_name,column_name,value_rank,value,value_count,value_share_pct
+ads,google_ads_campaign_report,campaign,1,Search - Brand,1096,20.04
+ads,google_ads_campaign_report,campaign,2,Search - Generic - Climbing Shoes,1096,20.04
+ads,google_ads_campaign_report,campaign,3,Search - Generic - Crash Pads,1096,20.04
+ads,google_ads_campaign_report,campaign,4,Search - Generic - Hardware,975,17.83
+ads,google_ads_campaign_report,campaign,5,PMax - All Products,638,11.67
+ads,google_ads_campaign_report,campaign,6,Shopping - All Products,458,8.37
+ads,google_ads_campaign_report,campaign,7,Search - Summer Sale 2024,21,0.38
+ads,google_ads_campaign_report,campaign,8,Search - Summer Sale 2025,21,0.38
+ads,google_ads_campaign_report,campaign,9,Search - Summer Sale 2026,21,0.38
+ads,google_ads_campaign_report,campaign,10,Search - Black Friday 2024,15,0.27
+ads,google_ads_campaign_report,campaign,11,Search - Black Friday 2025,15,0.27
+ads,google_ads_campaign_report,campaign,12,Search - Black Friday 2023,13,0.24
+ads,google_ads_campaign_report,campaign,13,--,4,0.07
+ads,google_ads_campaign_report,campaign_type,1,Search,4369,79.89
+ads,google_ads_campaign_report,campaign_type,2,Performance Max,638,11.67
+ads,google_ads_campaign_report,campaign_type,3,Shopping,458,8.37
+ads,google_ads_campaign_report,campaign_type,4,--,4,0.07
+ads,google_ads_campaign_report,clicks,1,161,17,0.31
+ads,google_ads_campaign_report,clicks,2,327,16,0.29
+ads,google_ads_campaign_report,clicks,3,296,15,0.27
+ads,google_ads_campaign_report,clicks,4,308,15,0.27
+ads,google_ads_campaign_report,clicks,5,346,15,0.27
+ads,google_ads_campaign_report,clicks,6,191,14,0.26
+ads,google_ads_campaign_report,clicks,7,260,14,0.26
+ads,google_ads_campaign_report,clicks,8,262,14,0.26
+ads,google_ads_campaign_report,clicks,9,279,14,0.26
+ads,google_ads_campaign_report,clicks,10,302,14,0.26
+ads,google_ads_campaign_report,clicks,11,306,14,0.26
+ads,google_ads_campaign_report,clicks,12,312,14,0.26
+ads,google_ads_campaign_report,clicks,13,246,13,0.24
+ads,google_ads_campaign_report,clicks,14,250,13,0.24
+ads,google_ads_campaign_report,clicks,15,264,13,0.24
+ads,google_ads_campaign_report,clicks,16,270,13,0.24
+ads,google_ads_campaign_report,clicks,17,278,13,0.24
+ads,google_ads_campaign_report,clicks,18,281,13,0.24
+ads,google_ads_campaign_report,clicks,19,315,13,0.24
+ads,google_ads_campaign_report,clicks,20,319,13,0.24
+ads,google_ads_campaign_report,clicks,21,332,13,0.24
+ads,google_ads_campaign_report,clicks,22,337,13,0.24
+ads,google_ads_campaign_report,clicks,23,348,13,0.24
+ads,google_ads_campaign_report,clicks,24,190,12,0.22
+ads,google_ads_campaign_report,clicks,25,237,12,0.22
+ads,google_ads_campaign_report,conv_value,1,0.00,85,1.55
+ads,google_ads_campaign_report,conv_value,2,242.75,3,0.05
+ads,google_ads_campaign_report,conv_value,3,"1,049.47",2,0.04
+ads,google_ads_campaign_report,conv_value,4,"1,196.66",2,0.04
+ads,google_ads_campaign_report,conv_value,5,"1,305.02",2,0.04
+ads,google_ads_campaign_report,conv_value,6,"1,441.21",2,0.04
+ads,google_ads_campaign_report,conv_value,7,"1,480.07",2,0.04
+ads,google_ads_campaign_report,conv_value,8,"1,568.32",2,0.04
+ads,google_ads_campaign_report,conv_value,9,"1,591.22",2,0.04
+ads,google_ads_campaign_report,conv_value,10,"1,633.49",2,0.04
+ads,google_ads_campaign_report,conv_value,11,"1,639.86",2,0.04
+ads,google_ads_campaign_report,conv_value,12,"1,643.73",2,0.04
+ads,google_ads_campaign_report,conv_value,13,"1,817.16",2,0.04
+ads,google_ads_campaign_report,conv_value,14,"1,891.02",2,0.04
+ads,google_ads_campaign_report,conv_value,15,166.96,2,0.04
+ads,google_ads_campaign_report,conv_value,16,"2,255.85",2,0.04
+ads,google_ads_campaign_report,conv_value,17,"2,449.80",2,0.04
+ads,google_ads_campaign_report,conv_value,18,"2,785.66",2,0.04
+ads,google_ads_campaign_report,conv_value,19,"2,809.83",2,0.04
+ads,google_ads_campaign_report,conv_value,20,"2,866.51",2,0.04
+ads,google_ads_campaign_report,conv_value,21,213.80,2,0.04
+ads,google_ads_campaign_report,conv_value,22,240.29,2,0.04
+ads,google_ads_campaign_report,conv_value,23,371.62,2,0.04
+ads,google_ads_campaign_report,conv_value,24,429.46,2,0.04
+ads,google_ads_campaign_report,conv_value,25,440.47,2,0.04
+ads,google_ads_campaign_report,conversions,1,0.00,85,1.55
+ads,google_ads_campaign_report,conversions,2,1.29,13,0.24
+ads,google_ads_campaign_report,conversions,3,1.34,13,0.24
+ads,google_ads_campaign_report,conversions,4,1.46,13,0.24
+ads,google_ads_campaign_report,conversions,5,2.54,13,0.24
+ads,google_ads_campaign_report,conversions,6,2.88,13,0.24
+ads,google_ads_campaign_report,conversions,7,3.03,13,0.24
+ads,google_ads_campaign_report,conversions,8,1.25,12,0.22
+ads,google_ads_campaign_report,conversions,9,1.28,12,0.22
+ads,google_ads_campaign_report,conversions,10,1.52,12,0.22
+ads,google_ads_campaign_report,conversions,11,2.52,12,0.22
+ads,google_ads_campaign_report,conversions,12,2.71,12,0.22
+ads,google_ads_campaign_report,conversions,13,3.86,12,0.22
+ads,google_ads_campaign_report,conversions,14,8.97,12,0.22
+ads,google_ads_campaign_report,conversions,15,1.50,11,0.20
+ads,google_ads_campaign_report,conversions,16,2.57,11,0.20
+ads,google_ads_campaign_report,conversions,17,2.96,11,0.20
+ads,google_ads_campaign_report,conversions,18,4.14,11,0.20
+ads,google_ads_campaign_report,conversions,19,1.23,10,0.18
+ads,google_ads_campaign_report,conversions,20,1.45,10,0.18
+ads,google_ads_campaign_report,conversions,21,1.48,10,0.18
+ads,google_ads_campaign_report,conversions,22,2.45,10,0.18
+ads,google_ads_campaign_report,conversions,23,2.47,10,0.18
+ads,google_ads_campaign_report,conversions,24,2.55,10,0.18
+ads,google_ads_campaign_report,conversions,25,2.87,10,0.18
+ads,google_ads_campaign_report,cost,1,228.23,3,0.05
+ads,google_ads_campaign_report,cost,2,100.23,2,0.04
+ads,google_ads_campaign_report,cost,3,106.77,2,0.04
+ads,google_ads_campaign_report,cost,4,108.68,2,0.04
+ads,google_ads_campaign_report,cost,5,112.42,2,0.04
+ads,google_ads_campaign_report,cost,6,112.67,2,0.04
+ads,google_ads_campaign_report,cost,7,114.85,2,0.04
+ads,google_ads_campaign_report,cost,8,114.95,2,0.04
+ads,google_ads_campaign_report,cost,9,121.48,2,0.04
+ads,google_ads_campaign_report,cost,10,123.84,2,0.04
+ads,google_ads_campaign_report,cost,11,126.07,2,0.04
+ads,google_ads_campaign_report,cost,12,127.86,2,0.04
+ads,google_ads_campaign_report,cost,13,131.58,2,0.04
+ads,google_ads_campaign_report,cost,14,134.63,2,0.04
+ads,google_ads_campaign_report,cost,15,136.06,2,0.04
+ads,google_ads_campaign_report,cost,16,136.97,2,0.04
+ads,google_ads_campaign_report,cost,17,140.27,2,0.04
+ads,google_ads_campaign_report,cost,18,145.08,2,0.04
+ads,google_ads_campaign_report,cost,19,145.13,2,0.04
+ads,google_ads_campaign_report,cost,20,148.72,2,0.04
+ads,google_ads_campaign_report,cost,21,150.28,2,0.04
+ads,google_ads_campaign_report,cost,22,153.10,2,0.04
+ads,google_ads_campaign_report,cost,23,157.31,2,0.04
+ads,google_ads_campaign_report,cost,24,159.32,2,0.04
+ads,google_ads_campaign_report,cost,25,159.66,2,0.04
+ads,google_ads_campaign_report,currency_code,1,EUR,5469,100.00
+ads,google_ads_campaign_report,day,1,2024-07-01,6,0.11
+ads,google_ads_campaign_report,day,2,2024-07-02,6,0.11
+ads,google_ads_campaign_report,day,3,2024-07-03,6,0.11
+ads,google_ads_campaign_report,day,4,2024-07-04,6,0.11
+ads,google_ads_campaign_report,day,5,2024-07-05,6,0.11
+ads,google_ads_campaign_report,day,6,2024-07-06,6,0.11
+ads,google_ads_campaign_report,day,7,2024-07-07,6,0.11
+ads,google_ads_campaign_report,day,8,2024-07-08,6,0.11
+ads,google_ads_campaign_report,day,9,2024-07-09,6,0.11
+ads,google_ads_campaign_report,day,10,2024-07-10,6,0.11
+ads,google_ads_campaign_report,day,11,2024-07-11,6,0.11
+ads,google_ads_campaign_report,day,12,2024-07-12,6,0.11
+ads,google_ads_campaign_report,day,13,2024-07-13,6,0.11
+ads,google_ads_campaign_report,day,14,2024-07-14,6,0.11
+ads,google_ads_campaign_report,day,15,2024-07-15,6,0.11
+ads,google_ads_campaign_report,day,16,2024-07-16,6,0.11
+ads,google_ads_campaign_report,day,17,2024-07-17,6,0.11
+ads,google_ads_campaign_report,day,18,2024-07-18,6,0.11
+ads,google_ads_campaign_report,day,19,2024-07-19,6,0.11
+ads,google_ads_campaign_report,day,20,2024-07-20,6,0.11
+ads,google_ads_campaign_report,day,21,2024-07-21,6,0.11
+ads,google_ads_campaign_report,day,22,2024-11-18,6,0.11
+ads,google_ads_campaign_report,day,23,2024-11-19,6,0.11
+ads,google_ads_campaign_report,day,24,2024-11-20,6,0.11
+ads,google_ads_campaign_report,day,25,2024-11-21,6,0.11
+ads,google_ads_campaign_report,impressions,1,"4,477",5,0.09
+ads,google_ads_campaign_report,impressions,2,"3,222",4,0.07
+ads,google_ads_campaign_report,impressions,3,"3,606",4,0.07
+ads,google_ads_campaign_report,impressions,4,"4,344",4,0.07
+ads,google_ads_campaign_report,impressions,5,"4,448",4,0.07
+ads,google_ads_campaign_report,impressions,6,"4,610",4,0.07
+ads,google_ads_campaign_report,impressions,7,"5,022",4,0.07
+ads,google_ads_campaign_report,impressions,8,"5,132",4,0.07
+ads,google_ads_campaign_report,impressions,9,"5,163",4,0.07
+ads,google_ads_campaign_report,impressions,10,"5,193",4,0.07
+ads,google_ads_campaign_report,impressions,11,"5,472",4,0.07
+ads,google_ads_campaign_report,impressions,12,"5,627",4,0.07
+ads,google_ads_campaign_report,impressions,13,"5,788",4,0.07
+ads,google_ads_campaign_report,impressions,14,"5,874",4,0.07
+ads,google_ads_campaign_report,impressions,15,"5,879",4,0.07
+ads,google_ads_campaign_report,impressions,16,"6,339",4,0.07
+ads,google_ads_campaign_report,impressions,17,"6,341",4,0.07
+ads,google_ads_campaign_report,impressions,18,"6,394",4,0.07
+ads,google_ads_campaign_report,impressions,19,"6,440",4,0.07
+ads,google_ads_campaign_report,impressions,20,"2,398",3,0.05
+ads,google_ads_campaign_report,impressions,21,"2,411",3,0.05
+ads,google_ads_campaign_report,impressions,22,"2,508",3,0.05
+ads,google_ads_campaign_report,impressions,23,"2,795",3,0.05
+ads,google_ads_campaign_report,impressions,24,"2,985",3,0.05
+ads,google_ads_campaign_report,impressions,25,"3,025",3,0.05
+ads,meta_ads_report,ad_set_name,1,RT | ATC 14d,1096,18.01
+ads,meta_ads_report,ad_set_name,2,RT | Engagers 30d,1096,18.01
+ads,meta_ads_report,ad_set_name,3,RT | Viewed 14d,1096,18.01
+ads,meta_ads_report,ad_set_name,4,Advantage+ | All countries,669,10.99
+ads,meta_ads_report,ad_set_name,5,LAL 1% | All countries,516,8.48
+ads,meta_ads_report,ad_set_name,6,LAL 1% | BE-NL,516,8.48
+ads,meta_ads_report,ad_set_name,7,BE-NL | 18-45 | Broad,427,7.02
+ads,meta_ads_report,ad_set_name,8,FR-DE-LU | 18-45 | Broad,427,7.02
+ads,meta_ads_report,ad_set_name,9,BF | Broad,63,1.04
+ads,meta_ads_report,ad_set_name,10,Sale | Past buyers 365d,63,1.04
+ads,meta_ads_report,ad_set_name,11,Outdoor | Interests bouldering,54,0.89
+ads,meta_ads_report,ad_set_name,12,BF | Interests climbing,41,0.67
+ads,meta_ads_report,ad_set_name,13,BF | LAL buyers,22,0.36
+ads,meta_ads_report,amount_spent_eur,1,118.93,3,0.05
+ads,meta_ads_report,amount_spent_eur,2,131.59,3,0.05
+ads,meta_ads_report,amount_spent_eur,3,135.32,3,0.05
+ads,meta_ads_report,amount_spent_eur,4,145.49,3,0.05
+ads,meta_ads_report,amount_spent_eur,5,167.49,3,0.05
+ads,meta_ads_report,amount_spent_eur,6,177.74,3,0.05
+ads,meta_ads_report,amount_spent_eur,7,185.22,3,0.05
+ads,meta_ads_report,amount_spent_eur,8,192.15,3,0.05
+ads,meta_ads_report,amount_spent_eur,9,218.26,3,0.05
+ads,meta_ads_report,amount_spent_eur,10,219.54,3,0.05
+ads,meta_ads_report,amount_spent_eur,11,234.18,3,0.05
+ads,meta_ads_report,amount_spent_eur,12,282.11,3,0.05
+ads,meta_ads_report,amount_spent_eur,13,52.7,3,0.05
+ads,meta_ads_report,amount_spent_eur,14,74.91,3,0.05
+ads,meta_ads_report,amount_spent_eur,15,81.43,3,0.05
+ads,meta_ads_report,amount_spent_eur,16,85.67,3,0.05
+ads,meta_ads_report,amount_spent_eur,17,88.74,3,0.05
+ads,meta_ads_report,amount_spent_eur,18,93.91,3,0.05
+ads,meta_ads_report,amount_spent_eur,19,96.06,3,0.05
+ads,meta_ads_report,amount_spent_eur,20,98.79,3,0.05
+ads,meta_ads_report,amount_spent_eur,21,98.92,3,0.05
+ads,meta_ads_report,amount_spent_eur,22,100.5,2,0.03
+ads,meta_ads_report,amount_spent_eur,23,100.78,2,0.03
+ads,meta_ads_report,amount_spent_eur,24,100.89,2,0.03
+ads,meta_ads_report,amount_spent_eur,25,1023.6,2,0.03
+ads,meta_ads_report,campaign_name,1,Retargeting - Viewed or ATC 14d,3288,54.03
+ads,meta_ads_report,campaign_name,2,Prospecting - Lookalike 1% Buyers,1032,16.96
+ads,meta_ads_report,campaign_name,3,Prospecting - Broad,854,14.03
+ads,meta_ads_report,campaign_name,4,Prospecting - Advantage+ Shopping,669,10.99
+ads,meta_ads_report,campaign_name,5,BF 2024 - Prospecting,44,0.72
+ads,meta_ads_report,campaign_name,6,BF 2025 - Prospecting,44,0.72
+ads,meta_ads_report,campaign_name,7,BF 2023 - Prospecting,38,0.62
+ads,meta_ads_report,campaign_name,8,Spring Outdoor 2025 - Prospecting,27,0.44
+ads,meta_ads_report,campaign_name,9,Spring Outdoor 2026 - Prospecting,27,0.44
+ads,meta_ads_report,campaign_name,10,Summer Sale 2024 - Retargeting,21,0.35
+ads,meta_ads_report,campaign_name,11,Summer Sale 2025 - Retargeting,21,0.35
+ads,meta_ads_report,campaign_name,12,Summer Sale 2026 - Retargeting,21,0.35
+ads,meta_ads_report,impressions,1,10382,3,0.05
+ads,meta_ads_report,impressions,2,11413,3,0.05
+ads,meta_ads_report,impressions,3,13201,3,0.05
+ads,meta_ads_report,impressions,4,13322,3,0.05
+ads,meta_ads_report,impressions,5,19553,3,0.05
+ads,meta_ads_report,impressions,6,22034,3,0.05
+ads,meta_ads_report,impressions,7,45339,3,0.05
+ads,meta_ads_report,impressions,8,6501,3,0.05
+ads,meta_ads_report,impressions,9,7202,3,0.05
+ads,meta_ads_report,impressions,10,7634,3,0.05
+ads,meta_ads_report,impressions,11,10011,2,0.03
+ads,meta_ads_report,impressions,12,10049,2,0.03
+ads,meta_ads_report,impressions,13,10062,2,0.03
+ads,meta_ads_report,impressions,14,10106,2,0.03
+ads,meta_ads_report,impressions,15,10116,2,0.03
+ads,meta_ads_report,impressions,16,10130,2,0.03
+ads,meta_ads_report,impressions,17,10153,2,0.03
+ads,meta_ads_report,impressions,18,10429,2,0.03
+ads,meta_ads_report,impressions,19,10489,2,0.03
+ads,meta_ads_report,impressions,20,10538,2,0.03
+ads,meta_ads_report,impressions,21,10551,2,0.03
+ads,meta_ads_report,impressions,22,10580,2,0.03
+ads,meta_ads_report,impressions,23,10855,2,0.03
+ads,meta_ads_report,impressions,24,10886,2,0.03
+ads,meta_ads_report,impressions,25,10964,2,0.03
+ads,meta_ads_report,link_clicks,1,97,24,0.39
+ads,meta_ads_report,link_clicks,2,151,23,0.38
+ads,meta_ads_report,link_clicks,3,179,23,0.38
+ads,meta_ads_report,link_clicks,4,106,21,0.35
+ads,meta_ads_report,link_clicks,5,158,20,0.33
+ads,meta_ads_report,link_clicks,6,192,20,0.33
+ads,meta_ads_report,link_clicks,7,300,20,0.33
+ads,meta_ads_report,link_clicks,8,139,19,0.31
+ads,meta_ads_report,link_clicks,9,147,19,0.31
+ads,meta_ads_report,link_clicks,10,181,19,0.31
+ads,meta_ads_report,link_clicks,11,184,19,0.31
+ads,meta_ads_report,link_clicks,12,215,19,0.31
+ads,meta_ads_report,link_clicks,13,224,19,0.31
+ads,meta_ads_report,link_clicks,14,288,19,0.31
+ads,meta_ads_report,link_clicks,15,80,19,0.31
+ads,meta_ads_report,link_clicks,16,125,18,0.30
+ads,meta_ads_report,link_clicks,17,234,18,0.30
+ads,meta_ads_report,link_clicks,18,266,18,0.30
+ads,meta_ads_report,link_clicks,19,95,18,0.30
+ads,meta_ads_report,link_clicks,20,96,18,0.30
+ads,meta_ads_report,link_clicks,21,109,17,0.28
+ads,meta_ads_report,link_clicks,22,117,17,0.28
+ads,meta_ads_report,link_clicks,23,118,17,0.28
+ads,meta_ads_report,link_clicks,24,121,17,0.28
+ads,meta_ads_report,link_clicks,25,142,17,0.28
+ads,meta_ads_report,purchases,1,5,482,7.92
+ads,meta_ads_report,purchases,2,4,463,7.61
+ads,meta_ads_report,purchases,3,6,439,7.21
+ads,meta_ads_report,purchases,4,3,416,6.84
+ads,meta_ads_report,purchases,5,7,392,6.44
+ads,meta_ads_report,purchases,6,8,330,5.42
+ads,meta_ads_report,purchases,7,9,283,4.65
+ads,meta_ads_report,purchases,8,10,281,4.62
+ads,meta_ads_report,purchases,9,2,270,4.44
+ads,meta_ads_report,purchases,10,11,238,3.91
+ads,meta_ads_report,purchases,11,12,214,3.52
+ads,meta_ads_report,purchases,12,13,193,3.17
+ads,meta_ads_report,purchases,13,14,187,3.07
+ads,meta_ads_report,purchases,14,15,146,2.40
+ads,meta_ads_report,purchases,15,17,129,2.12
+ads,meta_ads_report,purchases,16,16,117,1.92
+ads,meta_ads_report,purchases,17,18,104,1.71
+ads,meta_ads_report,purchases,18,1,90,1.48
+ads,meta_ads_report,purchases,19,20,81,1.33
+ads,meta_ads_report,purchases,20,19,80,1.31
+ads,meta_ads_report,purchases,21,22,68,1.12
+ads,meta_ads_report,purchases,22,23,55,0.90
+ads,meta_ads_report,purchases,23,21,53,0.87
+ads,meta_ads_report,purchases,24,26,52,0.85
+ads,meta_ads_report,purchases,25,24,49,0.81
+ads,meta_ads_report,purchases_conversion_value,1,1097.57,2,0.03
+ads,meta_ads_report,purchases_conversion_value,2,1101.17,2,0.03
+ads,meta_ads_report,purchases_conversion_value,3,1163.08,2,0.03
+ads,meta_ads_report,purchases_conversion_value,4,120.29,2,0.03
+ads,meta_ads_report,purchases_conversion_value,5,1202.99,2,0.03
+ads,meta_ads_report,purchases_conversion_value,6,1256.66,2,0.03
+ads,meta_ads_report,purchases_conversion_value,7,1389.52,2,0.03
+ads,meta_ads_report,purchases_conversion_value,8,1425.49,2,0.03
+ads,meta_ads_report,purchases_conversion_value,9,1482.46,2,0.03
+ads,meta_ads_report,purchases_conversion_value,10,1630.83,2,0.03
+ads,meta_ads_report,purchases_conversion_value,11,1923.13,2,0.03
+ads,meta_ads_report,purchases_conversion_value,12,1943.9,2,0.03
+ads,meta_ads_report,purchases_conversion_value,13,204.35,2,0.03
+ads,meta_ads_report,purchases_conversion_value,14,2127.66,2,0.03
+ads,meta_ads_report,purchases_conversion_value,15,2208.85,2,0.03
+ads,meta_ads_report,purchases_conversion_value,16,222.94,2,0.03
+ads,meta_ads_report,purchases_conversion_value,17,243.81,2,0.03
+ads,meta_ads_report,purchases_conversion_value,18,249.9,2,0.03
+ads,meta_ads_report,purchases_conversion_value,19,2509.52,2,0.03
+ads,meta_ads_report,purchases_conversion_value,20,266.07,2,0.03
+ads,meta_ads_report,purchases_conversion_value,21,283.08,2,0.03
+ads,meta_ads_report,purchases_conversion_value,22,293.75,2,0.03
+ads,meta_ads_report,purchases_conversion_value,23,298.94,2,0.03
+ads,meta_ads_report,purchases_conversion_value,24,319.17,2,0.03
+ads,meta_ads_report,purchases_conversion_value,25,338.61,2,0.03
+ads,meta_ads_report,reach,1,13480,4,0.07
+ads,meta_ads_report,reach,2,10364,3,0.05
+ads,meta_ads_report,reach,3,10475,3,0.05
+ads,meta_ads_report,reach,4,11120,3,0.05
+ads,meta_ads_report,reach,5,11285,3,0.05
+ads,meta_ads_report,reach,6,12111,3,0.05
+ads,meta_ads_report,reach,7,13285,3,0.05
+ads,meta_ads_report,reach,8,13419,3,0.05
+ads,meta_ads_report,reach,9,13529,3,0.05
+ads,meta_ads_report,reach,10,13905,3,0.05
+ads,meta_ads_report,reach,11,14422,3,0.05
+ads,meta_ads_report,reach,12,17795,3,0.05
+ads,meta_ads_report,reach,13,18141,3,0.05
+ads,meta_ads_report,reach,14,18801,3,0.05
+ads,meta_ads_report,reach,15,2678,3,0.05
+ads,meta_ads_report,reach,16,3337,3,0.05
+ads,meta_ads_report,reach,17,3388,3,0.05
+ads,meta_ads_report,reach,18,4097,3,0.05
+ads,meta_ads_report,reach,19,4431,3,0.05
+ads,meta_ads_report,reach,20,4717,3,0.05
+ads,meta_ads_report,reach,21,5025,3,0.05
+ads,meta_ads_report,reach,22,5304,3,0.05
+ads,meta_ads_report,reach,23,5459,3,0.05
+ads,meta_ads_report,reach,24,5878,3,0.05
+ads,meta_ads_report,reach,25,6509,3,0.05
+ads,meta_ads_report,reporting_ends,1,2024-11-12,9,0.15
+ads,meta_ads_report,reporting_ends,2,2024-11-13,9,0.15
+ads,meta_ads_report,reporting_ends,3,2024-11-14,9,0.15
+ads,meta_ads_report,reporting_ends,4,2024-11-15,9,0.15
+ads,meta_ads_report,reporting_ends,5,2024-11-16,9,0.15
+ads,meta_ads_report,reporting_ends,6,2024-11-17,9,0.15
+ads,meta_ads_report,reporting_ends,7,2024-11-18,9,0.15
+ads,meta_ads_report,reporting_ends,8,2024-11-19,9,0.15
+ads,meta_ads_report,reporting_ends,9,2024-11-20,9,0.15
+ads,meta_ads_report,reporting_ends,10,2024-11-21,9,0.15
+ads,meta_ads_report,reporting_ends,11,2024-11-22,9,0.15
+ads,meta_ads_report,reporting_ends,12,2024-11-23,9,0.15
+ads,meta_ads_report,reporting_ends,13,2024-11-24,9,0.15
+ads,meta_ads_report,reporting_ends,14,2024-11-25,9,0.15
+ads,meta_ads_report,reporting_ends,15,2024-11-26,9,0.15
+ads,meta_ads_report,reporting_ends,16,2024-11-27,9,0.15
+ads,meta_ads_report,reporting_ends,17,2024-11-28,9,0.15
+ads,meta_ads_report,reporting_ends,18,2024-11-29,9,0.15
+ads,meta_ads_report,reporting_ends,19,2024-11-30,9,0.15
+ads,meta_ads_report,reporting_ends,20,2024-12-01,9,0.15
+ads,meta_ads_report,reporting_ends,21,2024-12-02,9,0.15
+ads,meta_ads_report,reporting_ends,22,2024-12-03,9,0.15
+ads,meta_ads_report,reporting_ends,23,2024-07-01,8,0.13
+ads,meta_ads_report,reporting_ends,24,2024-07-02,8,0.13
+ads,meta_ads_report,reporting_ends,25,2024-07-03,8,0.13
+ads,meta_ads_report,reporting_starts,1,2024-11-12,9,0.15
+ads,meta_ads_report,reporting_starts,2,2024-11-13,9,0.15
+ads,meta_ads_report,reporting_starts,3,2024-11-14,9,0.15
+ads,meta_ads_report,reporting_starts,4,2024-11-15,9,0.15
+ads,meta_ads_report,reporting_starts,5,2024-11-16,9,0.15
+ads,meta_ads_report,reporting_starts,6,2024-11-17,9,0.15
+ads,meta_ads_report,reporting_starts,7,2024-11-18,9,0.15
+ads,meta_ads_report,reporting_starts,8,2024-11-19,9,0.15
+ads,meta_ads_report,reporting_starts,9,2024-11-20,9,0.15
+ads,meta_ads_report,reporting_starts,10,2024-11-21,9,0.15
+ads,meta_ads_report,reporting_starts,11,2024-11-22,9,0.15
+ads,meta_ads_report,reporting_starts,12,2024-11-23,9,0.15
+ads,meta_ads_report,reporting_starts,13,2024-11-24,9,0.15
+ads,meta_ads_report,reporting_starts,14,2024-11-25,9,0.15
+ads,meta_ads_report,reporting_starts,15,2024-11-26,9,0.15
+ads,meta_ads_report,reporting_starts,16,2024-11-27,9,0.15
+ads,meta_ads_report,reporting_starts,17,2024-11-28,9,0.15
+ads,meta_ads_report,reporting_starts,18,2024-11-29,9,0.15
+ads,meta_ads_report,reporting_starts,19,2024-11-30,9,0.15
+ads,meta_ads_report,reporting_starts,20,2024-12-01,9,0.15
+ads,meta_ads_report,reporting_starts,21,2024-12-02,9,0.15
+ads,meta_ads_report,reporting_starts,22,2024-12-03,9,0.15
+ads,meta_ads_report,reporting_starts,23,2024-07-01,8,0.13
+ads,meta_ads_report,reporting_starts,24,2024-07-02,8,0.13
+ads,meta_ads_report,reporting_starts,25,2024-07-03,8,0.13
+budget,influencer_contracts,_loaded_at,1,2026-11-26 12:57:24.589655+01,5,100.00
+budget,influencer_contracts,_row_number,1,2,1,20.00
+budget,influencer_contracts,_row_number,2,3,1,20.00
+budget,influencer_contracts,_row_number,3,4,1,20.00
+budget,influencer_contracts,_row_number,4,5,1,20.00
+budget,influencer_contracts,_row_number,5,6,1,20.00
+budget,influencer_contracts,_sheet_name,1,Influencer contracts,5,100.00
+budget,influencer_contracts,_source_file,1,marketing_budget.xlsx,5,100.00
+budget,influencer_contracts,creator,1,bloc_brothers,1,20.00
+budget,influencer_contracts,creator,2,crimp_kid,1,20.00
+budget,influencer_contracts,creator,3,font_freak,1,20.00
+budget,influencer_contracts,creator,4,lena.sends,1,20.00
+budget,influencer_contracts,creator,5,slab_sophie,1,20.00
+budget,influencer_contracts,discount_code,1,BLOCBROS,1,20.00
+budget,influencer_contracts,discount_code,2,CRIMP15,1,20.00
+budget,influencer_contracts,discount_code,3,FONT15,1,20.00
+budget,influencer_contracts,discount_code,4,LENA15,1,20.00
+budget,influencer_contracts,discount_code,5,SOPHIE15,1,20.00
+budget,influencer_contracts,end_date,1,2026-10-31,2,40.00
+budget,influencer_contracts,end_date,2,2024-12-31,1,20.00
+budget,influencer_contracts,end_date,3,2025-09-30,1,20.00
+budget,influencer_contracts,end_date,4,2026-06-30,1,20.00
+budget,influencer_contracts,monthly_fee_eur,1,1200,1,20.00
+budget,influencer_contracts,monthly_fee_eur,2,1500,1,20.00
+budget,influencer_contracts,monthly_fee_eur,3,2200,1,20.00
+budget,influencer_contracts,monthly_fee_eur,4,800,1,20.00
+budget,influencer_contracts,monthly_fee_eur,5,900,1,20.00
+budget,influencer_contracts,platform,1,Instagram,2,40.00
+budget,influencer_contracts,platform,2,TikTok,2,40.00
+budget,influencer_contracts,platform,3,YouTube,1,20.00
+budget,influencer_contracts,remarks,1,code valid 14 days after contract end,5,100.00
+budget,influencer_contracts,start_date,1,2024-01-15,1,20.00
+budget,influencer_contracts,start_date,2,2024-04-01,1,20.00
+budget,influencer_contracts,start_date,3,2024-09-01,1,20.00
+budget,influencer_contracts,start_date,4,2025-03-01,1,20.00
+budget,influencer_contracts,start_date,5,2025-10-01,1,20.00
+ga4,daily_traffic,add_to_carts,1,0,764756,76.32
+ga4,daily_traffic,add_to_carts,2,1,80356,8.02
+ga4,daily_traffic,add_to_carts,3,2,57066,5.70
+ga4,daily_traffic,add_to_carts,4,3,31922,3.19
+ga4,daily_traffic,add_to_carts,5,4,15562,1.55
+ga4,daily_traffic,add_to_carts,6,5,10464,1.04
+ga4,daily_traffic,add_to_carts,7,6,7078,0.71
+ga4,daily_traffic,add_to_carts,8,7,5100,0.51
+ga4,daily_traffic,add_to_carts,9,8,3995,0.40
+ga4,daily_traffic,add_to_carts,10,9,3021,0.30
+ga4,daily_traffic,add_to_carts,11,10,2346,0.23
+ga4,daily_traffic,add_to_carts,12,11,1926,0.19
+ga4,daily_traffic,add_to_carts,13,12,1713,0.17
+ga4,daily_traffic,add_to_carts,14,13,1390,0.14
+ga4,daily_traffic,add_to_carts,15,14,1237,0.12
+ga4,daily_traffic,add_to_carts,16,15,1055,0.11
+ga4,daily_traffic,add_to_carts,17,16,894,0.09
+ga4,daily_traffic,add_to_carts,18,17,847,0.08
+ga4,daily_traffic,add_to_carts,19,18,725,0.07
+ga4,daily_traffic,add_to_carts,20,19,643,0.06
+ga4,daily_traffic,add_to_carts,21,20,550,0.05
+ga4,daily_traffic,add_to_carts,22,21,544,0.05
+ga4,daily_traffic,add_to_carts,23,22,490,0.05
+ga4,daily_traffic,add_to_carts,24,23,432,0.04
+ga4,daily_traffic,add_to_carts,25,24,387,0.04
+ga4,daily_traffic,checkouts,1,0,835296,83.36
+ga4,daily_traffic,checkouts,2,1,103047,10.28
+ga4,daily_traffic,checkouts,3,2,27100,2.70
+ga4,daily_traffic,checkouts,4,3,11468,1.14
+ga4,daily_traffic,checkouts,5,4,6267,0.63
+ga4,daily_traffic,checkouts,6,5,3857,0.38
+ga4,daily_traffic,checkouts,7,6,2748,0.27
+ga4,daily_traffic,checkouts,8,7,1950,0.19
+ga4,daily_traffic,checkouts,9,8,1492,0.15
+ga4,daily_traffic,checkouts,10,9,1165,0.12
+ga4,daily_traffic,checkouts,11,10,899,0.09
+ga4,daily_traffic,checkouts,12,11,741,0.07
+ga4,daily_traffic,checkouts,13,12,663,0.07
+ga4,daily_traffic,checkouts,14,13,545,0.05
+ga4,daily_traffic,checkouts,15,14,481,0.05
+ga4,daily_traffic,checkouts,16,15,446,0.04
+ga4,daily_traffic,checkouts,17,16,353,0.04
+ga4,daily_traffic,checkouts,18,17,317,0.03
+ga4,daily_traffic,checkouts,19,18,289,0.03
+ga4,daily_traffic,checkouts,20,19,254,0.03
+ga4,daily_traffic,checkouts,21,21,224,0.02
+ga4,daily_traffic,checkouts,22,22,220,0.02
+ga4,daily_traffic,checkouts,23,20,217,0.02
+ga4,daily_traffic,checkouts,24,23,183,0.02
+ga4,daily_traffic,checkouts,25,24,162,0.02
+ga4,daily_traffic,country,1,Belgium,184713,18.43
+ga4,daily_traffic,country,2,Netherlands,173233,17.29
+ga4,daily_traffic,country,3,France,146172,14.59
+ga4,daily_traffic,country,4,Germany,139377,13.91
+ga4,daily_traffic,country,5,Luxembourg,95177,9.50
+ga4,daily_traffic,country,6,United States,92287,9.21
+ga4,daily_traffic,country,7,United Kingdom,92147,9.20
+ga4,daily_traffic,country,8,(not set),78871,7.87
+ga4,daily_traffic,date,1,20241201,1441,0.14
+ga4,daily_traffic,date,2,20241202,1435,0.14
+ga4,daily_traffic,date,3,20241129,1384,0.14
+ga4,daily_traffic,date,4,20251201,1332,0.13
+ga4,daily_traffic,date,5,20251128,1287,0.13
+ga4,daily_traffic,date,6,20251130,1278,0.13
+ga4,daily_traffic,date,7,20241128,1250,0.12
+ga4,daily_traffic,date,8,20241203,1249,0.12
+ga4,daily_traffic,date,9,20241130,1242,0.12
+ga4,daily_traffic,date,10,20241127,1237,0.12
+ga4,daily_traffic,date,11,20241125,1222,0.12
+ga4,daily_traffic,date,12,20241124,1213,0.12
+ga4,daily_traffic,date,13,20241122,1201,0.12
+ga4,daily_traffic,date,14,20241123,1190,0.12
+ga4,daily_traffic,date,15,20241208,1181,0.12
+ga4,daily_traffic,date,16,20251122,1181,0.12
+ga4,daily_traffic,date,17,20251129,1181,0.12
+ga4,daily_traffic,date,18,20241215,1167,0.12
+ga4,daily_traffic,date,19,20251123,1161,0.12
+ga4,daily_traffic,date,20,20241121,1158,0.12
+ga4,daily_traffic,date,21,20241204,1156,0.12
+ga4,daily_traffic,date,22,20250401,1155,0.12
+ga4,daily_traffic,date,23,20241117,1153,0.12
+ga4,daily_traffic,date,24,20241126,1151,0.11
+ga4,daily_traffic,date,25,20251124,1149,0.11
+ga4,daily_traffic,device_category,1,mobile,435144,43.43
+ga4,daily_traffic,device_category,2,desktop,376308,37.56
+ga4,daily_traffic,device_category,3,tablet,190525,19.01
+ga4,daily_traffic,ecommerce_purchases,1,0,865262,86.36
+ga4,daily_traffic,ecommerce_purchases,2,1,84114,8.39
+ga4,daily_traffic,ecommerce_purchases,3,2,22927,2.29
+ga4,daily_traffic,ecommerce_purchases,4,3,9606,0.96
+ga4,daily_traffic,ecommerce_purchases,5,4,5301,0.53
+ga4,daily_traffic,ecommerce_purchases,6,5,3211,0.32
+ga4,daily_traffic,ecommerce_purchases,7,6,2208,0.22
+ga4,daily_traffic,ecommerce_purchases,8,7,1612,0.16
+ga4,daily_traffic,ecommerce_purchases,9,8,1189,0.12
+ga4,daily_traffic,ecommerce_purchases,10,9,917,0.09
+ga4,daily_traffic,ecommerce_purchases,11,10,691,0.07
+ga4,daily_traffic,ecommerce_purchases,12,11,685,0.07
+ga4,daily_traffic,ecommerce_purchases,13,12,528,0.05
+ga4,daily_traffic,ecommerce_purchases,14,13,444,0.04
+ga4,daily_traffic,ecommerce_purchases,15,14,383,0.04
+ga4,daily_traffic,ecommerce_purchases,16,15,329,0.03
+ga4,daily_traffic,ecommerce_purchases,17,16,316,0.03
+ga4,daily_traffic,ecommerce_purchases,18,18,249,0.02
+ga4,daily_traffic,ecommerce_purchases,19,17,234,0.02
+ga4,daily_traffic,ecommerce_purchases,20,19,222,0.02
+ga4,daily_traffic,ecommerce_purchases,21,20,174,0.02
+ga4,daily_traffic,ecommerce_purchases,22,21,159,0.02
+ga4,daily_traffic,ecommerce_purchases,23,23,129,0.01
+ga4,daily_traffic,ecommerce_purchases,24,25,114,0.01
+ga4,daily_traffic,ecommerce_purchases,25,22,113,0.01
+ga4,daily_traffic,engaged_sessions,1,1,267182,26.67
+ga4,daily_traffic,engaged_sessions,2,0,189965,18.96
+ga4,daily_traffic,engaged_sessions,3,2,127212,12.70
+ga4,daily_traffic,engaged_sessions,4,3,75439,7.53
+ga4,daily_traffic,engaged_sessions,5,4,50580,5.05
+ga4,daily_traffic,engaged_sessions,6,5,36561,3.65
+ga4,daily_traffic,engaged_sessions,7,6,27536,2.75
+ga4,daily_traffic,engaged_sessions,8,7,21956,2.19
+ga4,daily_traffic,engaged_sessions,9,8,18231,1.82
+ga4,daily_traffic,engaged_sessions,10,9,15068,1.50
+ga4,daily_traffic,engaged_sessions,11,10,12889,1.29
+ga4,daily_traffic,engaged_sessions,12,11,11139,1.11
+ga4,daily_traffic,engaged_sessions,13,12,9574,0.96
+ga4,daily_traffic,engaged_sessions,14,13,8628,0.86
+ga4,daily_traffic,engaged_sessions,15,14,7833,0.78
+ga4,daily_traffic,engaged_sessions,16,15,7005,0.70
+ga4,daily_traffic,engaged_sessions,17,16,6273,0.63
+ga4,daily_traffic,engaged_sessions,18,17,5752,0.57
+ga4,daily_traffic,engaged_sessions,19,18,5343,0.53
+ga4,daily_traffic,engaged_sessions,20,19,4828,0.48
+ga4,daily_traffic,engaged_sessions,21,20,4360,0.44
+ga4,daily_traffic,engaged_sessions,22,21,4131,0.41
+ga4,daily_traffic,engaged_sessions,23,22,3855,0.38
+ga4,daily_traffic,engaged_sessions,24,23,3449,0.34
+ga4,daily_traffic,engaged_sessions,25,24,3187,0.32
+ga4,daily_traffic,new_users,1,1,286136,28.56
+ga4,daily_traffic,new_users,2,0,196016,19.56
+ga4,daily_traffic,new_users,3,2,132994,13.27
+ga4,daily_traffic,new_users,4,3,75168,7.50
+ga4,daily_traffic,new_users,5,4,48867,4.88
+ga4,daily_traffic,new_users,6,5,34851,3.48
+ga4,daily_traffic,new_users,7,6,26075,2.60
+ga4,daily_traffic,new_users,8,7,20605,2.06
+ga4,daily_traffic,new_users,9,8,16874,1.68
+ga4,daily_traffic,new_users,10,9,14171,1.41
+ga4,daily_traffic,new_users,11,10,12208,1.22
+ga4,daily_traffic,new_users,12,11,10516,1.05
+ga4,daily_traffic,new_users,13,12,9515,0.95
+ga4,daily_traffic,new_users,14,13,8258,0.82
+ga4,daily_traffic,new_users,15,14,7268,0.73
+ga4,daily_traffic,new_users,16,15,6476,0.65
+ga4,daily_traffic,new_users,17,16,5865,0.59
+ga4,daily_traffic,new_users,18,17,5207,0.52
+ga4,daily_traffic,new_users,19,18,4726,0.47
+ga4,daily_traffic,new_users,20,19,4414,0.44
+ga4,daily_traffic,new_users,21,20,3936,0.39
+ga4,daily_traffic,new_users,22,21,3557,0.35
+ga4,daily_traffic,new_users,23,22,3375,0.34
+ga4,daily_traffic,new_users,24,23,3019,0.30
+ga4,daily_traffic,new_users,25,24,2802,0.28
+ga4,daily_traffic,purchase_revenue,1,0.0,865262,86.36
+ga4,daily_traffic,purchase_revenue,2,12.99,1006,0.10
+ga4,daily_traffic,purchase_revenue,3,25.98,736,0.07
+ga4,daily_traffic,purchase_revenue,4,14.99,720,0.07
+ga4,daily_traffic,purchase_revenue,5,13.99,689,0.07
+ga4,daily_traffic,purchase_revenue,6,17.99,570,0.06
+ga4,daily_traffic,purchase_revenue,7,23.99,567,0.06
+ga4,daily_traffic,purchase_revenue,8,11.99,561,0.06
+ga4,daily_traffic,purchase_revenue,9,27.98,561,0.06
+ga4,daily_traffic,purchase_revenue,10,29.98,508,0.05
+ga4,daily_traffic,purchase_revenue,11,27.99,467,0.05
+ga4,daily_traffic,purchase_revenue,12,6.99,464,0.05
+ga4,daily_traffic,purchase_revenue,13,26.99,463,0.05
+ga4,daily_traffic,purchase_revenue,14,15.99,457,0.05
+ga4,daily_traffic,purchase_revenue,15,23.98,362,0.04
+ga4,daily_traffic,purchase_revenue,16,7.49,358,0.04
+ga4,daily_traffic,purchase_revenue,17,96.99,353,0.04
+ga4,daily_traffic,purchase_revenue,18,101.99,333,0.03
+ga4,daily_traffic,purchase_revenue,19,111.99,329,0.03
+ga4,daily_traffic,purchase_revenue,20,31.98,306,0.03
+ga4,daily_traffic,purchase_revenue,21,35.98,296,0.03
+ga4,daily_traffic,purchase_revenue,22,39.98,292,0.03
+ga4,daily_traffic,purchase_revenue,23,19.99,291,0.03
+ga4,daily_traffic,purchase_revenue,24,16.99,286,0.03
+ga4,daily_traffic,purchase_revenue,25,93.99,279,0.03
+ga4,daily_traffic,session_campaign,1,(referral),129089,12.88
+ga4,daily_traffic,session_campaign,2,(organic),84663,8.45
+ga4,daily_traffic,session_campaign,3,retargeting_viewed_or_atc_14d,80671,8.05
+ga4,daily_traffic,session_campaign,4,Prospecting - Advantage+ Shopping,63265,6.31
+ga4,daily_traffic,session_campaign,5,Retargeting - Viewed or ATC 14d,57235,5.71
+ga4,daily_traffic,session_campaign,6,prospecting_broad,52758,5.27
+ga4,daily_traffic,session_campaign,7,prospecting_lookalike_1_buyers,45995,4.59
+ga4,daily_traffic,session_campaign,8,prospecting_advantage+_shopping,37474,3.74
+ga4,daily_traffic,session_campaign,9,climbdeals_deals_page,35720,3.56
+ga4,daily_traffic,session_campaign,10,bloc_brothers,32387,3.23
+ga4,daily_traffic,session_campaign,11,(direct),26035,2.60
+ga4,daily_traffic,session_campaign,12,Search - Brand,24770,2.47
+ga4,daily_traffic,session_campaign,13,Search - Generic - Climbing Shoes,23741,2.37
+ga4,daily_traffic,session_campaign,14,{{campaign.name}},22362,2.23
+ga4,daily_traffic,session_campaign,15,crimp_kid,21802,2.18
+ga4,daily_traffic,session_campaign,16,abandoned_cart,21613,2.16
+ga4,daily_traffic,session_campaign,17,welcome_1,21590,2.15
+ga4,daily_traffic,session_campaign,18,post_purchase,21554,2.15
+ga4,daily_traffic,session_campaign,19,Search - Generic - Crash Pads,20856,2.08
+ga4,daily_traffic,session_campaign,20,font_freak,20243,2.02
+ga4,daily_traffic,session_campaign,21,Search - Generic - Hardware,18940,1.89
+ga4,daily_traffic,session_campaign,22,vouchers,17255,1.72
+ga4,daily_traffic,session_campaign,23,slab_sophie,16898,1.69
+ga4,daily_traffic,session_campaign,24,PMax - All Products,14631,1.46
+ga4,daily_traffic,session_campaign,25,lena.sends,12661,1.26
+ga4,daily_traffic,session_source_medium,1,google / cpc,115218,11.50
+ga4,daily_traffic,session_source_medium,2,sfmc / email,80467,8.03
+ga4,daily_traffic,session_source_medium,3,meta / paid-social,62394,6.23
+ga4,daily_traffic,session_source_medium,4,facebook / paid-social,58740,5.86
+ga4,daily_traffic,session_source_medium,5,ig / paid-social,46061,4.60
+ga4,daily_traffic,session_source_medium,6,meta / paidsocial,36039,3.60
+ga4,daily_traffic,session_source_medium,7,google / organic,26190,2.61
+ga4,daily_traffic,session_source_medium,8,(direct) / (none),26035,2.60
+ga4,daily_traffic,session_source_medium,9,facebook / paid_social,24511,2.45
+ga4,daily_traffic,session_source_medium,10,instagram / paid_social,22940,2.29
+ga4,daily_traffic,session_source_medium,11,bing / organic,22286,2.22
+ga4,daily_traffic,session_source_medium,12,climbdeals / affiliate,22237,2.22
+ga4,daily_traffic,session_source_medium,13,ig / paidsocial,21457,2.14
+ga4,daily_traffic,session_source_medium,14,facebook / paidsocial,21388,2.13
+ga4,daily_traffic,session_source_medium,15,l.instagram.com / referral,20986,2.09
+ga4,daily_traffic,session_source_medium,16,instagram / influencer,20553,2.05
+ga4,daily_traffic,session_source_medium,17,youtube.com / referral,19865,1.98
+ga4,daily_traffic,session_source_medium,18,reddit.com / referral,19819,1.98
+ga4,daily_traffic,session_source_medium,19,duckduckgo / organic,19039,1.90
+ga4,daily_traffic,session_source_medium,20,tiktok / influencer,18086,1.81
+ga4,daily_traffic,session_source_medium,21,gym-partners.example / referral,18020,1.80
+ga4,daily_traffic,session_source_medium,22,bloc-blog.example / referral,18017,1.80
+ga4,daily_traffic,session_source_medium,23,m.facebook.com / referral,17937,1.79
+ga4,daily_traffic,session_source_medium,24,outdoorvouchers / affiliate,17255,1.72
+ga4,daily_traffic,session_source_medium,25,ecosia.org / organic,17148,1.71
+ga4,daily_traffic,sessions,1,1,274850,27.43
+ga4,daily_traffic,sessions,2,2,144854,14.46
+ga4,daily_traffic,sessions,3,3,93002,9.28
+ga4,daily_traffic,sessions,4,4,65351,6.52
+ga4,daily_traffic,sessions,5,5,48497,4.84
+ga4,daily_traffic,sessions,6,6,37308,3.72
+ga4,daily_traffic,sessions,7,7,30267,3.02
+ga4,daily_traffic,sessions,8,8,24637,2.46
+ga4,daily_traffic,sessions,9,9,20601,2.06
+ga4,daily_traffic,sessions,10,10,17567,1.75
+ga4,daily_traffic,sessions,11,11,15224,1.52
+ga4,daily_traffic,sessions,12,12,13281,1.33
+ga4,daily_traffic,sessions,13,13,11915,1.19
+ga4,daily_traffic,sessions,14,14,10652,1.06
+ga4,daily_traffic,sessions,15,15,9489,0.95
+ga4,daily_traffic,sessions,16,16,8710,0.87
+ga4,daily_traffic,sessions,17,17,7782,0.78
+ga4,daily_traffic,sessions,18,18,7338,0.73
+ga4,daily_traffic,sessions,19,19,6690,0.67
+ga4,daily_traffic,sessions,20,20,6172,0.62
+ga4,daily_traffic,sessions,21,21,5837,0.58
+ga4,daily_traffic,sessions,22,22,5405,0.54
+ga4,daily_traffic,sessions,23,23,5208,0.52
+ga4,daily_traffic,sessions,24,24,4817,0.48
+ga4,daily_traffic,sessions,25,25,4607,0.46
+ga4,daily_traffic,total_users,1,1,274850,27.43
+ga4,daily_traffic,total_users,2,2,177161,17.68
+ga4,daily_traffic,total_users,3,3,104402,10.42
+ga4,daily_traffic,total_users,4,4,65161,6.50
+ga4,daily_traffic,total_users,5,5,41998,4.19
+ga4,daily_traffic,total_users,6,6,34750,3.47
+ga4,daily_traffic,total_users,7,7,27719,2.77
+ga4,daily_traffic,total_users,8,8,21998,2.20
+ga4,daily_traffic,total_users,9,9,18978,1.89
+ga4,daily_traffic,total_users,10,10,16488,1.65
+ga4,daily_traffic,total_users,11,11,14328,1.43
+ga4,daily_traffic,total_users,12,12,12334,1.23
+ga4,daily_traffic,total_users,13,13,11155,1.11
+ga4,daily_traffic,total_users,14,14,9838,0.98
+ga4,daily_traffic,total_users,15,15,8613,0.86
+ga4,daily_traffic,total_users,16,16,7790,0.78
+ga4,daily_traffic,total_users,17,17,7395,0.74
+ga4,daily_traffic,total_users,18,18,6740,0.67
+ga4,daily_traffic,total_users,19,19,6232,0.62
+ga4,daily_traffic,total_users,20,20,5964,0.60
+ga4,daily_traffic,total_users,21,21,5445,0.54
+ga4,daily_traffic,total_users,22,22,5028,0.50
+ga4,daily_traffic,total_users,23,23,4812,0.48
+ga4,daily_traffic,total_users,24,24,4399,0.44
+ga4,daily_traffic,total_users,25,25,4106,0.41
+ga4,events,campaign,1,,1890313,68.97
+ga4,events,campaign,2,(direct),209570,7.65
+ga4,events,campaign,3,(organic),203774,7.43
+ga4,events,campaign,4,(referral),48610,1.77
+ga4,events,campaign,5,Search - Brand,44077,1.61
+ga4,events,campaign,6,Prospecting - Advantage+ Shopping,35100,1.28
+ga4,events,campaign,7,PMax - All Products,29646,1.08
+ga4,events,campaign,8,Search - Generic - Climbing Shoes,26346,0.96
+ga4,events,campaign,9,Retargeting - Viewed or ATC 14d,23437,0.86
+ga4,events,campaign,10,climbdeals_deals_page,22647,0.83
+ga4,events,campaign,11,retargeting_viewed_or_atc_14d,15791,0.58
+ga4,events,campaign,12,prospecting_broad,13154,0.48
+ga4,events,campaign,13,Shopping - All Products,12382,0.45
+ga4,events,campaign,14,abandoned_cart,11555,0.42
+ga4,events,campaign,15,bloc_brothers,10857,0.40
+ga4,events,campaign,16,Search - Generic - Crash Pads,10304,0.38
+ga4,events,campaign,17,Search - Generic - Hardware,9757,0.36
+ga4,events,campaign,18,prospecting_lookalike_1_buyers,8870,0.32
+ga4,events,campaign,19,prospecting_advantage+_shopping,6647,0.24
+ga4,events,campaign,20,crimp_kid,6604,0.24
+ga4,events,campaign,21,font_freak,6348,0.23
+ga4,events,campaign,22,slab_sophie,5869,0.21
+ga4,events,campaign,23,vouchers,5509,0.20
+ga4,events,campaign,24,welcome_1,4280,0.16
+ga4,events,campaign,25,post_purchase,3754,0.14
+ga4,events,country,1,Belgium,1188996,43.38
+ga4,events,country,2,Netherlands,808100,29.48
+ga4,events,country,3,France,321456,11.73
+ga4,events,country,4,Germany,249696,9.11
+ga4,events,country,5,Luxembourg,103183,3.76
+ga4,events,country,6,(not set),37826,1.38
+ga4,events,country,7,United Kingdom,16028,0.58
+ga4,events,country,8,United States,15642,0.57
+ga4,events,currency,1,EUR,1459439,53.25
+ga4,events,currency,2,,1281488,46.75
+ga4,events,device_category,1,mobile,1691042,61.70
+ga4,events,device_category,2,desktop,906687,33.08
+ga4,events,device_category,3,tablet,143198,5.22
+ga4,events,event_date,1,20251201,9775,0.36
+ga4,events,event_date,2,20251128,9102,0.33
+ga4,events,event_date,3,20241202,7410,0.27
+ga4,events,event_date,4,20251130,7094,0.26
+ga4,events,event_date,5,20241129,6944,0.25
+ga4,events,event_date,6,20241201,6884,0.25
+ga4,events,event_date,7,20251129,5718,0.21
+ga4,events,event_date,8,20251123,5259,0.19
+ga4,events,event_date,9,20251207,5222,0.19
+ga4,events,event_date,10,20251214,5164,0.19
+ga4,events,event_date,11,20251204,4696,0.17
+ga4,events,event_date,12,20241130,4665,0.17
+ga4,events,event_date,13,20260111,4664,0.17
+ga4,events,event_date,14,20251125,4659,0.17
+ga4,events,event_date,15,20251215,4659,0.17
+ga4,events,event_date,16,20251127,4640,0.17
+ga4,events,event_date,17,20251122,4604,0.17
+ga4,events,event_date,18,20251218,4556,0.17
+ga4,events,event_date,19,20251211,4533,0.17
+ga4,events,event_date,20,20251126,4525,0.17
+ga4,events,event_date,21,20260104,4491,0.16
+ga4,events,event_date,22,20251208,4475,0.16
+ga4,events,event_date,23,20251124,4423,0.16
+ga4,events,event_date,24,20251217,4417,0.16
+ga4,events,event_date,25,20251216,4408,0.16
+ga4,events,event_name,1,add_to_cart,1123793,41.00
+ga4,events,event_name,2,session_start,850614,31.03
+ga4,events,event_name,3,begin_checkout,430874,15.72
+ga4,events,event_name,4,purchase,335646,12.25
+ga4,events,event_timestamp,1,1736701400000623,2,0.00
+ga4,events,event_timestamp,2,1698793212000534,1,0.00
+ga4,events,event_timestamp,3,1698793792807388,1,0.00
+ga4,events,event_timestamp,4,1698793855601083,1,0.00
+ga4,events,event_timestamp,5,1698794422000646,1,0.00
+ga4,events,event_timestamp,6,1698794528277053,1,0.00
+ga4,events,event_timestamp,7,1698794597777448,1,0.00
+ga4,events,event_timestamp,8,1698794635365395,1,0.00
+ga4,events,event_timestamp,9,1698794663771247,1,0.00
+ga4,events,event_timestamp,10,1698794789777666,1,0.00
+ga4,events,event_timestamp,11,1698794805000322,1,0.00
+ga4,events,event_timestamp,12,1698795044476340,1,0.00
+ga4,events,event_timestamp,13,1698795139029329,1,0.00
+ga4,events,event_timestamp,14,1698795379361272,1,0.00
+ga4,events,event_timestamp,15,1698795724123505,1,0.00
+ga4,events,event_timestamp,16,1698795890518908,1,0.00
+ga4,events,event_timestamp,17,1698796066542416,1,0.00
+ga4,events,event_timestamp,18,1698800387902932,1,0.00
+ga4,events,event_timestamp,19,1698800443000658,1,0.00
+ga4,events,event_timestamp,20,1698800672000573,1,0.00
+ga4,events,event_timestamp,21,1698800679575872,1,0.00
+ga4,events,event_timestamp,22,1698800975994611,1,0.00
+ga4,events,event_timestamp,23,1698801558000300,1,0.00
+ga4,events,event_timestamp,24,1698801645884242,1,0.00
+ga4,events,event_timestamp,25,1698801696000973,1,0.00
+ga4,events,ga_session_id,1,1774746000,34,0.00
+ga4,events,ga_session_id,2,1711846800,30,0.00
+ga4,events,ga_session_id,3,1743296400,17,0.00
+ga4,events,ga_session_id,4,1762505483,15,0.00
+ga4,events,ga_session_id,5,1765952886,15,0.00
+ga4,events,ga_session_id,6,1725651085,13,0.00
+ga4,events,ga_session_id,7,1729765018,13,0.00
+ga4,events,ga_session_id,8,1732818398,13,0.00
+ga4,events,ga_session_id,9,1773225889,13,0.00
+ga4,events,ga_session_id,10,1700477003,12,0.00
+ga4,events,ga_session_id,11,1705695348,12,0.00
+ga4,events,ga_session_id,12,1711113472,12,0.00
+ga4,events,ga_session_id,13,1712237577,12,0.00
+ga4,events,ga_session_id,14,1712692082,12,0.00
+ga4,events,ga_session_id,15,1715437709,12,0.00
+ga4,events,ga_session_id,16,1716992580,12,0.00
+ga4,events,ga_session_id,17,1720017686,12,0.00
+ga4,events,ga_session_id,18,1724353976,12,0.00
+ga4,events,ga_session_id,19,1725544524,12,0.00
+ga4,events,ga_session_id,20,1726650458,12,0.00
+ga4,events,ga_session_id,21,1728298588,12,0.00
+ga4,events,ga_session_id,22,1728803294,12,0.00
+ga4,events,ga_session_id,23,1729593785,12,0.00
+ga4,events,ga_session_id,24,1730536129,12,0.00
+ga4,events,ga_session_id,25,1731529277,12,0.00
+ga4,events,ga_session_number,1,1,1621329,59.15
+ga4,events,ga_session_number,2,2,425936,15.54
+ga4,events,ga_session_number,3,3,224706,8.20
+ga4,events,ga_session_number,4,4,136838,4.99
+ga4,events,ga_session_number,5,5,90672,3.31
+ga4,events,ga_session_number,6,6,62438,2.28
+ga4,events,ga_session_number,7,7,44378,1.62
+ga4,events,ga_session_number,8,8,32228,1.18
+ga4,events,ga_session_number,9,9,23465,0.86
+ga4,events,ga_session_number,10,10,17791,0.65
+ga4,events,ga_session_number,11,11,13289,0.48
+ga4,events,ga_session_number,12,12,9983,0.36
+ga4,events,ga_session_number,13,13,7859,0.29
+ga4,events,ga_session_number,14,14,5932,0.22
+ga4,events,ga_session_number,15,15,4663,0.17
+ga4,events,ga_session_number,16,16,3818,0.14
+ga4,events,ga_session_number,17,17,2903,0.11
+ga4,events,ga_session_number,18,18,2284,0.08
+ga4,events,ga_session_number,19,19,1872,0.07
+ga4,events,ga_session_number,20,20,1521,0.06
+ga4,events,ga_session_number,21,21,1176,0.04
+ga4,events,ga_session_number,22,22,996,0.04
+ga4,events,ga_session_number,23,23,755,0.03
+ga4,events,ga_session_number,24,24,643,0.02
+ga4,events,ga_session_number,25,25,543,0.02
+ga4,events,medium,1,,1890313,68.97
+ga4,events,medium,2,(none),209570,7.65
+ga4,events,medium,3,organic,203774,7.43
+ga4,events,medium,4,cpc,143402,5.23
+ga4,events,medium,5,email,72424,2.64
+ga4,events,medium,6,paid-social,69821,2.55
+ga4,events,medium,7,referral,48610,1.77
+ga4,events,medium,8,paid_social,26291,0.96
+ga4,events,medium,9,influencer,25834,0.94
+ga4,events,medium,10,affiliate,25390,0.93
+ga4,events,medium,11,paidsocial,11637,0.42
+ga4,events,medium,12,social,5200,0.19
+ga4,events,medium,13,Influencer,3421,0.12
+ga4,events,medium,14,aff,2766,0.10
+ga4,events,medium,15,Email,2474,0.09
+ga4,events,page_location,1,,1890313,68.97
+ga4,events,page_location,2,https://www.kalkberg.example/,76728,2.80
+ga4,events,page_location,3,https://www.kalkberg.example/blog/how-to-choose-climbing-shoes,38774,1.41
+ga4,events,page_location,4,https://www.kalkberg.example/collections/chalk,38648,1.41
+ga4,events,page_location,5,https://www.kalkberg.example/collections/climbing-shoes,38521,1.41
+ga4,events,page_location,6,https://www.kalkberg.example/collections/clothing,38507,1.40
+ga4,events,page_location,7,https://www.kalkberg.example/collections/crash-pads,38432,1.40
+ga4,events,page_location,8,https://www.kalkberg.example/collections/training,38403,1.40
+ga4,events,page_location,9,https://www.kalkberg.example/blog/bouldering-for-beginners,38274,1.40
+ga4,events,page_location,10,https://www.kalkberg.example/cart?utm_source=sfmc&utm_medium=email&utm_campaign=abandoned_cart,7816,0.29
+ga4,events,page_location,11,https://www.kalkberg.example/?utm_source=sfmc&utm_medium=email&utm_campaign=post_purchase,3754,0.14
+ga4,events,page_location,12,https://www.kalkberg.example/?utm_source=sfmc&utm_medium=email&utm_campaign=abandoned_cart,3739,0.14
+ga4,events,page_location,13,https://www.kalkberg.example/?utm_source=sfmc&utm_medium=email&utm_campaign=welcome_1,3638,0.13
+ga4,events,page_location,14,https://www.kalkberg.example/blog/how-to-choose-climbing-shoes?utm_source=sfmc&utm_medium=email&utm_campaign=welcome_2,3425,0.12
+ga4,events,page_location,15,https://www.kalkberg.example/?utm_source=climbdeals&utm_medium=affiliate&utm_campaign=climbdeals_deals_page,3240,0.12
+ga4,events,page_location,16,https://www.kalkberg.example/collections/chalk?utm_source=climbdeals&utm_medium=affiliate&utm_campaign=climbdeals_deals_page,1733,0.06
+ga4,events,page_location,17,https://www.kalkberg.example/collections/crash-pads?utm_source=climbdeals&utm_medium=affiliate&utm_campaign=climbdeals_deals_page,1678,0.06
+ga4,events,page_location,18,https://www.kalkberg.example/collections/training?utm_source=climbdeals&utm_medium=affiliate&utm_campaign=climbdeals_deals_page,1675,0.06
+ga4,events,page_location,19,https://www.kalkberg.example/blog/how-to-choose-climbing-shoes?utm_source=climbdeals&utm_medium=affiliate&utm_campaign=climbdeals_deals_page,1670,0.06
+ga4,events,page_location,20,https://www.kalkberg.example/collections/clothing?utm_source=climbdeals&utm_medium=affiliate&utm_campaign=climbdeals_deals_page,1661,0.06
+ga4,events,page_location,21,https://www.kalkberg.example/collections/climbing-shoes?utm_source=climbdeals&utm_medium=affiliate&utm_campaign=climbdeals_deals_page,1626,0.06
+ga4,events,page_location,22,https://www.kalkberg.example/blog/bouldering-for-beginners?utm_source=climbdeals&utm_medium=affiliate&utm_campaign=climbdeals_deals_page,1598,0.06
+ga4,events,page_location,23,https://www.kalkberg.example/?utm_source=youtube&utm_medium=influencer&utm_campaign=bloc_brothers,1367,0.05
+ga4,events,page_location,24,https://www.kalkberg.example/?utm_source=outdoorvouchers&utm_medium=affiliate&utm_campaign=vouchers,882,0.03
+ga4,events,page_location,25,https://www.kalkberg.example/?utm_source=tiktok&utm_medium=influencer&utm_campaign=crimp_kid,861,0.03
+ga4,events,source,1,,1890313,68.97
+ga4,events,source,2,google,315360,11.51
+ga4,events,source,3,(direct),209570,7.65
+ga4,events,source,4,sfmc,63346,2.31
+ga4,events,source,5,meta,46556,1.70
+ga4,events,source,6,facebook,32456,1.18
+ga4,events,source,7,instagram,24207,0.88
+ga4,events,source,8,climbdeals,22647,0.83
+ga4,events,source,9,ig,15588,0.57
+ga4,events,source,10,bing,14077,0.51
+ga4,events,source,11,tiktok,12473,0.46
+ga4,events,source,12,l.instagram.com,11549,0.42
+ga4,events,source,13,youtube,10857,0.40
+ga4,events,source,14,reddit.com,8679,0.32
+ga4,events,source,15,youtube.com,8524,0.31
+ga4,events,source,16,newsletter,7259,0.26
+ga4,events,source,17,duckduckgo,6158,0.22
+ga4,events,source,18,gym-partners.example,5689,0.21
+ga4,events,source,19,bloc-blog.example,5668,0.21
+ga4,events,source,20,m.facebook.com,5631,0.21
+ga4,events,source,21,outdoorvouchers,5509,0.20
+ga4,events,source,22,fb,4538,0.17
+ga4,events,source,23,SFMC,4293,0.16
+ga4,events,source,24,ecosia.org,4096,0.15
+ga4,events,source,25,Facebook,3014,0.11
+ga4,events,transaction_id,1,,2405281,87.75
+ga4,events,transaction_id,2,KB-24-000051,2,0.00
+ga4,events,transaction_id,3,KB-24-000108,2,0.00
+ga4,events,transaction_id,4,KB-24-000155,2,0.00
+ga4,events,transaction_id,5,KB-24-000256,2,0.00
+ga4,events,transaction_id,6,KB-24-000271,2,0.00
+ga4,events,transaction_id,7,KB-24-000275,2,0.00
+ga4,events,transaction_id,8,KB-24-000299,2,0.00
+ga4,events,transaction_id,9,KB-24-000301,2,0.00
+ga4,events,transaction_id,10,KB-24-000327,2,0.00
+ga4,events,transaction_id,11,KB-24-000499,2,0.00
+ga4,events,transaction_id,12,KB-24-000576,2,0.00
+ga4,events,transaction_id,13,KB-24-000603,2,0.00
+ga4,events,transaction_id,14,KB-24-000611,2,0.00
+ga4,events,transaction_id,15,KB-24-000621,2,0.00
+ga4,events,transaction_id,16,KB-24-000654,2,0.00
+ga4,events,transaction_id,17,KB-24-000669,2,0.00
+ga4,events,transaction_id,18,KB-24-000690,2,0.00
+ga4,events,transaction_id,19,KB-24-000832,2,0.00
+ga4,events,transaction_id,20,KB-24-000868,2,0.00
+ga4,events,transaction_id,21,KB-24-001024,2,0.00
+ga4,events,transaction_id,22,KB-24-001253,2,0.00
+ga4,events,transaction_id,23,KB-24-001342,2,0.00
+ga4,events,transaction_id,24,KB-24-001396,2,0.00
+ga4,events,transaction_id,25,KB-24-001469,2,0.00
+ga4,events,user_id,1,,1259588,45.95
+ga4,events,user_id,2,100128,618,0.02
+ga4,events,user_id,3,104135,487,0.02
+ga4,events,user_id,4,135750,436,0.02
+ga4,events,user_id,5,107542,391,0.01
+ga4,events,user_id,6,117517,389,0.01
+ga4,events,user_id,7,109897,388,0.01
+ga4,events,user_id,8,108729,348,0.01
+ga4,events,user_id,9,109791,336,0.01
+ga4,events,user_id,10,148395,332,0.01
+ga4,events,user_id,11,105311,331,0.01
+ga4,events,user_id,12,104302,310,0.01
+ga4,events,user_id,13,112585,305,0.01
+ga4,events,user_id,14,106377,304,0.01
+ga4,events,user_id,15,139084,304,0.01
+ga4,events,user_id,16,124388,300,0.01
+ga4,events,user_id,17,110082,283,0.01
+ga4,events,user_id,18,129526,283,0.01
+ga4,events,user_id,19,120488,282,0.01
+ga4,events,user_id,20,101387,279,0.01
+ga4,events,user_id,21,111263,272,0.01
+ga4,events,user_id,22,126007,272,0.01
+ga4,events,user_id,23,108080,271,0.01
+ga4,events,user_id,24,116872,270,0.01
+ga4,events,user_id,25,118652,270,0.01
+ga4,events,user_pseudo_id,1,1145715647.1760482834,212,0.01
+ga4,events,user_pseudo_id,2,226920263.1782143482,198,0.01
+ga4,events,user_pseudo_id,3,1419845270.1757797996,162,0.01
+ga4,events,user_pseudo_id,4,1150062837.1707361211,160,0.01
+ga4,events,user_pseudo_id,5,657905255.1758536260,157,0.01
+ga4,events,user_pseudo_id,6,694393235.1727067918,154,0.01
+ga4,events,user_pseudo_id,7,193139834.1757861287,153,0.01
+ga4,events,user_pseudo_id,8,225327054.1728227096,151,0.01
+ga4,events,user_pseudo_id,9,1534622535.1723145626,148,0.01
+ga4,events,user_pseudo_id,10,1878626108.1742950128,143,0.01
+ga4,events,user_pseudo_id,11,1279254454.1752233665,138,0.01
+ga4,events,user_pseudo_id,12,1916893724.1721122091,138,0.01
+ga4,events,user_pseudo_id,13,1487151740.1755540200,135,0.00
+ga4,events,user_pseudo_id,14,2127118167.1713751147,133,0.00
+ga4,events,user_pseudo_id,15,117793570.1708539120,131,0.00
+ga4,events,user_pseudo_id,16,1969095351.1765194937,131,0.00
+ga4,events,user_pseudo_id,17,1480564216.1722270492,130,0.00
+ga4,events,user_pseudo_id,18,1942067390.1772309329,129,0.00
+ga4,events,user_pseudo_id,19,299675725.1717018827,129,0.00
+ga4,events,user_pseudo_id,20,1222844581.1762784904,128,0.00
+ga4,events,user_pseudo_id,21,1351450731.1729567826,128,0.00
+ga4,events,user_pseudo_id,22,367997644.1736477158,127,0.00
+ga4,events,user_pseudo_id,23,813631668.1723911501,127,0.00
+ga4,events,user_pseudo_id,24,1247030624.1725636272,120,0.00
+ga4,events,user_pseudo_id,25,568664040.1732552127,120,0.00
+ga4,events,value,1,,1281488,46.75
+ga4,events,value,2,12.99,9793,0.36
+ga4,events,value,3,14.99,7450,0.27
+ga4,events,value,4,13.99,7357,0.27
+ga4,events,value,5,25.98,7051,0.26
+ga4,events,value,6,17.99,6606,0.24
+ga4,events,value,7,23.99,6520,0.24
+ga4,events,value,8,15.99,5936,0.22
+ga4,events,value,9,27.98,5384,0.20
+ga4,events,value,10,19.99,5155,0.19
+ga4,events,value,11,26.99,5087,0.19
+ga4,events,value,12,11.99,5030,0.18
+ga4,events,value,13,27.99,4821,0.18
+ga4,events,value,14,29.98,4684,0.17
+ga4,events,value,15,16.99,4424,0.16
+ga4,events,value,16,21.99,4025,0.15
+ga4,events,value,17,18.99,3932,0.14
+ga4,events,value,18,6.99,3791,0.14
+ga4,events,value,19,23.98,3741,0.14
+ga4,events,value,20,48.99,3581,0.13
+ga4,events,value,21,47.99,3505,0.13
+ga4,events,value,22,7.49,3382,0.12
+ga4,events,value,23,46.99,3249,0.12
+ga4,events,value,24,67.99,3198,0.12
+ga4,events,value,25,96.99,3126,0.11
+sfmc,bounces,account_id,1,518000123,18894,100.00
+sfmc,bounces,batch_id,1,1,3871,20.49
+sfmc,bounces,batch_id,2,9,1441,7.63
+sfmc,bounces,batch_id,3,3,1394,7.38
+sfmc,bounces,batch_id,4,4,1390,7.36
+sfmc,bounces,batch_id,5,6,1375,7.28
+sfmc,bounces,batch_id,6,2,1362,7.21
+sfmc,bounces,batch_id,7,7,1356,7.18
+sfmc,bounces,batch_id,8,5,1353,7.16
+sfmc,bounces,batch_id,9,12,1352,7.16
+sfmc,bounces,batch_id,10,8,1348,7.13
+sfmc,bounces,batch_id,11,10,1337,7.08
+sfmc,bounces,batch_id,12,11,1315,6.96
+sfmc,bounces,bounce_category,1,Soft bounce,17144,90.74
+sfmc,bounces,bounce_category,2,Hard bounce,1750,9.26
+sfmc,bounces,bounce_subcategory,1,Mailbox Full,17144,90.74
+sfmc,bounces,bounce_subcategory,2,User Unknown,1750,9.26
+sfmc,bounces,bounce_type,1,delayed,17144,90.74
+sfmc,bounces,bounce_type,2,immediate,1750,9.26
+sfmc,bounces,domain,1,gmail.com,7334,38.82
+sfmc,bounces,domain,2,hotmail.com,1872,9.91
+sfmc,bounces,domain,3,icloud.com,1750,9.26
+sfmc,bounces,domain,4,outlook.com,1407,7.45
+sfmc,bounces,domain,5,telenet.be,1115,5.90
+sfmc,bounces,domain,6,gmial.com,969,5.13
+sfmc,bounces,domain,7,ziggo.nl,498,2.64
+sfmc,bounces,domain,8,skynet.be,417,2.21
+sfmc,bounces,domain,9,kpnmail.nl,348,1.84
+sfmc,bounces,domain,10,orange.fr,319,1.69
+sfmc,bounces,domain,11,gmx.de,312,1.65
+sfmc,bounces,domain,12,web.de,302,1.60
+sfmc,bounces,domain,13,hotmail.fr,240,1.27
+sfmc,bounces,domain,14,free.fr,228,1.21
+sfmc,bounces,domain,15,proximus.be,214,1.13
+sfmc,bounces,domain,16,hotmial.com,204,1.08
+sfmc,bounces,domain,17,telnet.be,199,1.05
+sfmc,bounces,domain,18,icloud.co,191,1.01
+sfmc,bounces,domain,19,outlok.com,187,0.99
+sfmc,bounces,domain,20,t-online.de,166,0.88
+sfmc,bounces,domain,21,xs4all.nl,166,0.88
+sfmc,bounces,domain,22,laposte.net,139,0.74
+sfmc,bounces,domain,23,pt.lu,136,0.72
+sfmc,bounces,domain,24,outlook.de,104,0.55
+sfmc,bounces,domain,25,outlook.fr,77,0.41
+sfmc,bounces,event_date,1,11/26/2025 11:03:50 AM,3,0.02
+sfmc,bounces,event_date,2,11/26/2025 11:07:19 AM,3,0.02
+sfmc,bounces,event_date,3,2/12/2026 3:10:46 AM,3,0.02
+sfmc,bounces,event_date,4,2/12/2026 3:20:04 AM,3,0.02
+sfmc,bounces,event_date,5,3/13/2025 3:26:04 AM,3,0.02
+sfmc,bounces,event_date,6,3/20/2026 3:34:25 AM,3,0.02
+sfmc,bounces,event_date,7,3/26/2026 3:20:21 AM,3,0.02
+sfmc,bounces,event_date,8,4/23/2026 2:34:28 AM,3,0.02
+sfmc,bounces,event_date,9,4/9/2026 2:02:59 AM,3,0.02
+sfmc,bounces,event_date,10,5/7/2026 2:12:44 AM,3,0.02
+sfmc,bounces,event_date,11,5/7/2026 2:25:20 AM,3,0.02
+sfmc,bounces,event_date,12,5/7/2026 2:29:05 AM,3,0.02
+sfmc,bounces,event_date,13,7/1/2025 12:23:52 AM,3,0.02
+sfmc,bounces,event_date,14,7/17/2025 2:02:46 AM,3,0.02
+sfmc,bounces,event_date,15,7/19/2025 10:23:52 AM,3,0.02
+sfmc,bounces,event_date,16,7/19/2026 10:07:38 AM,3,0.02
+sfmc,bounces,event_date,17,7/19/2026 10:40:20 AM,3,0.02
+sfmc,bounces,event_date,18,8/15/2024 2:22:51 AM,3,0.02
+sfmc,bounces,event_date,19,8/27/2026 2:24:04 AM,3,0.02
+sfmc,bounces,event_date,20,8/27/2026 2:27:23 AM,3,0.02
+sfmc,bounces,event_date,21,9/11/2025 2:04:56 AM,3,0.02
+sfmc,bounces,event_date,22,1/1/2026 3:03:31 AM,2,0.01
+sfmc,bounces,event_date,23,1/1/2026 3:06:50 AM,2,0.01
+sfmc,bounces,event_date,24,1/1/2026 3:17:46 AM,2,0.01
+sfmc,bounces,event_date,25,1/1/2026 3:19:24 AM,2,0.01
+sfmc,bounces,is_unique,1,True,18891,99.98
+sfmc,bounces,is_unique,2,False,3,0.02
+sfmc,bounces,job_id,1,470027,178,0.94
+sfmc,bounces,job_id,2,470011,160,0.85
+sfmc,bounces,job_id,3,412684,159,0.84
+sfmc,bounces,job_id,4,470023,156,0.83
+sfmc,bounces,job_id,5,412712,152,0.80
+sfmc,bounces,job_id,6,412716,152,0.80
+sfmc,bounces,job_id,7,412720,150,0.79
+sfmc,bounces,job_id,8,412704,149,0.79
+sfmc,bounces,job_id,9,412728,149,0.79
+sfmc,bounces,job_id,10,412688,144,0.76
+sfmc,bounces,job_id,11,412692,144,0.76
+sfmc,bounces,job_id,12,412700,144,0.76
+sfmc,bounces,job_id,13,412696,143,0.76
+sfmc,bounces,job_id,14,412736,143,0.76
+sfmc,bounces,job_id,15,412660,142,0.75
+sfmc,bounces,job_id,16,412676,141,0.75
+sfmc,bounces,job_id,17,412680,141,0.75
+sfmc,bounces,job_id,18,412652,136,0.72
+sfmc,bounces,job_id,19,412708,136,0.72
+sfmc,bounces,job_id,20,412732,133,0.70
+sfmc,bounces,job_id,21,412672,131,0.69
+sfmc,bounces,job_id,22,470043,131,0.69
+sfmc,bounces,job_id,23,412724,130,0.69
+sfmc,bounces,job_id,24,470047,129,0.68
+sfmc,bounces,job_id,25,412656,128,0.68
+sfmc,bounces,list_id,1,1047,16425,86.93
+sfmc,bounces,list_id,2,1052,2469,13.07
+sfmc,bounces,oyb_account_id,1,,18894,100.00
+sfmc,bounces,smtp_bounce_reason,1,452 4.2.2 The email account that you tried to reach is over quota,17144,90.74
+sfmc,bounces,smtp_bounce_reason,2,550 5.1.1 The email account that you tried to reach does not exist,1750,9.26
+sfmc,bounces,subscriber_id,1,1007964,5,0.03
+sfmc,bounces,subscriber_id,2,1016068,5,0.03
+sfmc,bounces,subscriber_id,3,1044945,5,0.03
+sfmc,bounces,subscriber_id,4,1058642,5,0.03
+sfmc,bounces,subscriber_id,5,1000516,4,0.02
+sfmc,bounces,subscriber_id,6,1000709,4,0.02
+sfmc,bounces,subscriber_id,7,1001400,4,0.02
+sfmc,bounces,subscriber_id,8,1001628,4,0.02
+sfmc,bounces,subscriber_id,9,1003700,4,0.02
+sfmc,bounces,subscriber_id,10,1005544,4,0.02
+sfmc,bounces,subscriber_id,11,1007113,4,0.02
+sfmc,bounces,subscriber_id,12,1009188,4,0.02
+sfmc,bounces,subscriber_id,13,1011269,4,0.02
+sfmc,bounces,subscriber_id,14,1013092,4,0.02
+sfmc,bounces,subscriber_id,15,1014473,4,0.02
+sfmc,bounces,subscriber_id,16,1015194,4,0.02
+sfmc,bounces,subscriber_id,17,1015364,4,0.02
+sfmc,bounces,subscriber_id,18,1015431,4,0.02
+sfmc,bounces,subscriber_id,19,1016284,4,0.02
+sfmc,bounces,subscriber_id,20,1016330,4,0.02
+sfmc,bounces,subscriber_id,21,1016398,4,0.02
+sfmc,bounces,subscriber_id,22,1016565,4,0.02
+sfmc,bounces,subscriber_id,23,1016590,4,0.02
+sfmc,bounces,subscriber_id,24,1017168,4,0.02
+sfmc,bounces,subscriber_id,25,1017312,4,0.02
+sfmc,bounces,subscriber_key,1,jensdesmet@icloud.co,6,0.03
+sfmc,bounces,subscriber_key,2,jonasvanhecke@gmial.com,6,0.03
+sfmc,bounces,subscriber_key,3,laura_braun@gmial.com,6,0.03
+sfmc,bounces,subscriber_key,4,lien.verbeke@hotmial.com,6,0.03
+sfmc,bounces,subscriber_key,5,philippkrause44@gmial.com,6,0.03
+sfmc,bounces,subscriber_key,6,teun.kok@gmial.com,6,0.03
+sfmc,bounces,subscriber_key,7,152168,5,0.03
+sfmc,bounces,subscriber_key,8,166615,5,0.03
+sfmc,bounces,subscriber_key,9,hugo.gerard26@gmail.com,5,0.03
+sfmc,bounces,subscriber_key,10,ine.smets22@gmial.com,5,0.03
+sfmc,bounces,subscriber_key,11,koen_meijer@gmial.com,5,0.03
+sfmc,bounces,subscriber_key,12,lore.aerts76@outlook.com,5,0.03
+sfmc,bounces,subscriber_key,13,n.vos@outlok.com,5,0.03
+sfmc,bounces,subscriber_key,14,128100,4,0.02
+sfmc,bounces,subscriber_key,15,128185,4,0.02
+sfmc,bounces,subscriber_key,16,128187,4,0.02
+sfmc,bounces,subscriber_key,17,129295,4,0.02
+sfmc,bounces,subscriber_key,18,129622,4,0.02
+sfmc,bounces,subscriber_key,19,130267,4,0.02
+sfmc,bounces,subscriber_key,20,130800,4,0.02
+sfmc,bounces,subscriber_key,21,130988,4,0.02
+sfmc,bounces,subscriber_key,22,131040,4,0.02
+sfmc,bounces,subscriber_key,23,131167,4,0.02
+sfmc,bounces,subscriber_key,24,131297,4,0.02
+sfmc,bounces,subscriber_key,25,133818,4,0.02
+sfmc,bounces,triggered_send_customer_key,1,,16425,86.93
+sfmc,bounces,triggered_send_customer_key,2,TS_Welcome_1,814,4.31
+sfmc,bounces,triggered_send_customer_key,3,TS_PostPurchase_Review,637,3.37
+sfmc,bounces,triggered_send_customer_key,4,TS_Welcome_2,616,3.26
+sfmc,bounces,triggered_send_customer_key,5,TS_Winback,256,1.35
+sfmc,bounces,triggered_send_customer_key,6,TS_AbandonedCart,146,0.77
+sfmc,bounces,triggerer_send_definition_object_id,1,,16425,86.93
+sfmc,bounces,triggerer_send_definition_object_id,2,320ce211-490a-6052-5471-dc74c45bde7f,814,4.31
+sfmc,bounces,triggerer_send_definition_object_id,3,6b9e2c7d-d49a-a02d-3eda-1d2603f10ae0,637,3.37
+sfmc,bounces,triggerer_send_definition_object_id,4,0be69d8a-d936-8add-24c9-8fea275deaeb,616,3.26
+sfmc,bounces,triggerer_send_definition_object_id,5,22a98c78-f14e-847c-15ac-9156ac82b12c,256,1.35
+sfmc,bounces,triggerer_send_definition_object_id,6,1248f3f1-8c11-5b72-5d05-1d5c1d9adfec,146,0.77
+sfmc,clicks,account_id,1,518000123,238185,100.00
+sfmc,clicks,batch_id,1,1,57872,24.30
+sfmc,clicks,batch_id,2,8,16719,7.02
+sfmc,clicks,batch_id,3,5,16622,6.98
+sfmc,clicks,batch_id,4,6,16585,6.96
+sfmc,clicks,batch_id,5,2,16500,6.93
+sfmc,clicks,batch_id,6,9,16465,6.91
+sfmc,clicks,batch_id,7,11,16421,6.89
+sfmc,clicks,batch_id,8,4,16266,6.83
+sfmc,clicks,batch_id,9,10,16262,6.83
+sfmc,clicks,batch_id,10,7,16174,6.79
+sfmc,clicks,batch_id,11,3,16155,6.78
+sfmc,clicks,batch_id,12,12,16144,6.78
+sfmc,clicks,domain,1,gmail.com,104729,43.97
+sfmc,clicks,domain,2,hotmail.com,25607,10.75
+sfmc,clicks,domain,3,icloud.com,21259,8.93
+sfmc,clicks,domain,4,outlook.com,18546,7.79
+sfmc,clicks,domain,5,telenet.be,15019,6.31
+sfmc,clicks,domain,6,ziggo.nl,7644,3.21
+sfmc,clicks,domain,7,skynet.be,5959,2.50
+sfmc,clicks,domain,8,web.de,5173,2.17
+sfmc,clicks,domain,9,orange.fr,4769,2.00
+sfmc,clicks,domain,10,kpnmail.nl,4603,1.93
+sfmc,clicks,domain,11,gmx.de,4246,1.78
+sfmc,clicks,domain,12,hotmail.fr,3361,1.41
+sfmc,clicks,domain,13,xs4all.nl,3201,1.34
+sfmc,clicks,domain,14,proximus.be,3100,1.30
+sfmc,clicks,domain,15,t-online.de,2384,1.00
+sfmc,clicks,domain,16,free.fr,2355,0.99
+sfmc,clicks,domain,17,pt.lu,2273,0.95
+sfmc,clicks,domain,18,outlook.de,1605,0.67
+sfmc,clicks,domain,19,laposte.net,1368,0.57
+sfmc,clicks,domain,20,outlook.fr,984,0.41
+sfmc,clicks,event_date,1,1/9/2026 11:35:37 AM,5,0.00
+sfmc,clicks,event_date,2,1/2/2025 1:25:48 AM,4,0.00
+sfmc,clicks,event_date,3,1/2/2025 1:25:49 AM,4,0.00
+sfmc,clicks,event_date,4,1/2/2025 1:25:50 AM,4,0.00
+sfmc,clicks,event_date,5,1/29/2026 3:17:43 AM,4,0.00
+sfmc,clicks,event_date,6,1/9/2026 11:35:36 AM,4,0.00
+sfmc,clicks,event_date,7,1/9/2026 11:35:38 AM,4,0.00
+sfmc,clicks,event_date,8,10/24/2024 2:11:05 AM,4,0.00
+sfmc,clicks,event_date,9,11/20/2025 3:17:45 AM,4,0.00
+sfmc,clicks,event_date,10,11/28/2025 12:29:43 AM,4,0.00
+sfmc,clicks,event_date,11,11/28/2025 12:29:45 AM,4,0.00
+sfmc,clicks,event_date,12,11/28/2025 12:37:19 AM,4,0.00
+sfmc,clicks,event_date,13,11/30/2025 4:22:07 AM,4,0.00
+sfmc,clicks,event_date,14,2/13/2025 3:04:13 AM,4,0.00
+sfmc,clicks,event_date,15,3/27/2025 3:04:05 AM,4,0.00
+sfmc,clicks,event_date,16,5/21/2026 2:05:46 AM,4,0.00
+sfmc,clicks,event_date,17,5/21/2026 2:05:47 AM,4,0.00
+sfmc,clicks,event_date,18,5/7/2026 2:35:53 AM,4,0.00
+sfmc,clicks,event_date,19,7/16/2026 2:38:24 AM,4,0.00
+sfmc,clicks,event_date,20,7/17/2025 2:22:48 AM,4,0.00
+sfmc,clicks,event_date,21,7/17/2025 2:22:49 AM,4,0.00
+sfmc,clicks,event_date,22,7/19/2025 10:50:48 AM,4,0.00
+sfmc,clicks,event_date,23,8/27/2026 2:26:39 AM,4,0.00
+sfmc,clicks,event_date,24,9/10/2026 2:04:29 AM,4,0.00
+sfmc,clicks,event_date,25,9/10/2026 2:37:01 AM,4,0.00
+sfmc,clicks,is_unique,1,True,232415,97.58
+sfmc,clicks,is_unique,2,False,5770,2.42
+sfmc,clicks,job_id,1,470019,2759,1.16
+sfmc,clicks,job_id,2,470039,2513,1.06
+sfmc,clicks,job_id,3,470023,2420,1.02
+sfmc,clicks,job_id,4,470043,2260,0.95
+sfmc,clicks,job_id,5,412732,1850,0.78
+sfmc,clicks,job_id,6,470031,1813,0.76
+sfmc,clicks,job_id,7,412704,1811,0.76
+sfmc,clicks,job_id,8,412728,1802,0.76
+sfmc,clicks,job_id,9,412720,1779,0.75
+sfmc,clicks,job_id,10,412668,1775,0.75
+sfmc,clicks,job_id,11,412672,1775,0.75
+sfmc,clicks,job_id,12,412736,1754,0.74
+sfmc,clicks,job_id,13,412724,1725,0.72
+sfmc,clicks,job_id,14,412660,1723,0.72
+sfmc,clicks,job_id,15,412664,1699,0.71
+sfmc,clicks,job_id,16,470027,1693,0.71
+sfmc,clicks,job_id,17,412684,1688,0.71
+sfmc,clicks,job_id,18,412696,1687,0.71
+sfmc,clicks,job_id,19,412676,1643,0.69
+sfmc,clicks,job_id,20,412632,1642,0.69
+sfmc,clicks,job_id,21,412688,1640,0.69
+sfmc,clicks,job_id,22,412712,1615,0.68
+sfmc,clicks,job_id,23,412708,1610,0.68
+sfmc,clicks,job_id,24,412636,1593,0.67
+sfmc,clicks,job_id,25,412652,1590,0.67
+sfmc,clicks,link_content,1,https://www.kalkberg.example/collections/climbing-shoes?utm_source=%%=v(@utm_source)=%%&utm_medium=email,33409,14.03
+sfmc,clicks,link_content,2,https://www.kalkberg.example/collections/new-arrivals?utm_source=%%=v(@utm_source)=%%&utm_medium=email,30126,12.65
+sfmc,clicks,link_content,3,https://www.kalkberg.example/collections/chalk?utm_source=%%=v(@utm_source)=%%&utm_medium=email,29890,12.55
+sfmc,clicks,link_content,4,https://www.kalkberg.example/collections/crash-pads?utm_source=%%=v(@utm_source)=%%&utm_medium=email,27120,11.39
+sfmc,clicks,link_content,5,https://www.kalkberg.example/?utm_source=%%=v(@utm_source)=%%&utm_medium=email,24227,10.17
+sfmc,clicks,link_content,6,https://www.kalkberg.example/sale?utm_source=%%=v(@utm_source)=%%&utm_medium=email,21584,9.06
+sfmc,clicks,link_content,7,https://www.kalkberg.example/collections/clothing?utm_source=%%=v(@utm_source)=%%&utm_medium=email,21428,9.00
+sfmc,clicks,link_content,8,https://www.kalkberg.example/collections/training?utm_source=%%=v(@utm_source)=%%&utm_medium=email,20824,8.74
+sfmc,clicks,link_content,9,https://www.kalkberg.example/cart?utm_source=%%=v(@utm_source)=%%&utm_medium=email,10755,4.52
+sfmc,clicks,link_content,10,https://www.kalkberg.example/account/reviews?utm_source=%%=v(@utm_source)=%%&utm_medium=email,10375,4.36
+sfmc,clicks,link_content,11,https://www.kalkberg.example/blog/how-to-choose-climbing-shoes?utm_source=%%=v(@utm_source)=%%&utm_medium=email,8447,3.55
+sfmc,clicks,link_name,1,Hero banner,76729,32.21
+sfmc,clicks,link_name,2,Main CTA,41917,17.60
+sfmc,clicks,link_name,3,Product block 1,39353,16.52
+sfmc,clicks,link_name,4,Product block 2,31693,13.31
+sfmc,clicks,link_name,5,Blog teaser,24266,10.19
+sfmc,clicks,link_name,6,Footer - Shop,24227,10.17
+sfmc,clicks,list_id,1,1047,196268,82.40
+sfmc,clicks,list_id,2,1052,41917,17.60
+sfmc,clicks,oyb_account_id,1,,238185,100.00
+sfmc,clicks,subscriber_id,1,1002069,527,0.22
+sfmc,clicks,subscriber_id,2,1003555,515,0.22
+sfmc,clicks,subscriber_id,3,1003610,513,0.22
+sfmc,clicks,subscriber_id,4,1003607,511,0.21
+sfmc,clicks,subscriber_id,5,1004919,501,0.21
+sfmc,clicks,subscriber_id,6,1008679,478,0.20
+sfmc,clicks,subscriber_id,7,1007357,475,0.20
+sfmc,clicks,subscriber_id,8,1007973,473,0.20
+sfmc,clicks,subscriber_id,9,1009388,473,0.20
+sfmc,clicks,subscriber_id,10,1010898,469,0.20
+sfmc,clicks,subscriber_id,11,1009362,467,0.20
+sfmc,clicks,subscriber_id,12,1009959,467,0.20
+sfmc,clicks,subscriber_id,13,1008853,465,0.20
+sfmc,clicks,subscriber_id,14,1011202,463,0.19
+sfmc,clicks,subscriber_id,15,1011738,461,0.19
+sfmc,clicks,subscriber_id,16,1014068,455,0.19
+sfmc,clicks,subscriber_id,17,1012247,452,0.19
+sfmc,clicks,subscriber_id,18,1014622,449,0.19
+sfmc,clicks,subscriber_id,19,1014836,446,0.19
+sfmc,clicks,subscriber_id,20,1014687,444,0.19
+sfmc,clicks,subscriber_id,21,1015513,443,0.19
+sfmc,clicks,subscriber_id,22,1015258,440,0.18
+sfmc,clicks,subscriber_id,23,1016135,440,0.18
+sfmc,clicks,subscriber_id,24,1003730,439,0.18
+sfmc,clicks,subscriber_id,25,1016206,432,0.18
+sfmc,clicks,subscriber_key,1,s.kuipers6@gmail.com,527,0.22
+sfmc,clicks,subscriber_key,2,louisefournier@gmail.com,515,0.22
+sfmc,clicks,subscriber_key,3,clement_robert@icloud.com,513,0.22
+sfmc,clicks,subscriber_key,4,adriendelvaux2@gmail.com,511,0.21
+sfmc,clicks,subscriber_key,5,t.jansen4@gmail.com,501,0.21
+sfmc,clicks,subscriber_key,6,m.thiry@gmail.com,478,0.20
+sfmc,clicks,subscriber_key,7,pierrethomas@orange.fr,475,0.20
+sfmc,clicks,subscriber_key,8,lucas.martens@hotmail.com,473,0.20
+sfmc,clicks,subscriber_key,9,timvisser@gmail.com,473,0.20
+sfmc,clicks,subscriber_key,10,benjamingirard2@hotmail.fr,469,0.20
+sfmc,clicks,subscriber_key,11,lauravermeulen2@skynet.be,467,0.20
+sfmc,clicks,subscriber_key,12,lottedeclercq2@gmail.com,467,0.20
+sfmc,clicks,subscriber_key,13,l.aerts4@hotmail.com,465,0.20
+sfmc,clicks,subscriber_key,14,niels.dijkstra3@outlook.com,465,0.20
+sfmc,clicks,subscriber_key,15,florianlange@gmx.de,461,0.19
+sfmc,clicks,subscriber_key,16,philipp.muller@web.de,455,0.19
+sfmc,clicks,subscriber_key,17,basdewit@gmail.com,452,0.19
+sfmc,clicks,subscriber_key,18,jenssegers@gmail.com,449,0.19
+sfmc,clicks,subscriber_key,19,margauxbodart@telenet.be,446,0.19
+sfmc,clicks,subscriber_key,20,mirthedejong8@gmail.com,444,0.19
+sfmc,clicks,subscriber_key,21,hanne.michiels12@gmail.com,443,0.19
+sfmc,clicks,subscriber_key,22,gijs.visser6@gmail.com,440,0.18
+sfmc,clicks,subscriber_key,23,miriamrichter@pt.lu,440,0.18
+sfmc,clicks,subscriber_key,24,Ine.peeters71@gmail.com,439,0.18
+sfmc,clicks,subscriber_key,25,jesse_smit@icloud.com,432,0.18
+sfmc,clicks,triggered_send_customer_key,1,,196268,82.40
+sfmc,clicks,triggered_send_customer_key,2,TS_AbandonedCart,10755,4.52
+sfmc,clicks,triggered_send_customer_key,3,TS_PostPurchase_Review,10375,4.36
+sfmc,clicks,triggered_send_customer_key,4,TS_Welcome_2,8447,3.55
+sfmc,clicks,triggered_send_customer_key,5,TS_Welcome_1,7659,3.22
+sfmc,clicks,triggered_send_customer_key,6,TS_Winback,4681,1.97
+sfmc,clicks,triggerer_send_definition_object_id,1,,196268,82.40
+sfmc,clicks,triggerer_send_definition_object_id,2,1248f3f1-8c11-5b72-5d05-1d5c1d9adfec,10755,4.52
+sfmc,clicks,triggerer_send_definition_object_id,3,6b9e2c7d-d49a-a02d-3eda-1d2603f10ae0,10375,4.36
+sfmc,clicks,triggerer_send_definition_object_id,4,0be69d8a-d936-8add-24c9-8fea275deaeb,8447,3.55
+sfmc,clicks,triggerer_send_definition_object_id,5,320ce211-490a-6052-5471-dc74c45bde7f,7659,3.22
+sfmc,clicks,triggerer_send_definition_object_id,6,22a98c78-f14e-847c-15ac-9156ac82b12c,4681,1.97
+sfmc,clicks,url,1,https://www.kalkberg.example/cart?utm_source=sfmc&utm_medium=email&utm_campaign=abandoned_cart,10755,4.52
+sfmc,clicks,url,2,https://www.kalkberg.example/account/reviews?utm_source=sfmc&utm_medium=email&utm_campaign=post_purchase,10375,4.36
+sfmc,clicks,url,3,https://www.kalkberg.example/blog/how-to-choose-climbing-shoes?utm_source=sfmc&utm_medium=email&utm_campaign=welcome_2,8447,3.55
+sfmc,clicks,url,4,https://www.kalkberg.example/collections/climbing-shoes?utm_source=sfmc&utm_medium=email&utm_campaign=welcome_1,7659,3.22
+sfmc,clicks,url,5,https://www.kalkberg.example/collections/new-arrivals?utm_source=sfmc&utm_medium=email&utm_campaign=winback,4681,1.97
+sfmc,clicks,url,6,https://www.kalkberg.example/collections/training?utm_source=sfmc&utm_medium=email&utm_campaign=cmp_summer2026_lastchance,1330,0.56
+sfmc,clicks,url,7,https://www.kalkberg.example/collections/crash-pads?utm_source=sfmc&utm_medium=email&utm_campaign=nl_2026-10-08_biweekly,1324,0.56
+sfmc,clicks,url,8,https://www.kalkberg.example/collections/crash-pads?utm_source=sfmc&utm_medium=email&utm_campaign=nl_2026-04-09_biweekly,1285,0.54
+sfmc,clicks,url,9,https://www.kalkberg.example/collections/chalk?utm_source=SFMC&utm_medium=email&utm_campaign=nl_2026-09-24_biweekly,1272,0.53
+sfmc,clicks,url,10,https://www.kalkberg.example/collections/chalk?utm_source=sfmc&utm_medium=email&utm_campaign=cmp_newshoes2026_launch,1261,0.53
+sfmc,clicks,url,11,https://www.kalkberg.example/collections/chalk?utm_source=sfmc&utm_medium=email&utm_campaign=nl_2026-03-26_biweekly,1240,0.52
+sfmc,clicks,url,12,https://www.kalkberg.example/collections/new-arrivals?utm_source=sfmc&utm_medium=email&utm_campaign=cmp_outdoor2026_launch,1219,0.51
+sfmc,clicks,url,13,https://www.kalkberg.example/collections/climbing-shoes?utm_source=sfmc&utm_medium=email&utm_campaign=nl_2026-09-10_biweekly,1203,0.51
+sfmc,clicks,url,14,https://www.kalkberg.example/collections/new-arrivals?utm_source=sfmc&utm_medium=email&utm_campaign=nl_2026-07-02_biweekly,1192,0.50
+sfmc,clicks,url,15,https://www.kalkberg.example/collections/climbing-shoes?utm_source=sfmc&utm_medium=email&utm_campaign=nl_2026-10-22_biweekly,1182,0.50
+sfmc,clicks,url,16,https://www.kalkberg.example/collections/new-arrivals?utm_source=sfmc&utm_medium=Email&utm_campaign=nl_2026-04-23_biweekly,1180,0.50
+sfmc,clicks,url,17,https://www.kalkberg.example/collections/training?utm_source=sfmc&utm_medium=email&utm_campaign=nl_2026-06-04_biweekly,1178,0.49
+sfmc,clicks,url,18,https://www.kalkberg.example/collections/clothing?utm_source=SFMC&utm_medium=email&utm_campaign=nl_2026-02-26_biweekly,1150,0.48
+sfmc,clicks,url,19,https://www.kalkberg.example/collections/chalk?utm_source=sfmc&utm_medium=email&utm_campaign=nl_2026-08-13_biweekly,1147,0.48
+sfmc,clicks,url,20,https://www.kalkberg.example/collections/climbing-shoes?utm_source=sfmc&utm_medium=email&utm_campaign=cmp_jansale2026_reminder,1143,0.48
+sfmc,clicks,url,21,https://www.kalkberg.example/sale?utm_source=sfmc&utm_medium=email&utm_campaign=nl_2026-06-18_biweekly,1138,0.48
+sfmc,clicks,url,22,https://www.kalkberg.example/collections/crash-pads?utm_source=sfmc&utm_medium=email&utm_campaign=nl_2026-05-21_biweekly,1134,0.48
+sfmc,clicks,url,23,https://www.kalkberg.example/collections/clothing?utm_source=sfmc&utm_medium=email&utm_campaign=nl_2026-05-07_biweekly,1124,0.47
+sfmc,clicks,url,24,https://www.kalkberg.example/collections/clothing?utm_source=sfmc&utm_medium=email&utm_campaign=nl_2026-01-15_biweekly,1122,0.47
+sfmc,clicks,url,25,https://www.kalkberg.example/collections/chalk?utm_source=SFMC&utm_medium=email&utm_campaign=nl_2026-07-30_biweekly,1121,0.47
+sfmc,jobs,account_id,1,518000123,496,100.00
+sfmc,jobs,category,1,Newsletter,312,62.90
+sfmc,jobs,category,2,Campaign,128,25.81
+sfmc,jobs,category,3,Journeys,56,11.29
+sfmc,jobs,delivered_time,1,1/1/2026 3:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,2,1/15/2026 3:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,3,1/16/2025 3:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,4,1/18/2024 3:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,5,1/2/2024 1:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,6,1/2/2025 1:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,7,1/2/2025 3:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,8,1/2/2026 1:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,9,1/29/2026 3:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,10,1/30/2025 3:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,11,1/4/2024 3:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,12,1/9/2024 11:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,13,1/9/2025 11:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,14,1/9/2026 11:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,15,10/10/2024 2:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,16,10/22/2026 2:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,17,10/23/2025 2:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,18,10/24/2024 2:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,19,10/8/2026 2:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,20,10/9/2025 2:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,21,11/20/2025 3:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,22,11/21/2024 3:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,23,11/22/2023 11:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,24,11/23/2023 3:00:00 AM,4,0.81
+sfmc,jobs,delivered_time,25,11/24/2023 12:00:00 AM,4,0.81
+sfmc,jobs,email_id,1,9100,1,0.20
+sfmc,jobs,email_id,2,9101,1,0.20
+sfmc,jobs,email_id,3,9102,1,0.20
+sfmc,jobs,email_id,4,9103,1,0.20
+sfmc,jobs,email_id,5,9104,1,0.20
+sfmc,jobs,email_id,6,9105,1,0.20
+sfmc,jobs,email_id,7,9106,1,0.20
+sfmc,jobs,email_id,8,9107,1,0.20
+sfmc,jobs,email_id,9,9108,1,0.20
+sfmc,jobs,email_id,10,9109,1,0.20
+sfmc,jobs,email_id,11,9110,1,0.20
+sfmc,jobs,email_id,12,9111,1,0.20
+sfmc,jobs,email_id,13,9112,1,0.20
+sfmc,jobs,email_id,14,9113,1,0.20
+sfmc,jobs,email_id,15,9114,1,0.20
+sfmc,jobs,email_id,16,9115,1,0.20
+sfmc,jobs,email_id,17,9116,1,0.20
+sfmc,jobs,email_id,18,9117,1,0.20
+sfmc,jobs,email_id,19,9118,1,0.20
+sfmc,jobs,email_id,20,9119,1,0.20
+sfmc,jobs,email_id,21,9120,1,0.20
+sfmc,jobs,email_id,22,9121,1,0.20
+sfmc,jobs,email_id,23,9122,1,0.20
+sfmc,jobs,email_id,24,9123,1,0.20
+sfmc,jobs,email_id,25,9124,1,0.20
+sfmc,jobs,email_name,1,CMP_BF2023_Launch_DE,1,0.20
+sfmc,jobs,email_name,2,CMP_BF2023_Launch_EN,1,0.20
+sfmc,jobs,email_name,3,CMP_BF2023_Launch_FR,1,0.20
+sfmc,jobs,email_name,4,CMP_BF2023_Launch_NL,1,0.20
+sfmc,jobs,email_name,5,CMP_BF2023_Reminder_DE,1,0.20
+sfmc,jobs,email_name,6,CMP_BF2023_Reminder_EN,1,0.20
+sfmc,jobs,email_name,7,CMP_BF2023_Reminder_FR,1,0.20
+sfmc,jobs,email_name,8,CMP_BF2023_Reminder_NL,1,0.20
+sfmc,jobs,email_name,9,CMP_BF2023_Teaser_DE,1,0.20
+sfmc,jobs,email_name,10,CMP_BF2023_Teaser_EN,1,0.20
+sfmc,jobs,email_name,11,CMP_BF2023_Teaser_FR,1,0.20
+sfmc,jobs,email_name,12,CMP_BF2023_Teaser_NL,1,0.20
+sfmc,jobs,email_name,13,CMP_BF2024_Launch_DE,1,0.20
+sfmc,jobs,email_name,14,CMP_BF2024_Launch_EN,1,0.20
+sfmc,jobs,email_name,15,CMP_BF2024_Launch_FR,1,0.20
+sfmc,jobs,email_name,16,CMP_BF2024_Launch_NL,1,0.20
+sfmc,jobs,email_name,17,CMP_BF2024_Reminder_DE,1,0.20
+sfmc,jobs,email_name,18,CMP_BF2024_Reminder_EN,1,0.20
+sfmc,jobs,email_name,19,CMP_BF2024_Reminder_FR,1,0.20
+sfmc,jobs,email_name,20,CMP_BF2024_Reminder_NL,1,0.20
+sfmc,jobs,email_name,21,CMP_BF2024_Teaser_DE,1,0.20
+sfmc,jobs,email_name,22,CMP_BF2024_Teaser_EN,1,0.20
+sfmc,jobs,email_name,23,CMP_BF2024_Teaser_FR,1,0.20
+sfmc,jobs,email_name,24,CMP_BF2024_Teaser_NL,1,0.20
+sfmc,jobs,email_name,25,CMP_BF2025_Launch_DE,1,0.20
+sfmc,jobs,email_subject,1,Fresh beta: what's new at Kalkberg,312,62.90
+sfmc,jobs,email_subject,2,Black Friday is coming - get ready,12,2.42
+sfmc,jobs,email_subject,3,Black Friday: up to 25% off climbing shoes,12,2.42
+sfmc,jobs,email_subject,4,Cyber Monday: final call,12,2.42
+sfmc,jobs,email_subject,5,How is your new gear? Leave a review,12,2.42
+sfmc,jobs,email_subject,6,How to choose your first climbing shoes,12,2.42
+sfmc,jobs,email_subject,7,January sale starts now,12,2.42
+sfmc,jobs,email_subject,8,January sale: last week,12,2.42
+sfmc,jobs,email_subject,9,Last weekend of Black Friday deals,12,2.42
+sfmc,jobs,email_subject,10,"New season, new shoes",12,2.42
+sfmc,jobs,email_subject,11,Order today for delivery before Christmas,12,2.42
+sfmc,jobs,email_subject,12,Summer sale ends Sunday,12,2.42
+sfmc,jobs,email_subject,13,Summer sale: up to 30% off,12,2.42
+sfmc,jobs,email_subject,14,Welcome to Kalkberg - here is your 10% code,12,2.42
+sfmc,jobs,email_subject,15,You left something in your cart,12,2.42
+sfmc,jobs,email_subject,16,Outdoor season: pads and ropes 15% off,8,1.61
+sfmc,jobs,email_subject,17,We miss you at the wall,8,1.61
+sfmc,jobs,from_email,1,hello@kalkberg.example,496,100.00
+sfmc,jobs,from_name,1,Kalkberg,496,100.00
+sfmc,jobs,job_id,1,412300,1,0.20
+sfmc,jobs,job_id,2,412301,1,0.20
+sfmc,jobs,job_id,3,412302,1,0.20
+sfmc,jobs,job_id,4,412303,1,0.20
+sfmc,jobs,job_id,5,412304,1,0.20
+sfmc,jobs,job_id,6,412305,1,0.20
+sfmc,jobs,job_id,7,412306,1,0.20
+sfmc,jobs,job_id,8,412307,1,0.20
+sfmc,jobs,job_id,9,412308,1,0.20
+sfmc,jobs,job_id,10,412309,1,0.20
+sfmc,jobs,job_id,11,412310,1,0.20
+sfmc,jobs,job_id,12,412311,1,0.20
+sfmc,jobs,job_id,13,412312,1,0.20
+sfmc,jobs,job_id,14,412313,1,0.20
+sfmc,jobs,job_id,15,412314,1,0.20
+sfmc,jobs,job_id,16,412315,1,0.20
+sfmc,jobs,job_id,17,412316,1,0.20
+sfmc,jobs,job_id,18,412317,1,0.20
+sfmc,jobs,job_id,19,412318,1,0.20
+sfmc,jobs,job_id,20,412319,1,0.20
+sfmc,jobs,job_id,21,412320,1,0.20
+sfmc,jobs,job_id,22,412321,1,0.20
+sfmc,jobs,job_id,23,412322,1,0.20
+sfmc,jobs,job_id,24,412323,1,0.20
+sfmc,jobs,job_id,25,412324,1,0.20
+sfmc,jobs,job_status,1,Complete,496,100.00
+sfmc,jobs,job_type,1,Email,440,88.71
+sfmc,jobs,job_type,2,TriggeredSend,56,11.29
+sfmc,jobs,pickup_time,1,1/1/2026 2:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,2,1/15/2026 2:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,3,1/16/2025 2:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,4,1/18/2024 2:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,5,1/2/2024 12:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,6,1/2/2025 12:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,7,1/2/2025 2:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,8,1/2/2026 12:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,9,1/29/2026 2:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,10,1/30/2025 2:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,11,1/4/2024 2:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,12,1/9/2024 10:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,13,1/9/2025 10:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,14,1/9/2026 10:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,15,10/10/2024 1:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,16,10/22/2026 1:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,17,10/23/2025 1:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,18,10/24/2024 1:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,19,10/8/2026 1:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,20,10/9/2025 1:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,21,11/20/2025 2:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,22,11/21/2024 2:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,23,11/22/2023 10:59:00 AM,4,0.81
+sfmc,jobs,pickup_time,24,11/23/2023 11:59:00 PM,4,0.81
+sfmc,jobs,pickup_time,25,11/23/2023 2:59:00 AM,4,0.81
+sfmc,jobs,sched_time,1,,56,11.29
+sfmc,jobs,sched_time,2,1/1/2026 2:55:00 AM,4,0.81
+sfmc,jobs,sched_time,3,1/15/2026 2:55:00 AM,4,0.81
+sfmc,jobs,sched_time,4,1/16/2025 2:55:00 AM,4,0.81
+sfmc,jobs,sched_time,5,1/18/2024 2:55:00 AM,4,0.81
+sfmc,jobs,sched_time,6,1/2/2024 12:55:00 AM,4,0.81
+sfmc,jobs,sched_time,7,1/2/2025 12:55:00 AM,4,0.81
+sfmc,jobs,sched_time,8,1/2/2025 2:55:00 AM,4,0.81
+sfmc,jobs,sched_time,9,1/2/2026 12:55:00 AM,4,0.81
+sfmc,jobs,sched_time,10,1/29/2026 2:55:00 AM,4,0.81
+sfmc,jobs,sched_time,11,1/30/2025 2:55:00 AM,4,0.81
+sfmc,jobs,sched_time,12,1/4/2024 2:55:00 AM,4,0.81
+sfmc,jobs,sched_time,13,1/9/2024 10:55:00 AM,4,0.81
+sfmc,jobs,sched_time,14,1/9/2025 10:55:00 AM,4,0.81
+sfmc,jobs,sched_time,15,1/9/2026 10:55:00 AM,4,0.81
+sfmc,jobs,sched_time,16,10/10/2024 1:55:00 AM,4,0.81
+sfmc,jobs,sched_time,17,10/22/2026 1:55:00 AM,4,0.81
+sfmc,jobs,sched_time,18,10/23/2025 1:55:00 AM,4,0.81
+sfmc,jobs,sched_time,19,10/24/2024 1:55:00 AM,4,0.81
+sfmc,jobs,sched_time,20,10/8/2026 1:55:00 AM,4,0.81
+sfmc,jobs,sched_time,21,10/9/2025 1:55:00 AM,4,0.81
+sfmc,jobs,sched_time,22,11/20/2025 2:55:00 AM,4,0.81
+sfmc,jobs,sched_time,23,11/21/2024 2:55:00 AM,4,0.81
+sfmc,jobs,sched_time,24,11/22/2023 10:55:00 AM,4,0.81
+sfmc,jobs,sched_time,25,11/23/2023 11:55:00 PM,4,0.81
+sfmc,jobs,triggered_send_customer_key,1,,440,88.71
+sfmc,jobs,triggered_send_customer_key,2,TS_AbandonedCart,12,2.42
+sfmc,jobs,triggered_send_customer_key,3,TS_PostPurchase_Review,12,2.42
+sfmc,jobs,triggered_send_customer_key,4,TS_Welcome_1,12,2.42
+sfmc,jobs,triggered_send_customer_key,5,TS_Welcome_2,12,2.42
+sfmc,jobs,triggered_send_customer_key,6,TS_Winback,8,1.61
+sfmc,jobs,triggerer_send_definition_object_id,1,,440,88.71
+sfmc,jobs,triggerer_send_definition_object_id,2,0be69d8a-d936-8add-24c9-8fea275deaeb,12,2.42
+sfmc,jobs,triggerer_send_definition_object_id,3,1248f3f1-8c11-5b72-5d05-1d5c1d9adfec,12,2.42
+sfmc,jobs,triggerer_send_definition_object_id,4,320ce211-490a-6052-5471-dc74c45bde7f,12,2.42
+sfmc,jobs,triggerer_send_definition_object_id,5,6b9e2c7d-d49a-a02d-3eda-1d2603f10ae0,12,2.42
+sfmc,jobs,triggerer_send_definition_object_id,6,22a98c78-f14e-847c-15ac-9156ac82b12c,8,1.61
+sfmc,opens,account_id,1,518000123,3300814,100.00
+sfmc,opens,batch_id,1,1,601331,18.22
+sfmc,opens,batch_id,2,6,246428,7.47
+sfmc,opens,batch_id,3,12,246406,7.47
+sfmc,opens,batch_id,4,2,246256,7.46
+sfmc,opens,batch_id,5,8,245854,7.45
+sfmc,opens,batch_id,6,5,245707,7.44
+sfmc,opens,batch_id,7,11,245190,7.43
+sfmc,opens,batch_id,8,10,245098,7.43
+sfmc,opens,batch_id,9,7,244951,7.42
+sfmc,opens,batch_id,10,9,244752,7.41
+sfmc,opens,batch_id,11,4,244617,7.41
+sfmc,opens,batch_id,12,3,244224,7.40
+sfmc,opens,domain,1,gmail.com,1338125,40.54
+sfmc,opens,domain,2,icloud.com,524106,15.88
+sfmc,opens,domain,3,hotmail.com,333043,10.09
+sfmc,opens,domain,4,outlook.com,246253,7.46
+sfmc,opens,domain,5,telenet.be,202943,6.15
+sfmc,opens,domain,6,ziggo.nl,89583,2.71
+sfmc,opens,domain,7,skynet.be,71204,2.16
+sfmc,opens,domain,8,kpnmail.nl,64187,1.94
+sfmc,opens,domain,9,orange.fr,57343,1.74
+sfmc,opens,domain,10,web.de,54551,1.65
+sfmc,opens,domain,11,gmx.de,53610,1.62
+sfmc,opens,domain,12,hotmail.fr,42144,1.28
+sfmc,opens,domain,13,free.fr,39997,1.21
+sfmc,opens,domain,14,proximus.be,39948,1.21
+sfmc,opens,domain,15,xs4all.nl,33816,1.02
+sfmc,opens,domain,16,t-online.de,26768,0.81
+sfmc,opens,domain,17,pt.lu,26087,0.79
+sfmc,opens,domain,18,laposte.net,23230,0.70
+sfmc,opens,domain,19,outlook.de,18097,0.55
+sfmc,opens,domain,20,outlook.fr,15779,0.48
+sfmc,opens,event_date,1,10/8/2026 2:28:57 AM,28,0.00
+sfmc,opens,event_date,2,8/27/2026 2:17:13 AM,27,0.00
+sfmc,opens,event_date,3,10/8/2026 2:38:45 AM,26,0.00
+sfmc,opens,event_date,4,5/21/2026 2:41:06 AM,26,0.00
+sfmc,opens,event_date,5,6/18/2026 2:29:21 AM,26,0.00
+sfmc,opens,event_date,6,6/4/2026 2:32:57 AM,26,0.00
+sfmc,opens,event_date,7,7/16/2026 2:17:19 AM,26,0.00
+sfmc,opens,event_date,8,8/13/2026 2:26:41 AM,26,0.00
+sfmc,opens,event_date,9,8/27/2026 2:32:02 AM,26,0.00
+sfmc,opens,event_date,10,9/24/2026 2:18:18 AM,26,0.00
+sfmc,opens,event_date,11,10/8/2026 2:36:34 AM,25,0.00
+sfmc,opens,event_date,12,4/9/2026 2:42:24 AM,25,0.00
+sfmc,opens,event_date,13,6/4/2026 2:24:18 AM,25,0.00
+sfmc,opens,event_date,14,6/4/2026 2:33:27 AM,25,0.00
+sfmc,opens,event_date,15,7/16/2026 2:22:40 AM,25,0.00
+sfmc,opens,event_date,16,8/13/2026 2:37:43 AM,25,0.00
+sfmc,opens,event_date,17,8/27/2026 2:33:54 AM,25,0.00
+sfmc,opens,event_date,18,9/10/2026 2:38:07 AM,25,0.00
+sfmc,opens,event_date,19,9/10/2026 2:40:01 AM,25,0.00
+sfmc,opens,event_date,20,1/2/2026 1:34:48 AM,24,0.00
+sfmc,opens,event_date,21,10/22/2026 2:20:58 AM,24,0.00
+sfmc,opens,event_date,22,10/22/2026 2:36:48 AM,24,0.00
+sfmc,opens,event_date,23,10/8/2026 2:31:28 AM,24,0.00
+sfmc,opens,event_date,24,3/12/2026 3:18:49 AM,24,0.00
+sfmc,opens,event_date,25,3/12/2026 3:23:19 AM,24,0.00
+sfmc,opens,is_unique,1,True,2560430,77.57
+sfmc,opens,is_unique,2,False,740384,22.43
+sfmc,opens,job_id,1,412720,30078,0.91
+sfmc,opens,job_id,2,412736,29680,0.90
+sfmc,opens,job_id,3,412732,29623,0.90
+sfmc,opens,job_id,4,412704,29349,0.89
+sfmc,opens,job_id,5,412728,29007,0.88
+sfmc,opens,job_id,6,470023,28723,0.87
+sfmc,opens,job_id,7,412692,28720,0.87
+sfmc,opens,job_id,8,412724,28658,0.87
+sfmc,opens,job_id,9,412716,28239,0.86
+sfmc,opens,job_id,10,412712,27888,0.84
+sfmc,opens,job_id,11,412708,27673,0.84
+sfmc,opens,job_id,12,412696,27345,0.83
+sfmc,opens,job_id,13,412700,27234,0.83
+sfmc,opens,job_id,14,412688,26957,0.82
+sfmc,opens,job_id,15,412684,26745,0.81
+sfmc,opens,job_id,16,412680,26374,0.80
+sfmc,opens,job_id,17,412660,26259,0.80
+sfmc,opens,job_id,18,412676,26044,0.79
+sfmc,opens,job_id,19,412672,25896,0.78
+sfmc,opens,job_id,20,470043,25660,0.78
+sfmc,opens,job_id,21,412668,25626,0.78
+sfmc,opens,job_id,22,412664,25052,0.76
+sfmc,opens,job_id,23,412656,24434,0.74
+sfmc,opens,job_id,24,412636,24300,0.74
+sfmc,opens,job_id,25,412652,24298,0.74
+sfmc,opens,list_id,1,1047,2943948,89.19
+sfmc,opens,list_id,2,1052,356866,10.81
+sfmc,opens,oyb_account_id,1,,3300814,100.00
+sfmc,opens,subscriber_id,1,1000158,349,0.01
+sfmc,opens,subscriber_id,2,1007776,281,0.01
+sfmc,opens,subscriber_id,3,1009388,269,0.01
+sfmc,opens,subscriber_id,4,1021283,256,0.01
+sfmc,opens,subscriber_id,5,1020338,252,0.01
+sfmc,opens,subscriber_id,6,1002069,247,0.01
+sfmc,opens,subscriber_id,7,1003555,246,0.01
+sfmc,opens,subscriber_id,8,1001431,245,0.01
+sfmc,opens,subscriber_id,9,1003607,241,0.01
+sfmc,opens,subscriber_id,10,1008853,240,0.01
+sfmc,opens,subscriber_id,11,1008679,239,0.01
+sfmc,opens,subscriber_id,12,1000924,236,0.01
+sfmc,opens,subscriber_id,13,1010350,236,0.01
+sfmc,opens,subscriber_id,14,1003330,234,0.01
+sfmc,opens,subscriber_id,15,1016532,233,0.01
+sfmc,opens,subscriber_id,16,1015852,230,0.01
+sfmc,opens,subscriber_id,17,1000085,228,0.01
+sfmc,opens,subscriber_id,18,1011475,228,0.01
+sfmc,opens,subscriber_id,19,1016449,226,0.01
+sfmc,opens,subscriber_id,20,1013675,222,0.01
+sfmc,opens,subscriber_id,21,1019564,221,0.01
+sfmc,opens,subscriber_id,22,1009959,220,0.01
+sfmc,opens,subscriber_id,23,1014836,220,0.01
+sfmc,opens,subscriber_id,24,1016198,219,0.01
+sfmc,opens,subscriber_id,25,1014622,217,0.01
+sfmc,opens,subscriber_key,1,chloe.leclercq86@icloud.com,409,0.01
+sfmc,opens,subscriber_key,2,daan.devries2@icloud.com,373,0.01
+sfmc,opens,subscriber_key,3,p.hartmann2@icloud.com,350,0.01
+sfmc,opens,subscriber_key,4,leaneumann67@web.de,349,0.01
+sfmc,opens,subscriber_key,5,juliabecker2@gmail.com,345,0.01
+sfmc,opens,subscriber_key,6,l.segers@telenet.be,338,0.01
+sfmc,opens,subscriber_key,7,mark.vanleeuwen@icloud.com,331,0.01
+sfmc,opens,subscriber_key,8,arnaudrenard@icloud.com,326,0.01
+sfmc,opens,subscriber_key,9,e.jacobs3@icloud.com,325,0.01
+sfmc,opens,subscriber_key,10,quentin_simon3@telenet.be,320,0.01
+sfmc,opens,subscriber_key,11,laura.debacker@gmail.com,316,0.01
+sfmc,opens,subscriber_key,12,ellacools38@icloud.com,308,0.01
+sfmc,opens,subscriber_key,13,clara_lejeune@outlook.com,304,0.01
+sfmc,opens,subscriber_key,14,janavandenberghe68@icloud.com,304,0.01
+sfmc,opens,subscriber_key,15,clement_fournier@icloud.com,302,0.01
+sfmc,opens,subscriber_key,16,sannedegraaf@icloud.com,302,0.01
+sfmc,opens,subscriber_key,17,julien_lambert@icloud.com,301,0.01
+sfmc,opens,subscriber_key,18,amelie_denis@telenet.be,300,0.01
+sfmc,opens,subscriber_key,19,eline.vanderlinden@outlook.com,293,0.01
+sfmc,opens,subscriber_key,20,romain_henrard2@gmail.com,289,0.01
+sfmc,opens,subscriber_key,21,alicemorin89@icloud.com,288,0.01
+sfmc,opens,subscriber_key,22,luukmulder@xs4all.nl,288,0.01
+sfmc,opens,subscriber_key,23,niels.vanleeuwen40@gmail.com,288,0.01
+sfmc,opens,subscriber_key,24,maarten.willems@icloud.com,286,0.01
+sfmc,opens,subscriber_key,25,elodienoel@skynet.be,285,0.01
+sfmc,opens,triggered_send_customer_key,1,,2943948,89.19
+sfmc,opens,triggered_send_customer_key,2,TS_PostPurchase_Review,122046,3.70
+sfmc,opens,triggered_send_customer_key,3,TS_Welcome_1,73036,2.21
+sfmc,opens,triggered_send_customer_key,4,TS_Welcome_2,64114,1.94
+sfmc,opens,triggered_send_customer_key,5,TS_Winback,55709,1.69
+sfmc,opens,triggered_send_customer_key,6,TS_AbandonedCart,41961,1.27
+sfmc,opens,triggerer_send_definition_object_id,1,,2943948,89.19
+sfmc,opens,triggerer_send_definition_object_id,2,6b9e2c7d-d49a-a02d-3eda-1d2603f10ae0,122046,3.70
+sfmc,opens,triggerer_send_definition_object_id,3,320ce211-490a-6052-5471-dc74c45bde7f,73036,2.21
+sfmc,opens,triggerer_send_definition_object_id,4,0be69d8a-d936-8add-24c9-8fea275deaeb,64114,1.94
+sfmc,opens,triggerer_send_definition_object_id,5,22a98c78-f14e-847c-15ac-9156ac82b12c,55709,1.69
+sfmc,opens,triggerer_send_definition_object_id,6,1248f3f1-8c11-5b72-5d05-1d5c1d9adfec,41961,1.27
+sfmc,sent,account_id,1,518000123,4454934,100.00
+sfmc,sent,batch_id,1,1,793567,17.81
+sfmc,sent,batch_id,2,12,333610,7.49
+sfmc,sent,batch_id,3,6,333583,7.49
+sfmc,sent,batch_id,4,5,333423,7.48
+sfmc,sent,batch_id,5,8,333262,7.48
+sfmc,sent,batch_id,6,11,333176,7.48
+sfmc,sent,batch_id,7,2,332996,7.47
+sfmc,sent,batch_id,8,7,332783,7.47
+sfmc,sent,batch_id,9,4,332207,7.46
+sfmc,sent,batch_id,10,9,332197,7.46
+sfmc,sent,batch_id,11,10,332195,7.46
+sfmc,sent,batch_id,12,3,331935,7.45
+sfmc,sent,domain,1,gmail.com,1935230,43.44
+sfmc,sent,domain,2,hotmail.com,483278,10.85
+sfmc,sent,domain,3,icloud.com,436103,9.79
+sfmc,sent,domain,4,outlook.com,355192,7.97
+sfmc,sent,domain,5,telenet.be,288975,6.49
+sfmc,sent,domain,6,ziggo.nl,130513,2.93
+sfmc,sent,domain,7,skynet.be,104824,2.35
+sfmc,sent,domain,8,kpnmail.nl,93488,2.10
+sfmc,sent,domain,9,orange.fr,83827,1.88
+sfmc,sent,domain,10,web.de,80559,1.81
+sfmc,sent,domain,11,gmx.de,77941,1.75
+sfmc,sent,domain,12,hotmail.fr,60776,1.36
+sfmc,sent,domain,13,proximus.be,58685,1.32
+sfmc,sent,domain,14,free.fr,54044,1.21
+sfmc,sent,domain,15,xs4all.nl,50461,1.13
+sfmc,sent,domain,16,t-online.de,40128,0.90
+sfmc,sent,domain,17,pt.lu,36735,0.82
+sfmc,sent,domain,18,laposte.net,31812,0.71
+sfmc,sent,domain,19,outlook.de,26925,0.60
+sfmc,sent,domain,20,outlook.fr,23688,0.53
+sfmc,sent,domain,21,gmial.com,969,0.02
+sfmc,sent,domain,22,hotmial.com,204,0.00
+sfmc,sent,domain,23,telnet.be,199,0.00
+sfmc,sent,domain,24,icloud.co,191,0.00
+sfmc,sent,domain,25,outlok.com,187,0.00
+sfmc,sent,event_date,1,10/22/2026 2:19:26 AM,52,0.00
+sfmc,sent,event_date,2,10/22/2026 2:23:36 AM,51,0.00
+sfmc,sent,event_date,3,10/22/2026 2:36:06 AM,51,0.00
+sfmc,sent,event_date,4,9/24/2026 2:17:14 AM,50,0.00
+sfmc,sent,event_date,5,7/1/2026 12:37:46 AM,49,0.00
+sfmc,sent,event_date,6,9/4/2026 2:09:11 AM,49,0.00
+sfmc,sent,event_date,7,10/22/2026 2:36:52 AM,48,0.00
+sfmc,sent,event_date,8,7/2/2026 2:30:58 AM,48,0.00
+sfmc,sent,event_date,9,8/27/2026 2:37:10 AM,48,0.00
+sfmc,sent,event_date,10,5/21/2026 2:25:38 AM,47,0.00
+sfmc,sent,event_date,11,8/27/2026 2:33:44 AM,47,0.00
+sfmc,sent,event_date,12,9/24/2026 2:01:28 AM,47,0.00
+sfmc,sent,event_date,13,9/24/2026 2:13:03 AM,47,0.00
+sfmc,sent,event_date,14,10/22/2026 2:32:56 AM,46,0.00
+sfmc,sent,event_date,15,10/8/2026 2:33:23 AM,46,0.00
+sfmc,sent,event_date,16,7/2/2026 2:30:47 AM,46,0.00
+sfmc,sent,event_date,17,9/10/2026 2:24:38 AM,46,0.00
+sfmc,sent,event_date,18,9/10/2026 2:28:40 AM,46,0.00
+sfmc,sent,event_date,19,9/4/2026 2:30:51 AM,46,0.00
+sfmc,sent,event_date,20,10/22/2026 2:05:11 AM,45,0.00
+sfmc,sent,event_date,21,10/22/2026 2:32:41 AM,45,0.00
+sfmc,sent,event_date,22,10/8/2026 2:01:34 AM,45,0.00
+sfmc,sent,event_date,23,10/8/2026 2:09:03 AM,45,0.00
+sfmc,sent,event_date,24,10/8/2026 2:11:26 AM,45,0.00
+sfmc,sent,event_date,25,10/8/2026 2:19:55 AM,45,0.00
+sfmc,sent,job_id,1,470023,39579,0.89
+sfmc,sent,job_id,2,412736,37631,0.84
+sfmc,sent,job_id,3,412732,37107,0.83
+sfmc,sent,job_id,4,412728,36549,0.82
+sfmc,sent,job_id,5,412724,36020,0.81
+sfmc,sent,job_id,6,412720,35927,0.81
+sfmc,sent,job_id,7,412716,35633,0.80
+sfmc,sent,job_id,8,412712,35329,0.79
+sfmc,sent,job_id,9,470043,35215,0.79
+sfmc,sent,job_id,10,412700,35074,0.79
+sfmc,sent,job_id,11,412708,35030,0.79
+sfmc,sent,job_id,12,412704,34911,0.78
+sfmc,sent,job_id,13,412692,34690,0.78
+sfmc,sent,job_id,14,412696,34689,0.78
+sfmc,sent,job_id,15,412688,34484,0.77
+sfmc,sent,job_id,16,412684,34247,0.77
+sfmc,sent,job_id,17,412680,33931,0.76
+sfmc,sent,job_id,18,412676,33863,0.76
+sfmc,sent,job_id,19,412672,33600,0.75
+sfmc,sent,job_id,20,412668,33245,0.75
+sfmc,sent,job_id,21,412664,32976,0.74
+sfmc,sent,job_id,22,412660,32760,0.74
+sfmc,sent,job_id,23,412656,32402,0.73
+sfmc,sent,job_id,24,412652,31813,0.71
+sfmc,sent,job_id,25,412648,31359,0.70
+sfmc,sent,list_id,1,1047,3993106,89.63
+sfmc,sent,list_id,2,1052,461828,10.37
+sfmc,sent,oyb_account_id,1,,4454934,100.00
+sfmc,sent,subscriber_id,1,1000158,265,0.01
+sfmc,sent,subscriber_id,2,1014226,235,0.01
+sfmc,sent,subscriber_id,3,1005937,198,0.00
+sfmc,sent,subscriber_id,4,1029842,195,0.00
+sfmc,sent,subscriber_id,5,1004140,184,0.00
+sfmc,sent,subscriber_id,6,1007776,181,0.00
+sfmc,sent,subscriber_id,7,1004978,177,0.00
+sfmc,sent,subscriber_id,8,1006930,177,0.00
+sfmc,sent,subscriber_id,9,1007930,173,0.00
+sfmc,sent,subscriber_id,10,1009018,171,0.00
+sfmc,sent,subscriber_id,11,1003200,170,0.00
+sfmc,sent,subscriber_id,12,1006367,170,0.00
+sfmc,sent,subscriber_id,13,1008021,169,0.00
+sfmc,sent,subscriber_id,14,1003526,167,0.00
+sfmc,sent,subscriber_id,15,1003330,166,0.00
+sfmc,sent,subscriber_id,16,1001154,163,0.00
+sfmc,sent,subscriber_id,17,1021283,163,0.00
+sfmc,sent,subscriber_id,18,1001878,161,0.00
+sfmc,sent,subscriber_id,19,1017824,160,0.00
+sfmc,sent,subscriber_id,20,1009860,158,0.00
+sfmc,sent,subscriber_id,21,1016532,158,0.00
+sfmc,sent,subscriber_id,22,1012728,157,0.00
+sfmc,sent,subscriber_id,23,1012176,154,0.00
+sfmc,sent,subscriber_id,24,1013675,153,0.00
+sfmc,sent,subscriber_id,25,1000661,151,0.00
+sfmc,sent,subscriber_key,1,leaneumann67@web.de,265,0.01
+sfmc,sent,subscriber_key,2,lotte.degraaf2@gmail.com,264,0.01
+sfmc,sent,subscriber_key,3,lottedhondt37@telenet.be,250,0.01
+sfmc,sent,subscriber_key,4,zoe_martin@gmail.com,250,0.01
+sfmc,sent,subscriber_key,5,basjansen@gmail.com,248,0.01
+sfmc,sent,subscriber_key,6,amelie_denis@telenet.be,245,0.01
+sfmc,sent,subscriber_key,7,j.postma7@gmail.com,236,0.01
+sfmc,sent,subscriber_key,8,ninamaes5@gmail.com,236,0.01
+sfmc,sent,subscriber_key,9,clara_dubois@gmail.com,235,0.01
+sfmc,sent,subscriber_key,10,laura.debacker@gmail.com,235,0.01
+sfmc,sent,subscriber_key,11,daan.devries2@icloud.com,231,0.01
+sfmc,sent,subscriber_key,12,juliabecker2@gmail.com,231,0.01
+sfmc,sent,subscriber_key,13,florian.lambert33@telenet.be,230,0.01
+sfmc,sent,subscriber_key,14,jesse.visser18@gmail.com,229,0.01
+sfmc,sent,subscriber_key,15,joris.janssens54@telenet.be,229,0.01
+sfmc,sent,subscriber_key,16,bas_visser@hotmail.com,228,0.01
+sfmc,sent,subscriber_key,17,celinelaurent@gmail.com,228,0.01
+sfmc,sent,subscriber_key,18,janavandenberghe68@icloud.com,228,0.01
+sfmc,sent,subscriber_key,19,stefan.hoffmann98@web.de,228,0.01
+sfmc,sent,subscriber_key,20,maud_kok2@gmail.com,227,0.01
+sfmc,sent,subscriber_key,21,pieterverhoeven76@gmail.com,227,0.01
+sfmc,sent,subscriber_key,22,s.dekker@outlook.com,227,0.01
+sfmc,sent,subscriber_key,23,s.meyer3@gmail.com,227,0.01
+sfmc,sent,subscriber_key,24,ella.martens78@hotmail.com,226,0.01
+sfmc,sent,subscriber_key,25,elsalefebvre@orange.fr,226,0.01
+sfmc,sent,triggered_send_customer_key,1,,3993106,89.63
+sfmc,sent,triggered_send_customer_key,2,TS_PostPurchase_Review,168908,3.79
+sfmc,sent,triggered_send_customer_key,3,TS_Welcome_1,85582,1.92
+sfmc,sent,triggered_send_customer_key,4,TS_Welcome_2,85106,1.91
+sfmc,sent,triggered_send_customer_key,5,TS_Winback,77086,1.73
+sfmc,sent,triggered_send_customer_key,6,TS_AbandonedCart,45146,1.01
+sfmc,sent,triggerer_send_definition_object_id,1,,3993106,89.63
+sfmc,sent,triggerer_send_definition_object_id,2,6b9e2c7d-d49a-a02d-3eda-1d2603f10ae0,168908,3.79
+sfmc,sent,triggerer_send_definition_object_id,3,320ce211-490a-6052-5471-dc74c45bde7f,85582,1.92
+sfmc,sent,triggerer_send_definition_object_id,4,0be69d8a-d936-8add-24c9-8fea275deaeb,85106,1.91
+sfmc,sent,triggerer_send_definition_object_id,5,22a98c78-f14e-847c-15ac-9156ac82b12c,77086,1.73
+sfmc,sent,triggerer_send_definition_object_id,6,1248f3f1-8c11-5b72-5d05-1d5c1d9adfec,45146,1.01
+sfmc,subscribers,bounce_count,1,0,78679,83.26
+sfmc,subscribers,bounce_count,2,1,13482,14.27
+sfmc,subscribers,bounce_count,3,2,1757,1.86
+sfmc,subscribers,bounce_count,4,3,422,0.45
+sfmc,subscribers,bounce_count,5,4,153,0.16
+sfmc,subscribers,bounce_count,6,5,4,0.00
+sfmc,subscribers,date_joined,1,3/29/2025 7:00:00 PM,3,0.00
+sfmc,subscribers,date_joined,2,1/1/2025 4:07:50 PM,2,0.00
+sfmc,subscribers,date_joined,3,1/19/2026 4:49:14 PM,2,0.00
+sfmc,subscribers,date_joined,4,1/26/2026 1:12:21 AM,2,0.00
+sfmc,subscribers,date_joined,5,10/11/2024 12:02:37 AM,2,0.00
+sfmc,subscribers,date_joined,6,10/25/2025 6:34:35 AM,2,0.00
+sfmc,subscribers,date_joined,7,10/28/2025 1:12:38 AM,2,0.00
+sfmc,subscribers,date_joined,8,10/29/2026 6:01:22 PM,2,0.00
+sfmc,subscribers,date_joined,9,10/3/2026 12:46:13 PM,2,0.00
+sfmc,subscribers,date_joined,10,10/4/2026 1:24:57 AM,2,0.00
+sfmc,subscribers,date_joined,11,10/5/2024 6:06:49 AM,2,0.00
+sfmc,subscribers,date_joined,12,10/8/2024 6:47:13 AM,2,0.00
+sfmc,subscribers,date_joined,13,11/18/2024 2:28:10 AM,2,0.00
+sfmc,subscribers,date_joined,14,11/2/2024 10:24:32 AM,2,0.00
+sfmc,subscribers,date_joined,15,11/22/2024 12:07:16 AM,2,0.00
+sfmc,subscribers,date_joined,16,11/22/2025 10:34:32 AM,2,0.00
+sfmc,subscribers,date_joined,17,11/26/2024 2:35:02 PM,2,0.00
+sfmc,subscribers,date_joined,18,11/4/2025 1:49:36 PM,2,0.00
+sfmc,subscribers,date_joined,19,11/4/2025 12:33:11 PM,2,0.00
+sfmc,subscribers,date_joined,20,12/1/2024 12:30:40 PM,2,0.00
+sfmc,subscribers,date_joined,21,12/1/2024 6:52:10 AM,2,0.00
+sfmc,subscribers,date_joined,22,12/1/2025 3:18:28 PM,2,0.00
+sfmc,subscribers,date_joined,23,12/10/2024 3:12:38 PM,2,0.00
+sfmc,subscribers,date_joined,24,12/14/2025 9:20:39 AM,2,0.00
+sfmc,subscribers,date_joined,25,12/2/2024 8:37:30 AM,2,0.00
+sfmc,subscribers,date_undeliverable,1,,93853,99.32
+sfmc,subscribers,date_undeliverable,2,1/1/2026 11:23:48 AM,1,0.00
+sfmc,subscribers,date_undeliverable,3,1/10/2025 1:04:35 PM,1,0.00
+sfmc,subscribers,date_undeliverable,4,1/12/2025 7:28:11 AM,1,0.00
+sfmc,subscribers,date_undeliverable,5,1/13/2025 9:15:58 AM,1,0.00
+sfmc,subscribers,date_undeliverable,6,1/15/2025 8:35:30 AM,1,0.00
+sfmc,subscribers,date_undeliverable,7,1/18/2024 3:09:21 AM,1,0.00
+sfmc,subscribers,date_undeliverable,8,1/18/2024 3:13:23 AM,1,0.00
+sfmc,subscribers,date_undeliverable,9,1/18/2024 3:14:35 AM,1,0.00
+sfmc,subscribers,date_undeliverable,10,1/18/2024 3:19:28 AM,1,0.00
+sfmc,subscribers,date_undeliverable,11,1/18/2024 3:20:59 AM,1,0.00
+sfmc,subscribers,date_undeliverable,12,1/18/2024 3:28:05 AM,1,0.00
+sfmc,subscribers,date_undeliverable,13,1/18/2025 8:33:26 AM,1,0.00
+sfmc,subscribers,date_undeliverable,14,1/18/2026 1:21:56 PM,1,0.00
+sfmc,subscribers,date_undeliverable,15,1/18/2026 9:46:28 AM,1,0.00
+sfmc,subscribers,date_undeliverable,16,1/2/2024 1:03:23 AM,1,0.00
+sfmc,subscribers,date_undeliverable,17,1/2/2024 1:03:31 AM,1,0.00
+sfmc,subscribers,date_undeliverable,18,1/2/2024 1:03:42 AM,1,0.00
+sfmc,subscribers,date_undeliverable,19,1/2/2024 1:08:52 AM,1,0.00
+sfmc,subscribers,date_undeliverable,20,1/2/2024 1:10:08 AM,1,0.00
+sfmc,subscribers,date_undeliverable,21,1/2/2024 1:24:33 AM,1,0.00
+sfmc,subscribers,date_undeliverable,22,1/2/2024 1:27:16 AM,1,0.00
+sfmc,subscribers,date_undeliverable,23,1/2/2024 1:29:59 AM,1,0.00
+sfmc,subscribers,date_undeliverable,24,1/2/2024 1:36:13 AM,1,0.00
+sfmc,subscribers,date_undeliverable,25,1/2/2024 1:39:48 AM,1,0.00
+sfmc,subscribers,date_unsubscribed,1,,89365,94.57
+sfmc,subscribers,date_unsubscribed,2,3/20/2026 6:18:03 AM,2,0.00
+sfmc,subscribers,date_unsubscribed,3,4/9/2026 2:51:57 AM,2,0.00
+sfmc,subscribers,date_unsubscribed,4,5/7/2026 2:44:35 AM,2,0.00
+sfmc,subscribers,date_unsubscribed,5,7/3/2025 4:52:37 AM,2,0.00
+sfmc,subscribers,date_unsubscribed,6,9/4/2026 5:31:01 AM,2,0.00
+sfmc,subscribers,date_unsubscribed,7,1/1/2026 1:36:17 PM,1,0.00
+sfmc,subscribers,date_unsubscribed,8,1/1/2026 1:50:25 PM,1,0.00
+sfmc,subscribers,date_unsubscribed,9,1/1/2026 10:08:29 AM,1,0.00
+sfmc,subscribers,date_unsubscribed,10,1/1/2026 10:26:08 PM,1,0.00
+sfmc,subscribers,date_unsubscribed,11,1/1/2026 10:47:26 PM,1,0.00
+sfmc,subscribers,date_unsubscribed,12,1/1/2026 10:51:58 AM,1,0.00
+sfmc,subscribers,date_unsubscribed,13,1/1/2026 11:18:32 AM,1,0.00
+sfmc,subscribers,date_unsubscribed,14,1/1/2026 12:12:20 PM,1,0.00
+sfmc,subscribers,date_unsubscribed,15,1/1/2026 3:29:44 AM,1,0.00
+sfmc,subscribers,date_unsubscribed,16,1/1/2026 3:31:03 AM,1,0.00
+sfmc,subscribers,date_unsubscribed,17,1/1/2026 3:35:08 AM,1,0.00
+sfmc,subscribers,date_unsubscribed,18,1/1/2026 3:37:42 AM,1,0.00
+sfmc,subscribers,date_unsubscribed,19,1/1/2026 3:46:49 PM,1,0.00
+sfmc,subscribers,date_unsubscribed,20,1/1/2026 3:47:43 AM,1,0.00
+sfmc,subscribers,date_unsubscribed,21,1/1/2026 3:48:57 AM,1,0.00
+sfmc,subscribers,date_unsubscribed,22,1/1/2026 3:51:57 AM,1,0.00
+sfmc,subscribers,date_unsubscribed,23,1/1/2026 3:52:56 AM,1,0.00
+sfmc,subscribers,date_unsubscribed,24,1/1/2026 3:53:25 AM,1,0.00
+sfmc,subscribers,date_unsubscribed,25,1/1/2026 3:55:13 AM,1,0.00
+sfmc,subscribers,domain,1,gmail.com,41433,43.85
+sfmc,subscribers,domain,2,hotmail.com,10272,10.87
+sfmc,subscribers,domain,3,icloud.com,8141,8.62
+sfmc,subscribers,domain,4,outlook.com,7635,8.08
+sfmc,subscribers,domain,5,telenet.be,6159,6.52
+sfmc,subscribers,domain,6,ziggo.nl,2750,2.91
+sfmc,subscribers,domain,7,skynet.be,2209,2.34
+sfmc,subscribers,domain,8,kpnmail.nl,1988,2.10
+sfmc,subscribers,domain,9,orange.fr,1755,1.86
+sfmc,subscribers,domain,10,web.de,1687,1.79
+sfmc,subscribers,domain,11,gmx.de,1669,1.77
+sfmc,subscribers,domain,12,hotmail.fr,1272,1.35
+sfmc,subscribers,domain,13,proximus.be,1245,1.32
+sfmc,subscribers,domain,14,free.fr,1145,1.21
+sfmc,subscribers,domain,15,xs4all.nl,1113,1.18
+sfmc,subscribers,domain,16,t-online.de,850,0.90
+sfmc,subscribers,domain,17,pt.lu,748,0.79
+sfmc,subscribers,domain,18,laposte.net,684,0.72
+sfmc,subscribers,domain,19,outlook.de,600,0.63
+sfmc,subscribers,domain,20,outlook.fr,498,0.53
+sfmc,subscribers,domain,21,gmial.com,364,0.39
+sfmc,subscribers,domain,22,hotmial.com,73,0.08
+sfmc,subscribers,domain,23,icloud.co,72,0.08
+sfmc,subscribers,domain,24,outlok.com,70,0.07
+sfmc,subscribers,domain,25,telnet.be,65,0.07
+sfmc,subscribers,email_address,1,a.blanc@gmail.com,2,0.00
+sfmc,subscribers,email_address,2,a.blanc6@gmail.com,2,0.00
+sfmc,subscribers,email_address,3,a.bodart@skynet.be,2,0.00
+sfmc,subscribers,email_address,4,a.bodart10@gmail.com,2,0.00
+sfmc,subscribers,email_address,5,a.bonnet@laposte.net,2,0.00
+sfmc,subscribers,email_address,6,a.bos@gmail.com,2,0.00
+sfmc,subscribers,email_address,7,a.brouwer@hotmail.com,2,0.00
+sfmc,subscribers,email_address,8,a.chevalier@gmail.com,2,0.00
+sfmc,subscribers,email_address,9,a.collard4@gmail.com,2,0.00
+sfmc,subscribers,email_address,10,a.coppens2@telenet.be,2,0.00
+sfmc,subscribers,email_address,11,a.degraaf@icloud.com,2,0.00
+sfmc,subscribers,email_address,12,a.dejong@ziggo.nl,2,0.00
+sfmc,subscribers,email_address,13,a.delvaux6@gmail.com,2,0.00
+sfmc,subscribers,email_address,14,a.dhondt3@gmail.com,2,0.00
+sfmc,subscribers,email_address,15,a.faure@outlook.fr,2,0.00
+sfmc,subscribers,email_address,16,a.faure2@outlook.fr,2,0.00
+sfmc,subscribers,email_address,17,a.garcia@icloud.com,2,0.00
+sfmc,subscribers,email_address,18,a.gerard2@hotmail.com,2,0.00
+sfmc,subscribers,email_address,19,a.gerard2@icloud.com,2,0.00
+sfmc,subscribers,email_address,20,a.gilson7@gmail.com,2,0.00
+sfmc,subscribers,email_address,21,a.hendriks@kpnmail.nl,2,0.00
+sfmc,subscribers,email_address,22,a.kok@xs4all.nl,2,0.00
+sfmc,subscribers,email_address,23,a.kuipers@kpnmail.nl,2,0.00
+sfmc,subscribers,email_address,24,a.lambert3@gmail.com,2,0.00
+sfmc,subscribers,email_address,25,a.lambert7@gmail.com,2,0.00
+sfmc,subscribers,locale,1,nl-NL,27365,28.96
+sfmc,subscribers,locale,2,nl-BE,25102,26.56
+sfmc,subscribers,locale,3,fr-BE,14651,15.50
+sfmc,subscribers,locale,4,fr-FR,10983,11.62
+sfmc,subscribers,locale,5,de-DE,8173,8.65
+sfmc,subscribers,locale,6,en-GB,3850,4.07
+sfmc,subscribers,locale,7,fr-LU,1928,2.04
+sfmc,subscribers,locale,8,de-LU,1601,1.69
+sfmc,subscribers,locale,9,de-BE,844,0.89
+sfmc,subscribers,status,1,Active,88721,93.89
+sfmc,subscribers,status,2,Unsubscribed,5132,5.43
+sfmc,subscribers,status,3,Held,644,0.68
+sfmc,subscribers,subscriber_id,1,1000001,1,0.00
+sfmc,subscribers,subscriber_id,2,1000002,1,0.00
+sfmc,subscribers,subscriber_id,3,1000003,1,0.00
+sfmc,subscribers,subscriber_id,4,1000004,1,0.00
+sfmc,subscribers,subscriber_id,5,1000005,1,0.00
+sfmc,subscribers,subscriber_id,6,1000006,1,0.00
+sfmc,subscribers,subscriber_id,7,1000007,1,0.00
+sfmc,subscribers,subscriber_id,8,1000008,1,0.00
+sfmc,subscribers,subscriber_id,9,1000009,1,0.00
+sfmc,subscribers,subscriber_id,10,1000010,1,0.00
+sfmc,subscribers,subscriber_id,11,1000011,1,0.00
+sfmc,subscribers,subscriber_id,12,1000012,1,0.00
+sfmc,subscribers,subscriber_id,13,1000013,1,0.00
+sfmc,subscribers,subscriber_id,14,1000014,1,0.00
+sfmc,subscribers,subscriber_id,15,1000015,1,0.00
+sfmc,subscribers,subscriber_id,16,1000016,1,0.00
+sfmc,subscribers,subscriber_id,17,1000017,1,0.00
+sfmc,subscribers,subscriber_id,18,1000018,1,0.00
+sfmc,subscribers,subscriber_id,19,1000019,1,0.00
+sfmc,subscribers,subscriber_id,20,1000020,1,0.00
+sfmc,subscribers,subscriber_id,21,1000021,1,0.00
+sfmc,subscribers,subscriber_id,22,1000022,1,0.00
+sfmc,subscribers,subscriber_id,23,1000023,1,0.00
+sfmc,subscribers,subscriber_id,24,1000024,1,0.00
+sfmc,subscribers,subscriber_id,25,1000025,1,0.00
+sfmc,subscribers,subscriber_key,1,a.blanc@gmail.com,2,0.00
+sfmc,subscribers,subscriber_key,2,a.blanc6@gmail.com,2,0.00
+sfmc,subscribers,subscriber_key,3,a.collard4@gmail.com,2,0.00
+sfmc,subscribers,subscriber_key,4,a.degraaf@icloud.com,2,0.00
+sfmc,subscribers,subscriber_key,5,a.delvaux6@gmail.com,2,0.00
+sfmc,subscribers,subscriber_key,6,a.faure@outlook.fr,2,0.00
+sfmc,subscribers,subscriber_key,7,a.faure2@outlook.fr,2,0.00
+sfmc,subscribers,subscriber_key,8,a.gilson7@gmail.com,2,0.00
+sfmc,subscribers,subscriber_key,9,a.hendriks@kpnmail.nl,2,0.00
+sfmc,subscribers,subscriber_key,10,a.kuipers@kpnmail.nl,2,0.00
+sfmc,subscribers,subscriber_key,11,a.martin3@gmail.com,2,0.00
+sfmc,subscribers,subscriber_key,12,a.peters@icloud.com,2,0.00
+sfmc,subscribers,subscriber_key,13,a.vandenberghe4@gmail.com,2,0.00
+sfmc,subscribers,subscriber_key,14,a.vanderlinden@gmail.com,2,0.00
+sfmc,subscribers,subscriber_key,15,a.vandevelde@outlook.com,2,0.00
+sfmc,subscribers,subscriber_key,16,a.vandevelde@telenet.be,2,0.00
+sfmc,subscribers,subscriber_key,17,a.vermeulen5@gmail.com,2,0.00
+sfmc,subscribers,subscriber_key,18,adrien.delvaux74@hotmail.com,2,0.00
+sfmc,subscribers,subscriber_key,19,adrien.lemaire@telenet.be,2,0.00
+sfmc,subscribers,subscriber_key,20,adriendubois63@gmail.com,2,0.00
+sfmc,subscribers,subscriber_key,21,adriendubois96@outlook.com,2,0.00
+sfmc,subscribers,subscriber_key,22,adrienfrancois@skynet.be,2,0.00
+sfmc,subscribers,subscriber_key,23,adriengilson57@gmail.com,2,0.00
+sfmc,subscribers,subscriber_key,24,adriennoel3@gmail.com,2,0.00
+sfmc,subscribers,subscriber_key,25,adrienrenard@icloud.com,2,0.00
+sfmc,subscribers,subscriber_type,1,Subscriber,94497,100.00
+sfmc,unsubscribes,account_id,1,518000123,5150,100.00
+sfmc,unsubscribes,batch_id,1,1,790,15.34
+sfmc,unsubscribes,batch_id,2,10,423,8.21
+sfmc,unsubscribes,batch_id,3,8,409,7.94
+sfmc,unsubscribes,batch_id,4,7,406,7.88
+sfmc,unsubscribes,batch_id,5,12,405,7.86
+sfmc,unsubscribes,batch_id,6,3,405,7.86
+sfmc,unsubscribes,batch_id,7,6,402,7.81
+sfmc,unsubscribes,batch_id,8,4,396,7.69
+sfmc,unsubscribes,batch_id,9,9,395,7.67
+sfmc,unsubscribes,batch_id,10,5,378,7.34
+sfmc,unsubscribes,batch_id,11,2,374,7.26
+sfmc,unsubscribes,batch_id,12,11,367,7.13
+sfmc,unsubscribes,domain,1,gmail.com,2263,43.94
+sfmc,unsubscribes,domain,2,hotmail.com,562,10.91
+sfmc,unsubscribes,domain,3,outlook.com,438,8.50
+sfmc,unsubscribes,domain,4,icloud.com,434,8.43
+sfmc,unsubscribes,domain,5,telenet.be,335,6.50
+sfmc,unsubscribes,domain,6,ziggo.nl,149,2.89
+sfmc,unsubscribes,domain,7,kpnmail.nl,122,2.37
+sfmc,unsubscribes,domain,8,skynet.be,118,2.29
+sfmc,unsubscribes,domain,9,gmx.de,96,1.86
+sfmc,unsubscribes,domain,10,orange.fr,90,1.75
+sfmc,unsubscribes,domain,11,web.de,90,1.75
+sfmc,unsubscribes,domain,12,free.fr,77,1.50
+sfmc,unsubscribes,domain,13,proximus.be,71,1.38
+sfmc,unsubscribes,domain,14,xs4all.nl,61,1.18
+sfmc,unsubscribes,domain,15,hotmail.fr,59,1.15
+sfmc,unsubscribes,domain,16,t-online.de,40,0.78
+sfmc,unsubscribes,domain,17,laposte.net,39,0.76
+sfmc,unsubscribes,domain,18,pt.lu,39,0.76
+sfmc,unsubscribes,domain,19,outlook.de,38,0.74
+sfmc,unsubscribes,domain,20,outlook.fr,29,0.56
+sfmc,unsubscribes,event_date,1,3/20/2026 6:18:03 AM,2,0.04
+sfmc,unsubscribes,event_date,2,4/9/2026 2:51:57 AM,2,0.04
+sfmc,unsubscribes,event_date,3,5/7/2026 2:44:35 AM,2,0.04
+sfmc,unsubscribes,event_date,4,7/3/2025 4:52:37 AM,2,0.04
+sfmc,unsubscribes,event_date,5,9/4/2026 5:31:01 AM,2,0.04
+sfmc,unsubscribes,event_date,6,9/4/2026 6:16:57 AM,2,0.04
+sfmc,unsubscribes,event_date,7,1/1/2026 1:36:17 PM,1,0.02
+sfmc,unsubscribes,event_date,8,1/1/2026 1:50:25 PM,1,0.02
+sfmc,unsubscribes,event_date,9,1/1/2026 10:08:29 AM,1,0.02
+sfmc,unsubscribes,event_date,10,1/1/2026 10:26:08 PM,1,0.02
+sfmc,unsubscribes,event_date,11,1/1/2026 10:47:26 PM,1,0.02
+sfmc,unsubscribes,event_date,12,1/1/2026 10:51:58 AM,1,0.02
+sfmc,unsubscribes,event_date,13,1/1/2026 11:18:32 AM,1,0.02
+sfmc,unsubscribes,event_date,14,1/1/2026 12:12:20 PM,1,0.02
+sfmc,unsubscribes,event_date,15,1/1/2026 3:29:44 AM,1,0.02
+sfmc,unsubscribes,event_date,16,1/1/2026 3:31:03 AM,1,0.02
+sfmc,unsubscribes,event_date,17,1/1/2026 3:35:08 AM,1,0.02
+sfmc,unsubscribes,event_date,18,1/1/2026 3:37:42 AM,1,0.02
+sfmc,unsubscribes,event_date,19,1/1/2026 3:46:49 PM,1,0.02
+sfmc,unsubscribes,event_date,20,1/1/2026 3:47:43 AM,1,0.02
+sfmc,unsubscribes,event_date,21,1/1/2026 3:48:57 AM,1,0.02
+sfmc,unsubscribes,event_date,22,1/1/2026 3:51:57 AM,1,0.02
+sfmc,unsubscribes,event_date,23,1/1/2026 3:52:56 AM,1,0.02
+sfmc,unsubscribes,event_date,24,1/1/2026 3:53:25 AM,1,0.02
+sfmc,unsubscribes,event_date,25,1/1/2026 3:55:13 AM,1,0.02
+sfmc,unsubscribes,is_unique,1,True,5150,100.00
+sfmc,unsubscribes,job_id,1,412720,59,1.15
+sfmc,unsubscribes,job_id,2,412672,56,1.09
+sfmc,unsubscribes,job_id,3,412704,55,1.07
+sfmc,unsubscribes,job_id,4,412668,52,1.01
+sfmc,unsubscribes,job_id,5,412692,52,1.01
+sfmc,unsubscribes,job_id,6,412700,52,1.01
+sfmc,unsubscribes,job_id,7,412688,51,0.99
+sfmc,unsubscribes,job_id,8,412716,50,0.97
+sfmc,unsubscribes,job_id,9,412660,49,0.95
+sfmc,unsubscribes,job_id,10,412732,48,0.93
+sfmc,unsubscribes,job_id,11,412724,46,0.89
+sfmc,unsubscribes,job_id,12,412632,44,0.85
+sfmc,unsubscribes,job_id,13,412636,43,0.83
+sfmc,unsubscribes,job_id,14,412676,43,0.83
+sfmc,unsubscribes,job_id,15,412708,43,0.83
+sfmc,unsubscribes,job_id,16,412628,42,0.82
+sfmc,unsubscribes,job_id,17,412644,42,0.82
+sfmc,unsubscribes,job_id,18,412624,41,0.80
+sfmc,unsubscribes,job_id,19,412656,41,0.80
+sfmc,unsubscribes,job_id,20,412696,41,0.80
+sfmc,unsubscribes,job_id,21,412728,41,0.80
+sfmc,unsubscribes,job_id,22,412664,40,0.78
+sfmc,unsubscribes,job_id,23,412680,40,0.78
+sfmc,unsubscribes,job_id,24,412552,39,0.76
+sfmc,unsubscribes,job_id,25,412712,39,0.76
+sfmc,unsubscribes,list_id,1,1047,4759,92.41
+sfmc,unsubscribes,list_id,2,1052,391,7.59
+sfmc,unsubscribes,oyb_account_id,1,,5150,100.00
+sfmc,unsubscribes,subscriber_id,1,1001584,2,0.04
+sfmc,unsubscribes,subscriber_id,2,1001691,2,0.04
+sfmc,unsubscribes,subscriber_id,3,1004196,2,0.04
+sfmc,unsubscribes,subscriber_id,4,1007683,2,0.04
+sfmc,unsubscribes,subscriber_id,5,1008037,2,0.04
+sfmc,unsubscribes,subscriber_id,6,1008706,2,0.04
+sfmc,unsubscribes,subscriber_id,7,1009860,2,0.04
+sfmc,unsubscribes,subscriber_id,8,1012474,2,0.04
+sfmc,unsubscribes,subscriber_id,9,1016394,2,0.04
+sfmc,unsubscribes,subscriber_id,10,1020859,2,0.04
+sfmc,unsubscribes,subscriber_id,11,1031844,2,0.04
+sfmc,unsubscribes,subscriber_id,12,1032542,2,0.04
+sfmc,unsubscribes,subscriber_id,13,1036129,2,0.04
+sfmc,unsubscribes,subscriber_id,14,1036934,2,0.04
+sfmc,unsubscribes,subscriber_id,15,1050457,2,0.04
+sfmc,unsubscribes,subscriber_id,16,1059541,2,0.04
+sfmc,unsubscribes,subscriber_id,17,1060655,2,0.04
+sfmc,unsubscribes,subscriber_id,18,1068711,2,0.04
+sfmc,unsubscribes,subscriber_id,19,1000024,1,0.02
+sfmc,unsubscribes,subscriber_id,20,1000058,1,0.02
+sfmc,unsubscribes,subscriber_id,21,1000063,1,0.02
+sfmc,unsubscribes,subscriber_id,22,1000071,1,0.02
+sfmc,unsubscribes,subscriber_id,23,1000077,1,0.02
+sfmc,unsubscribes,subscriber_id,24,1000081,1,0.02
+sfmc,unsubscribes,subscriber_id,25,1000082,1,0.02
+sfmc,unsubscribes,subscriber_key,1,142717,2,0.04
+sfmc,unsubscribes,subscriber_key,2,143557,2,0.04
+sfmc,unsubscribes,subscriber_key,3,158100,2,0.04
+sfmc,unsubscribes,subscriber_key,4,168717,2,0.04
+sfmc,unsubscribes,subscriber_key,5,bastien_clement@free.fr,2,0.04
+sfmc,unsubscribes,subscriber_key,6,charlotte_martens2@outlook.com,2,0.04
+sfmc,unsubscribes,subscriber_key,7,e.declercq@gmail.com,2,0.04
+sfmc,unsubscribes,subscriber_key,8,ellabogaerts89@hotmail.com,2,0.04
+sfmc,unsubscribes,subscriber_key,9,florian.lange70@gmx.de,2,0.04
+sfmc,unsubscribes,subscriber_key,10,jesse_mulder@gmail.com,2,0.04
+sfmc,unsubscribes,subscriber_key,11,lea_muller@gmail.com,2,0.04
+sfmc,unsubscribes,subscriber_key,12,lisadegroot36@gmail.com,2,0.04
+sfmc,unsubscribes,subscriber_key,13,lucas.vandenbroeck@telenet.be,2,0.04
+sfmc,unsubscribes,subscriber_key,14,m.peters@icloud.com,2,0.04
+sfmc,unsubscribes,subscriber_key,15,marine_bonnet3@gmail.com,2,0.04
+sfmc,unsubscribes,subscriber_key,16,mark_vanderlinden7@gmail.com,2,0.04
+sfmc,unsubscribes,subscriber_key,17,NL-110405,2,0.04
+sfmc,unsubscribes,subscriber_key,18,NL-259860,2,0.04
+sfmc,unsubscribes,subscriber_key,19,NL-713449,2,0.04
+sfmc,unsubscribes,subscriber_key,20,NL-745186,2,0.04
+sfmc,unsubscribes,subscriber_key,21,stijn.declercq35@gmail.com,2,0.04
+sfmc,unsubscribes,subscriber_key,22,sven_vanderlinden2@kpnmail.nl,2,0.04
+sfmc,unsubscribes,subscriber_key,23,valentinblanc3@gmail.com,2,0.04
+sfmc,unsubscribes,subscriber_key,24,victor.perrin2@gmail.com,2,0.04
+sfmc,unsubscribes,subscriber_key,25,126855,1,0.02
+shop,brands,brand_id,1,1,1,11.11
+shop,brands,brand_id,2,2,1,11.11
+shop,brands,brand_id,3,3,1,11.11
+shop,brands,brand_id,4,4,1,11.11
+shop,brands,brand_id,5,5,1,11.11
+shop,brands,brand_id,6,6,1,11.11
+shop,brands,brand_id,7,7,1,11.11
+shop,brands,brand_id,8,8,1,11.11
+shop,brands,brand_id,9,9,1,11.11
+shop,brands,brand_name,1,Arete Labs,1,11.11
+shop,brands,brand_name,2,Crimpwell,1,11.11
+shop,brands,brand_name,3,Dynova,1,11.11
+shop,brands,brand_name,4,Granitex,1,11.11
+shop,brands,brand_name,5,Kalkberg Basics,1,11.11
+shop,brands,brand_name,6,Ledgewood Press,1,11.11
+shop,brands,brand_name,7,Mantlo,1,11.11
+shop,brands,brand_name,8,Pinchwick,1,11.11
+shop,brands,brand_name,9,Slabline,1,11.11
+shop,brands,is_own_brand,1,false,8,88.89
+shop,brands,is_own_brand,2,true,1,11.11
+shop,categories,category_id,1,1,1,7.14
+shop,categories,category_id,2,10,1,7.14
+shop,categories,category_id,3,11,1,7.14
+shop,categories,category_id,4,12,1,7.14
+shop,categories,category_id,5,13,1,7.14
+shop,categories,category_id,6,14,1,7.14
+shop,categories,category_id,7,2,1,7.14
+shop,categories,category_id,8,3,1,7.14
+shop,categories,category_id,9,4,1,7.14
+shop,categories,category_id,10,5,1,7.14
+shop,categories,category_id,11,6,1,7.14
+shop,categories,category_id,12,7,1,7.14
+shop,categories,category_id,13,8,1,7.14
+shop,categories,category_id,14,9,1,7.14
+shop,categories,category_name,1,Accessories,1,7.14
+shop,categories,category_name,2,Belay devices,1,7.14
+shop,categories,category_name,3,Books & guides,1,7.14
+shop,categories,category_name,4,Chalk,1,7.14
+shop,categories,category_name,5,Chalk bags & buckets,1,7.14
+shop,categories,category_name,6,Climbing shoes,1,7.14
+shop,categories,category_name,7,Clothing,1,7.14
+shop,categories,category_name,8,Crash pads,1,7.14
+shop,categories,category_name,9,Gift cards,1,7.14
+shop,categories,category_name,10,Harnesses,1,7.14
+shop,categories,category_name,11,Helmets,1,7.14
+shop,categories,category_name,12,Quickdraws & carabiners,1,7.14
+shop,categories,category_name,13,Ropes,1,7.14
+shop,categories,category_name,14,Training,1,7.14
+shop,categories,parent_category,1,Hardware,5,35.71
+shop,categories,parent_category,2,Bouldering,4,28.57
+shop,categories,parent_category,3,Other,2,14.29
+shop,categories,parent_category,4,Apparel,1,7.14
+shop,categories,parent_category,5,Footwear,1,7.14
+shop,categories,parent_category,6,Training,1,7.14
+shop,customers,birth_date,1,,25042,24.66
+shop,customers,birth_date,2,1900-01-01,1010,0.99
+shop,customers,birth_date,3,1999-12-24,27,0.03
+shop,customers,birth_date,4,1994-06-20,26,0.03
+shop,customers,birth_date,5,1996-11-30,26,0.03
+shop,customers,birth_date,6,1997-09-03,26,0.03
+shop,customers,birth_date,7,1996-07-03,25,0.02
+shop,customers,birth_date,8,1997-06-20,25,0.02
+shop,customers,birth_date,9,1995-09-23,24,0.02
+shop,customers,birth_date,10,1997-02-03,24,0.02
+shop,customers,birth_date,11,1997-07-25,24,0.02
+shop,customers,birth_date,12,1998-04-11,24,0.02
+shop,customers,birth_date,13,1998-06-13,24,0.02
+shop,customers,birth_date,14,1999-07-09,24,0.02
+shop,customers,birth_date,15,2000-08-08,24,0.02
+shop,customers,birth_date,16,2000-12-01,24,0.02
+shop,customers,birth_date,17,1991-08-29,23,0.02
+shop,customers,birth_date,18,1996-09-09,23,0.02
+shop,customers,birth_date,19,1996-10-18,23,0.02
+shop,customers,birth_date,20,1996-10-26,23,0.02
+shop,customers,birth_date,21,1997-08-20,23,0.02
+shop,customers,birth_date,22,1998-02-17,23,0.02
+shop,customers,birth_date,23,1999-03-25,23,0.02
+shop,customers,birth_date,24,1999-08-03,23,0.02
+shop,customers,birth_date,25,1999-09-06,23,0.02
+shop,customers,city,1,Antwerpen,7652,7.54
+shop,customers,city,2,Amsterdam,7229,7.12
+shop,customers,city,3,Gent,5754,5.67
+shop,customers,city,4,Brussel,4629,4.56
+shop,customers,city,5,Leuven,4023,3.96
+shop,customers,city,6,Utrecht,3899,3.84
+shop,customers,city,7,Rotterdam,3530,3.48
+shop,customers,city,8,Paris,3323,3.27
+shop,customers,city,9,Liège,2928,2.88
+shop,customers,city,10,Den Haag,2566,2.53
+shop,customers,city,11,Elsene,2373,2.34
+shop,customers,city,12,Brugge,2362,2.33
+shop,customers,city,13,Namur,2303,2.27
+shop,customers,city,14,Luxembourg,2231,2.20
+shop,customers,city,15,Berlin,2123,2.09
+shop,customers,city,16,Groningen,2061,2.03
+shop,customers,city,17,Eindhoven,2039,2.01
+shop,customers,city,18,Nijmegen,2018,1.99
+shop,customers,city,19,Louvain-la-Neuve,1794,1.77
+shop,customers,city,20,Mechelen,1771,1.74
+shop,customers,city,21,Schaarbeek,1764,1.74
+shop,customers,city,22,Hasselt,1716,1.69
+shop,customers,city,23,Lille,1705,1.68
+shop,customers,city,24,Arnhem,1526,1.50
+shop,customers,city,25,Maastricht,1520,1.50
+shop,customers,country_code,1,BE,33228,32.73
+shop,customers,country_code,2,NL,22410,22.07
+shop,customers,country_code,3,Belgium,10251,10.10
+shop,customers,country_code,4,FR,8903,8.77
+shop,customers,country_code,5,Netherlands,7345,7.23
+shop,customers,country_code,6,DE,6566,6.47
+shop,customers,country_code,7,France,3151,3.10
+shop,customers,country_code,8,LU,2867,2.82
+shop,customers,country_code,9,Germany,2148,2.12
+shop,customers,country_code,10,Luxembourg,1044,1.03
+shop,customers,country_code,11,België,829,0.82
+shop,customers,country_code,12,Belgique,816,0.80
+shop,customers,country_code,13,Nederland,756,0.74
+shop,customers,country_code,14,be,316,0.31
+shop,customers,country_code,15,Deutschland,230,0.23
+shop,customers,country_code,16,nl,221,0.22
+shop,customers,country_code,17,belgium,101,0.10
+shop,customers,country_code,18,fr,92,0.09
+shop,customers,country_code,19,netherlands,79,0.08
+shop,customers,country_code,20,de,59,0.06
+shop,customers,country_code,21,france,35,0.03
+shop,customers,country_code,22,lu,30,0.03
+shop,customers,country_code,23,germany,17,0.02
+shop,customers,country_code,24,luxembourg,15,0.01
+shop,customers,country_code,25,belgique,12,0.01
+shop,customers,created_at,1,2023-11-19 20:40:24,2,0.00
+shop,customers,created_at,2,2023-12-14 11:42:00,2,0.00
+shop,customers,created_at,3,2024-03-02 19:01:39,2,0.00
+shop,customers,created_at,4,2024-03-05 11:45:36,2,0.00
+shop,customers,created_at,5,2024-03-19 09:46:07,2,0.00
+shop,customers,created_at,6,2024-05-14 15:07:04,2,0.00
+shop,customers,created_at,7,2024-07-02 20:56:15,2,0.00
+shop,customers,created_at,8,2024-07-21 19:55:26,2,0.00
+shop,customers,created_at,9,2024-08-26 21:37:22,2,0.00
+shop,customers,created_at,10,2024-08-28 08:46:22,2,0.00
+shop,customers,created_at,11,2024-09-03 19:04:51,2,0.00
+shop,customers,created_at,12,2024-09-11 13:09:11,2,0.00
+shop,customers,created_at,13,2024-09-27 11:36:15,2,0.00
+shop,customers,created_at,14,2024-10-05 12:06:49,2,0.00
+shop,customers,created_at,15,2024-10-11 06:02:37,2,0.00
+shop,customers,created_at,16,2024-10-24 11:26:13,2,0.00
+shop,customers,created_at,17,2024-11-11 17:30:53,2,0.00
+shop,customers,created_at,18,2024-11-15 14:40:13,2,0.00
+shop,customers,created_at,19,2024-11-18 08:28:10,2,0.00
+shop,customers,created_at,20,2024-11-25 09:03:46,2,0.00
+shop,customers,created_at,21,2024-12-01 07:48:40,2,0.00
+shop,customers,created_at,22,2024-12-01 11:13:11,2,0.00
+shop,customers,created_at,23,2024-12-01 12:52:10,2,0.00
+shop,customers,created_at,24,2024-12-02 14:37:30,2,0.00
+shop,customers,created_at,25,2024-12-05 14:23:34,2,0.00
+shop,customers,customer_id,1,100001,1,0.00
+shop,customers,customer_id,2,100002,1,0.00
+shop,customers,customer_id,3,100003,1,0.00
+shop,customers,customer_id,4,100004,1,0.00
+shop,customers,customer_id,5,100005,1,0.00
+shop,customers,customer_id,6,100006,1,0.00
+shop,customers,customer_id,7,100007,1,0.00
+shop,customers,customer_id,8,100008,1,0.00
+shop,customers,customer_id,9,100009,1,0.00
+shop,customers,customer_id,10,100010,1,0.00
+shop,customers,customer_id,11,100011,1,0.00
+shop,customers,customer_id,12,100012,1,0.00
+shop,customers,customer_id,13,100013,1,0.00
+shop,customers,customer_id,14,100014,1,0.00
+shop,customers,customer_id,15,100015,1,0.00
+shop,customers,customer_id,16,100016,1,0.00
+shop,customers,customer_id,17,100017,1,0.00
+shop,customers,customer_id,18,100018,1,0.00
+shop,customers,customer_id,19,100019,1,0.00
+shop,customers,customer_id,20,100020,1,0.00
+shop,customers,customer_id,21,100021,1,0.00
+shop,customers,customer_id,22,100022,1,0.00
+shop,customers,customer_id,23,100023,1,0.00
+shop,customers,customer_id,24,100024,1,0.00
+shop,customers,customer_id,25,100025,1,0.00
+shop,customers,email,1,a.aerts.686@outlook.com,1,0.00
+shop,customers,email,2,a.aerts@gmail.com,1,0.00
+shop,customers,email,3,a.aerts@hotmail.com,1,0.00
+shop,customers,email,4,a.aerts@outlook.com,1,0.00
+shop,customers,email,5,a.aerts@telenet.be,1,0.00
+shop,customers,email,6,a.aerts2@telenet.be,1,0.00
+shop,customers,email,7,a.bakker@gmail.com,1,0.00
+shop,customers,email,8,a.bakker@icloud.com,1,0.00
+shop,customers,email,9,a.bakker@ziggo.nl,1,0.00
+shop,customers,email,10,a.bakker2@gmail.com,1,0.00
+shop,customers,email,11,a.bakker2@ziggo.nl,1,0.00
+shop,customers,email,12,a.becker@gmx.de,1,0.00
+shop,customers,email,13,a.bernard@free.fr,1,0.00
+shop,customers,email,14,a.bernard@gmail.com,1,0.00
+shop,customers,email,15,a.bernard@hotmail.fr,1,0.00
+shop,customers,email,16,a.bernard@orange.fr,1,0.00
+shop,customers,email,17,a.bernard2@gmail.com,1,0.00
+shop,customers,email,18,a.bernard2@hotmail.fr,1,0.00
+shop,customers,email,19,a.blanc@gmail.com,1,0.00
+shop,customers,email,20,a.blanc@hotmail.fr,1,0.00
+shop,customers,email,21,a.blanc@laposte.net,1,0.00
+shop,customers,email,22,a.blanc@orange.fr,1,0.00
+shop,customers,email,23,a.blanc@outlook.fr,1,0.00
+shop,customers,email,24,a.blanc2@gmail.com,1,0.00
+shop,customers,email,25,a.blanc2@hotmail.fr,1,0.00
+shop,customers,first_name,1,Lotte,1642,1.62
+shop,customers,first_name,2,Koen,1618,1.59
+shop,customers,first_name,3,Tim,1347,1.33
+shop,customers,first_name,4,Stefan,1324,1.30
+shop,customers,first_name,5,Laura,1103,1.09
+shop,customers,first_name,6,Emma,1056,1.04
+shop,customers,first_name,7,Léa,1026,1.01
+shop,customers,first_name,8,Mirthe,1022,1.01
+shop,customers,first_name,9,Thijs,1019,1.00
+shop,customers,first_name,10,Ruud,1013,1.00
+shop,customers,first_name,11,Lucas,1012,1.00
+shop,customers,first_name,12,Jonas,1007,0.99
+shop,customers,first_name,13,Luuk,1005,0.99
+shop,customers,first_name,14,Hugo,1004,0.99
+shop,customers,first_name,15,Martijn,1004,0.99
+shop,customers,first_name,16,Maud,1003,0.99
+shop,customers,first_name,17,Sanne,1001,0.99
+shop,customers,first_name,18,Gijs,997,0.98
+shop,customers,first_name,19,Femke,995,0.98
+shop,customers,first_name,20,Jesse,995,0.98
+shop,customers,first_name,21,Joost,994,0.98
+shop,customers,first_name,22,Anouk,993,0.98
+shop,customers,first_name,23,Mark,983,0.97
+shop,customers,first_name,24,Camille,982,0.97
+shop,customers,first_name,25,Jeroen,978,0.96
+shop,customers,last_name,1,Jacobs,1742,1.72
+shop,customers,last_name,2,Laurent,1175,1.16
+shop,customers,last_name,3,de Boer,1066,1.05
+shop,customers,last_name,4,de Groot,1065,1.05
+shop,customers,last_name,5,Visser,1046,1.03
+shop,customers,last_name,6,Dekker,1030,1.01
+shop,customers,last_name,7,Meijer,1023,1.01
+shop,customers,last_name,8,de Jong,1022,1.01
+shop,customers,last_name,9,van der Meer,1017,1.00
+shop,customers,last_name,10,de Vries,1014,1.00
+shop,customers,last_name,11,Mulder,1014,1.00
+shop,customers,last_name,12,Kuipers,1011,1.00
+shop,customers,last_name,13,Smits,1008,0.99
+shop,customers,last_name,14,de Wit,1002,0.99
+shop,customers,last_name,15,Vos,987,0.97
+shop,customers,last_name,16,de Graaf,986,0.97
+shop,customers,last_name,17,Peters,986,0.97
+shop,customers,last_name,18,Bos,985,0.97
+shop,customers,last_name,19,Smit,984,0.97
+shop,customers,last_name,20,Hendriks,983,0.97
+shop,customers,last_name,21,Kok,980,0.97
+shop,customers,last_name,22,van der Linden,980,0.97
+shop,customers,last_name,23,Bakker,979,0.96
+shop,customers,last_name,24,van Leeuwen,976,0.96
+shop,customers,last_name,25,Postma,961,0.95
+shop,customers,marketing_opt_in,1,true,56502,55.65
+shop,customers,marketing_opt_in,2,false,45033,44.35
+shop,customers,phone,1,,30458,30.00
+shop,customers,phone,2,+32 466 46 55 84,3,0.00
+shop,customers,phone,3,+31 6 01187346,2,0.00
+shop,customers,phone,4,+31 6 02512661,2,0.00
+shop,customers,phone,5,+31 6 02717591,2,0.00
+shop,customers,phone,6,+31 6 03526218,2,0.00
+shop,customers,phone,7,+31 6 04823247,2,0.00
+shop,customers,phone,8,+31 6 05057820,2,0.00
+shop,customers,phone,9,+31 6 05116937,2,0.00
+shop,customers,phone,10,+31 6 05821619,2,0.00
+shop,customers,phone,11,+31 6 06214963,2,0.00
+shop,customers,phone,12,+31 6 07750709,2,0.00
+shop,customers,phone,13,+31 6 08029117,2,0.00
+shop,customers,phone,14,+31 6 08604687,2,0.00
+shop,customers,phone,15,+31 6 09786005,2,0.00
+shop,customers,phone,16,+31 6 10430310,2,0.00
+shop,customers,phone,17,+31 6 10882799,2,0.00
+shop,customers,phone,18,+31 6 11450788,2,0.00
+shop,customers,phone,19,+31 6 12041113,2,0.00
+shop,customers,phone,20,+31 6 13700924,2,0.00
+shop,customers,phone,21,+31 6 13803513,2,0.00
+shop,customers,phone,22,+31 6 14383607,2,0.00
+shop,customers,phone,23,+31 6 17292545,2,0.00
+shop,customers,phone,24,+31 6 20564863,2,0.00
+shop,customers,phone,25,+31 6 21491724,2,0.00
+shop,customers,postal_code,1,9000,5754,5.67
+shop,customers,postal_code,2,2000,5223,5.14
+shop,customers,postal_code,3,1000,4629,4.56
+shop,customers,postal_code,4,3000,4023,3.96
+shop,customers,postal_code,5,4000,2928,2.88
+shop,customers,postal_code,6,2018,2429,2.39
+shop,customers,postal_code,7,1050,2373,2.34
+shop,customers,postal_code,8,8000,2362,2.33
+shop,customers,postal_code,9,5000,2303,2.27
+shop,customers,postal_code,10,75011,2201,2.17
+shop,customers,postal_code,11,1348,1794,1.77
+shop,customers,postal_code,12,2800,1771,1.74
+shop,customers,postal_code,13,1030,1764,1.74
+shop,customers,postal_code,14,3500,1716,1.69
+shop,customers,postal_code,15,59000,1705,1.68
+shop,customers,postal_code,16,10115,1485,1.46
+shop,customers,postal_code,17,69001,1450,1.43
+shop,customers,postal_code,18,38000,1385,1.36
+shop,customers,postal_code,19,80331,1284,1.26
+shop,customers,postal_code,20,50667,1267,1.25
+shop,customers,postal_code,21,9300,1256,1.24
+shop,customers,postal_code,22,6000,1218,1.20
+shop,customers,postal_code,23,1300,1182,1.16
+shop,customers,postal_code,24,1111,1152,1.13
+shop,customers,postal_code,25,8500,1127,1.11
+shop,customers,preferred_language,1,nl,56565,55.71
+shop,customers,preferred_language,2,fr,29602,29.15
+shop,customers,preferred_language,3,de,11288,11.12
+shop,customers,preferred_language,4,en,4080,4.02
+shop,order_lines,discount_amount,1,0.00,702620,89.44
+shop,order_lines,discount_amount,2,3.60,2462,0.31
+shop,order_lines,discount_amount,3,1.95,1580,0.20
+shop,order_lines,discount_amount,4,2.10,1544,0.20
+shop,order_lines,discount_amount,5,1.80,1508,0.19
+shop,order_lines,discount_amount,6,2.70,1486,0.19
+shop,order_lines,discount_amount,7,2.40,1388,0.18
+shop,order_lines,discount_amount,8,2.25,1366,0.17
+shop,order_lines,discount_amount,9,4.20,1333,0.17
+shop,order_lines,discount_amount,10,3.90,1255,0.16
+shop,order_lines,discount_amount,11,3.00,1132,0.14
+shop,order_lines,discount_amount,12,1.50,1105,0.14
+shop,order_lines,discount_amount,13,4.50,885,0.11
+shop,order_lines,discount_amount,14,1.05,851,0.11
+shop,order_lines,discount_amount,15,14.10,842,0.11
+shop,order_lines,discount_amount,16,7.20,782,0.10
+shop,order_lines,discount_amount,17,1.30,763,0.10
+shop,order_lines,discount_amount,18,5.40,757,0.10
+shop,order_lines,discount_amount,19,1.40,724,0.09
+shop,order_lines,discount_amount,20,2.80,697,0.09
+shop,order_lines,discount_amount,21,6.00,695,0.09
+shop,order_lines,discount_amount,22,8.40,695,0.09
+shop,order_lines,discount_amount,23,4.05,642,0.08
+shop,order_lines,discount_amount,24,4.80,631,0.08
+shop,order_lines,discount_amount,25,3.30,615,0.08
+shop,order_lines,line_total,1,12.99,28920,3.68
+shop,order_lines,line_total,2,14.99,19989,2.54
+shop,order_lines,line_total,3,13.99,19864,2.53
+shop,order_lines,line_total,4,23.99,19817,2.52
+shop,order_lines,line_total,5,17.99,17775,2.26
+shop,order_lines,line_total,6,25.98,16925,2.15
+shop,order_lines,line_total,7,15.99,14854,1.89
+shop,order_lines,line_total,8,11.99,14750,1.88
+shop,order_lines,line_total,9,6.99,12998,1.65
+shop,order_lines,line_total,10,27.99,12753,1.62
+shop,order_lines,line_total,11,27.98,11807,1.50
+shop,order_lines,line_total,12,26.99,11747,1.50
+shop,order_lines,line_total,13,7.49,10870,1.38
+shop,order_lines,line_total,14,19.99,10695,1.36
+shop,order_lines,line_total,15,29.98,9914,1.26
+shop,order_lines,line_total,16,21.99,8559,1.09
+shop,order_lines,line_total,17,16.99,8528,1.09
+shop,order_lines,line_total,18,24.99,7850,1.00
+shop,order_lines,line_total,19,29.99,7617,0.97
+shop,order_lines,line_total,20,10.99,7283,0.93
+shop,order_lines,line_total,21,9.99,7193,0.92
+shop,order_lines,line_total,22,23.98,6904,0.88
+shop,order_lines,line_total,23,18.99,6809,0.87
+shop,order_lines,line_total,24,13.98,6804,0.87
+shop,order_lines,line_total,25,47.99,6667,0.85
+shop,order_lines,order_id,1,100193,7,0.00
+shop,order_lines,order_id,2,115061,7,0.00
+shop,order_lines,order_id,3,144039,7,0.00
+shop,order_lines,order_id,4,152392,7,0.00
+shop,order_lines,order_id,5,163518,7,0.00
+shop,order_lines,order_id,6,184849,7,0.00
+shop,order_lines,order_id,7,223800,7,0.00
+shop,order_lines,order_id,8,248347,7,0.00
+shop,order_lines,order_id,9,254144,7,0.00
+shop,order_lines,order_id,10,260057,7,0.00
+shop,order_lines,order_id,11,264473,7,0.00
+shop,order_lines,order_id,12,291813,7,0.00
+shop,order_lines,order_id,13,313754,7,0.00
+shop,order_lines,order_id,14,34030,7,0.00
+shop,order_lines,order_id,15,342181,7,0.00
+shop,order_lines,order_id,16,342198,7,0.00
+shop,order_lines,order_id,17,367276,7,0.00
+shop,order_lines,order_id,18,36920,7,0.00
+shop,order_lines,order_id,19,370302,7,0.00
+shop,order_lines,order_id,20,37134,7,0.00
+shop,order_lines,order_id,21,385675,7,0.00
+shop,order_lines,order_id,22,53221,7,0.00
+shop,order_lines,order_id,23,5664,7,0.00
+shop,order_lines,order_id,24,63988,7,0.00
+shop,order_lines,order_id,25,69833,7,0.00
+shop,order_lines,order_line_id,1,1,1,0.00
+shop,order_lines,order_line_id,2,10,1,0.00
+shop,order_lines,order_line_id,3,100,1,0.00
+shop,order_lines,order_line_id,4,1000,1,0.00
+shop,order_lines,order_line_id,5,10000,1,0.00
+shop,order_lines,order_line_id,6,100000,1,0.00
+shop,order_lines,order_line_id,7,100001,1,0.00
+shop,order_lines,order_line_id,8,100002,1,0.00
+shop,order_lines,order_line_id,9,100003,1,0.00
+shop,order_lines,order_line_id,10,100004,1,0.00
+shop,order_lines,order_line_id,11,100005,1,0.00
+shop,order_lines,order_line_id,12,100006,1,0.00
+shop,order_lines,order_line_id,13,100007,1,0.00
+shop,order_lines,order_line_id,14,100008,1,0.00
+shop,order_lines,order_line_id,15,100009,1,0.00
+shop,order_lines,order_line_id,16,10001,1,0.00
+shop,order_lines,order_line_id,17,100010,1,0.00
+shop,order_lines,order_line_id,18,100011,1,0.00
+shop,order_lines,order_line_id,19,100012,1,0.00
+shop,order_lines,order_line_id,20,100013,1,0.00
+shop,order_lines,order_line_id,21,100014,1,0.00
+shop,order_lines,order_line_id,22,100015,1,0.00
+shop,order_lines,order_line_id,23,100016,1,0.00
+shop,order_lines,order_line_id,24,100017,1,0.00
+shop,order_lines,order_line_id,25,100018,1,0.00
+shop,order_lines,quantity,1,1,665559,84.72
+shop,order_lines,quantity,2,2,111295,14.17
+shop,order_lines,quantity,3,3,8077,1.03
+shop,order_lines,quantity,4,4,553,0.07
+shop,order_lines,quantity,5,5,84,0.01
+shop,order_lines,quantity,6,6,8,0.00
+shop,order_lines,unit_price,1,12.99,51245,6.52
+shop,order_lines,unit_price,2,13.99,35323,4.50
+shop,order_lines,unit_price,3,14.99,33552,4.27
+shop,order_lines,unit_price,4,23.99,26073,3.32
+shop,order_lines,unit_price,5,11.99,24352,3.10
+shop,order_lines,unit_price,6,17.99,23977,3.05
+shop,order_lines,unit_price,7,6.99,22399,2.85
+shop,order_lines,unit_price,8,15.99,21289,2.71
+shop,order_lines,unit_price,9,7.49,19078,2.43
+shop,order_lines,unit_price,10,27.99,15938,2.03
+shop,order_lines,unit_price,11,19.99,13797,1.76
+shop,order_lines,unit_price,12,26.99,13618,1.73
+shop,order_lines,unit_price,13,9.99,11653,1.48
+shop,order_lines,unit_price,14,21.99,11435,1.46
+shop,order_lines,unit_price,15,16.99,10616,1.35
+shop,order_lines,unit_price,16,24.99,9877,1.26
+shop,order_lines,unit_price,17,10.99,9814,1.25
+shop,order_lines,unit_price,18,29.99,9355,1.19
+shop,order_lines,unit_price,19,18.99,8370,1.07
+shop,order_lines,unit_price,20,28.99,8324,1.06
+shop,order_lines,unit_price,21,96.99,8135,1.04
+shop,order_lines,unit_price,22,47.99,7866,1.00
+shop,order_lines,unit_price,23,48.99,7645,0.97
+shop,order_lines,unit_price,24,6.49,7262,0.92
+shop,order_lines,unit_price,25,25.99,7156,0.91
+shop,order_lines,variant_id,1,50952,40040,5.10
+shop,order_lines,variant_id,2,50949,22569,2.87
+shop,order_lines,variant_id,3,50957,20992,2.67
+shop,order_lines,variant_id,4,50962,18693,2.38
+shop,order_lines,variant_id,5,50951,16829,2.14
+shop,order_lines,variant_id,6,51647,13616,1.73
+shop,order_lines,variant_id,7,51674,13209,1.68
+shop,order_lines,variant_id,8,51650,10380,1.32
+shop,order_lines,variant_id,9,50945,9731,1.24
+shop,order_lines,variant_id,10,51706,9692,1.23
+shop,order_lines,variant_id,11,50983,8287,1.05
+shop,order_lines,variant_id,12,51640,8272,1.05
+shop,order_lines,variant_id,13,50964,7516,0.96
+shop,order_lines,variant_id,14,51669,7330,0.93
+shop,order_lines,variant_id,15,51681,7305,0.93
+shop,order_lines,variant_id,16,51170,7144,0.91
+shop,order_lines,variant_id,17,51645,6943,0.88
+shop,order_lines,variant_id,18,50966,6701,0.85
+shop,order_lines,variant_id,19,50958,6687,0.85
+shop,order_lines,variant_id,20,51682,6487,0.83
+shop,order_lines,variant_id,21,51663,6191,0.79
+shop,order_lines,variant_id,22,50955,6188,0.79
+shop,order_lines,variant_id,23,51668,6025,0.77
+shop,order_lines,variant_id,24,51655,5954,0.76
+shop,order_lines,variant_id,25,51670,5784,0.74
+shop,orders,created_at,1,2024-12-01 19:48:33,3,0.00
+shop,orders,created_at,2,2024-12-02 19:07:11,3,0.00
+shop,orders,created_at,3,2025-11-20 15:13:30,3,0.00
+shop,orders,created_at,4,2025-12-01 19:53:46,3,0.00
+shop,orders,created_at,5,2026-01-05 20:21:10,3,0.00
+shop,orders,created_at,6,2023-11-14 09:18:37,2,0.00
+shop,orders,created_at,7,2023-11-21 10:54:45,2,0.00
+shop,orders,created_at,8,2023-11-21 21:20:18,2,0.00
+shop,orders,created_at,9,2023-11-23 18:01:59,2,0.00
+shop,orders,created_at,10,2023-11-24 09:32:44,2,0.00
+shop,orders,created_at,11,2023-11-25 21:54:05,2,0.00
+shop,orders,created_at,12,2023-11-26 20:25:47,2,0.00
+shop,orders,created_at,13,2023-11-28 11:23:36,2,0.00
+shop,orders,created_at,14,2023-11-29 18:17:11,2,0.00
+shop,orders,created_at,15,2023-12-02 20:18:33,2,0.00
+shop,orders,created_at,16,2023-12-03 10:47:00,2,0.00
+shop,orders,created_at,17,2023-12-09 14:19:21,2,0.00
+shop,orders,created_at,18,2023-12-18 21:18:48,2,0.00
+shop,orders,created_at,19,2023-12-28 18:29:35,2,0.00
+shop,orders,created_at,20,2024-01-01 09:07:37,2,0.00
+shop,orders,created_at,21,2024-01-02 17:14:32,2,0.00
+shop,orders,created_at,22,2024-01-08 21:42:54,2,0.00
+shop,orders,created_at,23,2024-01-12 12:16:18,2,0.00
+shop,orders,created_at,24,2024-01-13 12:18:36,2,0.00
+shop,orders,created_at,25,2024-01-15 09:31:44,2,0.00
+shop,orders,currency,1,EUR,400893,100.00
+shop,orders,customer_id,1,,24000,5.99
+shop,orders,customer_id,2,100128,159,0.04
+shop,orders,customer_id,3,104135,117,0.03
+shop,orders,customer_id,4,135750,105,0.03
+shop,orders,customer_id,5,117517,95,0.02
+shop,orders,customer_id,6,139084,93,0.02
+shop,orders,customer_id,7,107542,92,0.02
+shop,orders,customer_id,8,109897,89,0.02
+shop,orders,customer_id,9,108729,88,0.02
+shop,orders,customer_id,10,105311,84,0.02
+shop,orders,customer_id,11,106377,83,0.02
+shop,orders,customer_id,12,109791,81,0.02
+shop,orders,customer_id,13,148395,80,0.02
+shop,orders,customer_id,14,124388,76,0.02
+shop,orders,customer_id,15,101387,75,0.02
+shop,orders,customer_id,16,120488,75,0.02
+shop,orders,customer_id,17,129526,75,0.02
+shop,orders,customer_id,18,112585,74,0.02
+shop,orders,customer_id,19,120453,72,0.02
+shop,orders,customer_id,20,104302,71,0.02
+shop,orders,customer_id,21,111263,71,0.02
+shop,orders,customer_id,22,110082,69,0.02
+shop,orders,customer_id,23,115302,69,0.02
+shop,orders,customer_id,24,148490,69,0.02
+shop,orders,customer_id,25,113517,68,0.02
+shop,orders,discount_code,1,,382844,95.50
+shop,orders,discount_code,2,WELCOME10,4298,1.07
+shop,orders,discount_code,3,CLIMBDEALS10,3279,0.82
+shop,orders,discount_code,4,SORRY10,1899,0.47
+shop,orders,discount_code,5,BLOCBROS,1582,0.39
+shop,orders,discount_code,6,welcome10,1318,0.33
+shop,orders,discount_code,7,CRIMP15,1163,0.29
+shop,orders,discount_code,8,LENA15,980,0.24
+shop,orders,discount_code,9,FONT15,871,0.22
+shop,orders,discount_code,10,SOPHIE15,735,0.18
+shop,orders,discount_code,11,Welcome10,694,0.17
+shop,orders,discount_code,12,blocbros,295,0.07
+shop,orders,discount_code,13, WELCOME10,191,0.05
+shop,orders,discount_code,14,lena15,184,0.05
+shop,orders,discount_code,15,crimp15,180,0.04
+shop,orders,discount_code,16,font15,168,0.04
+shop,orders,discount_code,17,sophie15,141,0.04
+shop,orders,discount_code,18,TEST100,71,0.02
+shop,orders,discount_total,1,0.00,351363,87.65
+shop,orders,discount_total,2,3.60,801,0.20
+shop,orders,discount_total,3,14.10,546,0.14
+shop,orders,discount_total,4,5.40,418,0.10
+shop,orders,discount_total,5,20.40,400,0.10
+shop,orders,discount_total,6,6.00,380,0.09
+shop,orders,discount_total,7,16.80,366,0.09
+shop,orders,discount_total,8,14.40,337,0.08
+shop,orders,discount_total,9,4.20,335,0.08
+shop,orders,discount_total,10,13.20,322,0.08
+shop,orders,discount_total,11,2.10,322,0.08
+shop,orders,discount_total,12,1.95,320,0.08
+shop,orders,discount_total,13,24.60,320,0.08
+shop,orders,discount_total,14,12.90,311,0.08
+shop,orders,discount_total,15,15.00,310,0.08
+shop,orders,discount_total,16,3.90,309,0.08
+shop,orders,discount_total,17,3.00,305,0.08
+shop,orders,discount_total,18,8.40,301,0.08
+shop,orders,discount_total,19,19.80,297,0.07
+shop,orders,discount_total,20,14.55,296,0.07
+shop,orders,discount_total,21,2.70,293,0.07
+shop,orders,discount_total,22,15.60,292,0.07
+shop,orders,discount_total,23,18.15,290,0.07
+shop,orders,discount_total,24,9.60,287,0.07
+shop,orders,discount_total,25,12.60,285,0.07
+shop,orders,guest_email,1,,376893,94.01
+shop,orders,guest_email,2,joost.hendriks@kpnmail.nl,3,0.00
+shop,orders,guest_email,3,k.weber@web.de,3,0.00
+shop,orders,guest_email,4,larssegers44@icloud.com,3,0.00
+shop,orders,guest_email,5,luukbrouwer@hotmail.com,3,0.00
+shop,orders,guest_email,6,nicolasdurand17@outlook.fr,3,0.00
+shop,orders,guest_email,7,ruben.vanhecke@telenet.be,3,0.00
+shop,orders,guest_email,8,sophie.muller55@gmail.com,3,0.00
+shop,orders,guest_email,9,a.collard2@telenet.be,2,0.00
+shop,orders,guest_email,10,a.renard2@gmail.com,2,0.00
+shop,orders,guest_email,11,a.richard@icloud.com,2,0.00
+shop,orders,guest_email,12,adrien.simon22@telenet.be,2,0.00
+shop,orders,guest_email,13,adrien_lemaire@outlook.com,2,0.00
+shop,orders,guest_email,14,adrien_mathieu2@gmail.com,2,0.00
+shop,orders,guest_email,15,alicegirard48@icloud.com,2,0.00
+shop,orders,guest_email,16,amelie_renard4@gmail.com,2,0.00
+shop,orders,guest_email,17,amelielemaire@gmail.com,2,0.00
+shop,orders,guest_email,18,anna.richter18@gmail.com,2,0.00
+shop,orders,guest_email,19,anouk.degroot@hotmail.com,2,0.00
+shop,orders,guest_email,20,anouk.kok@gmail.com,2,0.00
+shop,orders,guest_email,21,anouk.vandijk4@gmail.com,2,0.00
+shop,orders,guest_email,22,anouk_vandijk@icloud.com,2,0.00
+shop,orders,guest_email,23,anoukdevries2@gmail.com,2,0.00
+shop,orders,guest_email,24,anoukjansen50@hotmail.com,2,0.00
+shop,orders,guest_email,25,anoukvanderlinden@hotmail.com,2,0.00
+shop,orders,order_id,1,1,1,0.00
+shop,orders,order_id,2,10,1,0.00
+shop,orders,order_id,3,100,1,0.00
+shop,orders,order_id,4,1000,1,0.00
+shop,orders,order_id,5,10000,1,0.00
+shop,orders,order_id,6,100000,1,0.00
+shop,orders,order_id,7,100001,1,0.00
+shop,orders,order_id,8,100002,1,0.00
+shop,orders,order_id,9,100003,1,0.00
+shop,orders,order_id,10,100004,1,0.00
+shop,orders,order_id,11,100005,1,0.00
+shop,orders,order_id,12,100006,1,0.00
+shop,orders,order_id,13,100007,1,0.00
+shop,orders,order_id,14,100008,1,0.00
+shop,orders,order_id,15,100009,1,0.00
+shop,orders,order_id,16,10001,1,0.00
+shop,orders,order_id,17,100010,1,0.00
+shop,orders,order_id,18,100011,1,0.00
+shop,orders,order_id,19,100012,1,0.00
+shop,orders,order_id,20,100013,1,0.00
+shop,orders,order_id,21,100014,1,0.00
+shop,orders,order_id,22,100015,1,0.00
+shop,orders,order_id,23,100016,1,0.00
+shop,orders,order_id,24,100017,1,0.00
+shop,orders,order_id,25,100018,1,0.00
+shop,orders,order_number,1,KB-24-000001,1,0.00
+shop,orders,order_number,2,KB-24-000002,1,0.00
+shop,orders,order_number,3,KB-24-000003,1,0.00
+shop,orders,order_number,4,KB-24-000004,1,0.00
+shop,orders,order_number,5,KB-24-000005,1,0.00
+shop,orders,order_number,6,KB-24-000006,1,0.00
+shop,orders,order_number,7,KB-24-000007,1,0.00
+shop,orders,order_number,8,KB-24-000008,1,0.00
+shop,orders,order_number,9,KB-24-000009,1,0.00
+shop,orders,order_number,10,KB-24-000010,1,0.00
+shop,orders,order_number,11,KB-24-000011,1,0.00
+shop,orders,order_number,12,KB-24-000012,1,0.00
+shop,orders,order_number,13,KB-24-000013,1,0.00
+shop,orders,order_number,14,KB-24-000014,1,0.00
+shop,orders,order_number,15,KB-24-000015,1,0.00
+shop,orders,order_number,16,KB-24-000016,1,0.00
+shop,orders,order_number,17,KB-24-000017,1,0.00
+shop,orders,order_number,18,KB-24-000018,1,0.00
+shop,orders,order_number,19,KB-24-000019,1,0.00
+shop,orders,order_number,20,KB-24-000020,1,0.00
+shop,orders,order_number,21,KB-24-000021,1,0.00
+shop,orders,order_number,22,KB-24-000022,1,0.00
+shop,orders,order_number,23,KB-24-000023,1,0.00
+shop,orders,order_number,24,KB-24-000024,1,0.00
+shop,orders,order_number,25,KB-24-000025,1,0.00
+shop,orders,order_total,1,18.94,4103,1.02
+shop,orders,order_total,2,21.94,3417,0.85
+shop,orders,order_total,3,19.94,3269,0.82
+shop,orders,order_total,4,31.93,2653,0.66
+shop,orders,order_total,5,20.94,2619,0.65
+shop,orders,order_total,6,32.94,2534,0.63
+shop,orders,order_total,7,23.94,2477,0.62
+shop,orders,order_total,8,29.94,2246,0.56
+shop,orders,order_total,9,35.93,2040,0.51
+shop,orders,order_total,10,33.93,2032,0.51
+shop,orders,order_total,11,22.94,1929,0.48
+shop,orders,order_total,12,25.94,1871,0.47
+shop,orders,order_total,13,16.94,1793,0.45
+shop,orders,order_total,14,17.94,1718,0.43
+shop,orders,order_total,15,96.99,1592,0.40
+shop,orders,order_total,16,13.44,1589,0.40
+shop,orders,order_total,17,34.93,1588,0.40
+shop,orders,order_total,18,33.94,1557,0.39
+shop,orders,order_total,19,37.93,1458,0.36
+shop,orders,order_total,20,101.99,1449,0.36
+shop,orders,order_total,21,35.94,1431,0.36
+shop,orders,order_total,22,12.94,1427,0.36
+shop,orders,order_total,23,15.94,1425,0.36
+shop,orders,order_total,24,31.94,1370,0.34
+shop,orders,order_total,25,45.93,1279,0.32
+shop,orders,payment_method,1,Bancontact,98448,24.56
+shop,orders,payment_method,2,Credit card,90172,22.49
+shop,orders,payment_method,3,iDEAL,75157,18.75
+shop,orders,payment_method,4,PayPal,73714,18.39
+shop,orders,payment_method,5,Klarna,39649,9.89
+shop,orders,payment_method,6,Apple Pay,23652,5.90
+shop,orders,payment_method,7,Manual,101,0.03
+shop,orders,shipping_city,1,Antwerpen,29751,7.42
+shop,orders,shipping_city,2,Amsterdam,29389,7.33
+shop,orders,shipping_city,3,Gent,23497,5.86
+shop,orders,shipping_city,4,Brussel,18732,4.67
+shop,orders,shipping_city,5,Leuven,16021,4.00
+shop,orders,shipping_city,6,Utrecht,15422,3.85
+shop,orders,shipping_city,7,Rotterdam,13771,3.44
+shop,orders,shipping_city,8,Paris,12720,3.17
+shop,orders,shipping_city,9,Liège,11401,2.84
+shop,orders,shipping_city,10,Den Haag,10170,2.54
+shop,orders,shipping_city,11,Elsene,9474,2.36
+shop,orders,shipping_city,12,Namur,9081,2.27
+shop,orders,shipping_city,13,Luxembourg,8980,2.24
+shop,orders,shipping_city,14,Brugge,8711,2.17
+shop,orders,shipping_city,15,Berlin,8611,2.15
+shop,orders,shipping_city,16,Eindhoven,8209,2.05
+shop,orders,shipping_city,17,Groningen,7968,1.99
+shop,orders,shipping_city,18,Nijmegen,7650,1.91
+shop,orders,shipping_city,19,Mechelen,7164,1.79
+shop,orders,shipping_city,20,Louvain-la-Neuve,7075,1.76
+shop,orders,shipping_city,21,Schaarbeek,6739,1.68
+shop,orders,shipping_city,22,Hasselt,6561,1.64
+shop,orders,shipping_city,23,Lille,6226,1.55
+shop,orders,shipping_city,24,Maastricht,5969,1.49
+shop,orders,shipping_city,25,Arnhem,5936,1.48
+shop,orders,shipping_country,1,BE,152573,38.06
+shop,orders,shipping_country,2,NL,103926,25.92
+shop,orders,shipping_country,3,FR,40837,10.19
+shop,orders,shipping_country,4,DE,30786,7.68
+shop,orders,shipping_country,5,Belgium,26835,6.69
+shop,orders,shipping_country,6,Netherlands,17905,4.47
+shop,orders,shipping_country,7,LU,13631,3.40
+shop,orders,shipping_country,8,France,6651,1.66
+shop,orders,shipping_country,9,Germany,5353,1.34
+shop,orders,shipping_country,10,Luxembourg,2396,0.60
+shop,orders,shipping_fee,1,0.00,226240,56.43
+shop,orders,shipping_fee,2,5.95,91482,22.82
+shop,orders,shipping_fee,3,4.95,34195,8.53
+shop,orders,shipping_fee,4,8.95,30268,7.55
+shop,orders,shipping_fee,5,7.95,16575,4.13
+shop,orders,shipping_fee,6,6.95,2133,0.53
+shop,orders,shipping_postal_code,1,9000,23497,5.86
+shop,orders,shipping_postal_code,2,2000,20509,5.12
+shop,orders,shipping_postal_code,3,1000,18732,4.67
+shop,orders,shipping_postal_code,4,3000,16021,4.00
+shop,orders,shipping_postal_code,5,4000,11401,2.84
+shop,orders,shipping_postal_code,6,1050,9474,2.36
+shop,orders,shipping_postal_code,7,2018,9242,2.31
+shop,orders,shipping_postal_code,8,5000,9081,2.27
+shop,orders,shipping_postal_code,9,8000,8711,2.17
+shop,orders,shipping_postal_code,10,75011,8068,2.01
+shop,orders,shipping_postal_code,11,2800,7164,1.79
+shop,orders,shipping_postal_code,12,1348,7075,1.76
+shop,orders,shipping_postal_code,13,1030,6739,1.68
+shop,orders,shipping_postal_code,14,3500,6561,1.64
+shop,orders,shipping_postal_code,15,59000,6226,1.55
+shop,orders,shipping_postal_code,16,10115,5921,1.48
+shop,orders,shipping_postal_code,17,69001,5894,1.47
+shop,orders,shipping_postal_code,18,38000,5412,1.35
+shop,orders,shipping_postal_code,19,80331,5404,1.35
+shop,orders,shipping_postal_code,20,50667,5022,1.25
+shop,orders,shipping_postal_code,21,6000,4854,1.21
+shop,orders,shipping_postal_code,22,1300,4691,1.17
+shop,orders,shipping_postal_code,23,9300,4686,1.17
+shop,orders,shipping_postal_code,24,75018,4652,1.16
+shop,orders,shipping_postal_code,25,1111,4568,1.14
+shop,orders,status,1,completed,355930,88.78
+shop,orders,status,2,partially_refunded,27567,6.88
+shop,orders,status,3,refunded,8356,2.08
+shop,orders,status,4,cancelled,5470,1.36
+shop,orders,status,5,shipped,2057,0.51
+shop,orders,status,6,processing,1513,0.38
+shop,orders,subtotal,1,12.99,5615,1.40
+shop,orders,subtotal,2,25.98,3935,0.98
+shop,orders,subtotal,3,13.99,3873,0.97
+shop,orders,subtotal,4,14.99,3822,0.95
+shop,orders,subtotal,5,23.99,3291,0.82
+shop,orders,subtotal,6,17.99,3158,0.79
+shop,orders,subtotal,7,27.98,2964,0.74
+shop,orders,subtotal,8,11.99,2771,0.69
+shop,orders,subtotal,9,29.98,2767,0.69
+shop,orders,subtotal,10,15.99,2630,0.66
+shop,orders,subtotal,11,6.99,2479,0.62
+shop,orders,subtotal,12,26.99,2466,0.62
+shop,orders,subtotal,13,27.99,2423,0.60
+shop,orders,subtotal,14,7.49,2125,0.53
+shop,orders,subtotal,15,96.99,2021,0.50
+shop,orders,subtotal,16,23.98,1762,0.44
+shop,orders,subtotal,17,101.99,1750,0.44
+shop,orders,subtotal,18,31.98,1740,0.43
+shop,orders,subtotal,19,19.99,1728,0.43
+shop,orders,subtotal,20,111.99,1628,0.41
+shop,orders,subtotal,21,93.99,1549,0.39
+shop,orders,subtotal,22,120.99,1524,0.38
+shop,orders,subtotal,23,39.98,1521,0.38
+shop,orders,subtotal,24,21.99,1485,0.37
+shop,orders,subtotal,25,35.98,1469,0.37
+shop,product_variants,list_price,1,98.99,85,4.95
+shop,product_variants,list_price,2,95.99,63,3.67
+shop,product_variants,list_price,3,91.99,48,2.80
+shop,product_variants,list_price,4,122.99,43,2.51
+shop,product_variants,list_price,5,107.99,42,2.45
+shop,product_variants,list_price,6,113.99,42,2.45
+shop,product_variants,list_price,7,131.99,42,2.45
+shop,product_variants,list_price,8,137.99,42,2.45
+shop,product_variants,list_price,9,48.99,36,2.10
+shop,product_variants,list_price,10,101.99,28,1.63
+shop,product_variants,list_price,11,96.99,27,1.57
+shop,product_variants,list_price,12,93.99,26,1.52
+shop,product_variants,list_price,13,128.99,24,1.40
+shop,product_variants,list_price,14,105.99,23,1.34
+shop,product_variants,list_price,15,103.99,22,1.28
+shop,product_variants,list_price,16,108.99,22,1.28
+shop,product_variants,list_price,17,126.99,22,1.28
+shop,product_variants,list_price,18,129.99,22,1.28
+shop,product_variants,list_price,19,161.99,22,1.28
+shop,product_variants,list_price,20,82.99,22,1.28
+shop,product_variants,list_price,21,87.99,22,1.28
+shop,product_variants,list_price,22,102.99,21,1.22
+shop,product_variants,list_price,23,111.99,21,1.22
+shop,product_variants,list_price,24,117.99,21,1.22
+shop,product_variants,list_price,25,118.99,21,1.22
+shop,product_variants,product_id,1,1000,21,1.22
+shop,product_variants,product_id,2,1001,21,1.22
+shop,product_variants,product_id,3,1002,21,1.22
+shop,product_variants,product_id,4,1003,21,1.22
+shop,product_variants,product_id,5,1004,21,1.22
+shop,product_variants,product_id,6,1005,21,1.22
+shop,product_variants,product_id,7,1006,21,1.22
+shop,product_variants,product_id,8,1007,21,1.22
+shop,product_variants,product_id,9,1008,21,1.22
+shop,product_variants,product_id,10,1009,21,1.22
+shop,product_variants,product_id,11,1010,21,1.22
+shop,product_variants,product_id,12,1011,21,1.22
+shop,product_variants,product_id,13,1012,21,1.22
+shop,product_variants,product_id,14,1013,21,1.22
+shop,product_variants,product_id,15,1014,21,1.22
+shop,product_variants,product_id,16,1015,21,1.22
+shop,product_variants,product_id,17,1016,21,1.22
+shop,product_variants,product_id,18,1017,21,1.22
+shop,product_variants,product_id,19,1018,21,1.22
+shop,product_variants,product_id,20,1019,21,1.22
+shop,product_variants,product_id,21,1020,21,1.22
+shop,product_variants,product_id,22,1021,21,1.22
+shop,product_variants,product_id,23,1022,21,1.22
+shop,product_variants,product_id,24,1023,21,1.22
+shop,product_variants,product_id,25,1024,21,1.22
+shop,product_variants,size_label,1,,186,10.84
+shop,product_variants,size_label,2,L,89,5.19
+shop,product_variants,size_label,3,M,89,5.19
+shop,product_variants,size_label,4,S,89,5.19
+shop,product_variants,size_label,5,XL,89,5.19
+shop,product_variants,size_label,6,XS,89,5.19
+shop,product_variants,size_label,7,XXL,71,4.14
+shop,product_variants,size_label,8,EU 36,45,2.62
+shop,product_variants,size_label,9,EU 36.5,45,2.62
+shop,product_variants,size_label,10,EU 37,45,2.62
+shop,product_variants,size_label,11,EU 37.5,45,2.62
+shop,product_variants,size_label,12,EU 38,45,2.62
+shop,product_variants,size_label,13,EU 38.5,45,2.62
+shop,product_variants,size_label,14,EU 39,45,2.62
+shop,product_variants,size_label,15,EU 39.5,45,2.62
+shop,product_variants,size_label,16,EU 40,45,2.62
+shop,product_variants,size_label,17,EU 40.5,45,2.62
+shop,product_variants,size_label,18,EU 41,45,2.62
+shop,product_variants,size_label,19,EU 41.5,45,2.62
+shop,product_variants,size_label,20,EU 42,45,2.62
+shop,product_variants,size_label,21,EU 42.5,45,2.62
+shop,product_variants,size_label,22,EU 43,45,2.62
+shop,product_variants,size_label,23,EU 43.5,45,2.62
+shop,product_variants,size_label,24,EU 44,45,2.62
+shop,product_variants,size_label,25,EU 44.5,45,2.62
+shop,product_variants,sku,1,KB-A-1285,1,0.06
+shop,product_variants,sku,2,KB-A-1286,1,0.06
+shop,product_variants,sku,3,KB-A-1287,1,0.06
+shop,product_variants,sku,4,KB-A-1288,1,0.06
+shop,product_variants,sku,5,KB-A-1289,1,0.06
+shop,product_variants,sku,6,KB-A-1290,1,0.06
+shop,product_variants,sku,7,KB-A-1291,1,0.06
+shop,product_variants,sku,8,KB-A-1292,1,0.06
+shop,product_variants,sku,9,KB-A-1293,1,0.06
+shop,product_variants,sku,10,KB-A-1294,1,0.06
+shop,product_variants,sku,11,KB-A-1295,1,0.06
+shop,product_variants,sku,12,KB-A-1296,1,0.06
+shop,product_variants,sku,13,KB-A-1297,1,0.06
+shop,product_variants,sku,14,KB-A-1298,1,0.06
+shop,product_variants,sku,15,KB-A-1299,1,0.06
+shop,product_variants,sku,16,KB-A-1300,1,0.06
+shop,product_variants,sku,17,KB-A-1301,1,0.06
+shop,product_variants,sku,18,KB-A-1302,1,0.06
+shop,product_variants,sku,19,KB-A-1303,1,0.06
+shop,product_variants,sku,20,KB-A-1304,1,0.06
+shop,product_variants,sku,21,KB-A-1305,1,0.06
+shop,product_variants,sku,22,KB-A-1306,1,0.06
+shop,product_variants,sku,23,KB-A-1307,1,0.06
+shop,product_variants,sku,24,KB-A-1308,1,0.06
+shop,product_variants,sku,25,KB-A-1309,1,0.06
+shop,product_variants,unit_cost,1,,39,2.27
+shop,product_variants,unit_cost,2,12.38,4,0.23
+shop,product_variants,unit_cost,3,16.04,3,0.17
+shop,product_variants,unit_cost,4,18.11,3,0.17
+shop,product_variants,unit_cost,5,18.70,3,0.17
+shop,product_variants,unit_cost,6,29.82,3,0.17
+shop,product_variants,unit_cost,7,33.06,3,0.17
+shop,product_variants,unit_cost,8,38.16,3,0.17
+shop,product_variants,unit_cost,9,40.99,3,0.17
+shop,product_variants,unit_cost,10,41.39,3,0.17
+shop,product_variants,unit_cost,11,42.70,3,0.17
+shop,product_variants,unit_cost,12,43.70,3,0.17
+shop,product_variants,unit_cost,13,43.74,3,0.17
+shop,product_variants,unit_cost,14,46.21,3,0.17
+shop,product_variants,unit_cost,15,48.12,3,0.17
+shop,product_variants,unit_cost,16,48.13,3,0.17
+shop,product_variants,unit_cost,17,50.37,3,0.17
+shop,product_variants,unit_cost,18,52.76,3,0.17
+shop,product_variants,unit_cost,19,52.80,3,0.17
+shop,product_variants,unit_cost,20,53.77,3,0.17
+shop,product_variants,unit_cost,21,64.12,3,0.17
+shop,product_variants,unit_cost,22,10.74,2,0.12
+shop,product_variants,unit_cost,23,11.27,2,0.12
+shop,product_variants,unit_cost,24,11.44,2,0.12
+shop,product_variants,unit_cost,25,12.32,2,0.12
+shop,product_variants,variant_id,1,50000,1,0.06
+shop,product_variants,variant_id,2,50001,1,0.06
+shop,product_variants,variant_id,3,50002,1,0.06
+shop,product_variants,variant_id,4,50003,1,0.06
+shop,product_variants,variant_id,5,50004,1,0.06
+shop,product_variants,variant_id,6,50005,1,0.06
+shop,product_variants,variant_id,7,50006,1,0.06
+shop,product_variants,variant_id,8,50007,1,0.06
+shop,product_variants,variant_id,9,50008,1,0.06
+shop,product_variants,variant_id,10,50009,1,0.06
+shop,product_variants,variant_id,11,50010,1,0.06
+shop,product_variants,variant_id,12,50011,1,0.06
+shop,product_variants,variant_id,13,50012,1,0.06
+shop,product_variants,variant_id,14,50013,1,0.06
+shop,product_variants,variant_id,15,50014,1,0.06
+shop,product_variants,variant_id,16,50015,1,0.06
+shop,product_variants,variant_id,17,50016,1,0.06
+shop,product_variants,variant_id,18,50017,1,0.06
+shop,product_variants,variant_id,19,50018,1,0.06
+shop,product_variants,variant_id,20,50019,1,0.06
+shop,product_variants,variant_id,21,50020,1,0.06
+shop,product_variants,variant_id,22,50021,1,0.06
+shop,product_variants,variant_id,23,50022,1,0.06
+shop,product_variants,variant_id,24,50023,1,0.06
+shop,product_variants,variant_id,25,50024,1,0.06
+shop,products,brand_id,1,8,98,28.32
+shop,products,brand_id,2,2,67,19.36
+shop,products,brand_id,3,4,46,13.29
+shop,products,brand_id,4,3,41,11.85
+shop,products,brand_id,5,5,25,7.23
+shop,products,brand_id,6,7,22,6.36
+shop,products,brand_id,7,6,21,6.07
+shop,products,brand_id,8,9,15,4.34
+shop,products,brand_id,9,1,11,3.18
+shop,products,category_id,1,10,71,20.52
+shop,products,category_id,2,1,45,13.01
+shop,products,category_id,3,12,41,11.85
+shop,products,category_id,4,7,30,8.67
+shop,products,category_id,5,11,27,7.80
+shop,products,category_id,6,3,26,7.51
+shop,products,category_id,7,2,20,5.78
+shop,products,category_id,8,5,18,5.20
+shop,products,category_id,9,13,15,4.34
+shop,products,category_id,10,4,15,4.34
+shop,products,category_id,11,6,15,4.34
+shop,products,category_id,12,8,12,3.47
+shop,products,category_id,13,9,10,2.89
+shop,products,category_id,14,14,1,0.29
+shop,products,discontinued_at,1,,300,86.71
+shop,products,discontinued_at,2,2025-01-01,2,0.58
+shop,products,discontinued_at,3,2026-03-15,2,0.58
+shop,products,discontinued_at,4,2024-06-11,1,0.29
+shop,products,discontinued_at,5,2024-07-08,1,0.29
+shop,products,discontinued_at,6,2024-08-12,1,0.29
+shop,products,discontinued_at,7,2024-09-18,1,0.29
+shop,products,discontinued_at,8,2024-09-28,1,0.29
+shop,products,discontinued_at,9,2024-10-04,1,0.29
+shop,products,discontinued_at,10,2024-10-27,1,0.29
+shop,products,discontinued_at,11,2024-11-24,1,0.29
+shop,products,discontinued_at,12,2024-11-25,1,0.29
+shop,products,discontinued_at,13,2024-12-12,1,0.29
+shop,products,discontinued_at,14,2025-01-23,1,0.29
+shop,products,discontinued_at,15,2025-02-01,1,0.29
+shop,products,discontinued_at,16,2025-02-06,1,0.29
+shop,products,discontinued_at,17,2025-03-08,1,0.29
+shop,products,discontinued_at,18,2025-03-27,1,0.29
+shop,products,discontinued_at,19,2025-03-31,1,0.29
+shop,products,discontinued_at,20,2025-04-16,1,0.29
+shop,products,discontinued_at,21,2025-07-21,1,0.29
+shop,products,discontinued_at,22,2025-07-26,1,0.29
+shop,products,discontinued_at,23,2025-07-30,1,0.29
+shop,products,discontinued_at,24,2025-09-06,1,0.29
+shop,products,discontinued_at,25,2025-09-24,1,0.29
+shop,products,is_active,1,true,300,86.71
+shop,products,is_active,2,false,46,13.29
+shop,products,launched_at,1,2023-10-15,228,65.90
+shop,products,launched_at,2,2025-02-16,4,1.16
+shop,products,launched_at,3,2024-08-19,3,0.87
+shop,products,launched_at,4,2024-02-16,2,0.58
+shop,products,launched_at,5,2024-03-14,2,0.58
+shop,products,launched_at,6,2024-03-19,2,0.58
+shop,products,launched_at,7,2024-08-03,2,0.58
+shop,products,launched_at,8,2024-08-10,2,0.58
+shop,products,launched_at,9,2025-02-10,2,0.58
+shop,products,launched_at,10,2025-02-15,2,0.58
+shop,products,launched_at,11,2025-02-27,2,0.58
+shop,products,launched_at,12,2025-03-09,2,0.58
+shop,products,launched_at,13,2025-03-16,2,0.58
+shop,products,launched_at,14,2025-03-17,2,0.58
+shop,products,launched_at,15,2025-03-23,2,0.58
+shop,products,launched_at,16,2025-08-16,2,0.58
+shop,products,launched_at,17,2025-08-18,2,0.58
+shop,products,launched_at,18,2025-09-22,2,0.58
+shop,products,launched_at,19,2026-08-19,2,0.58
+shop,products,launched_at,20,2024-02-02,1,0.29
+shop,products,launched_at,21,2024-02-06,1,0.29
+shop,products,launched_at,22,2024-02-09,1,0.29
+shop,products,launched_at,23,2024-02-10,1,0.29
+shop,products,launched_at,24,2024-02-11,1,0.29
+shop,products,launched_at,25,2024-02-19,1,0.29
+shop,products,product_id,1,1000,1,0.29
+shop,products,product_id,2,1001,1,0.29
+shop,products,product_id,3,1002,1,0.29
+shop,products,product_id,4,1003,1,0.29
+shop,products,product_id,5,1004,1,0.29
+shop,products,product_id,6,1005,1,0.29
+shop,products,product_id,7,1006,1,0.29
+shop,products,product_id,8,1007,1,0.29
+shop,products,product_id,9,1008,1,0.29
+shop,products,product_id,10,1009,1,0.29
+shop,products,product_id,11,1010,1,0.29
+shop,products,product_id,12,1011,1,0.29
+shop,products,product_id,13,1012,1,0.29
+shop,products,product_id,14,1013,1,0.29
+shop,products,product_id,15,1014,1,0.29
+shop,products,product_id,16,1015,1,0.29
+shop,products,product_id,17,1016,1,0.29
+shop,products,product_id,18,1017,1,0.29
+shop,products,product_id,19,1018,1,0.29
+shop,products,product_id,20,1019,1,0.29
+shop,products,product_id,21,1020,1,0.29
+shop,products,product_id,22,1021,1,0.29
+shop,products,product_id,23,1022,1,0.29
+shop,products,product_id,24,1023,1,0.29
+shop,products,product_id,25,1024,1,0.29
+shop,products,product_name,1,Kalkberg Basics Hangboard Pro,2,0.58
+shop,products,product_name,2,Kalkberg Basics Pinch Block,2,0.58
+shop,products,product_name,3,Mantlo Roll-top Chalk Bag,2,0.58
+shop,products,product_name,4,Arete Labs Boulder Brush,1,0.29
+shop,products,product_name,5,Arete Labs Boulder Brush Comp,1,0.29
+shop,products,product_name,6,Arete Labs Boulder Brush Plus,1,0.29
+shop,products,product_name,7,Arete Labs Campus Rungs Evo,1,0.29
+shop,products,product_name,8,Arete Labs Campus Rungs II,1,0.29
+shop,products,product_name,9,Arete Labs Finger Rings II,1,0.29
+shop,products,product_name,10,Arete Labs Finger Tape LV,1,0.29
+shop,products,product_name,11,Arete Labs Grip Trainer,1,0.29
+shop,products,product_name,12,Arete Labs Grip Trainer Comp,1,0.29
+shop,products,product_name,13,Arete Labs Grip Trainer Evo,1,0.29
+shop,products,product_name,14,Arete Labs Pinch Block Evo,1,0.29
+shop,products,product_name,15,Arete Labs Pinch Block X,1,0.29
+shop,products,product_name,16,Arete Labs Resistance Bands Lite,1,0.29
+shop,products,product_name,17,Arete Labs Resistance Bands LV,1,0.29
+shop,products,product_name,18,Arete Labs Rope Bag Lite,1,0.29
+shop,products,product_name,19,Arete Labs Shoe Bag Comp,1,0.29
+shop,products,product_name,20,Arete Labs Shoe Bag X,1,0.29
+shop,products,product_name,21,Arete Labs Shoe Bag X ,1,0.29
+shop,products,product_name,22,Arete Labs Shoe Deodoriser II,1,0.29
+shop,products,product_name,23,Arete Labs Skin File,1,0.29
+shop,products,product_name,24,Arete Labs Skin File Pro,1,0.29
+shop,products,product_name,25,Belgian Crags,1,0.29
+shop,returns,order_line_id,1,100012,1,0.00
+shop,returns,order_line_id,2,100027,1,0.00
+shop,returns,order_line_id,3,10003,1,0.00
+shop,returns,order_line_id,4,100052,1,0.00
+shop,returns,order_line_id,5,100055,1,0.00
+shop,returns,order_line_id,6,100063,1,0.00
+shop,returns,order_line_id,7,100101,1,0.00
+shop,returns,order_line_id,8,100103,1,0.00
+shop,returns,order_line_id,9,100132,1,0.00
+shop,returns,order_line_id,10,100134,1,0.00
+shop,returns,order_line_id,11,100194,1,0.00
+shop,returns,order_line_id,12,100197,1,0.00
+shop,returns,order_line_id,13,100217,1,0.00
+shop,returns,order_line_id,14,100226,1,0.00
+shop,returns,order_line_id,15,100239,1,0.00
+shop,returns,order_line_id,16,100261,1,0.00
+shop,returns,order_line_id,17,100277,1,0.00
+shop,returns,order_line_id,18,10028,1,0.00
+shop,returns,order_line_id,19,100292,1,0.00
+shop,returns,order_line_id,20,100316,1,0.00
+shop,returns,order_line_id,21,100371,1,0.00
+shop,returns,order_line_id,22,100402,1,0.00
+shop,returns,order_line_id,23,100405,1,0.00
+shop,returns,order_line_id,24,100417,1,0.00
+shop,returns,order_line_id,25,100443,1,0.00
+shop,returns,quantity,1,1,38112,98.29
+shop,returns,quantity,2,2,632,1.63
+shop,returns,quantity,3,3,32,0.08
+shop,returns,quantity,4,4,1,0.00
+shop,returns,reason,1,Too small,11972,30.87
+shop,returns,reason,2,Too big,7853,20.25
+shop,returns,reason,3,Not as expected,7209,18.59
+shop,returns,reason,4,Defective,5376,13.86
+shop,returns,reason,5,Changed mind,5335,13.76
+shop,returns,reason,6,Wrong item received,1032,2.66
+shop,returns,received_at,1,,202,0.52
+shop,returns,received_at,2,2024-09-29 04:50:44,2,0.01
+shop,returns,received_at,3,2024-12-18 00:15:55,2,0.01
+shop,returns,received_at,4,2025-02-03 03:55:36,2,0.01
+shop,returns,received_at,5,2025-03-11 00:53:10,2,0.01
+shop,returns,received_at,6,2025-10-08 19:28:33,2,0.01
+shop,returns,received_at,7,2025-12-12 05:18:28,2,0.01
+shop,returns,received_at,8,2026-02-01 20:05:28,2,0.01
+shop,returns,received_at,9,2026-04-08 00:08:27,2,0.01
+shop,returns,received_at,10,2026-10-30 12:56:24,2,0.01
+shop,returns,received_at,11,2023-11-10 11:07:42,1,0.00
+shop,returns,received_at,12,2023-11-12 03:19:44,1,0.00
+shop,returns,received_at,13,2023-11-12 06:09:55,1,0.00
+shop,returns,received_at,14,2023-11-13 01:40:05,1,0.00
+shop,returns,received_at,15,2023-11-13 05:30:09,1,0.00
+shop,returns,received_at,16,2023-11-13 10:00:38,1,0.00
+shop,returns,received_at,17,2023-11-13 18:46:14,1,0.00
+shop,returns,received_at,18,2023-11-14 03:23:53,1,0.00
+shop,returns,received_at,19,2023-11-14 07:43:42,1,0.00
+shop,returns,received_at,20,2023-11-14 18:01:11,1,0.00
+shop,returns,received_at,21,2023-11-15 02:05:20,1,0.00
+shop,returns,received_at,22,2023-11-15 03:54:32,1,0.00
+shop,returns,received_at,23,2023-11-16 00:48:46,1,0.00
+shop,returns,received_at,24,2023-11-16 05:28:23,1,0.00
+shop,returns,received_at,25,2023-11-16 11:11:52,1,0.00
+shop,returns,refund_amount,1,0.00,1413,3.64
+shop,returns,refund_amount,2,96.99,884,2.28
+shop,returns,refund_amount,3,101.99,850,2.19
+shop,returns,refund_amount,4,111.99,762,1.97
+shop,returns,refund_amount,5,98.99,687,1.77
+shop,returns,refund_amount,6,93.99,642,1.66
+shop,returns,refund_amount,7,47.99,637,1.64
+shop,returns,refund_amount,8,120.99,633,1.63
+shop,returns,refund_amount,9,46.99,596,1.54
+shop,returns,refund_amount,10,42.99,589,1.52
+shop,returns,refund_amount,11,41.99,576,1.49
+shop,returns,refund_amount,12,48.99,534,1.38
+shop,returns,refund_amount,13,43.99,524,1.35
+shop,returns,refund_amount,14,99.99,520,1.34
+shop,returns,refund_amount,15,107.99,517,1.33
+shop,returns,refund_amount,16,103.99,496,1.28
+shop,returns,refund_amount,17,113.99,488,1.26
+shop,returns,refund_amount,18,79.99,471,1.21
+shop,returns,refund_amount,19,122.99,429,1.11
+shop,returns,refund_amount,20,116.99,419,1.08
+shop,returns,refund_amount,21,77.99,404,1.04
+shop,returns,refund_amount,22,67.99,385,0.99
+shop,returns,refund_amount,23,95.99,371,0.96
+shop,returns,refund_amount,24,17.99,366,0.94
+shop,returns,refund_amount,25,75.99,366,0.94
+shop,returns,requested_at,1,2025-03-30 01:00:00,3,0.01
+shop,returns,requested_at,2,2026-03-29 01:00:00,3,0.01
+shop,returns,requested_at,3,2024-07-04 00:13:30,2,0.01
+shop,returns,requested_at,4,2024-10-25 01:04:20,2,0.01
+shop,returns,requested_at,5,2025-02-20 16:57:51,2,0.01
+shop,returns,requested_at,6,2025-08-27 15:13:39,2,0.01
+shop,returns,requested_at,7,2025-11-21 04:49:12,2,0.01
+shop,returns,requested_at,8,2026-03-09 12:21:31,2,0.01
+shop,returns,requested_at,9,2026-03-13 10:19:19,2,0.01
+shop,returns,requested_at,10,2026-09-14 05:18:10,2,0.01
+shop,returns,requested_at,11,2023-11-05 07:08:16,1,0.00
+shop,returns,requested_at,12,2023-11-05 16:01:39,1,0.00
+shop,returns,requested_at,13,2023-11-06 11:00:10,1,0.00
+shop,returns,requested_at,14,2023-11-07 06:07:18,1,0.00
+shop,returns,requested_at,15,2023-11-07 23:00:40,1,0.00
+shop,returns,requested_at,16,2023-11-08 16:33:49,1,0.00
+shop,returns,requested_at,17,2023-11-09 11:22:08,1,0.00
+shop,returns,requested_at,18,2023-11-09 20:05:23,1,0.00
+shop,returns,requested_at,19,2023-11-10 01:28:39,1,0.00
+shop,returns,requested_at,20,2023-11-10 06:47:40,1,0.00
+shop,returns,requested_at,21,2023-11-10 08:59:20,1,0.00
+shop,returns,requested_at,22,2023-11-10 10:50:22,1,0.00
+shop,returns,requested_at,23,2023-11-10 17:51:08,1,0.00
+shop,returns,requested_at,24,2023-11-11 08:24:34,1,0.00
+shop,returns,requested_at,25,2023-11-11 10:04:37,1,0.00
+shop,returns,return_id,1,1,1,0.00
+shop,returns,return_id,2,10,1,0.00
+shop,returns,return_id,3,100,1,0.00
+shop,returns,return_id,4,1000,1,0.00
+shop,returns,return_id,5,10000,1,0.00
+shop,returns,return_id,6,10001,1,0.00
+shop,returns,return_id,7,10002,1,0.00
+shop,returns,return_id,8,10003,1,0.00
+shop,returns,return_id,9,10004,1,0.00
+shop,returns,return_id,10,10005,1,0.00
+shop,returns,return_id,11,10006,1,0.00
+shop,returns,return_id,12,10007,1,0.00
+shop,returns,return_id,13,10008,1,0.00
+shop,returns,return_id,14,10009,1,0.00
+shop,returns,return_id,15,1001,1,0.00
+shop,returns,return_id,16,10010,1,0.00
+shop,returns,return_id,17,10011,1,0.00
+shop,returns,return_id,18,10012,1,0.00
+shop,returns,return_id,19,10013,1,0.00
+shop,returns,return_id,20,10014,1,0.00
+shop,returns,return_id,21,10015,1,0.00
+shop,returns,return_id,22,10016,1,0.00
+shop,returns,return_id,23,10017,1,0.00
+shop,returns,return_id,24,10018,1,0.00
+shop,returns,return_id,25,10019,1,0.00
+shop,returns,status,1,refunded,37364,96.36
+shop,returns,status,2,rejected,1211,3.12
+shop,returns,status,3,in_transit,202,0.52

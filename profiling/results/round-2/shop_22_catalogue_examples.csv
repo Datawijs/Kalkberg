@@ -1,0 +1,50 @@
+finding,product_id,product_name,variant_id,sku,category_name
+same name as another product,1316,Arete Labs Shoe Bag X,,,Accessories
+same name as another product,1341,Arete Labs Shoe Bag X ,,,Accessories
+same name as another product,1344,Kalkberg Basics Hangboard Pro,,,Training
+same name as another product,1284,Kalkberg Basics Hangboard Pro,,,Training
+same name as another product,1345,Kalkberg Basics Pinch Block,,,Training
+same name as another product,1275,Kalkberg Basics Pinch Block,,,Training
+same name as another product,1067,Mantlo Roll-top Chalk Bag,,,Chalk bags & buckets
+same name as another product,1342,Mantlo Roll-top Chalk Bag,,,Chalk bags & buckets
+same name as another product,1253,Slabline Beanie Plus,,,Clothing
+same name as another product,1343,Slabline Beanie Plus ,,,Clothing
+variant without unit_cost,1012,Crimpwell Comet Evo,50270,KB-CS-1012-19,Climbing shoes
+variant without unit_cost,1038,Crimpwell Feather II,50812,KB-CS-1038-15,Climbing shoes
+variant without unit_cost,1007,Crimpwell Pivot X,50153,KB-CS-1007-07,Climbing shoes
+variant without unit_cost,1017,Crimpwell Raptor X,50376,KB-CS-1017-20,Climbing shoes
+variant without unit_cost,1026,Crimpwell Ridgeback II,50550,KB-CS-1026-05,Climbing shoes
+variant without unit_cost,1036,Crimpwell Slipstream Comp,50775,KB-CS-1036-20,Climbing shoes
+variant without unit_cost,1000,Crimpwell Talon II,50013,KB-CS-1000-14,Climbing shoes
+variant without unit_cost,1000,Crimpwell Talon II,50014,KB-CS-1000-15,Climbing shoes
+variant without unit_cost,1008,Crimpwell Viper Plus,50178,KB-CS-1008-11,Climbing shoes
+variant without unit_cost,1008,Crimpwell Viper Plus,50182,KB-CS-1008-15,Climbing shoes
+variant without unit_cost,1142,Dynova Quickdraw Comp,51144,KB-QC-1142,Quickdraws & carabiners
+variant without unit_cost,1163,Dynova Quickdraw Evo,51165,KB-QC-1163,Quickdraws & carabiners
+variant without unit_cost,1113,Dynova Sport Harness Plus,51046,KB-H-1113-02,Harnesses
+variant without unit_cost,1122,Granitex Alpine Harness II,51094,KB-H-1122-05,Harnesses
+variant without unit_cost,1111,Granitex Alpine Harness Lite,51035,KB-H-1111-01,Harnesses
+variant without unit_cost,1035,Granitex Kestrel X,50744,KB-CS-1035-10,Climbing shoes
+variant without unit_cost,1037,Granitex Talon Lite,50795,KB-CS-1037-19,Climbing shoes
+variant without unit_cost,1020,Granitex Talon LV,50425,KB-CS-1020-06,Climbing shoes
+variant without unit_cost,1020,Granitex Talon LV,50436,KB-CS-1020-17,Climbing shoes
+variant without unit_cost,1043,Granitex Viper Lite,50904,KB-CS-1043-02,Climbing shoes
+variant without unit_cost,1029,Granitex Viper X,50609,KB-CS-1029-01,Climbing shoes
+variant without unit_cost,1029,Granitex Viper X,50618,KB-CS-1029-10,Climbing shoes
+variant without unit_cost,1027,Kalkberg Basics Falcon II,50581,KB-CS-1027-15,Climbing shoes
+variant without unit_cost,1042,Kalkberg Basics Hook Plus,50893,KB-CS-1042-12,Climbing shoes
+variant without unit_cost,1222,Kalkberg Basics Jacket II,51396,KB-C-1222-03,Clothing
+variant without unit_cost,1021,Kalkberg Basics Lynx LV,50446,KB-CS-1021-06,Climbing shoes
+variant without unit_cost,1021,Kalkberg Basics Lynx LV,50458,KB-CS-1021-18,Climbing shoes
+variant without unit_cost,1034,Kalkberg Basics Nimbus II,50725,KB-CS-1034-12,Climbing shoes
+variant without unit_cost,1033,Kalkberg Basics Pivot,50709,KB-CS-1033-17,Climbing shoes
+variant without unit_cost,1018,Kalkberg Basics Pivot Lite,50389,KB-CS-1018-12,Climbing shoes
+variant without unit_cost,1018,Kalkberg Basics Pivot Lite,50398,KB-CS-1018-21,Climbing shoes
+variant without unit_cost,1015,Kalkberg Basics Raptor,50333,KB-CS-1015-19,Climbing shoes
+variant without unit_cost,1025,Kalkberg Basics Ridgeback,50542,KB-CS-1025-18,Climbing shoes
+variant without unit_cost,1067,Mantlo Roll-top Chalk Bag,50967,KB-CBB-1067,Chalk bags & buckets
+variant without unit_cost,1342,Mantlo Roll-top Chalk Bag,51707,KB-CBB-1342,Chalk bags & buckets
+variant without unit_cost,1291,Pinchwick Boulder Brush,51653,KB-A-1291,Accessories
+variant without unit_cost,1292,Pinchwick Shoe Bag LV,51654,KB-A-1292,Accessories
+variant without unit_cost,1217,Slabline Beanie II,51369,KB-C-1217-06,Clothing
+variant without unit_cost,1232,Slabline Climbing Pants Pro,51456,KB-C-1232-03,Clothing

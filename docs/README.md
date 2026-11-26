@@ -57,7 +57,7 @@ flowchart LR
 | --- | --- | --- |
 | 0 | [Setup: tools and how to reproduce the project](00-setup.md) | Done |
 | 1 | [Bronze: landing the raw data in PostgreSQL](01-bronze.md) | Done |
-| 2 | Profiling: what is wrong with the raw data? | Next |
+| 2 | [Profiling: what is wrong with the raw data?](02-profiling.md) | In progress |
 | 3 | Silver: cleaning and connecting the data (dbt) | Planned |
 | 4 | Gold: the star schema (dbt) | Planned |
 | 5 | Connecting Power BI to the gold layer | Planned |
@@ -80,3 +80,4 @@ Larger choices are recorded as short decision records in [decisions/](decisions/
 - Screenshots live in [img/](img/) and are named after the document they belong to (`01-...png` belongs to `01-bronze.md`). A screenshot that is still missing is marked with a placeholder that starts with **SCREENSHOT PLACEHOLDER**.
 - Warnings, notes and tips use GitHub's alert syntax (`> [!NOTE]`, `> [!WARNING]`, ...), so they stand out when the docs are read on GitHub.
 - Commands are written for a Windows terminal, run from the project folder unless stated otherwise.
+- The project is written in English for a Belgian and Dutch audience, so numbers and dates use the Belgian format: `1.234,56` and `31/03/2026`. The same goes for the report, which uses the *English (Belgium)* locale: English labels, Belgian dates and numbers. Values quoted literally from a source or a query result (in `code` style) are shown exactly as the source wrote them, because they are evidence.

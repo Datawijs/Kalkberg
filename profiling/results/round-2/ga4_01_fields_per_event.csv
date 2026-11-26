@@ -1,0 +1,5 @@
+event_name,events,with_user_id,with_source,with_medium,with_campaign,with_page_location,with_transaction_id,with_value
+add_to_cart,1123793,671351,0,0,0,0,0,1123793
+session_start,850614,206445,850614,850614,850614,850614,0,0
+begin_checkout,430874,313124,0,0,0,0,0,0
+purchase,335646,290419,0,0,0,0,335646,335646

@@ -1,0 +1,5 @@
+rule,row_count
+google: more than one row per day and campaign,0
+"meta: more than one row per day, campaign and ad set",0
+meta: reporting_starts differs from reporting_ends,0
+meta: ad set name used in more than one campaign,4

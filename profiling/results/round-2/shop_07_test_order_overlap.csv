@@ -1,0 +1,11 @@
+code_test100,payment_manual,total_zero,test_like_customer,status,orders
+t,t,t,t,completed,55
+f,t,f,t,completed,27
+t,t,t,f,completed,10
+f,t,f,f,completed,2
+t,t,f,t,completed,2
+t,t,t,t,shipped,1
+t,t,f,f,completed,1
+t,t,t,t,cancelled,1
+t,t,t,t,processing,1
+f,t,f,f,cancelled,1

@@ -1,0 +1,8 @@
+indicator,row_count
+customers: email on a kalkberg domain,23
+"customers: email contains ""test""",23
+"customers: first or last name contains ""test""",22
+orders: discount code TEST100 (any notation),71
+orders: payment method Manual,101
+orders: order total 0.00,68
+"customers: last name is ""Account""",15

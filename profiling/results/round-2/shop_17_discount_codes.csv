@@ -1,0 +1,10 @@
+code_normalised,notations,orders,first_used,last_used,creator,contract_start,contract_end,orders_before_contract_start,orders_after_contract_end,orders_after_contract_end_plus_14_days
+WELCOME10,""" WELCOME10"", ""welcome10"", ""Welcome10"", ""WELCOME10""",6501,2023-11-01,2026-10-31,,,,0,0,0
+CLIMBDEALS10,"""CLIMBDEALS10""",3279,2023-11-01,2026-10-31,,,,0,0,0
+SORRY10,"""SORRY10""",1899,2023-11-03,2026-10-31,,,,0,0,0
+BLOCBROS,"""blocbros"", ""BLOCBROS""",1877,2024-09-01,2026-10-31,bloc_brothers,2024-09-01,2026-10-31,0,0,0
+CRIMP15,"""crimp15"", ""CRIMP15""",1343,2024-04-01,2025-10-10,crimp_kid,2024-04-01,2025-09-30,0,4,0
+LENA15,"""lena15"", ""LENA15""",1164,2024-01-15,2025-01-13,lena.sends,2024-01-15,2024-12-31,0,14,0
+FONT15,"""font15"", ""FONT15""",1039,2025-03-01,2026-07-12,font_freak,2025-03-01,2026-06-30,0,4,0
+SOPHIE15,"""sophie15"", ""SOPHIE15""",876,2025-10-03,2026-10-30,slab_sophie,2025-10-01,2026-10-31,0,0,0
+TEST100,"""TEST100""",71,2024-03-01,2026-10-29,,,,0,0,0

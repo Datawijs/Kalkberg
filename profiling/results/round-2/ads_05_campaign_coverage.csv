@@ -1,0 +1,25 @@
+platform,campaign,detail,first_day,last_day,days_with_data,days_missing_in_between
+Google Ads,Search - Brand,Search,2023-11-01,2026-10-31,1096,0
+Google Ads,Search - Generic - Climbing Shoes,Search,2023-11-01,2026-10-31,1096,0
+Google Ads,Search - Generic - Crash Pads,Search,2023-11-01,2026-10-31,1096,0
+Google Ads,Shopping - All Products,Shopping,2023-11-01,2025-01-31,458,0
+Google Ads,Search - Black Friday 2023,Search,2023-11-15,2023-11-27,13,0
+Google Ads,Search - Generic - Hardware,Search,2024-03-01,2026-10-31,975,0
+Google Ads,Search - Summer Sale 2024,Search,2024-07-01,2024-07-21,21,0
+Google Ads,Search - Black Friday 2024,Search,2024-11-18,2024-12-02,15,0
+Google Ads,PMax - All Products,Performance Max,2025-02-01,2026-10-31,638,0
+Google Ads,Search - Summer Sale 2025,Search,2025-07-01,2025-07-21,21,0
+Google Ads,Search - Black Friday 2025,Search,2025-11-17,2025-12-01,15,0
+Google Ads,Search - Summer Sale 2026,Search,2026-07-01,2026-07-21,21,0
+Meta Ads,Prospecting - Broad,"BE-NL | 18-45 | Broad, FR-DE-LU | 18-45 | Broad",2023-11-01,2024-12-31,427,0
+Meta Ads,Retargeting - Viewed or ATC 14d,"RT | ATC 14d, RT | Engagers 30d, RT | Viewed 14d",2023-11-01,2026-10-31,1096,0
+Meta Ads,BF 2023 - Prospecting,"BF | Broad, BF | Interests climbing",2023-11-10,2023-11-28,19,0
+Meta Ads,Prospecting - Lookalike 1% Buyers,"LAL 1% | All countries, LAL 1% | BE-NL",2024-02-01,2025-06-30,516,0
+Meta Ads,Summer Sale 2024 - Retargeting,Sale | Past buyers 365d,2024-07-01,2024-07-21,21,0
+Meta Ads,BF 2024 - Prospecting,"BF | Broad, BF | Interests climbing",2024-11-12,2024-12-03,22,0
+Meta Ads,Prospecting - Advantage+ Shopping,Advantage+ | All countries,2025-01-01,2026-10-31,669,0
+Meta Ads,Spring Outdoor 2025 - Prospecting,Outdoor | Interests bouldering,2025-03-15,2025-04-10,27,0
+Meta Ads,Summer Sale 2025 - Retargeting,Sale | Past buyers 365d,2025-07-01,2025-07-21,21,0
+Meta Ads,BF 2025 - Prospecting,"BF | Broad, BF | LAL buyers",2025-11-11,2025-12-02,22,0
+Meta Ads,Spring Outdoor 2026 - Prospecting,Outdoor | Interests bouldering,2026-03-15,2026-04-10,27,0
+Meta Ads,Summer Sale 2026 - Retargeting,Sale | Past buyers 365d,2026-07-01,2026-07-21,21,0

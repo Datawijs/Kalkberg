@@ -1,0 +1,2 @@
+returns,returned_more_than_ordered,refund_more_than_line_total,refunded_with_zero_amount,refund_amount_but_not_refunded,received_before_requested,requested_before_order,returns_on_cancelled_orders
+38777,0,0,0,0,0,0,0

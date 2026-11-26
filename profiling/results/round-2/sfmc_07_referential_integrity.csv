@@ -1,0 +1,10 @@
+rule,row_count
+subscribers: status Unsubscribed without unsubscribe event,0
+unsubscribes: subscriber status is not Unsubscribed,0
+sent: job_id not in jobs,0
+sent: subscriber_id not in subscribers,0
+sent: more than one row per job and subscriber,63488
+events: subscriber_key differs from the subscriber's key,0
+clicks: no matching open (job + subscriber),24
+clicks: no matching send (job + subscriber),0
+opens: no matching send (job + subscriber),0

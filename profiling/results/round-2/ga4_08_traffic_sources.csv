@@ -1,0 +1,343 @@
+session_source_medium,session_campaign,sessions,purchases,first_date,last_date
+(direct) / (none),(direct),3102407,94875,20231101,20261031
+bing / organic,(organic),352409,4750,20231101,20261031
+bloc-blog.example / referral,(referral),120106,1855,20231101,20261031
+climbdeals / aff,climbdeals_deals_page,51169,1496,20231101,20261031
+climbdeals / affiliate,climbdeals_deals_page,356795,10655,20231101,20261031
+cragnotes.example / referral,(referral),59538,920,20231101,20261031
+duckduckgo / organic,(organic),150646,2056,20231101,20261031
+ecosia.org / organic,(organic),100915,1390,20231101,20261031
+facebook / cpc,prospecting_broad,22260,357,20231101,20241231
+facebook / cpc,retargeting_viewed_or_atc_14d,20929,385,20231101,20250131
+facebook / cpc,prospecting_lookalike_1_buyers,15062,240,20240201,20250131
+facebook / cpc,prospecting_advantage+_shopping,3163,50,20250101,20250131
+facebook / cpc,bf_2024_prospecting,1659,36,20241112,20241203
+facebook / cpc,summer_sale_2024_retargeting,761,7,20240701,20240721
+facebook / cpc,bf_2023_prospecting,442,17,20231110,20231128
+Facebook / cpc,prospecting_broad,4024,73,20231101,20241231
+Facebook / cpc,retargeting_viewed_or_atc_14d,3741,61,20231101,20250131
+Facebook / cpc,prospecting_lookalike_1_buyers,2726,41,20240201,20250131
+Facebook / cpc,prospecting_advantage+_shopping,528,9,20250101,20250131
+Facebook / cpc,bf_2024_prospecting,286,3,20241112,20241203
+Facebook / cpc,summer_sale_2024_retargeting,122,8,20240701,20240721
+Facebook / cpc,bf_2023_prospecting,84,5,20231110,20231128
+facebook / paid-social,Prospecting - Advantage+ Shopping,127590,1834,20250201,20261031
+facebook / paid-social,Retargeting - Viewed or ATC 14d,85017,1214,20250201,20261031
+facebook / paid-social,retargeting_viewed_or_atc_14d,22397,316,20231101,20261031
+facebook / paid-social,prospecting_advantage+_shopping,19843,257,20250101,20261031
+facebook / paid-social,Prospecting - Lookalike 1% Buyers,11659,170,20250201,20250630
+facebook / paid-social,prospecting_broad,11069,199,20231101,20241231
+facebook / paid-social,prospecting_lookalike_1_buyers,9096,141,20240201,20250630
+facebook / paid-social,{{campaign.name}},8419,123,20250201,20261031
+facebook / paid-social,BF 2025 - Prospecting,3765,67,20251111,20251202
+facebook / paid-social,Spring Outdoor 2026 - Prospecting,3694,49,20260315,20260410
+facebook / paid-social,Spring Outdoor 2025 - Prospecting,2598,33,20250315,20250410
+facebook / paid-social,Summer Sale 2026 - Retargeting,2289,30,20260701,20260721
+facebook / paid-social,Summer Sale 2025 - Retargeting,2138,39,20250701,20250721
+facebook / paid-social,bf_2024_prospecting,827,16,20241112,20241203
+facebook / paid-social,bf_2025_prospecting,583,10,20251111,20251202
+facebook / paid-social,spring_outdoor_2026_prospecting,490,10,20260315,20260410
+facebook / paid-social,summer_sale_2024_retargeting,391,12,20240701,20240721
+facebook / paid-social,spring_outdoor_2025_prospecting,348,6,20250315,20250410
+facebook / paid-social,summer_sale_2025_retargeting,318,2,20250701,20250721
+facebook / paid-social,summer_sale_2026_retargeting,312,7,20260701,20260721
+facebook / paid-social,bf_2023_prospecting,239,10,20231110,20231128
+Facebook / paid-social,prospecting_broad,1946,30,20231102,20241231
+Facebook / paid-social,retargeting_viewed_or_atc_14d,1859,30,20231101,20250131
+Facebook / paid-social,prospecting_lookalike_1_buyers,1365,24,20240201,20250131
+Facebook / paid-social,prospecting_advantage+_shopping,274,4,20250101,20250131
+Facebook / paid-social,bf_2024_prospecting,151,10,20241112,20241203
+Facebook / paid-social,summer_sale_2024_retargeting,57,1,20240701,20240721
+Facebook / paid-social,bf_2023_prospecting,29,0,20231110,20231128
+facebook / paid_social,prospecting_broad,77723,1433,20231101,20241231
+facebook / paid_social,retargeting_viewed_or_atc_14d,74358,1335,20231101,20250131
+facebook / paid_social,prospecting_lookalike_1_buyers,52638,862,20240201,20250131
+facebook / paid_social,prospecting_advantage+_shopping,10821,190,20250101,20250131
+facebook / paid_social,bf_2024_prospecting,5707,97,20241112,20241203
+facebook / paid_social,summer_sale_2024_retargeting,2697,43,20240701,20240721
+facebook / paid_social,bf_2023_prospecting,1552,51,20231110,20231128
+Facebook / paid_social,prospecting_broad,13856,272,20231101,20241231
+Facebook / paid_social,retargeting_viewed_or_atc_14d,13189,213,20231101,20250131
+Facebook / paid_social,prospecting_lookalike_1_buyers,9284,152,20240201,20250131
+Facebook / paid_social,prospecting_advantage+_shopping,1919,34,20250101,20250131
+Facebook / paid_social,bf_2024_prospecting,1077,24,20241112,20241203
+Facebook / paid_social,summer_sale_2024_retargeting,469,8,20240701,20240721
+Facebook / paid_social,bf_2023_prospecting,300,6,20231110,20231128
+facebook / paidsocial,Prospecting - Advantage+ Shopping,22362,322,20250201,20261031
+facebook / paidsocial,Retargeting - Viewed or ATC 14d,15107,227,20250201,20261031
+facebook / paidsocial,prospecting_advantage+_shopping,3200,59,20250201,20261031
+facebook / paidsocial,retargeting_viewed_or_atc_14d,2091,38,20250201,20261031
+facebook / paidsocial,Prospecting - Lookalike 1% Buyers,2068,24,20250201,20250630
+facebook / paidsocial,{{campaign.name}},1492,22,20250202,20261031
+facebook / paidsocial,BF 2025 - Prospecting,667,10,20251111,20251202
+facebook / paidsocial,Spring Outdoor 2026 - Prospecting,627,10,20260315,20260410
+facebook / paidsocial,Spring Outdoor 2025 - Prospecting,481,8,20250315,20250410
+facebook / paidsocial,Summer Sale 2026 - Retargeting,434,5,20260701,20260721
+facebook / paidsocial,Summer Sale 2025 - Retargeting,414,2,20250701,20250721
+facebook / paidsocial,prospecting_lookalike_1_buyers,275,3,20250201,20250630
+facebook / paidsocial,spring_outdoor_2026_prospecting,102,0,20260315,20260410
+facebook / paidsocial,bf_2025_prospecting,97,3,20251111,20251202
+facebook / paidsocial,summer_sale_2026_retargeting,60,1,20260701,20260721
+facebook / paidsocial,spring_outdoor_2025_prospecting,58,2,20250315,20250410
+facebook / paidsocial,summer_sale_2025_retargeting,44,0,20250702,20250721
+fb / cpc,prospecting_broad,5911,104,20231101,20241231
+fb / cpc,retargeting_viewed_or_atc_14d,5650,109,20231101,20250131
+fb / cpc,prospecting_lookalike_1_buyers,4001,59,20240201,20250131
+fb / cpc,prospecting_advantage+_shopping,847,14,20250101,20250131
+fb / cpc,bf_2024_prospecting,434,3,20241112,20241203
+fb / cpc,summer_sale_2024_retargeting,199,5,20240701,20240721
+fb / cpc,bf_2023_prospecting,115,3,20231110,20231128
+fb / paid-social,prospecting_broad,2919,59,20231101,20241231
+fb / paid-social,retargeting_viewed_or_atc_14d,2800,55,20231101,20250131
+fb / paid-social,prospecting_lookalike_1_buyers,1917,20,20240201,20250131
+fb / paid-social,prospecting_advantage+_shopping,409,7,20250101,20250131
+fb / paid-social,bf_2024_prospecting,201,3,20241112,20241203
+fb / paid-social,summer_sale_2024_retargeting,97,1,20240701,20240721
+fb / paid-social,bf_2023_prospecting,56,3,20231110,20231128
+fb / paid_social,prospecting_broad,20468,375,20231101,20241231
+fb / paid_social,retargeting_viewed_or_atc_14d,19749,381,20231101,20250131
+fb / paid_social,prospecting_lookalike_1_buyers,13950,244,20240201,20250131
+fb / paid_social,prospecting_advantage+_shopping,2851,57,20250101,20250131
+fb / paid_social,bf_2024_prospecting,1589,27,20241112,20241203
+fb / paid_social,summer_sale_2024_retargeting,734,12,20240701,20240721
+fb / paid_social,bf_2023_prospecting,442,5,20231110,20231128
+google / cpc,Search - Brand,984856,16934,20231101,20261031
+google / cpc,PMax - All Products,677603,11350,20250201,20261031
+google / cpc,Search - Generic - Climbing Shoes,590450,9994,20231101,20261031
+google / cpc,Shopping - All Products,258619,4761,20231101,20250131
+google / cpc,Search - Generic - Crash Pads,229452,3958,20231101,20261031
+google / cpc,Search - Generic - Hardware,217751,3799,20240301,20261031
+google / cpc,Search - Black Friday 2025,16875,335,20251117,20251201
+google / cpc,Search - Summer Sale 2026,13865,241,20260701,20260721
+google / cpc,Search - Black Friday 2024,13780,262,20241118,20241202
+google / cpc,Search - Summer Sale 2025,12850,231,20250701,20250721
+google / cpc,Search - Summer Sale 2024,8678,170,20240701,20240721
+google / cpc,Search - Black Friday 2023,3247,86,20231115,20231127
+google / organic,(organic),4424973,59251,20231101,20261031
+gym-partners.example / referral,(referral),119245,1802,20231101,20261031
+ig / paid-social,Prospecting - Advantage+ Shopping,127243,1887,20250201,20261031
+ig / paid-social,Retargeting - Viewed or ATC 14d,85167,1208,20250201,20261031
+ig / paid-social,prospecting_advantage+_shopping,17850,230,20250201,20261031
+ig / paid-social,retargeting_viewed_or_atc_14d,12132,187,20250201,20261031
+ig / paid-social,Prospecting - Lookalike 1% Buyers,11789,156,20250201,20250630
+ig / paid-social,{{campaign.name}},8450,119,20250201,20261031
+ig / paid-social,BF 2025 - Prospecting,3895,66,20251111,20251202
+ig / paid-social,Spring Outdoor 2026 - Prospecting,3738,59,20260315,20260410
+ig / paid-social,Spring Outdoor 2025 - Prospecting,2632,43,20250315,20250410
+ig / paid-social,Summer Sale 2026 - Retargeting,2292,27,20260701,20260721
+ig / paid-social,Summer Sale 2025 - Retargeting,2234,32,20250701,20250721
+ig / paid-social,prospecting_lookalike_1_buyers,1627,31,20250201,20250630
+ig / paid-social,bf_2025_prospecting,581,10,20251111,20251202
+ig / paid-social,spring_outdoor_2026_prospecting,507,10,20260315,20260410
+ig / paid-social,spring_outdoor_2025_prospecting,393,6,20250315,20250410
+ig / paid-social,summer_sale_2025_retargeting,337,4,20250701,20250721
+ig / paid-social,summer_sale_2026_retargeting,309,6,20260701,20260721
+ig / paidsocial,Prospecting - Advantage+ Shopping,22546,328,20250201,20261031
+ig / paidsocial,Retargeting - Viewed or ATC 14d,14814,193,20250201,20261031
+ig / paidsocial,prospecting_advantage+_shopping,3249,53,20250201,20261031
+ig / paidsocial,retargeting_viewed_or_atc_14d,2148,30,20250201,20261031
+ig / paidsocial,Prospecting - Lookalike 1% Buyers,2111,36,20250201,20250630
+ig / paidsocial,{{campaign.name}},1580,23,20250201,20261031
+ig / paidsocial,Spring Outdoor 2026 - Prospecting,701,16,20260315,20260410
+ig / paidsocial,BF 2025 - Prospecting,670,9,20251111,20251202
+ig / paidsocial,Spring Outdoor 2025 - Prospecting,493,9,20250315,20250410
+ig / paidsocial,Summer Sale 2026 - Retargeting,406,4,20260701,20260721
+ig / paidsocial,Summer Sale 2025 - Retargeting,404,5,20250701,20250721
+ig / paidsocial,prospecting_lookalike_1_buyers,315,7,20250201,20250630
+ig / paidsocial,bf_2025_prospecting,94,5,20251111,20251202
+ig / paidsocial,spring_outdoor_2026_prospecting,88,1,20260315,20260410
+ig / paidsocial,summer_sale_2025_retargeting,65,0,20250701,20250721
+ig / paidsocial,summer_sale_2026_retargeting,54,0,20260701,20260721
+ig / paidsocial,spring_outdoor_2025_prospecting,54,2,20250315,20250410
+instagram / cpc,prospecting_broad,17261,286,20231101,20241231
+instagram / cpc,retargeting_viewed_or_atc_14d,16617,276,20231101,20250131
+instagram / cpc,prospecting_lookalike_1_buyers,11766,186,20240201,20250131
+instagram / cpc,prospecting_advantage+_shopping,2418,47,20250101,20250131
+instagram / cpc,bf_2024_prospecting,1289,15,20241112,20241203
+instagram / cpc,summer_sale_2024_retargeting,594,7,20240701,20240721
+instagram / cpc,bf_2023_prospecting,381,9,20231110,20231128
+instagram / influencer,font_freak,93497,1766,20250301,20260714
+instagram / influencer,lena.sends,43997,1029,20240115,20250114
+instagram / influencer,lena_sends,18825,379,20240115,20250114
+instagram / Influencer,font_freak,12350,249,20250301,20260714
+instagram / Influencer,lena.sends,5784,123,20240115,20250114
+instagram / Influencer,lena_sends,2546,65,20240115,20250114
+instagram / paid-social,prospecting_broad,8688,152,20231101,20241231
+instagram / paid-social,retargeting_viewed_or_atc_14d,8031,128,20231101,20250131
+instagram / paid-social,prospecting_lookalike_1_buyers,5845,113,20240201,20250131
+instagram / paid-social,prospecting_advantage+_shopping,1253,8,20250101,20250131
+instagram / paid-social,bf_2024_prospecting,642,18,20241112,20241203
+instagram / paid-social,summer_sale_2024_retargeting,285,5,20240701,20240721
+instagram / paid-social,bf_2023_prospecting,176,2,20231110,20231128
+instagram / paid_social,prospecting_broad,59946,1018,20231101,20241231
+instagram / paid_social,retargeting_viewed_or_atc_14d,57139,977,20231101,20250131
+instagram / paid_social,prospecting_lookalike_1_buyers,40459,631,20240201,20250131
+instagram / paid_social,prospecting_advantage+_shopping,8550,108,20250101,20250131
+instagram / paid_social,bf_2024_prospecting,4478,91,20241112,20241203
+instagram / paid_social,summer_sale_2024_retargeting,2017,47,20240701,20240721
+instagram / paid_social,bf_2023_prospecting,1241,35,20231110,20231128
+instagram / social,font_freak,18645,356,20250301,20260714
+instagram / social,lena.sends,8885,198,20240115,20250114
+instagram / social,lena_sends,3799,90,20240115,20250114
+l.instagram.com / referral,(referral),238894,3705,20231101,20261031
+m.facebook.com / referral,(referral),119553,1742,20231101,20261031
+meta / paid-social,Prospecting - Advantage+ Shopping,383120,5528,20250201,20261031
+meta / paid-social,Retargeting - Viewed or ATC 14d,254699,3632,20250201,20261031
+meta / paid-social,prospecting_advantage+_shopping,54138,752,20250201,20261031
+meta / paid-social,retargeting_viewed_or_atc_14d,36250,538,20250201,20261031
+meta / paid-social,Prospecting - Lookalike 1% Buyers,35596,475,20250201,20250630
+meta / paid-social,{{campaign.name}},25338,376,20250201,20261031
+meta / paid-social,BF 2025 - Prospecting,11419,174,20251111,20251202
+meta / paid-social,Spring Outdoor 2026 - Prospecting,11259,168,20260315,20260410
+meta / paid-social,Spring Outdoor 2025 - Prospecting,7796,118,20250315,20250410
+meta / paid-social,Summer Sale 2026 - Retargeting,7051,109,20260701,20260721
+meta / paid-social,Summer Sale 2025 - Retargeting,6593,116,20250701,20250721
+meta / paid-social,prospecting_lookalike_1_buyers,5018,66,20250201,20250630
+meta / paid-social,bf_2025_prospecting,1682,33,20251111,20251202
+meta / paid-social,spring_outdoor_2026_prospecting,1552,23,20260315,20260410
+meta / paid-social,spring_outdoor_2025_prospecting,1150,22,20250315,20250410
+meta / paid-social,summer_sale_2026_retargeting,1008,17,20260701,20260721
+meta / paid-social,summer_sale_2025_retargeting,891,13,20250701,20250721
+meta / paidsocial,Prospecting - Advantage+ Shopping,67058,969,20250201,20261031
+meta / paidsocial,Retargeting - Viewed or ATC 14d,44678,615,20250201,20261031
+meta / paidsocial,prospecting_advantage+_shopping,9397,158,20250201,20261031
+meta / paidsocial,retargeting_viewed_or_atc_14d,6290,96,20250201,20261031
+meta / paidsocial,Prospecting - Lookalike 1% Buyers,6204,105,20250201,20250630
+meta / paidsocial,{{campaign.name}},4475,57,20250201,20261031
+meta / paidsocial,BF 2025 - Prospecting,2053,28,20251111,20251202
+meta / paidsocial,Spring Outdoor 2026 - Prospecting,1972,24,20260315,20260410
+meta / paidsocial,Spring Outdoor 2025 - Prospecting,1361,24,20250315,20250410
+meta / paidsocial,Summer Sale 2025 - Retargeting,1211,19,20250701,20250721
+meta / paidsocial,Summer Sale 2026 - Retargeting,1161,19,20260701,20260721
+meta / paidsocial,prospecting_lookalike_1_buyers,872,12,20250201,20250630
+meta / paidsocial,bf_2025_prospecting,279,5,20251111,20251202
+meta / paidsocial,spring_outdoor_2026_prospecting,278,3,20260315,20260410
+meta / paidsocial,spring_outdoor_2025_prospecting,181,2,20250315,20250410
+meta / paidsocial,summer_sale_2026_retargeting,174,2,20260701,20260721
+meta / paidsocial,summer_sale_2025_retargeting,154,7,20250701,20250721
+newsletter / email,nl_2024-05-23_biweekly,1893,204,20240523,20240606
+newsletter / email,nl_2024-05-09_biweekly,1834,244,20240509,20240523
+newsletter / email,nl_2024-04-25_biweekly,1779,210,20240425,20240509
+newsletter / email,nl_2024-04-11_biweekly,1747,201,20240411,20240425
+newsletter / email,nl_2024-08-15_biweekly,1702,225,20240815,20240829
+newsletter / email,nl_2024-08-01_biweekly,1694,217,20240801,20240815
+newsletter / email,nl_2024-03-28_biweekly,1663,211,20240328,20240411
+newsletter / email,nl_2024-07-04_biweekly,1659,236,20240704,20240718
+newsletter / email,nl_2024-06-06_biweekly,1612,198,20240606,20240620
+newsletter / email,cmp_summer2024_launch,1610,82,20240701,20240710
+newsletter / email,nl_2024-08-29_biweekly,1607,113,20240829,20240907
+newsletter / email,nl_2024-06-20_biweekly,1569,165,20240620,20240701
+newsletter / email,nl_2024-03-14_biweekly,1543,172,20240314,20240328
+newsletter / email,cmp_summer2024_lastchance,1459,200,20240719,20240801
+newsletter / email,nl_2024-02-29_biweekly,1338,196,20240229,20240314
+newsletter / email,cmp_jansale2024_reminder,1224,100,20240109,20240118
+newsletter / email,nl_2024-01-18_biweekly,1214,130,20240118,20240201
+newsletter / email,nl_2024-02-15_biweekly,1186,158,20240215,20240229
+newsletter / email,nl_2023-12-07_biweekly,1147,84,20231207,20231216
+newsletter / email,nl_2024-07-18_biweekly,1141,32,20240718,20240727
+newsletter / email,nl_2024-02-01_biweekly,1109,136,20240201,20240215
+newsletter / email,cmp_xmas2023_lastorderday,1098,66,20231216,20231225
+newsletter / email,nl_2024-01-04_biweekly,1005,60,20240104,20240113
+newsletter / email,nl_2023-12-21_biweekly,934,89,20231221,20240102
+newsletter / email,cmp_jansale2024_launch,871,18,20240102,20240111
+newsletter / email,cmp_cm2023_launch,805,89,20231127,20231207
+newsletter / email,cmp_bf2023_reminder,673,7,20231126,20231205
+newsletter / email,nl_2023-11-09_biweekly,599,41,20231109,20231122
+newsletter / email,cmp_bf2023_launch,593,30,20231124,20231203
+newsletter / email,nl_2023-11-23_biweekly,514,7,20231123,20231202
+newsletter / email,cmp_bf2023_teaser,496,5,20231122,20231201
+outdoorvouchers / affiliate,vouchers,101677,2993,20231101,20261031
+reddit.com / referral,(referral),178755,2805,20231101,20261031
+sfmc / email,abandoned_cart,310210,7986,20231101,20261031
+sfmc / email,welcome_1,302295,658,20231101,20261031
+sfmc / email,post_purchase,301422,0,20231101,20261031
+sfmc / email,nl_2025-12-04_biweekly,4397,603,20251204,20251216
+sfmc / email,nl_2025-11-20_biweekly,4186,319,20251120,20251129
+sfmc / email,nl_2026-03-26_biweekly,3978,598,20260326,20260409
+sfmc / email,nl_2025-12-18_biweekly,3942,456,20251218,20260101
+sfmc / email,nl_2025-11-06_biweekly,3909,528,20251106,20251120
+sfmc / email,nl_2026-04-09_biweekly,3886,528,20260409,20260423
+sfmc / email,nl_2026-10-08_biweekly,3886,502,20261008,20261022
+sfmc / email,nl_2026-01-15_biweekly,3811,479,20260115,20260129
+sfmc / email,nl_2026-09-10_biweekly,3711,485,20260910,20260924
+sfmc / email,cmp_bf2025_launch,3693,203,20251128,20251208
+sfmc / email,cmp_jansale2026_reminder,3669,271,20260109,20260118
+sfmc / email,nl_2026-10-22_biweekly,3669,400,20261022,20261031
+sfmc / email,nl_2026-05-21_biweekly,3608,456,20260521,20260604
+sfmc / email,nl_2025-03-27_biweekly,3589,500,20250327,20250410
+sfmc / email,nl_2025-10-09_biweekly,3574,417,20251009,20251023
+sfmc / email,nl_2025-10-23_biweekly,3553,457,20251023,20251106
+sfmc / email,nl_2025-09-25_biweekly,3480,428,20250925,20251009
+sfmc / email,nl_2026-01-29_biweekly,3474,424,20260129,20260212
+sfmc / email,nl_2024-12-05_biweekly,3459,479,20241205,20241216
+sfmc / email,nl_2025-09-11_biweekly,3458,430,20250911,20250925
+sfmc / email,nl_2026-05-07_biweekly,3445,469,20260507,20260521
+sfmc / email,welcome_2,3425,3486,20240304,20261031
+sfmc / email,cmp_cm2025_launch,3424,220,20251201,20251210
+sfmc / email,nl_2025-05-08_biweekly,3396,427,20250508,20250522
+sfmc / email,nl_2025-04-24_biweekly,3331,443,20250424,20250508
+sfmc / email,cmp_bf2025_reminder,3325,81,20251130,20251209
+sfmc / email,nl_2026-03-12_biweekly,3306,286,20260312,20260321
+sfmc / email,cmp_jansale2026_launch,3292,318,20260102,20260115
+sfmc / email,cmp_newshoes2026_launch,3232,193,20260904,20260913
+sfmc / email,cmp_outdoor2026_launch,3230,259,20260320,20260329
+sfmc / email,nl_2025-04-10_biweekly,3191,432,20250410,20250424
+sfmc / email,cmp_xmas2025_lastorderday,3173,99,20251216,20251225
+sfmc / email,nl_2024-12-19_biweekly,3087,345,20241219,20250102
+sfmc / email,nl_2024-11-21_biweekly,3058,255,20241121,20241130
+sfmc / email,cmp_jansale2025_reminder,3044,264,20250109,20250118
+sfmc / email,nl_2026-02-12_biweekly,3034,381,20260212,20260226
+sfmc / email,cmp_bf2024_launch,3027,178,20241129,20241208
+sfmc / email,nl_2025-05-22_biweekly,2984,380,20250522,20250605
+sfmc / email,cmp_bf2025_teaser,2961,73,20251126,20251205
+sfmc / email,cmp_newshoes2025_launch,2919,227,20250904,20250915
+sfmc / email,nl_2024-11-07_biweekly,2911,405,20241107,20241121
+sfmc / email,nl_2026-06-04_biweekly,2900,405,20260604,20260618
+sfmc / email,nl_2025-01-30_biweekly,2895,395,20250130,20250213
+sfmc / email,nl_2026-07-02_biweekly,2890,477,20260702,20260716
+sfmc / email,nl_2026-06-18_biweekly,2861,382,20260618,20260701
+sfmc / email,cmp_bf2024_reminder,2826,76,20241201,20241210
+sfmc / email,cmp_cm2024_launch,2824,171,20241202,20241211
+sfmc / email,nl_2026-08-13_biweekly,2785,369,20260813,20260827
+sfmc / email,nl_2025-03-13_biweekly,2764,221,20250313,20250322
+sfmc / email,nl_2025-06-05_biweekly,2699,366,20250605,20250619
+sfmc / email,nl_2025-07-03_biweekly,2674,392,20250703,20250717
+sfmc / email,nl_2025-02-13_biweekly,2644,340,20250213,20250227
+sfmc / email,cmp_summer2026_lastchance,2614,249,20260719,20260801
+sfmc / email,nl_2026-08-27_biweekly,2567,225,20260827,20260905
+sfmc / email,nl_2024-10-10_biweekly,2540,304,20241010,20241024
+sfmc / email,nl_2025-07-31_biweekly,2535,303,20250731,20250814
+sfmc / email,nl_2025-06-19_biweekly,2453,276,20250619,20250702
+sfmc / email,nl_2025-08-14_biweekly,2440,332,20250814,20250828
+sfmc / email,nl_2025-01-02_biweekly,2440,258,20250102,20250111
+sfmc / email,nl_2024-09-12_biweekly,2438,355,20240912,20240926
+sfmc / email,nl_2024-09-26_biweekly,2426,329,20240926,20241010
+sfmc / email,nl_2026-01-01_biweekly,2386,34,20260101,20260110
+sfmc / email,nl_2025-08-28_biweekly,2189,158,20250828,20250906
+sfmc / email,cmp_summer2025_launch,2151,82,20250701,20250712
+sfmc / email,cmp_summer2026_launch,2147,43,20260701,20260710
+sfmc / email,cmp_newshoes2024_launch,2040,185,20240904,20240913
+sfmc / email,nl_2025-07-17_biweekly,1939,79,20250717,20250731
+sfmc / email,cmp_jansale2025_launch,1884,5,20250102,20250111
+sfmc / Email,nl_2026-04-23_biweekly,3740,506,20260423,20260507
+sfmc / Email,nl_2025-02-27_biweekly,2936,415,20250227,20250313
+sfmc / Email,nl_2024-10-24_biweekly,2718,373,20241024,20241107
+sfmc / Email,nl_2026-07-16_biweekly,2155,92,20260716,20260725
+SFMC / email,nl_2026-09-24_biweekly,3840,506,20260924,20261008
+SFMC / email,nl_2026-02-26_biweekly,3209,451,20260226,20260312
+SFMC / email,nl_2025-01-16_biweekly,3002,406,20250116,20250130
+SFMC / email,cmp_outdoor2025_launch,2913,245,20250320,20250401
+SFMC / email,cmp_xmas2024_lastorderday,2869,114,20241216,20241225
+SFMC / email,cmp_bf2024_teaser,2639,56,20241127,20241206
+SFMC / email,nl_2026-07-30_biweekly,2619,340,20260730,20260813
+SFMC / email,cmp_summer2025_lastchance,2441,271,20250719,20250801
+tiktok / influencer,crimp_kid,93053,1868,20240401,20251014
+tiktok / influencer,slab_sophie,88235,1565,20251001,20261031
+tiktok / Influencer,crimp_kid,12412,262,20240401,20251014
+tiktok / Influencer,slab_sophie,11875,249,20251001,20261031
+tiktok / social,crimp_kid,18443,397,20240401,20251014
+tiktok / social,slab_sophie,17741,337,20251001,20261031
+youtube / influencer,bloc_brothers,157656,3077,20240901,20261031
+youtube / Influencer,bloc_brothers,21195,426,20240901,20261031
+youtube / social,bloc_brothers,31211,605,20240901,20261031
+youtube.com / referral,(referral),178671,2645,20231101,20261031

@@ -1,0 +1,9 @@
+status,has_returns,orders,refunded_via_returns
+cancelled,f,5470,
+completed,f,354630,
+completed,t,1300,0.00
+partially_refunded,t,27567,2210467.24
+processing,f,1513,
+refunded,t,8356,743882.39
+shipped,f,2053,
+shipped,t,4,0.00

@@ -12,7 +12,7 @@ The raw schemas *are* the bronze layer. We don't copy them, and we never change 
 
 ## Consequences
 
-- No second copy of ~1.3 GB, and no extra load step that can fail or drift.
+- No second copy of about 1,3 GB, and no extra load step that can fail or drift.
 - The schema name tells you the source system, which is handy when tracing a number back.
 - Silver and gold get their own schemas, so the layers stay clearly separated in the database.
 - The generator drops and recreates the database on every load, so everything built on top (budget, silver, gold) has to be rebuilt afterwards. That order is documented in [00-setup.md](../00-setup.md).

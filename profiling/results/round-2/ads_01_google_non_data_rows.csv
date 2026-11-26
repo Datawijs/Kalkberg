@@ -1,0 +1,5 @@
+day,campaign,campaign_type,currency_code,cost,impressions,clicks,conversions,conv_value
+Total: Account,--,--,EUR,"2,301,714.73","138,156,436","3,700,919","70,079.45","7,571,894.65"
+Total: Search,--,--,EUR,"1,647,181.57","28,849,036","2,557,118","48,400.87","5,219,882.31"
+Total: Shopping,--,--,EUR,"168,063.99","26,470,884","315,933","6,399.30","676,143.21"
+Total: Performance Max,--,--,EUR,"486,469.17","82,836,516","827,868","15,279.28","1,675,869.13"

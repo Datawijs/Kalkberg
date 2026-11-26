@@ -1,0 +1,10 @@
+rule,row_count
+products: same name as another product (ignoring case and spaces),10
+products: name with leading or trailing spaces,2
+products: discontinued_at filled but is_active = true,0
+products: discontinued_at empty but is_active = false,0
+variants: no unit_cost,39
+variants: never sold,17
+variants: sold before the product was launched,3
+variants: sold after the product was discontinued,0
+variants: unit_cost higher than list_price,0

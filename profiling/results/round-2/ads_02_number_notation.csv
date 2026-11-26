@@ -1,0 +1,17 @@
+column_name,notation,row_count,example
+google.clicks,plain number,4120,101
+google.clicks,with thousands separator,1345,"1,000"
+google.conv_value,plain number,2521,0.00
+google.conv_value,with thousands separator,2944,"1,000.45"
+google.conversions,plain number,5465,0.00
+google.cost,plain number,5298,100.06
+google.cost,with thousands separator,167,"1,000.25"
+google.impressions,plain number,9,652
+google.impressions,with thousands separator,5456,"1,028"
+meta.amount_spent_eur,plain number,6086,100.03
+meta.impressions,plain number,6086,100002
+meta.link_clicks,plain number,6086,100
+meta.purchases,empty,6,
+meta.purchases,plain number,6080,1
+meta.purchases_conversion_value,plain number,6086,10.52
+meta.reach,plain number,6086,10000

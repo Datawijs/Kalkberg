@@ -1,0 +1,2 @@
+orders_without_customer_or_email,orders_with_customer_and_guest_email,guest_orders,distinct_guest_emails,guest_emails_with_more_than_one_order,guest_orders_with_email_of_an_account,guest_emails_that_have_an_account
+0,0,24000,23755,238,7077,6832

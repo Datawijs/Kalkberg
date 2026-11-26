@@ -1,7 +1,7 @@
 -- =====================================================================
 -- Kalkberg demo data - step 2: load the CSV files
 -- Run from the project folder (the folder that contains 'data' and 'sql'):
---   psql -U postgres -d kalkberg -v ON_ERROR_STOP=1 -f sql/02_load_raw_data.sql
+--   psql -U postgres -d kalkberg -v ON_ERROR_STOP=1 -f sql/02-load-raw-data.sql
 -- \copy reads the files on the client side, so paths are relative to the current folder.
 -- Loading takes a few minutes (about 20 million rows in total).
 -- =====================================================================
@@ -42,4 +42,4 @@ TRUNCATE ads.google_ads_campaign_report, ads.meta_ads_report;
 \copy ads.meta_ads_report            FROM 'data/ads/meta_ads_report.csv'            WITH (FORMAT csv, HEADER true, ENCODING 'UTF8')
 
 ANALYZE;
-\echo 'Done. Run sql/03_row_counts.sql to check the result.'
+\echo 'Done. Run sql/03-row-check.sql to check the result.'

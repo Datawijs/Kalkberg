@@ -1,7 +1,7 @@
 -- =====================================================================
 -- Kalkberg demo data - step 1: raw tables
 -- Run in the kalkberg database:
---   psql -U postgres -d kalkberg -v ON_ERROR_STOP=1 -f sql/01_create_raw_tables.sql
+--   psql -U postgres -d kalkberg -v ON_ERROR_STOP=1 -f sql/01-create-tables.sql
 --
 -- Schemas
 --   shop  : the webshop's operational (OLTP) database - typed columns, keys, constraints

@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: budget_influencer_contracts
+    description: Influencer contracts from the budget workbook, typed (decision 0003).
+    columns:
+      - name: creator
+        tests: [unique, not_null]
+      - name: creator_key
+        description: Creator name as a key; matches both lena.sends and lena_sends in GA4 (GA-02).
+        tests: [unique, not_null]
+      - name: discount_code
+        description: Trimmed, uppercased discount code (SH-11).
+        tests: [unique, not_null]
+      - name: contract_start_date
+        tests: [not_null]
+      - name: contract_end_date
+        tests:
+          - not_null
+          - expression_is_true:
+              arguments: {expression: "contract_end_date >= contract_start_date"}
+      - name: code_valid_until
+        description: "Last day the code counts for this creator, 14 days after the contract ends."
+      - name: monthly_fee_eur
+        tests: [not_null]

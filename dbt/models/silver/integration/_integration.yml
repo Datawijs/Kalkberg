@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: person_identities
+    description: >
+      Every identity that can belong to a person (shop account, guest email address, Marketing Cloud
+      subscriber record), with its person_key (SH-06, SH-07, MC-03, X-02).
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [identity_type, identity_id]}
+    columns:
+      - name: identity_type
+        tests:
+          - accepted_values:
+              arguments: {values: [shop_account, guest_email, sfmc_subscriber]}
+      - name: person_key
+        tests: [not_null]
+      - name: matched_on
+        description: "'shop account' when the identity belongs to a person with an account, otherwise 'email address'."
+
+  - name: persons
+    description: People, one row per person_key. Becomes the customer dimension in gold.
+    columns:
+      - name: person_key
+        tests: [unique, not_null]
+      - name: is_reachable
+        description: At least one subscriber record of the person is active (MC-03).
+      - name: has_opt_in_mismatch
+        description: Subscribed in Marketing Cloud, while none of the person's shop accounts has marketing opt-in (X-02).
+      - name: is_test
+        description: The person has a test account or a test guest order (SH-05). Left out of gold.

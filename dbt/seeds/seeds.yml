@@ -1,0 +1,77 @@
+version: 2
+
+seeds:
+  - name: channels
+    description: >
+      The one channel list of the project (GA-01). Shared by every source and, through
+      budget_channel, by the budget sheets in Power Query. Becomes dim_channel in gold.
+    config:
+      column_types: {is_paid: boolean, sort_order: integer}
+    columns:
+      - name: channel_key
+        tests: [unique, not_null]
+      - name: channel_name
+        tests: [unique, not_null]
+      - name: budget_channel
+        description: Channel name as written in the budget sheets of marketing_budget.xlsx. Empty when the channel has no budget line.
+
+  - name: map_traffic_source
+    description: >
+      GA-01: every source / medium spelling found in GA4 (lowercased and trimmed), mapped to a channel.
+      A session whose campaign is an influencer's name is assigned to the influencer channel
+      regardless of this mapping (see ga4_sessions).
+    columns:
+      - name: channel_key
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('channels'), field: channel_key}}
+
+  - name: map_country
+    description: SH-01, GA-04. Every country notation (lowercased and trimmed) mapped to an ISO code. '??' is unknown.
+    columns:
+      - name: notation
+        tests: [unique, not_null]
+      - name: country_code
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('countries'), field: country_code}}
+
+  - name: countries
+    description: Countries that appear in the data. Kalkberg only ships to the five with is_shipping_country = true.
+    config:
+      column_types: {is_shipping_country: boolean}
+    columns:
+      - name: country_code
+        tests: [unique, not_null]
+
+  - name: discount_codes
+    description: >
+      SH-11, F3. Discount codes that are not influencer codes, with their type. Influencer codes come from
+      the contracts sheet (budget_influencer_contracts), so a new contract never needs a change here.
+    columns:
+      - name: discount_code
+        tests: [unique, not_null]
+      - name: code_type
+        tests:
+          - accepted_values:
+              arguments: {values: [welcome, affiliate, customer_service, test]}
+
+  - name: email_domain_typos
+    description: >
+      MC-05. Email domains that are a typo of a real domain. We don't correct the address (we can't be sure
+      what was meant), but flag it as undeliverable. probable_domain is for information only.
+    columns:
+      - name: typo_domain
+        tests: [unique, not_null]
+
+  - name: sfmc_journeys
+    description: >
+      The automated journeys in Marketing Cloud (E3, E4), keyed on the triggered send's customer key,
+      with the utm_campaign their links carry (sfmc_10).
+    config:
+      column_types: {journey_step: integer}
+    columns:
+      - name: triggered_send_customer_key
+        tests: [unique, not_null]
+      - name: utm_campaign
+        tests: [unique, not_null]

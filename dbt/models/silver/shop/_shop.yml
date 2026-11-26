@@ -1,0 +1,176 @@
+version: 2
+
+models:
+  - name: shop_categories
+    description: Product categories, unchanged from bronze.
+    columns:
+      - name: category_id
+        tests: [unique, not_null]
+
+  - name: shop_brands
+    description: Brands, unchanged from bronze.
+    columns:
+      - name: brand_id
+        tests: [unique, not_null]
+
+  - name: shop_products
+    description: Products with trimmed names (SH-13).
+    columns:
+      - name: product_id
+        tests: [unique, not_null]
+      - name: product_name
+        tests:
+          - not_null
+          - expression_is_true:
+              arguments: {expression: "product_name = btrim(product_name)"}
+      - name: product_name_key
+        description: Lowercased, trimmed name. Products with the same key have the same name (SH-13).
+      - name: has_duplicate_name
+        description: True when another product has the same name. Both keep their own sales history.
+      - name: brand_id
+        tests:
+          - relationships: {arguments: {to: ref('shop_brands'), field: brand_id}}
+      - name: category_id
+        tests:
+          - relationships: {arguments: {to: ref('shop_categories'), field: category_id}}
+
+  - name: shop_product_variants
+    description: Product variants, with an estimated purchase cost where the source has none (SH-14).
+    columns:
+      - name: variant_id
+        tests: [unique, not_null]
+      - name: product_id
+        tests:
+          - relationships: {arguments: {to: ref('shop_products'), field: product_id}}
+      - name: unit_cost_source
+        description: Purchase cost excl. VAT as the shop delivered it.
+      - name: unit_cost
+        description: Purchase cost excl. VAT; the median of the product's other variants when the source has none.
+      - name: is_unit_cost_estimated
+        description: True when unit_cost is the estimate of SH-14.
+
+  - name: shop_customers
+    description: Shop accounts, one row per account. People are in persons.
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+      - name: person_key
+        description: The person this account belongs to (SH-06).
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('persons'), field: person_key}}
+      - name: email_normalised
+        description: Email address in lowercase without spaces.
+      - name: has_email_domain_typo
+        description: The email domain is a known typo (MC-05). Emails to this address bounce.
+      - name: birth_date
+        description: Birth date; NULL when missing, a placeholder or impossible (SH-10).
+        tests:
+          - expression_is_true:
+              arguments:
+                expression: "birth_date IS NULL OR (birth_date <> DATE '1900-01-01' AND birth_date <= created_at_utc::date)"
+      - name: birth_date_issue
+        description: Why birth_date is empty.
+        tests:
+          - accepted_values:
+              arguments: {values: ['missing', 'placeholder 01/01/1900', 'after account creation', 'younger than 14 at sign-up']}
+      - name: country_code
+        description: ISO country code (SH-01).
+        tests:
+          - not_null
+          - accepted_values:
+              arguments: {values: [BE, NL, FR, DE, LU]}
+      - name: created_at_utc
+        description: Account creation in UTC (SH-02).
+        tests: [not_null]
+      - name: created_at_local
+        description: Account creation in Belgian time (SH-02).
+      - name: platform
+        description: Webshop platform at account creation (old until 01/09/2024, new from 02/09/2024).
+        tests:
+          - accepted_values:
+              arguments: {values: [old, new]}
+      - name: is_test
+        description: Test account (SH-05). Left out of gold.
+        tests: [not_null]
+
+  - name: shop_orders
+    description: Orders, one row per order. order_total is the revenue amount.
+    columns:
+      - name: order_id
+        tests: [unique, not_null]
+      - name: order_number
+        description: Business key; GA4 uses the same number as transaction_id (SH-04).
+        tests: [unique, not_null]
+      - name: platform
+        description: Webshop platform the order was placed on (SH-04).
+        tests:
+          - accepted_values:
+              arguments: {values: [old, new]}
+      - name: customer_id
+        tests:
+          - relationships: {arguments: {to: ref('shop_customers'), field: customer_id}}
+      - name: person_key
+        description: The person who placed the order, for account and guest orders alike (SH-06, SH-07).
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('persons'), field: person_key}}
+      - name: created_at_utc
+        description: Order moment in UTC (SH-02).
+        tests: [not_null]
+      - name: created_at_local
+        description: Order moment in Belgian time (SH-02).
+      - name: order_date
+        description: Belgian date of the order. Use this for every daily or monthly report.
+        tests: [not_null]
+      - name: order_total_excl_shipping
+        description: order_total minus shipping. Compare this with GA4's purchase value (GA-07).
+      - name: total_rounding_difference
+        description: order_total minus (subtotal - discount_total + shipping_fee). A few cents at most (SH-12).
+        tests:
+          - expression_is_true:
+              arguments: {expression: "abs(total_rounding_difference) <= 0.05"}
+      - name: discount_code
+        description: Trimmed, uppercased discount code (SH-11).
+      - name: discount_code_type
+        description: >
+          welcome, affiliate, customer_service, influencer or test. 'other' means a code that is not in the
+          discount_codes seed and is not a valid influencer code on the order date: the test fails, so
+          somebody decides what it is.
+        tests:
+          - accepted_values:
+              arguments: {values: [welcome, affiliate, customer_service, influencer, test]}
+      - name: influencer_creator
+        description: Creator of the influencer code, when the code was valid on the order date.
+      - name: shipping_country_code
+        description: ISO country code (SH-01).
+        tests:
+          - not_null
+          - accepted_values:
+              arguments: {values: [BE, NL, FR, DE, LU]}
+      - name: is_test
+        description: Test order (SH-05). Left out of gold.
+        tests: [not_null]
+
+  - name: shop_order_lines
+    description: Order lines, unchanged from bronze.
+    columns:
+      - name: order_line_id
+        tests: [unique, not_null]
+      - name: order_id
+        tests:
+          - relationships: {arguments: {to: ref('shop_orders'), field: order_id}}
+      - name: variant_id
+        tests:
+          - relationships: {arguments: {to: ref('shop_product_variants'), field: variant_id}}
+
+  - name: shop_returns
+    description: Returns, with dates only (SH-03).
+    columns:
+      - name: return_id
+        tests: [unique, not_null]
+      - name: order_line_id
+        tests:
+          - relationships: {arguments: {to: ref('shop_order_lines'), field: order_line_id}}
+      - name: requested_date
+        tests: [not_null]

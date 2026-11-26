@@ -1,0 +1,9 @@
+country_code,country_name,is_shipping_country
+BE,Belgium,true
+NL,Netherlands,true
+FR,France,true
+DE,Germany,true
+LU,Luxembourg,true
+GB,United Kingdom,false
+US,United States,false
+??,Unknown,false

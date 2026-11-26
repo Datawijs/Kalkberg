@@ -1,0 +1,5 @@
+discount_code,code_type,description
+WELCOME10,welcome,Welcome code for new subscribers
+CLIMBDEALS10,affiliate,Code of the affiliate network ClimbDeals
+SORRY10,customer_service,Code handed out by customer service
+TEST100,test,Code used by QA for test orders (SH-05)

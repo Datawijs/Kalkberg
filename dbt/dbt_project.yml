@@ -1,0 +1,38 @@
+# Kalkberg dbt project: builds the silver (and later gold) layer on top of the bronze schemas.
+name: kalkberg
+version: "1.0.0"
+profile: kalkberg
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+clean-targets: ["target", "dbt_packages", "logs"]
+
+vars:
+  # SH-02: the webshop moved to its new platform on this date (at midnight Belgian time).
+  # The old platform wrote Belgian local time, the new one writes UTC.
+  shop_migration_date: "2024-09-02"
+  # Business time zone: every local date and time in silver is Belgian time.
+  local_time_zone: "Europe/Brussels"
+  # Influencer codes stay valid this many days after the contract ends (contracts sheet, confirmed by shop_17).
+  influencer_code_grace_days: 14
+
+models:
+  kalkberg:
+    silver:
+      +schema: silver
+      +materialized: table
+      +docs:
+        node_color: "#a7a9ac"
+
+seeds:
+  kalkberg:
+    +schema: silver
+    +docs:
+      node_color: "#a7a9ac"
+
+tests:
+  kalkberg:
+    +severity: error

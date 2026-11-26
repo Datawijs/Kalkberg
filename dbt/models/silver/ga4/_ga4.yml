@@ -1,0 +1,85 @@
+version: 2
+
+models:
+  - name: ga4_traffic_sources
+    description: Every source / medium / campaign combination that GA4 reports, with its channel and campaign (GA-01 to GA-03).
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [source, medium, campaign]}
+    columns:
+      - name: channel_key
+        description: The channel. A new spelling without a mapping makes this test fail, so it is added to map_traffic_source.
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('channels'), field: channel_key}}
+      - name: campaign_name
+        description: Campaign as named in the ad platform, the creator for influencers, the utm_campaign for email.
+      - name: campaign_issue
+        description: >
+          Why the campaign can't be trusted: 'template not filled' (GA-03), 'not found in Meta' or
+          'not found in Google Ads'. The test only allows the first: every other paid campaign must be
+          found in its ad platform.
+        tests:
+          - accepted_values:
+              arguments: {values: ['template not filled']}
+
+  - name: ga4_events
+    description: GA4 events, typed, with purchases sent twice kept once (GA-05).
+    columns:
+      - name: event_name
+        tests:
+          - accepted_values:
+              arguments: {values: [session_start, add_to_cart, begin_checkout, purchase]}
+      - name: session_key
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('ga4_sessions'), field: session_key}}
+      - name: event_at_utc
+        tests: [not_null]
+      - name: customer_id
+        description: GA4 user_id, the shop customer number of a logged-in customer.
+        tests:
+          - relationships: {arguments: {to: ref('shop_customers'), field: customer_id}}
+      - name: transaction_id
+        description: The shop's order number on purchase events.
+        tests:
+          - relationships: {arguments: {to: ref('shop_orders'), field: order_number}}
+
+  - name: ga4_sessions
+    description: >
+      GA4 sessions from the event export: only sessions with shopping activity (GA-08). Use them for
+      journeys and attribution, not for traffic totals or conversion rates (those come from ga4_daily_traffic).
+    columns:
+      - name: session_key
+        tests: [unique, not_null]
+      - name: channel_key
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('channels'), field: channel_key}}
+      - name: person_key
+        description: The person, when the session belongs to a logged-in customer.
+      - name: country_code
+        tests: [not_null]
+      - name: is_shipping_country
+        description: False for US, UK and unknown countries. Leave these out of conversion rates (GA-04).
+
+  - name: ga4_daily_traffic
+    description: >
+      GA4 traffic report. Source for sessions, users and conversion rates. Its purchase columns include
+      duplicates (GA-05) and are kept only as reported.
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [traffic_date, source, medium, campaign, device_category, country_code]}
+    columns:
+      - name: traffic_date
+        tests: [not_null]
+      - name: channel_key
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('channels'), field: channel_key}}
+      - name: country_code
+        tests: [not_null]
+      - name: ecommerce_purchases_reported
+        description: As reported, including purchases sent twice. Don't use; take purchases from ga4_events (GA-05).
+      - name: purchase_revenue_reported
+        description: As reported, including purchases sent twice. Don't use; take revenue from ga4_events (GA-05).

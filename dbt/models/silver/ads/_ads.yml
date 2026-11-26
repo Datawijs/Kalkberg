@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: ads_google_daily
+    description: >
+      Google Ads report, one row per day and campaign, without the total rows (AD-01) and with numbers
+      converted from US notation (AD-02). Conversions are Google's own (X-01).
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [report_date, campaign_name]}
+    columns:
+      - name: report_date
+        tests: [not_null]
+      - name: cost
+        tests: [not_null]
+      - name: channel_key
+        tests:
+          - relationships: {arguments: {to: ref('channels'), field: channel_key}}
+
+  - name: ads_meta_daily
+    description: >
+      Meta Ads report, one row per day, campaign and ad set. Missing purchases stay unknown (AD-03).
+      Purchases are Meta's own (X-01).
+    tests:
+      - unique_combination_of_columns:
+          arguments: {combination_of_columns: [report_date, ad_set_key]}
+    columns:
+      - name: report_date
+        tests: [not_null]
+      - name: ad_set_key
+        description: Campaign + ad set name; ad set names alone are not unique (AD-04).
+      - name: cost
+        tests: [not_null]
+      - name: is_purchases_missing
+        description: Meta reported no purchases on this row, while the purchase value is not 0 (AD-03).
+      - name: channel_key
+        tests:
+          - relationships: {arguments: {to: ref('channels'), field: channel_key}}

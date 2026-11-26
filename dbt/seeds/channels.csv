@@ -1,0 +1,10 @@
+channel_key,channel_name,channel_group,is_paid,budget_channel,sort_order
+paid_search,Paid search (Google Ads),Paid,true,SEA (Google Ads),1
+paid_social,Paid social (Meta),Paid,true,Paid Social (Meta),2
+influencer,Influencers,Paid,true,Influencers,3
+affiliate,Affiliates,Paid,true,Affiliates (commission est.),4
+email,Email,Owned,false,Email (SFMC licence),5
+organic_search,Organic search,Organic,false,SEO / content agency,6
+organic_social,Organic social,Organic,false,,7
+referral,Referral,Organic,false,,8
+direct,Direct,Direct,false,,9

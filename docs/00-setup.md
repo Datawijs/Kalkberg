@@ -9,8 +9,10 @@ This step covers the tools we use and how to rebuild the project from scratch, f
 | Tool | Used for | Version used |
 | --- | --- | --- |
 | Python | Generating the data and loading the budget workbook | 3.15 |
+| Python for dbt | Running dbt, in its own virtual environment | 3.13 (x64) |
 | PostgreSQL (incl. `psql`) | The database that holds the bronze, silver and gold layers | 19 |
-| dbt (`dbt-postgres`) | Building the silver and gold layers | *added in step 3* |
+| dbt (`dbt-postgres`) | Building the silver and gold layers | dbt Core 1.12, `dbt-postgres` 1.11 |
+| `uv` | Installing the Python version that dbt needs | 0.13 |
 | Power BI Desktop | Budget medallion, semantic model and report | *added in step 5* |
 
 ### Why these tools
@@ -18,6 +20,7 @@ This step covers the tools we use and how to rebuild the project from scratch, f
 - **PostgreSQL** is a full, free relational database that runs locally, so anyone can reproduce the project without a cloud subscription. Everything we do in it (schemas, views, SQL transformations) works the same way on a cloud data warehouse.
 - **`psql` with `\copy`** is the fastest simple way to load large CSV files: about 20 million rows in a few minutes, with no extra Python database driver.
 - **Python** is only used where SQL can't do the job: generating the fictional data, and reading an Excel sheet that `psql` can't open.
+- **dbt** builds silver and gold from plain SQL, and adds the order of building, tests, documentation and lineage. See [step 3](03-silver.md#why-dbt).
 
 ## How to reproduce the project
 
@@ -61,7 +64,38 @@ The script asks for the path of `marketing_budget.xlsx` (default: `data/budget/m
 
 ### 3. Build silver and gold
 
-*Added in step 3.*
+dbt runs from the `dbt` folder, in its own virtual environment.
+
+> [!NOTE]
+> dbt doesn't support Python 3.15 yet, and one of its dependencies has no ready-made package for Windows on ARM. That's why the dbt folder uses Python 3.13, installed with [`uv`](https://docs.astral.sh/uv/). On Windows on ARM, take the x64 build (the line below); on other machines, `--python 3.13` is enough.
+
+```powershell
+cd dbt
+uv venv --python cpython-3.13-windows-x86_64-none .venv
+uv pip install --python .venv\Scripts\python.exe -r requirements.txt
+```
+
+dbt reads the database connection from environment variables, so no password is stored in the project ([`dbt/profiles.yml`](../dbt/profiles.yml)). Set them once for your Windows user:
+
+```powershell
+setx DBT_PG_USER "[username]"
+setx DBT_PG_PASSWORD "[password]"
+# Only when they differ from the defaults localhost, 5432 and kalkberg:
+setx DBT_PG_HOST "[host]"
+setx DBT_PG_PORT "[port]"
+setx DBT_PG_DBNAME "[database]"
+```
+
+`setx` only affects terminals that are opened afterwards. Then, in a new terminal:
+
+```powershell
+cd dbt
+.venv\Scripts\Activate.ps1
+dbt debug     # checks the connection
+dbt build     # seeds, models and tests
+```
+
+`dbt build` creates the `silver` schema and ends with a summary line; every test must pass. See [step 3](03-silver.md#2-building-silver).
 
 ## Running the tests
 
@@ -77,5 +111,5 @@ cd ingestion;  .venv\Scripts\python -m unittest; cd ..
 ```
 python generator/generate_data.py               # source systems + bronze (drops the database)
 python ingestion/load_influencer_contracts.py   # budget.influencer_contracts
-dbt build                                       # silver + gold (from step 3 onwards)
+cd dbt; dbt build                               # silver + gold
 ```

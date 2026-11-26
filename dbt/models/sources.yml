@@ -1,0 +1,46 @@
+# The bronze layer: the raw schemas, exactly as loaded (docs/01-bronze.md, decision 0002).
+# dbt only reads from them; nothing in this project writes to these schemas.
+version: 2
+
+sources:
+  - name: shop
+    description: Operational database of the webshop (typed, with keys and constraints). Platform migration on 02/09/2024.
+    tables:
+      - name: categories
+      - name: brands
+      - name: products
+      - name: product_variants
+      - name: customers
+      - name: orders
+      - name: order_lines
+      - name: returns
+
+  - name: ga4
+    description: Google Analytics 4 exports, all text.
+    tables:
+      - name: events
+        description: Event export (session_start, add_to_cart, begin_checkout, purchase). Only sessions with shopping activity (GA-08).
+      - name: daily_traffic
+        description: Traffic report per day, source / medium, campaign, device and country.
+
+  - name: sfmc
+    description: Salesforce Marketing Cloud data views, all text. Timestamps in US notation, fixed UTC-6 (MC-01, MC-02).
+    tables:
+      - name: subscribers
+      - name: jobs
+      - name: sent
+      - name: opens
+      - name: clicks
+      - name: bounces
+      - name: unsubscribes
+
+  - name: ads
+    description: Ad platform report downloads, all text.
+    tables:
+      - name: google_ads_campaign_report
+      - name: meta_ads_report
+
+  - name: budget
+    description: Sheets of marketing_budget.xlsx that the SQL pipeline needs, all text plus load metadata (decision 0003).
+    tables:
+      - name: influencer_contracts

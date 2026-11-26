@@ -1,0 +1,15 @@
+# Connection profile for the Kalkberg dbt project.
+# No secrets in this file: every connection detail comes from an environment variable.
+# Run dbt from this folder (dbt looks for profiles.yml in the current directory first).
+kalkberg:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('DBT_PG_HOST', 'localhost') }}"
+      port: "{{ env_var('DBT_PG_PORT', '5432') | as_number }}"
+      dbname: "{{ env_var('DBT_PG_DBNAME', 'kalkberg') }}"
+      user: "{{ env_var('DBT_PG_USER') }}"
+      password: "{{ env_var('DBT_PG_PASSWORD') }}"
+      schema: silver
+      threads: 4

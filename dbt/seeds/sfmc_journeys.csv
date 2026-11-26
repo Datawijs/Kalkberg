@@ -1,0 +1,6 @@
+triggered_send_customer_key,journey_name,journey_step,utm_campaign
+TS_Welcome_1,Welcome,1,welcome_1
+TS_Welcome_2,Welcome,2,welcome_2
+TS_AbandonedCart,Abandoned cart,1,abandoned_cart
+TS_PostPurchase_Review,Post-purchase,1,post_purchase
+TS_Winback,Win-back,1,winback

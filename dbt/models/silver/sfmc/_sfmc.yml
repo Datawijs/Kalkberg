@@ -1,0 +1,114 @@
+version: 2
+
+models:
+  - name: sfmc_subscribers
+    description: Marketing Cloud subscriber records, one row per record. People are in persons (MC-03).
+    columns:
+      - name: subscriber_id
+        tests: [unique, not_null]
+      - name: subscriber_key_type
+        description: What the subscriber key is (MC-04). Never used to link to the shop.
+        tests:
+          - accepted_values:
+              arguments: {values: ['customer number', 'email address', 'sign-up key']}
+      - name: person_key
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('persons'), field: person_key}}
+      - name: is_shop_customer
+        description: The person also has a shop account, linked on email address (X-02).
+      - name: has_email_domain_typo
+        description: The email domain is a known typo (MC-05); these records are the ones with status Held.
+      - name: is_icloud_address
+        description: Opens from these addresses are mostly automatic (MC-06).
+      - name: status
+        tests:
+          - accepted_values:
+              arguments: {values: [Active, Unsubscribed, Held]}
+      - name: joined_at_utc
+        tests: [not_null]
+
+  - name: sfmc_jobs
+    description: Marketing Cloud email jobs, one per email, language and (for journeys) year.
+    columns:
+      - name: job_id
+        tests: [unique, not_null]
+      - name: send_type
+        tests:
+          - accepted_values:
+              arguments: {values: [newsletter, campaign, journey]}
+      - name: email_language
+        tests:
+          - accepted_values:
+              arguments: {values: [nl, fr, de, en]}
+      - name: utm_campaign
+        description: Campaign that the links in this email carry; links email to GA4 traffic.
+        tests: [not_null]
+      - name: journey_name
+        description: The journey of a journey email; every journey email must be in the sfmc_journeys seed.
+        tests:
+          - not_null:
+              config: {where: "send_type = 'journey'"}
+
+  - name: sfmc_sends
+    description: Marketing Cloud sends, one row per send (MC-07).
+    columns:
+      - name: send_key
+        description: Job, subscriber and send time.
+        tests: [unique, not_null]
+      - name: job_id
+        tests:
+          - relationships: {arguments: {to: ref('sfmc_jobs'), field: job_id}}
+      - name: subscriber_id
+        tests:
+          - relationships: {arguments: {to: ref('sfmc_subscribers'), field: subscriber_id}}
+      - name: sent_at_utc
+        tests: [not_null]
+
+  - name: sfmc_opens
+    description: Marketing Cloud opens, linked to the send just before them (MC-07). See is_icloud_address (MC-06).
+    columns:
+      - name: open_id
+        tests: [unique, not_null]
+      - name: send_key
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('sfmc_sends'), field: send_key}}
+      - name: time_since_send
+        tests:
+          - expression_is_true:
+              arguments: {expression: "time_since_send >= interval '0'"}
+
+  - name: sfmc_clicks
+    description: Marketing Cloud clicks, linked to the send just before them (MC-07), with the UTM parameters of the link.
+    columns:
+      - name: click_id
+        tests: [unique, not_null]
+      - name: send_key
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('sfmc_sends'), field: send_key}}
+      - name: time_since_send
+        tests:
+          - expression_is_true:
+              arguments: {expression: "time_since_send >= interval '0'"}
+
+  - name: sfmc_bounces
+    description: Marketing Cloud bounces, linked to the send just before them (MC-07).
+    columns:
+      - name: bounce_id
+        tests: [unique, not_null]
+      - name: send_key
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('sfmc_sends'), field: send_key}}
+
+  - name: sfmc_unsubscribes
+    description: Marketing Cloud unsubscribes, linked to the send just before them (MC-07).
+    columns:
+      - name: unsubscribe_id
+        tests: [unique, not_null]
+      - name: send_key
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('sfmc_sends'), field: send_key}}

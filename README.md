@@ -12,6 +12,7 @@ context.md                          --> Provides information about the fictional
 generator/                          --> Code to generate the data used for this project (plays the source systems)
 ingestion/                          --> Loads the influencer contracts from the budget workbook into PostgreSQL
 profiling/                          --> SQL to profile the raw data, and the results it produced
+dbt/                                --> dbt project that builds the silver (and later gold) layer
 docs/                               --> Step-by-step guide on what we did, how and why
 ```
 
@@ -52,3 +53,13 @@ The script asks for the workbook path and the database connection, and loads the
 
 > [!IMPORTANT]
 > Run this script again every time the generator has recreated the database.
+
+### 3. Build the silver layer
+
+The silver layer is built with dbt from the `dbt` folder. dbt needs Python 3.13 and reads the database connection from the `DBT_PG_*` environment variables; [docs/00-setup.md](docs/00-setup.md#3-build-silver-and-gold) explains how to set both up. Then run:
+
+```shell
+cd dbt
+.venv\Scripts\Activate.ps1
+dbt build
+```

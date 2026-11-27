@@ -11,6 +11,7 @@ table EmailSends
 
 	column job_id
 		dataType: string
+		isHidden
 		lineageTag: 1fd34ed2-dc17-4ea4-b6d7-7138b862a19b
 		summarizeBy: none
 		sourceColumn: job_id
@@ -19,6 +20,7 @@ table EmailSends
 
 	column subscriber_id
 		dataType: string
+		isHidden
 		lineageTag: c9592874-92e9-446e-87b5-fa40dcaaa2df
 		summarizeBy: none
 		sourceColumn: subscriber_id
@@ -27,6 +29,7 @@ table EmailSends
 
 	column person_key
 		dataType: string
+		isHidden
 		lineageTag: 9aecc293-3873-496f-90dd-db475a7d3705
 		summarizeBy: none
 		sourceColumn: person_key
@@ -36,6 +39,7 @@ table EmailSends
 	column sent_date
 		dataType: dateTime
 		formatString: Short Date
+		isHidden
 		lineageTag: a55b622c-f062-41eb-8274-b3e0d6b073e6
 		summarizeBy: none
 		sourceColumn: sent_date

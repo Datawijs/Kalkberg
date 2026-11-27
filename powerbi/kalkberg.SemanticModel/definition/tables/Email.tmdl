@@ -76,6 +76,7 @@ table Email
 
 	column campaign_key
 		dataType: string
+		isHidden
 		lineageTag: 73e9a507-f6e3-4251-8ca7-9c26fb3fcf16
 		summarizeBy: none
 		sourceColumn: campaign_key

@@ -5,28 +5,28 @@ table Returns
 		dataType: int64
 		formatString: 0
 		lineageTag: 1b8fe635-9f09-4209-9a13-d4ecfb0265f3
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: return_id
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column order_line_id
 		dataType: int64
 		formatString: 0
 		lineageTag: f76ae004-16bf-425a-930c-5ac5f06e2dfc
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: order_line_id
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column order_id
 		dataType: int64
 		formatString: 0
 		lineageTag: 2ba17910-0226-4180-b44f-d5b24a5a92ef
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: order_id
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column order_number
 		dataType: string
@@ -39,6 +39,7 @@ table Returns
 	column order_date
 		dataType: dateTime
 		formatString: Short Date
+		isHidden
 		lineageTag: 6bc7623b-4fa5-4cf5-b016-c6849e5e2002
 		summarizeBy: none
 		sourceColumn: order_date
@@ -49,6 +50,7 @@ table Returns
 
 	column person_key
 		dataType: string
+		isHidden
 		lineageTag: 8010d678-1758-4cf7-b622-7c51754de4e2
 		summarizeBy: none
 		sourceColumn: person_key
@@ -58,8 +60,9 @@ table Returns
 	column variant_id
 		dataType: int64
 		formatString: 0
+		isHidden
 		lineageTag: 6534b630-5ce7-4e22-a58f-2b66740d700d
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: variant_id
 
 		annotation SummarizationSetBy = Automatic
@@ -68,13 +71,14 @@ table Returns
 		dataType: int64
 		formatString: 0
 		lineageTag: b7944d02-c734-4c56-a684-bca38550b1f4
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: product_id
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column shipping_country_code
 		dataType: string
+		isHidden
 		lineageTag: 93b5dcac-d241-4b09-830b-e6a599c4073f
 		summarizeBy: none
 		sourceColumn: shipping_country_code
@@ -93,6 +97,7 @@ table Returns
 	column requested_date
 		dataType: dateTime
 		formatString: Short Date
+		isHidden
 		lineageTag: b91da30f-5231-413b-a436-c766bb05b467
 		summarizeBy: none
 		sourceColumn: requested_date
@@ -104,6 +109,7 @@ table Returns
 	column received_date
 		dataType: dateTime
 		formatString: Short Date
+		isHidden
 		lineageTag: 3bb4ff52-1e1f-4ff9-89db-5e5faab85cc7
 		summarizeBy: none
 		sourceColumn: received_date

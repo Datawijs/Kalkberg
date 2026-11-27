@@ -1,0 +1,200 @@
+relationship d24fed11-bf00-4a79-f3fa-a0a242538b35
+	fromColumn: Orders.order_date
+	toColumn: Date.date
+
+relationship 0add2062-0377-f296-6876-d1c13d9e7733
+	fromColumn: Orders.person_key
+	toColumn: Customer.person_key
+
+relationship c60cdc1f-06f0-c80e-c41b-878233cf9640
+	fromColumn: Orders.order_channel_key
+	toColumn: Channel.channel_key
+
+relationship 55c3764c-a0e0-7ea0-fc1d-868aae332ebb
+	fromColumn: Orders.order_campaign_key
+	toColumn: Campaign.campaign_key
+
+relationship 9aeb31ff-0239-aa73-3a6d-3eac9711e5c9
+	fromColumn: Orders.shipping_country_code
+	toColumn: Country.country_code
+
+relationship a6738521-ff32-01a0-72fd-a52f8dee85d3
+	fromColumn: OrderLines.order_date
+	toColumn: Date.date
+
+relationship 267de37d-61cc-61a5-f67f-081bd68791f1
+	fromColumn: OrderLines.person_key
+	toColumn: Customer.person_key
+
+relationship 6f2fb97f-d4c2-ccf9-56fa-17abfeaf4402
+	fromColumn: OrderLines.order_channel_key
+	toColumn: Channel.channel_key
+
+relationship 6f55f0f4-4b9c-b4eb-e879-9a0eab3dd3d1
+	fromColumn: OrderLines.order_campaign_key
+	toColumn: Campaign.campaign_key
+
+relationship 8320e411-68a7-0af4-a94c-d7d72b644c73
+	fromColumn: OrderLines.variant_id
+	toColumn: Product.variant_id
+
+relationship 9a95f210-9708-f939-518d-218c7a3957c6
+	fromColumn: OrderLines.shipping_country_code
+	toColumn: Country.country_code
+
+relationship 25be6cc4-5bfa-be6f-5d12-bd55892af708
+	fromColumn: Returns.order_date
+	toColumn: Date.date
+
+relationship 42474316-8272-30a7-a9cc-445eebe173f3
+	fromColumn: Returns.person_key
+	toColumn: Customer.person_key
+
+relationship d92fef9f-0e3c-867e-a36a-7a5f15618165
+	fromColumn: Returns.variant_id
+	toColumn: Product.variant_id
+
+relationship fbf649c4-c5e4-623b-078c-e4ccabe09fdb
+	fromColumn: Returns.shipping_country_code
+	toColumn: Country.country_code
+
+relationship 1703c420-e7c8-330d-8a1b-850ee0b3cb75
+	fromColumn: OrderTouchpoints.order_date
+	toColumn: Date.date
+
+relationship d87686da-3c74-2432-cbd9-3938cea5a79a
+	fromColumn: OrderTouchpoints.person_key
+	toColumn: Customer.person_key
+
+relationship a68a5cf8-b44d-6302-00d8-21854eeb2671
+	fromColumn: OrderTouchpoints.channel_key
+	toColumn: Channel.channel_key
+
+relationship 37d22dd4-de4d-d347-c6e3-133bac185927
+	fromColumn: OrderTouchpoints.campaign_key
+	toColumn: Campaign.campaign_key
+
+relationship 3a82f4f9-9566-74a6-8882-84cd0d333d11
+	fromColumn: OrderTouchpoints.country_code
+	toColumn: Country.country_code
+
+relationship 2fcfa504-ea27-a290-8b9b-f54a40bb030c
+	fromColumn: CustomerMonthlyRFM.month_start
+	toColumn: Date.date
+
+relationship c5d81821-b5c7-c174-a2c5-cf6784a65c69
+	fromColumn: CustomerMonthlyRFM.person_key
+	toColumn: Customer.person_key
+
+relationship e9377af2-da85-bac5-8b8d-f73c93e03c50
+	fromColumn: MarketingSpend.spend_date
+	toColumn: Date.date
+
+relationship 372c6d42-942d-bbdb-99c8-a8f6a20383d6
+	fromColumn: MarketingSpend.channel_key
+	toColumn: Channel.channel_key
+
+relationship 79a02204-b4cf-56b8-cd70-1677dc1b79dc
+	fromColumn: MarketingSpend.campaign_key
+	toColumn: Campaign.campaign_key
+
+relationship 53c29a62-ad5c-82e4-5e43-2665eb533620
+	fromColumn: AdPerformance.report_date
+	toColumn: Date.date
+
+relationship 3b25cc10-2370-e9bd-93bf-8f1ad3055757
+	fromColumn: AdPerformance.channel_key
+	toColumn: Channel.channel_key
+
+relationship c326d421-9400-6174-e58c-5c38a19d2b0e
+	fromColumn: AdPerformance.campaign_key
+	toColumn: Campaign.campaign_key
+
+relationship 8776d15f-8245-da83-7f25-25ee58e75df7
+	fromColumn: WebTraffic.traffic_date
+	toColumn: Date.date
+
+relationship c2318204-a9c8-62d5-424d-514572318cae
+	fromColumn: WebTraffic.channel_key
+	toColumn: Channel.channel_key
+
+relationship 856bb847-70c6-4b9e-63ad-1b06ca1aecd1
+	fromColumn: WebTraffic.campaign_key
+	toColumn: Campaign.campaign_key
+
+relationship 11517c92-2637-88e0-dc32-6d390e53ae29
+	fromColumn: WebTraffic.country_code
+	toColumn: Country.country_code
+
+relationship c8da49dc-e693-1c6a-73fb-08e8f294f1ad
+	fromColumn: EmailSends.sent_date
+	toColumn: Date.date
+
+relationship 0721d003-f2e2-48af-b4e1-8688800c0815
+	fromColumn: EmailSends.person_key
+	toColumn: Customer.person_key
+
+relationship c41bbe9e-7c96-f8dc-5d12-27c4f6452c48
+	fromColumn: Budget.month_start
+	toColumn: Date.date
+
+relationship 5c6a3d89-e5db-d383-89ab-55690a24b640
+	fromColumn: Budget.channel_key
+	toColumn: Channel.channel_key
+
+relationship c9008f45-fd6a-f75b-0032-1960ec34b668
+	fromColumn: Targets.month_start
+	toColumn: Date.date
+
+relationship 2ce34271-b372-01b0-51fc-e9763a73d548
+	fromColumn: EmailSends.job_id
+	toColumn: Email.job_id
+
+relationship 2991dec4-4081-45bb-d21f-a99b350bc4a0
+	fromColumn: EmailSends.subscriber_id
+	toColumn: Subscriber.subscriber_id
+
+relationship f2b1cad8-cf10-23e5-34bb-f19fbe8f4df2
+	fromColumn: Email.campaign_key
+	toColumn: Campaign.campaign_key
+
+relationship f1d87b94-f144-4d2b-3c28-6acbfeb97b0e
+	isActive: false
+	fromColumn: Orders.code_channel_key
+	toColumn: Channel.channel_key
+
+relationship 682c9ca6-cdb1-42c3-4471-c63ea12ba74f
+	isActive: false
+	fromColumn: Orders.last_click_channel_key
+	toColumn: Channel.channel_key
+
+relationship 6064ba22-2f31-d378-ee2a-02dee4972cdc
+	isActive: false
+	fromColumn: OrderTouchpoints.touchpoint_date
+	toColumn: Date.date
+
+relationship 2203b864-51ec-b3d7-866e-715f08b12296
+	isActive: false
+	fromColumn: Returns.requested_date
+	toColumn: Date.date
+
+relationship deb263f9-c608-9dde-469e-6d7afcef5268
+	isActive: false
+	fromColumn: Returns.received_date
+	toColumn: Date.date
+
+relationship b47fb7b3-c6e3-d77f-11a5-b0120023c04d
+	isActive: false
+	fromColumn: Subscriber.joined_date
+	toColumn: Date.date
+
+relationship 7a13ce97-e9e3-7269-04da-1c8d031bcc68
+	isActive: false
+	fromColumn: Subscriber.unsubscribed_date
+	toColumn: Date.date
+
+relationship b0fe7a66-c1b1-f3c6-4c77-68acdb1ee3ef
+	isActive: false
+	fromColumn: Customer.acquisition_channel_key
+	toColumn: Channel.channel_key
+

@@ -4,6 +4,7 @@ table AdPerformance
 	column report_date
 		dataType: dateTime
 		formatString: Short Date
+		isHidden
 		lineageTag: cf84100a-7ac9-4115-84fa-21b7aed34bdc
 		summarizeBy: none
 		sourceColumn: report_date
@@ -22,6 +23,7 @@ table AdPerformance
 
 	column channel_key
 		dataType: string
+		isHidden
 		lineageTag: 51c947c8-1326-4ae0-8efa-6274b7d1d199
 		summarizeBy: none
 		sourceColumn: channel_key
@@ -30,6 +32,7 @@ table AdPerformance
 
 	column campaign_key
 		dataType: string
+		isHidden
 		lineageTag: 2cedc4d0-9344-435a-a179-c277db464061
 		summarizeBy: none
 		sourceColumn: campaign_key

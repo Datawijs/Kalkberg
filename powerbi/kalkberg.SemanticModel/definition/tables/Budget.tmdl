@@ -4,6 +4,7 @@ table Budget
 	column month_start
 		dataType: dateTime
 		formatString: Short Date
+		isHidden
 		lineageTag: 392c5f31-23bb-4db5-896a-c60321bdc587
 		summarizeBy: none
 		sourceColumn: month_start
@@ -14,6 +15,7 @@ table Budget
 
 	column channel_key
 		dataType: string
+		isHidden
 		lineageTag: c5bb1f63-a4a9-4b58-90ba-ae24f4f9ad1c
 		summarizeBy: none
 		sourceColumn: channel_key

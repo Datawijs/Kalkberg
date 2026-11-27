@@ -3,6 +3,7 @@ table CustomerMonthlyRFM
 
 	column person_key
 		dataType: string
+		isHidden
 		lineageTag: b2f3846f-a76f-4a1f-abc9-5b5c876fb5e8
 		summarizeBy: none
 		sourceColumn: person_key
@@ -23,6 +24,7 @@ table CustomerMonthlyRFM
 	column month_start
 		dataType: dateTime
 		formatString: Short Date
+		isHidden
 		lineageTag: cb0170ce-9d84-4599-aa1e-2fdd14e04471
 		summarizeBy: none
 		sourceColumn: month_start

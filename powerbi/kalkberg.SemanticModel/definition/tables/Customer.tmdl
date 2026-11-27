@@ -125,10 +125,10 @@ table Customer
 		dataType: int64
 		formatString: 0
 		lineageTag: c475dac8-2d79-4d61-b0b7-4dcf4d19ee21
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: first_order_id
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column first_order_date
 		dataType: dateTime

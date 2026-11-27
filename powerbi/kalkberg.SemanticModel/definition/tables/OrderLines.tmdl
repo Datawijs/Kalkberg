@@ -5,19 +5,19 @@ table OrderLines
 		dataType: int64
 		formatString: 0
 		lineageTag: d9e70f82-9557-4fc4-a75d-c26eeebc52f9
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: order_line_id
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column order_id
 		dataType: int64
 		formatString: 0
 		lineageTag: de604c10-c978-4e98-aef9-4732a4ded813
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: order_id
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column order_number
 		dataType: string
@@ -30,6 +30,7 @@ table OrderLines
 	column order_date
 		dataType: dateTime
 		formatString: Short Date
+		isHidden
 		lineageTag: e5757388-c905-411a-bd89-4b9622959220
 		summarizeBy: none
 		sourceColumn: order_date
@@ -40,6 +41,7 @@ table OrderLines
 
 	column person_key
 		dataType: string
+		isHidden
 		lineageTag: 4d368e2c-516b-4eb1-8259-ab7a7b5c632a
 		summarizeBy: none
 		sourceColumn: person_key
@@ -49,8 +51,9 @@ table OrderLines
 	column variant_id
 		dataType: int64
 		formatString: 0
+		isHidden
 		lineageTag: be4f6fc1-e7ad-415e-bcdd-a58613fe579b
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: variant_id
 
 		annotation SummarizationSetBy = Automatic
@@ -59,13 +62,14 @@ table OrderLines
 		dataType: int64
 		formatString: 0
 		lineageTag: 027d4417-38f6-4e9c-be3a-bbd9d101169b
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: product_id
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column shipping_country_code
 		dataType: string
+		isHidden
 		lineageTag: 6d4e7790-04f6-4a2c-98c2-9649c2d17607
 		summarizeBy: none
 		sourceColumn: shipping_country_code
@@ -292,6 +296,7 @@ table OrderLines
 
 	column order_channel_key
 		dataType: string
+		isHidden
 		lineageTag: d7540d6c-2c56-4653-8ccc-dfa1c72f926c
 		summarizeBy: none
 		sourceColumn: order_channel_key
@@ -300,6 +305,7 @@ table OrderLines
 
 	column order_campaign_key
 		dataType: string
+		isHidden
 		lineageTag: bfcd7456-9fbe-49a3-a81f-e615eb1c694d
 		summarizeBy: none
 		sourceColumn: order_campaign_key

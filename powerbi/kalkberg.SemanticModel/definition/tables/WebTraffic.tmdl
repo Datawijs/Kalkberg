@@ -4,6 +4,7 @@ table WebTraffic
 	column traffic_date
 		dataType: dateTime
 		formatString: Short Date
+		isHidden
 		lineageTag: e3629757-bc97-43f9-99bc-3f833e7e5051
 		summarizeBy: none
 		sourceColumn: traffic_date
@@ -14,6 +15,7 @@ table WebTraffic
 
 	column channel_key
 		dataType: string
+		isHidden
 		lineageTag: bfadd37c-2106-4076-8367-f7071ab72ffd
 		summarizeBy: none
 		sourceColumn: channel_key
@@ -22,6 +24,7 @@ table WebTraffic
 
 	column campaign_key
 		dataType: string
+		isHidden
 		lineageTag: 8448279a-4d68-4a2e-9441-6b97ae8108dd
 		summarizeBy: none
 		sourceColumn: campaign_key
@@ -38,6 +41,7 @@ table WebTraffic
 
 	column country_code
 		dataType: string
+		isHidden
 		lineageTag: f27b0d92-cf86-4a51-b4ff-a343d19ac25e
 		summarizeBy: none
 		sourceColumn: country_code

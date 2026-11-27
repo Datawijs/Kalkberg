@@ -5,7 +5,7 @@ table Product
 		dataType: int64
 		formatString: 0
 		lineageTag: 66e5c7f2-5d8b-4cab-bec1-1ebaeb3d5e5a
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: variant_id
 
 		annotation SummarizationSetBy = Automatic
@@ -30,10 +30,10 @@ table Product
 		dataType: int64
 		formatString: 0
 		lineageTag: 92ba0279-8ef1-480e-8d28-8f3fccd0db31
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: product_id
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column product_name
 		dataType: string

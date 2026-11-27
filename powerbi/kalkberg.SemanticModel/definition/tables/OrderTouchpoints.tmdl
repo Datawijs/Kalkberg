@@ -13,10 +13,10 @@ table OrderTouchpoints
 		dataType: int64
 		formatString: 0
 		lineageTag: c8814a73-63dc-4da5-a907-47c6141c90f0
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: order_id
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column order_number
 		dataType: string
@@ -28,6 +28,7 @@ table OrderTouchpoints
 
 	column person_key
 		dataType: string
+		isHidden
 		lineageTag: 2e584b9c-9c4f-4796-98be-c9e573d475b2
 		summarizeBy: none
 		sourceColumn: person_key
@@ -80,6 +81,7 @@ table OrderTouchpoints
 	column touchpoint_date
 		dataType: dateTime
 		formatString: Short Date
+		isHidden
 		lineageTag: c6c23f57-4956-4fd9-9d1b-ea505503152c
 		summarizeBy: none
 		sourceColumn: touchpoint_date
@@ -109,6 +111,7 @@ table OrderTouchpoints
 
 	column channel_key
 		dataType: string
+		isHidden
 		lineageTag: 71c6a1c3-f35e-40e1-b849-de34d6ef9c44
 		summarizeBy: none
 		sourceColumn: channel_key
@@ -117,6 +120,7 @@ table OrderTouchpoints
 
 	column campaign_key
 		dataType: string
+		isHidden
 		lineageTag: adfa8505-016e-4bdb-b928-d3c305ada3ad
 		summarizeBy: none
 		sourceColumn: campaign_key
@@ -133,6 +137,7 @@ table OrderTouchpoints
 
 	column country_code
 		dataType: string
+		isHidden
 		lineageTag: c7b9beac-7496-47cc-8518-638f2e2ad2ef
 		summarizeBy: none
 		sourceColumn: country_code
@@ -191,6 +196,7 @@ table OrderTouchpoints
 	column order_date
 		dataType: dateTime
 		formatString: Short Date
+		isHidden
 		lineageTag: c5ac56fa-03f2-4367-8432-acd27ac218f6
 		summarizeBy: none
 		sourceColumn: order_date

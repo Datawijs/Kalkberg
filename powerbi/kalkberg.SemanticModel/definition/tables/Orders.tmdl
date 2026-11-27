@@ -5,10 +5,10 @@ table Orders
 		dataType: int64
 		formatString: 0
 		lineageTag: 38cb51f2-a093-448a-9a72-1f0d3d77e090
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: order_id
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column order_number
 		dataType: string
@@ -21,6 +21,7 @@ table Orders
 	column order_date
 		dataType: dateTime
 		formatString: Short Date
+		isHidden
 		lineageTag: fd0c44b8-0004-4716-9612-59abd886c70a
 		summarizeBy: none
 		sourceColumn: order_date
@@ -40,6 +41,7 @@ table Orders
 
 	column person_key
 		dataType: string
+		isHidden
 		lineageTag: d54a54e9-d68c-45c9-ac65-865b0c6abf57
 		summarizeBy: none
 		sourceColumn: person_key
@@ -50,10 +52,10 @@ table Orders
 		dataType: int64
 		formatString: 0
 		lineageTag: ad5508ff-7074-4d41-b4ab-0f21fe3b6ade
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: customer_id
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column is_guest_order
 		dataType: boolean
@@ -118,6 +120,7 @@ table Orders
 
 	column shipping_country_code
 		dataType: string
+		isHidden
 		lineageTag: 5905d919-4a1c-4314-944f-a90619b04f70
 		summarizeBy: none
 		sourceColumn: shipping_country_code
@@ -174,6 +177,7 @@ table Orders
 
 	column code_channel_key
 		dataType: string
+		isHidden
 		lineageTag: 015c3fc2-b10e-4281-ab33-b6395cd7b446
 		summarizeBy: none
 		sourceColumn: code_channel_key
@@ -182,6 +186,7 @@ table Orders
 
 	column last_click_channel_key
 		dataType: string
+		isHidden
 		lineageTag: bf47ece2-b04b-41bb-bc9a-e63e375176da
 		summarizeBy: none
 		sourceColumn: last_click_channel_key
@@ -190,6 +195,7 @@ table Orders
 
 	column order_channel_key
 		dataType: string
+		isHidden
 		lineageTag: e51d75e0-4b26-4160-a67f-1265bea16b7b
 		summarizeBy: none
 		sourceColumn: order_channel_key
@@ -198,6 +204,7 @@ table Orders
 
 	column order_campaign_key
 		dataType: string
+		isHidden
 		lineageTag: efd642e5-07ec-4f65-a029-8026befe9460
 		summarizeBy: none
 		sourceColumn: order_campaign_key

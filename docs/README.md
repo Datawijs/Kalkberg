@@ -61,8 +61,8 @@ flowchart LR
 | 3 | [Silver: cleaning and connecting the data (dbt)](03-silver.md) | Done |
 | 4 | [Gold: the star schema (dbt)](04-gold.md) | Done |
 | 5 | [Connecting Power BI to the gold layer](05-powerbi-connection.md) | Done |
-| 6 | The budget medallion in Power Query | Next |
-| 7 | Semantic model and DAX measures | Planned |
+| 6 | [The budget medallion in Power Query](06-budget-medallion.md) | Done |
+| 7 | Semantic model and DAX measures | Next |
 | 8 | The report | Planned |
 
 ## Decisions

@@ -1,0 +1,56 @@
+table Targets
+	lineageTag: b2ebada3-f0ba-4f56-8919-9c643512df70
+
+	column month_start
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: da756abb-297c-4a29-be91-6553c3a475d6
+		summarizeBy: none
+		sourceColumn: month_start
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column revenue_target
+		dataType: decimal
+		formatString: "€"\ #,0.###############;#,0.###############\ -"€";"€"\ #,0.###############
+		lineageTag: f990ff99-df31-4f74-ae8c-51df2b4e33f6
+		summarizeBy: sum
+		sourceColumn: revenue_target
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"nl-BE"}
+
+	column new_customers_target
+		dataType: int64
+		formatString: 0
+		lineageTag: e803d4d9-f514-41b1-b5e8-0fe1da0d275f
+		summarizeBy: sum
+		sourceColumn: new_customers_target
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_stretch_target
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: fc925564-3914-4a11-87a9-af04a105e00b
+		summarizeBy: none
+		sourceColumn: is_stretch_target
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Targets = m
+		mode: import
+		queryGroup: 03_Gold\Facts
+		source =
+				let
+				    WithStretch = Table.AddColumn(silver_targets, "is_stretch_target",
+				        each [comment] <> null and Text.Lower(Text.Trim([comment])) = "stretch target", type logical),
+				    Result = Table.SelectColumns(WithStretch, {"month_start", "revenue_target", "new_customers_target", "is_stretch_target"})
+				in
+				    Result
+
+	annotation PBI_ResultType = Table
+

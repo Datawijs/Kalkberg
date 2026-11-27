@@ -4,6 +4,7 @@ model Model
 	sourceQueryCulture: nl-BE
 	valueFilterBehavior: independent
 	dataAccessOptions
+		fastCombine
 		legacyRedirects
 		returnErrorValuesAsNull
 
@@ -35,7 +36,7 @@ annotation __PBI_TimeIntelligenceEnabled = 0
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["pg_server","pg_database","budget_file","Campaign","Channel","Country","Customer","Date","Email","Product","Subscriber","AdPerformance","CustomerMonthlyRFM","EmailSends","MarketingSpend","OrderLines","OrderTouchpoints","Orders","Returns","WebTraffic"]
+annotation PBI_QueryOrder = ["pg_server","pg_database","budget_file","Campaign","Channel","Country","Customer","Date","Email","Product","Subscriber","AdPerformance","CustomerMonthlyRFM","EmailSends","MarketingSpend","OrderLines","OrderTouchpoints","Orders","Returns","WebTraffic","bronze_budget","bronze_targets","silver_budget","silver_targets","Budget","Targets"]
 
 ref table Campaign
 ref table Channel
@@ -54,6 +55,8 @@ ref table OrderTouchpoints
 ref table Orders
 ref table Returns
 ref table WebTraffic
+ref table Budget
+ref table Targets
 
 ref cultureInfo en-US
 

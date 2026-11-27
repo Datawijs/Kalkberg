@@ -105,6 +105,7 @@ Power BI Desktop needs a few general settings before the project is opened; [ste
 1. Open `powerbi/kalkberg.pbip`. A clone contains no data, so the tables are empty.
 2. **Transform data > Edit parameters**: check `pg_server` and `pg_database`, and set `budget_file` to the absolute path of `data/budget/marketing_budget.xlsx` on your machine.
 3. **Refresh**. Power BI asks for the PostgreSQL credentials once: choose **Database** and enter the same user as for dbt. They're stored encrypted for your Windows user, not in the project.
+4. If Power BI asks about data privacy, set both sources (the PostgreSQL database and the budget workbook) to **Organizational** in **File > Options and settings > Data source settings > Edit Permissions**. Like the credentials, privacy levels are stored per machine, not in the project. [Step 6](06-budget-medallion.md#7-privacy-levels) explains why they're needed.
 
 See [step 5](05-powerbi-connection.md) for the file settings and how to check the result.
 

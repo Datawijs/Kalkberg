@@ -1,0 +1,74 @@
+table Budget
+	lineageTag: 86e5f6da-920f-4f41-b00c-4c377a7be438
+
+	column month_start
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 392c5f31-23bb-4db5-896a-c60321bdc587
+		summarizeBy: none
+		sourceColumn: month_start
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column channel_key
+		dataType: string
+		lineageTag: c5bb1f63-a4a9-4b58-90ba-ae24f4f9ad1c
+		summarizeBy: none
+		sourceColumn: channel_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget
+		dataType: decimal
+		formatString: "€"\ #,0.###############;#,0.###############\ -"€";"€"\ #,0.###############
+		lineageTag: 9745c805-ca47-4d4f-a625-6b358f6cd755
+		summarizeBy: sum
+		sourceColumn: budget
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"nl-BE"}
+
+	column original_budget
+		dataType: decimal
+		formatString: "€"\ #,0.###############;#,0.###############\ -"€";"€"\ #,0.###############
+		lineageTag: da3979b4-2142-4c26-a323-3686929e9430
+		summarizeBy: sum
+		sourceColumn: original_budget
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"nl-BE"}
+
+	partition Budget = m
+		mode: import
+		queryGroup: 03_Gold\Facts
+		source =
+				let
+				    Original = Table.SelectRows(silver_budget, each [version] = "original"),
+				    Revised  = Table.SelectRows(silver_budget, each [version] = "revised"),
+				    // Business rule: a revision replaces the original value for that channel and month
+				    Joined = Table.NestedJoin(Original, {"budget_channel", "month_start"},
+				                              Revised,  {"budget_channel", "month_start"}, "revision", JoinKind.LeftOuter),
+				    WithRevision = Table.ExpandTableColumn(Joined, "revision", {"amount"}, {"revised_amount"}),
+				    WithBudget = Table.AddColumn(WithRevision, "budget",
+				        each if [revised_amount] <> null then [revised_amount] else [amount], Currency.Type),
+				    Renamed = Table.RenameColumns(WithBudget, {{"amount", "original_budget"}}),
+				    // Map budget channel names to the gold channel key (seed channels.csv -> dim_channel)
+				    WithKey = Table.NestedJoin(Renamed, {"budget_channel"}, Channel, {"budget_channel"}, "channel", JoinKind.LeftOuter),
+				    Expanded = Table.ExpandTableColumn(WithKey, "channel", {"channel_key"}),
+				    Checked =
+				        if List.Contains(Expanded[channel_key], null)
+				        then error Error.Record("Unmapped channel", "A budget channel has no match in Channel[budget_channel]")
+				        else Expanded,
+				    Result = Table.SelectColumns(Checked, {"month_start", "channel_key", "budget", "original_budget"}),
+				    Typed = Table.TransformColumnTypes(Result, {
+				        {"month_start", type date}, {"channel_key", type text},
+				        {"budget", Currency.Type}, {"original_budget", Currency.Type}})
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

@@ -133,6 +133,7 @@ _params                             --> pg_server, pg_database, budget_file
 03_Gold
   Dimensions                        --> The 8 gold dimensions
   Facts                             --> The 9 gold facts, and later the budget and targets (step 6)
+  Helpers                           --> Added in step 6: the parts MarketingSpend is combined from, not loaded
 ```
 
 The PostgreSQL tables only appear in `03_Gold`: their bronze and silver layers were built in PostgreSQL with dbt (steps 1 to 4), so Power Query only reads the result. Only the budget sheets pass through all three groups. The rule that follows is simple: **every query in `03_Gold` is loaded into the model, and nothing outside it is**.
@@ -181,4 +182,4 @@ After **Refresh**, the row count of every table in Power BI must match [step 4](
 
 ## Next step
 
-Step 6: the budget medallion in Power Query.
+[Step 6: the budget medallion in Power Query](06-budget-medallion.md).

@@ -20,3 +20,90 @@ expression budget_file = "C:\Users\tvercamer\Projects\kalkberg\data\budget\marke
 
 	annotation PBI_ResultType = Text
 
+expression bronze_budget =
+		let
+		    Source = Excel.Workbook(File.Contents(budget_file), null, true),
+		    Sheets = Table.SelectRows(Source, each [Kind] = "Sheet" and Text.StartsWith([Name], "Budget ")),
+		    Result = Table.SelectColumns(Sheets, {"Name", "Data"})
+		in
+		    Result
+	lineageTag: e08c810a-702e-4116-ba73-82f226e285fd
+	queryGroup: 01_Bronze
+
+	annotation PBI_ResultType = Table
+
+expression bronze_targets =
+		let
+		    Source = Excel.Workbook(File.Contents(budget_file), null, true),
+		    Targets = Source{[Item = "Targets", Kind = "Sheet"]}[Data]
+		in
+		    Targets
+	lineageTag: dbec91f6-d4b8-49dd-a7c6-d259947f6bc0
+	queryGroup: 01_Bronze
+
+	annotation PBI_ResultType = Table
+
+expression silver_budget =
+		let
+		    // One budget sheet -> rows of (channel, month, raw amount)
+		    CleanSheet = (sheet as table, year as number) as table =>
+		        let
+		            FromHeader = Table.Skip(sheet, each [Column1] <> "Channel"),
+		            Header = FromHeader{0},
+		            CheckedLayout =
+		                if Header[Column14] = "FY total" and Header[Column15] = "Notes"
+		                then Table.Skip(FromHeader, 1)
+		                else error Error.Record("Layout changed", "Unexpected header in Budget " & Text.From(year)),
+		            Rows = Table.SelectRows(CheckedLayout, each [Column1] <> null and [Column1] <> "TOTAL"),
+		            MonthColumns = List.Transform({2..13}, each "Column" & Text.From(_)),
+		            Kept = Table.SelectColumns(Rows, {"Column1"} & MonthColumns),
+		            Unpivoted = Table.UnpivotOtherColumns(Kept, {"Column1"}, "month_column", "raw_amount"),
+		            WithMonth = Table.AddColumn(Unpivoted, "month_start",
+		                each #date(year, Number.From(Text.AfterDelimiter([month_column], "Column")) - 1, 1), type date)
+		        in
+		            WithMonth,
+		
+		    // "-" means not planned; text amounts use Belgian notation ("€ 71.250")
+		    ToAmount = (value as any) as nullable number =>
+		        if value = null or value = "-" then null
+		        else if value is number then value
+		        else Number.From(Text.Trim(Text.Remove(value, {"€", "#(00A0)"})), "nl-BE"),
+		
+		    WithYear = Table.AddColumn(bronze_budget, "year", each Number.From(Text.AfterDelimiter([Name], "Budget ")), Int64.Type),
+		    PerSheet = Table.AddColumn(WithYear, "rows", each CleanSheet([Data], [year])),
+		    Combined = Table.Combine(PerSheet[rows]),
+		    WithAmount = Table.AddColumn(Combined, "amount", each ToAmount([raw_amount]), Currency.Type),
+		    Planned = Table.SelectRows(WithAmount, each [amount] <> null),
+		    WithChannel = Table.AddColumn(Planned, "budget_channel",
+		        each Text.Trim(Text.BeforeDelimiter([Column1], " - REVISED")), type text),
+		    WithVersion = Table.AddColumn(WithChannel, "version",
+		        each if Text.Contains([Column1], " - REVISED") then "revised" else "original", type text),
+		    Result = Table.SelectColumns(WithVersion, {"month_start", "budget_channel", "version", "amount"})
+		in
+		    Result
+	lineageTag: 80e327f3-8046-4276-bebf-c78f400e5a88
+	queryGroup: 02_Silver
+
+	annotation PBI_ResultType = Table
+
+expression silver_targets =
+		let
+		    Promoted = Table.PromoteHeaders(bronze_targets, [PromoteAllScalars = true]),
+		    CheckedLayout =
+		        if Table.ColumnNames(Promoted) = {"Month", "Revenue target (EUR)", "New customers target", "Comment"}
+		        then Promoted
+		        else error Error.Record("Layout changed", "Unexpected header in the Targets sheet"),
+		    Renamed = Table.RenameColumns(CheckedLayout, {
+		        {"Month", "month_start"}, {"Revenue target (EUR)", "revenue_target"},
+		        {"New customers target", "new_customers_target"}, {"Comment", "comment"}}),
+		    Rows = Table.SelectRows(Renamed, each [month_start] <> null),
+		    Typed = Table.TransformColumnTypes(Rows, {
+		        {"month_start", type date}, {"revenue_target", Currency.Type},
+		        {"new_customers_target", Int64.Type}, {"comment", type text}})
+		in
+		    Typed
+	lineageTag: fded8d0d-e279-415f-a5c0-ecf792fccbdc
+	queryGroup: 02_Silver
+
+	annotation PBI_ResultType = Table
+

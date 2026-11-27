@@ -143,6 +143,15 @@ models:
       - name: order_date
         tests:
           - relationships: {arguments: {to: ref('dim_date'), field: date}}
+      - name: order_channel_key
+        description: The channel of the order (fct_orders.order_channel_key), so lines can be split by channel (F2).
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('dim_channel'), field: channel_key}}
+      - name: order_campaign_key
+        description: The campaign of the order (fct_orders.order_campaign_key).
+        tests:
+          - relationships: {arguments: {to: ref('dim_campaign'), field: campaign_key}}
       - name: unit_cost
         description: Purchase cost at the time of sale - today's cost x unit_price / current list price.
       - name: restocked_quantity
@@ -191,6 +200,16 @@ models:
         tests:
           - expression_is_true:
               arguments: {expression: "days_before_order <= {{ var('attribution_lookback_days') }}"}
+      - name: order_date
+        description: The date of the order the touchpoint led to. touchpoint_date is the date of the session.
+        tests:
+          - not_null
+          - relationships: {arguments: {to: ref('dim_date'), field: date}}
+      - name: order_net_revenue
+        description: fct_orders.net_revenue of the order. Attributed revenue = weight x order_net_revenue (PM3).
+        tests: [not_null]
+      - name: order_gross_margin
+        description: fct_orders.gross_margin_before_shipping_cost of the order.
 
   - name: fct_customer_rfm_monthly
     description: RFM scores and segment per customer at the end of every month (C3).

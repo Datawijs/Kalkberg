@@ -84,7 +84,7 @@ table Email
 
 	column delivered_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 2ef65386-dfa6-4469-90c8-6dbbf14e35b9
 		summarizeBy: none
 		sourceColumn: delivered_date

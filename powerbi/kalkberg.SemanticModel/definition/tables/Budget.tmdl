@@ -3,7 +3,7 @@ table Budget
 
 	column month_start
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 392c5f31-23bb-4db5-896a-c60321bdc587
 		summarizeBy: none
 		sourceColumn: month_start

@@ -43,7 +43,7 @@ table Campaign
 
 	column first_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 880eb58b-554a-4168-91dd-278f970c5a4e
 		summarizeBy: none
 		sourceColumn: first_date
@@ -54,7 +54,7 @@ table Campaign
 
 	column last_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 8d9dd285-7f28-40df-bc46-71c3eae8def7
 		summarizeBy: none
 		sourceColumn: last_date

@@ -35,7 +35,7 @@ table EmailSends
 
 	column sent_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: a55b622c-f062-41eb-8274-b3e0d6b073e6
 		summarizeBy: none
 		sourceColumn: sent_date

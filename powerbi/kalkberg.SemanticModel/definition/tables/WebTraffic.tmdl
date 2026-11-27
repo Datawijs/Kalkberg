@@ -3,7 +3,7 @@ table WebTraffic
 
 	column traffic_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: e3629757-bc97-43f9-99bc-3f833e7e5051
 		summarizeBy: none
 		sourceColumn: traffic_date

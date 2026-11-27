@@ -339,4 +339,4 @@ ORDER BY [year]
 
 ## Next step
 
-Step 7: the semantic model and DAX measures.
+[Step 7: the semantic model and DAX measures](07-semantic-model.md).

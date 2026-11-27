@@ -79,7 +79,7 @@ table OrderTouchpoints
 
 	column touchpoint_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: c6c23f57-4956-4fd9-9d1b-ea505503152c
 		summarizeBy: none
 		sourceColumn: touchpoint_date
@@ -183,6 +183,37 @@ table OrderTouchpoints
 		lineageTag: a2594415-2e85-4d50-b312-4e9f7ae7ce9b
 		summarizeBy: sum
 		sourceColumn: weight_position_based
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column order_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: c5ac56fa-03f2-4367-8432-acd27ac218f6
+		summarizeBy: none
+		sourceColumn: order_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column order_net_revenue
+		dataType: double
+		lineageTag: 634710e2-2eb3-4cd0-978e-20a6457ede3c
+		summarizeBy: sum
+		sourceColumn: order_net_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column order_gross_margin
+		dataType: double
+		lineageTag: d90324c3-f7bc-4424-a0e6-668721972ed2
+		summarizeBy: sum
+		sourceColumn: order_gross_margin
 
 		annotation SummarizationSetBy = Automatic
 

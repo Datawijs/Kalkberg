@@ -38,7 +38,7 @@ table Returns
 
 	column order_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 6bc7623b-4fa5-4cf5-b016-c6849e5e2002
 		summarizeBy: none
 		sourceColumn: order_date
@@ -92,7 +92,7 @@ table Returns
 
 	column requested_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: b91da30f-5231-413b-a436-c766bb05b467
 		summarizeBy: none
 		sourceColumn: requested_date
@@ -103,7 +103,7 @@ table Returns
 
 	column received_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 3bb4ff52-1e1f-4ff9-89db-5e5faab85cc7
 		summarizeBy: none
 		sourceColumn: received_date

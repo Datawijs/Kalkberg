@@ -20,7 +20,7 @@ table Orders
 
 	column order_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: fd0c44b8-0004-4716-9612-59abd886c70a
 		summarizeBy: none
 		sourceColumn: order_date

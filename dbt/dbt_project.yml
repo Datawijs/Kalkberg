@@ -44,6 +44,11 @@ models:
       +materialized: table
       +docs:
         node_color: "#d4a017"
+      # Building blocks of the gold facts, kept out of the gold schema so it only holds the star schema.
+      intermediate:
+        +schema: gold_intermediate
+        +docs:
+          node_color: "#e8c766"
 
 seeds:
   kalkberg:

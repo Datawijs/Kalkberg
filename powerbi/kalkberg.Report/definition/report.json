@@ -51,5 +51,6 @@
     "customMemoryLimit": "1048576",
     "customTimeoutLimit": "225",
     "locale": "nl-BE"
-  }
+  },
+  "linguisticSchemaSyncVersion": 2
 }

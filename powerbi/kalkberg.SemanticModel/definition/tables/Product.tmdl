@@ -141,7 +141,7 @@ table Product
 
 	column launched_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: cf8a7ae9-501d-41d0-b62d-7276658d7483
 		summarizeBy: none
 		sourceColumn: launched_date
@@ -152,7 +152,7 @@ table Product
 
 	column discontinued_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: f4b9db8c-cef8-45dd-b2fb-6d7f86ab03cc
 		summarizeBy: none
 		sourceColumn: discontinued_date

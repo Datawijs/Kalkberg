@@ -67,7 +67,7 @@ These live under **File > Options and settings > Options > CURRENT FILE**.
 
 Once the sources exist, both get the **Organizational** privacy level in **File > Options and settings > Data source settings**: the PostgreSQL database and the budget workbook.
 
-The locale for import controls how Power Query reads text as dates and numbers. Dutch (Belgium) reads them in the Belgian notation (`31/03/2026`, `1.234,56`), which is what the budget workbook uses. It's separate from the locale the report *shows* values in, which is English (Belgium) (see the [conventions](README.md#conventions-in-these-documents)). The one difference to watch: month names written out as text are read in Dutch (`maart`, not `March`).
+The locale for import controls how Power Query reads text as dates and numbers. Dutch (Belgium) reads them in the Belgian notation (`31/03/2026`, `1.234,56`), which is what the budget workbook uses. It's separate from the locale the report *shows* values in (see the [conventions](README.md#conventions-in-these-documents) and [step 7](07-semantic-model.md#2-display-locale-english-labels-belgian-formats)). The one difference to watch: month names written out as text are read in Dutch (`maart`, not `March`).
 
 Some of these settings can be checked in the TMDL files. In [`model.tmdl`](../powerbi/kalkberg.SemanticModel/definition/model.tmdl), `sourceQueryCulture: nl-BE` is the locale for import, `__PBI_TimeIntelligenceEnabled = 0` means auto date/time is off, and the model has no relationships yet.
 

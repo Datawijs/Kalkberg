@@ -62,6 +62,10 @@ flowchart LR
     fct_orders --- fct_order_lines & fct_order_touchpoints
 ```
 
+`fct_orders` is built from the order lines and the touchpoints, and since [step 7](07-semantic-model.md#columns-added-to-gold-for-this) the order lines and touchpoints also carry columns of their order (its channel, date and amounts). To avoid a loop, the lines and journeys are built first in two intermediate models, `int_order_lines` and `int_order_touchpoints`, in the schema `gold_intermediate`. Only the star schema itself is in `gold`.
+
+The link between `fct_orders` and its lines and touchpoints holds in SQL, but in Power BI the facts don't filter each other: each one connects to the dimensions directly ([step 7](07-semantic-model.md#why-no-relationships-between-facts)).
+
 The budget and the targets are not in gold: they go through their own medallion in Power Query (step 6, [decision 0001](decisions/0001-medallion-in-two-tools.md)) and meet gold in the semantic model through `dim_date` and `dim_channel` (`dim_channel.budget_channel` holds the channel name as the budget sheets write it).
 
 ## How
@@ -77,9 +81,9 @@ dbt build                       # silver and gold
 dbt build --select models/gold  # only gold, when silver is up to date
 ```
 
-The full build (9 seeds, 41 models, 236 tests) takes under 4 minutes.
+The full build (9 seeds, 43 models, 244 tests) takes about 8 minutes.
 
-> SCREENSHOT PLACEHOLDER: terminal output of `dbt build`, ending with `Done. PASS=286 WARN=0 ERROR=0 SKIP=0`.
+> SCREENSHOT PLACEHOLDER: terminal output of `dbt build`, ending with `Done. PASS=296 WARN=0 ERROR=0 SKIP=0`.
 
 ### 2. The business rules
 
@@ -194,12 +198,13 @@ The two cost decisions change the margin trend noticeably. With today's costs fo
 
 ### 4. Tests
 
-Besides the usual key and relationship tests on every fact and dimension, five tests check that gold tells the same story as silver:
+Besides the usual key and relationship tests on every fact and dimension, six tests check that gold tells the same story as silver:
 
 | Test | What it checks |
 | --- | --- |
 | `assert_gold_revenue_reconciles_with_silver` | Per month, gold has exactly the same orders and revenue as the real orders in silver, and the order lines add up to the order totals |
 | `assert_attribution_weights_add_up_to_one` | Every order has a journey, and its weights add up to 1 in every model |
+| `assert_attributed_revenue_adds_up_to_revenue` | Per order month, the revenue attributed to the touchpoints equals the revenue of the orders, in every model (added in [step 7](07-semantic-model.md#columns-added-to-gold-for-this)) |
 | `assert_marketing_spend_reconciles_with_platforms` | The platform cost in `fct_marketing_spend` equals the ad reports |
 | `assert_new_customers_match_first_orders` | Every customer has exactly one first order, on their first order date |
 | `assert_web_traffic_purchases_match_ga4` | The traffic fact holds every GA4 purchase exactly once |

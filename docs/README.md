@@ -62,7 +62,7 @@ flowchart LR
 | 4 | [Gold: the star schema (dbt)](04-gold.md) | Done |
 | 5 | [Connecting Power BI to the gold layer](05-powerbi-connection.md) | Done |
 | 6 | [The budget medallion in Power Query](06-budget-medallion.md) | Done |
-| 7 | Semantic model and DAX measures | Next |
+| 7 | [Semantic model and DAX measures](07-semantic-model.md) | In progress |
 | 8 | The report | Planned |
 
 ## Decisions
@@ -83,4 +83,4 @@ Larger choices are recorded as short decision records in [decisions/](decisions/
 - Screenshots live in [img/](img/) and are named after the document they belong to (`01-...png` belongs to `01-bronze.md`). A screenshot that is still missing is marked with a placeholder that starts with **SCREENSHOT PLACEHOLDER**.
 - Warnings, notes and tips use GitHub's alert syntax (`> [!NOTE]`, `> [!WARNING]`, ...), so they stand out when the docs are read on GitHub.
 - Commands are written for a Windows terminal, run from the project folder unless stated otherwise.
-- The project is written in English for a Belgian and Dutch audience, so numbers and dates use the Belgian format: `1.234,56` and `31/03/2026`. The same goes for the report, which uses the *English (Belgium)* locale: English labels, Belgian dates and numbers. Values quoted literally from a source or a query result (in `code` style) are shown exactly as the source wrote them, because they are evidence.
+- The project is written in English for a Belgian and Dutch audience, so numbers and dates use the Belgian format: `1.234,56` and `31/03/2026`. The same goes for the report: English labels, Belgian dates and numbers. Power BI has no *English (Belgium)* format locale, so the report formats values with *Dutch (Belgium)* and keeps every label in English ([step 7](07-semantic-model.md#2-display-locale-english-labels-belgian-formats)). Values quoted literally from a source or a query result (in `code` style) are shown exactly as the source wrote them, because they are evidence.

@@ -29,7 +29,7 @@ table OrderLines
 
 	column order_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: e5757388-c905-411a-bd89-4b9622959220
 		summarizeBy: none
 		sourceColumn: order_date
@@ -289,6 +289,22 @@ table OrderLines
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column order_channel_key
+		dataType: string
+		lineageTag: d7540d6c-2c56-4653-8ccc-dfa1c72f926c
+		summarizeBy: none
+		sourceColumn: order_channel_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_campaign_key
+		dataType: string
+		lineageTag: bfcd7456-9fbe-49a3-a81f-e615eb1c694d
+		summarizeBy: none
+		sourceColumn: order_campaign_key
+
+		annotation SummarizationSetBy = Automatic
 
 	partition OrderLines = m
 		mode: import

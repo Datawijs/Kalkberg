@@ -78,7 +78,7 @@ table Subscriber
 
 	column joined_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 0b64bc34-fde2-417f-a270-7d721d4b6c06
 		summarizeBy: none
 		sourceColumn: joined_date
@@ -89,7 +89,7 @@ table Subscriber
 
 	column unsubscribed_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 517b6b4e-de33-4d3a-ac9f-0d47ddbdfccc
 		summarizeBy: none
 		sourceColumn: unsubscribed_date
@@ -100,7 +100,7 @@ table Subscriber
 
 	column undeliverable_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 19e4cd80-3c0c-405c-b3f5-37ecefe431d2
 		summarizeBy: none
 		sourceColumn: undeliverable_date

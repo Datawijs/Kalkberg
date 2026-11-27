@@ -3,7 +3,7 @@ table AdPerformance
 
 	column report_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: cf84100a-7ac9-4115-84fa-21b7aed34bdc
 		summarizeBy: none
 		sourceColumn: report_date

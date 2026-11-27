@@ -3,7 +3,7 @@ table Targets
 
 	column month_start
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: da756abb-297c-4a29-be91-6553c3a475d6
 		summarizeBy: none
 		sourceColumn: month_start

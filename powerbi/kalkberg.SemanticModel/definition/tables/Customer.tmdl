@@ -132,7 +132,7 @@ table Customer
 
 	column first_order_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 0bac2272-8a4d-4301-9f54-5050bfafbd4c
 		summarizeBy: none
 		sourceColumn: first_order_date
@@ -143,7 +143,7 @@ table Customer
 
 	column cohort_month
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 0dab7943-50f8-46bc-80c2-dc5e1eac2ec7
 		summarizeBy: none
 		sourceColumn: cohort_month
@@ -204,7 +204,7 @@ table Customer
 
 	column last_order_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 55bc8969-5c07-427c-9a6a-c9fc7ea96a19
 		summarizeBy: none
 		sourceColumn: last_order_date

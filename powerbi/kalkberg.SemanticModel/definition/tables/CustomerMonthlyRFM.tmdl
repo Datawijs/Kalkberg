@@ -11,7 +11,7 @@ table CustomerMonthlyRFM
 
 	column snapshot_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 0d404871-db66-40d8-afd6-9ef122df4bba
 		summarizeBy: none
 		sourceColumn: snapshot_date
@@ -22,7 +22,7 @@ table CustomerMonthlyRFM
 
 	column month_start
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: cb0170ce-9d84-4599-aa1e-2fdd14e04471
 		summarizeBy: none
 		sourceColumn: month_start

@@ -3,7 +3,7 @@ table MarketingSpend
 
 	column spend_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 70f73cb1-14e3-426c-982f-ac953056ecc8
 		summarizeBy: none
 		sourceColumn: spend_date

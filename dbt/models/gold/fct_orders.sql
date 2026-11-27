@@ -42,7 +42,7 @@ lines AS (
         bool_or(is_unit_cost_estimated)                              AS has_estimated_cost,
         bool_or(unit_cost IS NULL AND NOT is_gift_card)              AS has_unknown_cost,
         bool_or(discount_amount > 0)                                 AS has_line_discount
-    FROM {{ ref('fct_order_lines') }}
+    FROM {{ ref('int_order_lines') }}
     GROUP BY order_id
 ),
 
@@ -69,7 +69,7 @@ journeys AS (
         (array_agg(campaign_key ORDER BY touchpoint_number DESC)
             FILTER (WHERE touchpoint_type = 'session' AND channel_key <> 'direct'))[1]  AS last_non_direct_campaign_key,
         bool_or(touchpoint_type = 'session')                         AS has_session
-    FROM {{ ref('fct_order_touchpoints') }}
+    FROM {{ ref('int_order_touchpoints') }}
     GROUP BY order_id
 ),
 

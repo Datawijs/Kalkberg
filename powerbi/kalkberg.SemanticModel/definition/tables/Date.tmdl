@@ -1,9 +1,11 @@
 table Date
 	lineageTag: 08abdad5-bc15-49b3-9ad5-4e304870c19b
+	dataCategory: Time
 
 	column date
 		dataType: dateTime
-		formatString: Long Date
+		isKey
+		formatString: Short Date
 		lineageTag: d37f8d3a-cbdc-4c15-b273-4f97f8cdc8dc
 		summarizeBy: none
 		sourceColumn: date
@@ -65,7 +67,7 @@ table Date
 
 	column month_start
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 0913fb8f-c15f-474e-b2af-afaf0b86cb25
 		summarizeBy: none
 		sourceColumn: month_start

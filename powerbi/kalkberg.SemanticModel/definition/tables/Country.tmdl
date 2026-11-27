@@ -1,4 +1,4 @@
-table 'gold dim_country'
+table Country
 	lineageTag: 1e8d3fdd-9581-4904-8cb7-c95f1a4ed1b4
 
 	column country_code
@@ -26,12 +26,15 @@ table 'gold dim_country'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'gold dim_country' = m
+	partition Country = m
 		mode: import
+		queryGroup: 03_Gold\Dimensions
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_country"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

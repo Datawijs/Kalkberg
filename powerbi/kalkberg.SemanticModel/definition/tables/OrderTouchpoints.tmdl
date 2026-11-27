@@ -1,4 +1,4 @@
-table 'gold fct_order_touchpoints'
+table OrderTouchpoints
 	lineageTag: fd8819e1-64fc-4c74-8474-f961af584b6a
 
 	column touchpoint_id
@@ -188,12 +188,15 @@ table 'gold fct_order_touchpoints'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	partition 'gold fct_order_touchpoints' = m
+	partition OrderTouchpoints = m
 		mode: import
+		queryGroup: 03_Gold\Facts
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "fct_order_touchpoints"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

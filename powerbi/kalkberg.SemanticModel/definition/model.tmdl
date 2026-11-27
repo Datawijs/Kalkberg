@@ -11,29 +11,49 @@ queryGroup _params
 
 	annotation PBI_QueryGroupOrder = 0
 
+queryGroup 03_Gold
+
+	annotation PBI_QueryGroupOrder = 3
+
+queryGroup 03_Gold\Dimensions
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 03_Gold\Facts
+
+	annotation PBI_QueryGroupOrder = 1
+
+queryGroup 01_Bronze
+
+	annotation PBI_QueryGroupOrder = 1
+
+queryGroup 02_Silver
+
+	annotation PBI_QueryGroupOrder = 2
+
 annotation __PBI_TimeIntelligenceEnabled = 0
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["pg_server","pg_database","budget_file","gold dim_campaign","gold dim_channel","gold dim_country","gold dim_customer","gold dim_date","gold dim_email","gold dim_product","gold dim_subscriber","gold fct_ad_performance","gold fct_customer_rfm_monthly","gold fct_email_sends","gold fct_marketing_spend","gold fct_order_lines","gold fct_order_touchpoints","gold fct_orders","gold fct_returns","gold fct_web_traffic"]
+annotation PBI_QueryOrder = ["pg_server","pg_database","budget_file","Campaign","Channel","Country","Customer","Date","Email","Product","Subscriber","AdPerformance","CustomerMonthlyRFM","EmailSends","MarketingSpend","OrderLines","OrderTouchpoints","Orders","Returns","WebTraffic"]
 
-ref table 'gold dim_campaign'
-ref table 'gold dim_channel'
-ref table 'gold dim_country'
-ref table 'gold dim_customer'
-ref table 'gold dim_date'
-ref table 'gold dim_email'
-ref table 'gold dim_product'
-ref table 'gold dim_subscriber'
-ref table 'gold fct_ad_performance'
-ref table 'gold fct_customer_rfm_monthly'
-ref table 'gold fct_email_sends'
-ref table 'gold fct_marketing_spend'
-ref table 'gold fct_order_lines'
-ref table 'gold fct_order_touchpoints'
-ref table 'gold fct_orders'
-ref table 'gold fct_returns'
-ref table 'gold fct_web_traffic'
+ref table Campaign
+ref table Channel
+ref table Country
+ref table Customer
+ref table Date
+ref table Email
+ref table Product
+ref table Subscriber
+ref table AdPerformance
+ref table CustomerMonthlyRFM
+ref table EmailSends
+ref table MarketingSpend
+ref table OrderLines
+ref table OrderTouchpoints
+ref table Orders
+ref table Returns
+ref table WebTraffic
 
 ref cultureInfo en-US
 

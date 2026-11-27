@@ -1,4 +1,4 @@
-table 'gold dim_campaign'
+table Campaign
 	lineageTag: 054bef84-73a4-42e2-86d5-08411c304126
 
 	column campaign_key
@@ -63,12 +63,15 @@ table 'gold dim_campaign'
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	partition 'gold dim_campaign' = m
+	partition Campaign = m
 		mode: import
+		queryGroup: 03_Gold\Dimensions
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_campaign"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

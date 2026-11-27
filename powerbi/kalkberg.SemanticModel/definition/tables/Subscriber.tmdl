@@ -1,4 +1,4 @@
-table 'gold dim_subscriber'
+table Subscriber
 	lineageTag: a4abb17b-6a90-40de-b406-993c5ad21724
 
 	column subscriber_id
@@ -109,12 +109,15 @@ table 'gold dim_subscriber'
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	partition 'gold dim_subscriber' = m
+	partition Subscriber = m
 		mode: import
+		queryGroup: 03_Gold\Dimensions
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_subscriber"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

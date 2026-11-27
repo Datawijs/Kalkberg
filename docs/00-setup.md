@@ -103,7 +103,7 @@ dbt build     # seeds, models and tests
 Power BI Desktop needs a few general settings before the project is opened; [step 5](05-powerbi-connection.md#1-general-settings-once-per-machine) lists them. Then:
 
 1. Open `powerbi/kalkberg.pbip`. A clone contains no data, so the tables are empty.
-2. **Transform data > Edit parameters**: check `pg_server` and `pg_database`, and set `p_BudgetFile` to the absolute path of `data/budget/marketing_budget.xlsx` on your machine.
+2. **Transform data > Edit parameters**: check `pg_server` and `pg_database`, and set `budget_file` to the absolute path of `data/budget/marketing_budget.xlsx` on your machine.
 3. **Refresh**. Power BI asks for the PostgreSQL credentials once: choose **Database** and enter the same user as for dbt. They're stored encrypted for your Windows user, not in the project.
 
 See [step 5](05-powerbi-connection.md) for the file settings and how to check the result.

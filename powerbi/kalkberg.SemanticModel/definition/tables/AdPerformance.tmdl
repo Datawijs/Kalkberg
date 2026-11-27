@@ -1,4 +1,4 @@
-table 'gold fct_ad_performance'
+table AdPerformance
 	lineageTag: aef5898c-6027-4f03-96a4-34a603ab7a3d
 
 	column report_date
@@ -110,12 +110,15 @@ table 'gold fct_ad_performance'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'gold fct_ad_performance' = m
+	partition AdPerformance = m
 		mode: import
+		queryGroup: 03_Gold\Facts
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "fct_ad_performance"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

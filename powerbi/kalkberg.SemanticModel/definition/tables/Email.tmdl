@@ -1,4 +1,4 @@
-table 'gold dim_email'
+table Email
 	lineageTag: c6e5f3fb-3945-422e-9cd6-4dfeb42f8a24
 
 	column job_id
@@ -93,12 +93,15 @@ table 'gold dim_email'
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	partition 'gold dim_email' = m
+	partition Email = m
 		mode: import
+		queryGroup: 03_Gold\Dimensions
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_email"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

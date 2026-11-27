@@ -1,4 +1,4 @@
-table 'gold fct_returns'
+table Returns
 	lineageTag: 1b90eac4-43c9-445e-8415-57e4622e0164
 
 	column return_id
@@ -175,12 +175,15 @@ table 'gold fct_returns'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	partition 'gold fct_returns' = m
+	partition Returns = m
 		mode: import
+		queryGroup: 03_Gold\Facts
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "fct_returns"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

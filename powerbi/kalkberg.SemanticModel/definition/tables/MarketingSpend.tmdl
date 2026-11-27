@@ -1,4 +1,4 @@
-table 'gold fct_marketing_spend'
+table MarketingSpend
 	lineageTag: 48710035-96eb-4c5a-a414-f964ed26cb0e
 
 	column spend_date
@@ -55,12 +55,15 @@ table 'gold fct_marketing_spend'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'gold fct_marketing_spend' = m
+	partition MarketingSpend = m
 		mode: import
+		queryGroup: 03_Gold\Facts
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "fct_marketing_spend"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

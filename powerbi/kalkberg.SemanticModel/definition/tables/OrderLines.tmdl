@@ -1,4 +1,4 @@
-table 'gold fct_order_lines'
+table OrderLines
 	lineageTag: 77af91cc-cc82-4022-9321-889e700848a2
 
 	column order_line_id
@@ -290,12 +290,15 @@ table 'gold fct_order_lines'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	partition 'gold fct_order_lines' = m
+	partition OrderLines = m
 		mode: import
+		queryGroup: 03_Gold\Facts
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "fct_order_lines"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

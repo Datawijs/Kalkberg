@@ -1,4 +1,4 @@
-table 'gold dim_customer'
+table Customer
 	lineageTag: 9771b915-ad47-4575-a682-d326f0a2f1f9
 
 	column person_key
@@ -290,12 +290,15 @@ table 'gold dim_customer'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'gold dim_customer' = m
+	partition Customer = m
 		mode: import
+		queryGroup: 03_Gold\Dimensions
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_customer"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

@@ -1,4 +1,4 @@
-table 'gold fct_orders'
+table Orders
 	lineageTag: e3e68139-e045-4538-a25b-53ab721b692f
 
 	column order_id
@@ -405,12 +405,15 @@ table 'gold fct_orders'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'gold fct_orders' = m
+	partition Orders = m
 		mode: import
+		queryGroup: 03_Gold\Facts
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "fct_orders"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

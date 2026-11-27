@@ -1,4 +1,4 @@
-table 'gold fct_web_traffic'
+table WebTraffic
 	lineageTag: 4951e6cf-3777-4b65-b2fd-8660435e4eda
 
 	column traffic_date
@@ -127,8 +127,9 @@ table 'gold fct_web_traffic'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	partition 'gold fct_web_traffic' = m
+	partition WebTraffic = m
 		mode: import
+		queryGroup: 03_Gold\Facts
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),

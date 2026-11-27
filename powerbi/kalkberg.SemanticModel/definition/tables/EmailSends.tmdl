@@ -1,4 +1,4 @@
-table 'gold fct_email_sends'
+table EmailSends
 	lineageTag: 91c039d1-0a13-4645-9beb-11644b589dc0
 
 	column send_key
@@ -189,12 +189,15 @@ table 'gold fct_email_sends'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	partition 'gold fct_email_sends' = m
+	partition EmailSends = m
 		mode: import
+		queryGroup: 03_Gold\Facts
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "fct_email_sends"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

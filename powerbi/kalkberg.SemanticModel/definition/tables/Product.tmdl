@@ -1,4 +1,4 @@
-table 'gold dim_product'
+table Product
 	lineageTag: 63c23f33-9991-4dff-a289-112518f7884e
 
 	column variant_id
@@ -170,12 +170,15 @@ table 'gold dim_product'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'gold dim_product' = m
+	partition Product = m
 		mode: import
+		queryGroup: 03_Gold\Dimensions
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_product"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

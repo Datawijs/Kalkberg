@@ -1,4 +1,4 @@
-table 'gold dim_date'
+table Date
 	lineageTag: 08abdad5-bc15-49b3-9ad5-4e304870c19b
 
 	column date
@@ -178,12 +178,15 @@ table 'gold dim_date'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'gold dim_date' = m
+	partition Date = m
 		mode: import
+		queryGroup: 03_Gold\Dimensions
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_date"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

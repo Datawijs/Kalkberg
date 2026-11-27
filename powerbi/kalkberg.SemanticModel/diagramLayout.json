@@ -13,8 +13,7 @@
             "x": 0,
             "y": 26
           },
-          "nodeIndex": "gold dim_campaign",
-          "nodeLineageTag": "054bef84-73a4-42e2-86d5-08411c304126",
+          "nodeIndex": "Campaign",
           "size": {
             "height": 248,
             "width": 234
@@ -26,8 +25,7 @@
             "x": 284,
             "y": 38
           },
-          "nodeIndex": "gold dim_channel",
-          "nodeLineageTag": "d4085e68-3fc6-4ec9-986e-854d067959f9",
+          "nodeIndex": "Channel",
           "size": {
             "height": 224,
             "width": 234
@@ -39,8 +37,7 @@
             "x": 568,
             "y": 74
           },
-          "nodeIndex": "gold dim_country",
-          "nodeLineageTag": "1e8d3fdd-9581-4904-8cb7-c95f1a4ed1b4",
+          "nodeIndex": "Country",
           "size": {
             "height": 152,
             "width": 234
@@ -52,8 +49,7 @@
             "x": 852,
             "y": 0
           },
-          "nodeIndex": "gold dim_customer",
-          "nodeLineageTag": "9771b915-ad47-4575-a682-d326f0a2f1f9",
+          "nodeIndex": "Customer",
           "size": {
             "height": 300,
             "width": 234
@@ -65,8 +61,7 @@
             "x": 1136,
             "y": 0
           },
-          "nodeIndex": "gold dim_date",
-          "nodeLineageTag": "08abdad5-bc15-49b3-9ad5-4e304870c19b",
+          "nodeIndex": "Date",
           "size": {
             "height": 300,
             "width": 234
@@ -78,8 +73,7 @@
             "x": 1420,
             "y": 0
           },
-          "nodeIndex": "gold dim_email",
-          "nodeLineageTag": "c6e5f3fb-3945-422e-9cd6-4dfeb42f8a24",
+          "nodeIndex": "Email",
           "size": {
             "height": 300,
             "width": 234
@@ -91,8 +85,7 @@
             "x": 1704,
             "y": 0
           },
-          "nodeIndex": "gold dim_product",
-          "nodeLineageTag": "63c23f33-9991-4dff-a289-112518f7884e",
+          "nodeIndex": "Product",
           "size": {
             "height": 300,
             "width": 234
@@ -104,8 +97,7 @@
             "x": 1988,
             "y": 0
           },
-          "nodeIndex": "gold dim_subscriber",
-          "nodeLineageTag": "a4abb17b-6a90-40de-b406-993c5ad21724",
+          "nodeIndex": "Subscriber",
           "size": {
             "height": 300,
             "width": 234
@@ -117,8 +109,7 @@
             "x": 2272,
             "y": 0
           },
-          "nodeIndex": "gold fct_ad_performance",
-          "nodeLineageTag": "aef5898c-6027-4f03-96a4-34a603ab7a3d",
+          "nodeIndex": "AdPerformance",
           "size": {
             "height": 300,
             "width": 234
@@ -130,8 +121,7 @@
             "x": 2556,
             "y": 0
           },
-          "nodeIndex": "gold fct_customer_rfm_monthly",
-          "nodeLineageTag": "e7d6d127-d9b0-4ac1-a8b6-b82526790ee1",
+          "nodeIndex": "CustomerMonthlyRFM",
           "size": {
             "height": 300,
             "width": 234
@@ -143,8 +133,7 @@
             "x": 2840,
             "y": 0
           },
-          "nodeIndex": "gold fct_email_sends",
-          "nodeLineageTag": "91c039d1-0a13-4645-9beb-11644b589dc0",
+          "nodeIndex": "EmailSends",
           "size": {
             "height": 300,
             "width": 234
@@ -156,8 +145,7 @@
             "x": 3124,
             "y": 38
           },
-          "nodeIndex": "gold fct_marketing_spend",
-          "nodeLineageTag": "48710035-96eb-4c5a-a414-f964ed26cb0e",
+          "nodeIndex": "MarketingSpend",
           "size": {
             "height": 224,
             "width": 234
@@ -169,8 +157,7 @@
             "x": 3408,
             "y": 0
           },
-          "nodeIndex": "gold fct_order_lines",
-          "nodeLineageTag": "77af91cc-cc82-4022-9321-889e700848a2",
+          "nodeIndex": "OrderLines",
           "size": {
             "height": 300,
             "width": 234
@@ -182,8 +169,7 @@
             "x": 3692,
             "y": 0
           },
-          "nodeIndex": "gold fct_order_touchpoints",
-          "nodeLineageTag": "fd8819e1-64fc-4c74-8474-f961af584b6a",
+          "nodeIndex": "OrderTouchpoints",
           "size": {
             "height": 300,
             "width": 234
@@ -195,8 +181,7 @@
             "x": 3976,
             "y": 0
           },
-          "nodeIndex": "gold fct_orders",
-          "nodeLineageTag": "e3e68139-e045-4538-a25b-53ab721b692f",
+          "nodeIndex": "Orders",
           "size": {
             "height": 300,
             "width": 234
@@ -208,8 +193,7 @@
             "x": 4260,
             "y": 0
           },
-          "nodeIndex": "gold fct_returns",
-          "nodeLineageTag": "1b90eac4-43c9-445e-8415-57e4622e0164",
+          "nodeIndex": "Returns",
           "size": {
             "height": 300,
             "width": 234
@@ -221,8 +205,7 @@
             "x": 4544,
             "y": 0
           },
-          "nodeIndex": "gold fct_web_traffic",
-          "nodeLineageTag": "4951e6cf-3777-4b65-b2fd-8660435e4eda",
+          "nodeIndex": "WebTraffic",
           "size": {
             "height": 300,
             "width": 234

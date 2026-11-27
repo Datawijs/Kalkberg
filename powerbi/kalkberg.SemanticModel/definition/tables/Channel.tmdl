@@ -1,4 +1,4 @@
-table 'gold dim_channel'
+table Channel
 	lineageTag: d4085e68-3fc6-4ec9-986e-854d067959f9
 
 	column channel_key
@@ -51,12 +51,15 @@ table 'gold dim_channel'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'gold dim_channel' = m
+	partition Channel = m
 		mode: import
+		queryGroup: 03_Gold\Dimensions
 		source =
 				let
 				  Source = PostgreSQL.Database(pg_server, pg_database),
 				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_channel"]}[Data]
 				in
 				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
 

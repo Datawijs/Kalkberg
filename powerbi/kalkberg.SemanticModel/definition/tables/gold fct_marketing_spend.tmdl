@@ -1,0 +1,66 @@
+table 'gold fct_marketing_spend'
+	lineageTag: 48710035-96eb-4c5a-a414-f964ed26cb0e
+
+	column spend_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 70f73cb1-14e3-426c-982f-ac953056ecc8
+		summarizeBy: none
+		sourceColumn: spend_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column channel_key
+		dataType: string
+		lineageTag: 1da7fc4e-5bc9-4fb6-a498-b2ca263f98d1
+		summarizeBy: none
+		sourceColumn: channel_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column campaign_key
+		dataType: string
+		lineageTag: 613b4bb9-4e9c-4759-997f-65cb980edc01
+		summarizeBy: none
+		sourceColumn: campaign_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost
+		dataType: double
+		lineageTag: fb47ba5e-1413-43e0-a387-ef1ba7964800
+		summarizeBy: sum
+		sourceColumn: cost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cost_source
+		dataType: string
+		lineageTag: 32c547c1-2748-4289-96eb-f9a13f9b012e
+		summarizeBy: none
+		sourceColumn: cost_source
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_estimated
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8c5e3b43-ec52-467b-85df-e2139c437a98
+		summarizeBy: none
+		sourceColumn: is_estimated
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold fct_marketing_spend' = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database(pg_server, pg_database),
+				  #"Navigation 1" = Source{[Schema = "gold", Item = "fct_marketing_spend"]}[Data]
+				in
+				  #"Navigation 1"
+

@@ -4,7 +4,7 @@
 
 Gold turns the clean silver tables into a model for reporting: a **star schema** of facts (things that happened, with numbers) and dimensions (the things you filter and group by). It answers the question *how do we want to look at what happened?* Every business rule that a report needs (what is revenue, who is a new customer, which channel gets an order) is decided here, once, so that every report uses the same definition.
 
-Gold lives in the `gold` schema and is built by the same dbt project as silver: 17 models, two extra seeds and 83 tests. Test data is left out of gold (SH-05). Power BI only reads from gold (step 5).
+Gold lives in the `gold` schema and is built by the same dbt project as silver: 17 models, two extra seeds and 83 tests. Test data is left out of gold (SH-05). Power BI only reads from gold ([step 5](05-powerbi-connection.md)).
 
 ### The tables
 
@@ -264,4 +264,4 @@ ORDER BY min(segment_sort_order);
 
 ## Next step
 
-Step 5: connecting Power BI to the gold layer.
+[Step 5: connecting Power BI to the gold layer](05-powerbi-connection.md).

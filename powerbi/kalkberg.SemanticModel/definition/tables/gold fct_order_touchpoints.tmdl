@@ -1,0 +1,199 @@
+table 'gold fct_order_touchpoints'
+	lineageTag: fd8819e1-64fc-4c74-8474-f961af584b6a
+
+	column touchpoint_id
+		dataType: string
+		lineageTag: ee940efe-2fcf-4e12-8ad0-cdb52f9a1856
+		summarizeBy: none
+		sourceColumn: touchpoint_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_id
+		dataType: int64
+		formatString: 0
+		lineageTag: c8814a73-63dc-4da5-a907-47c6141c90f0
+		summarizeBy: sum
+		sourceColumn: order_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_number
+		dataType: string
+		lineageTag: cb1339f6-c14b-49a9-9b76-09335bb294c9
+		summarizeBy: none
+		sourceColumn: order_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column person_key
+		dataType: string
+		lineageTag: 2e584b9c-9c4f-4796-98be-c9e573d475b2
+		summarizeBy: none
+		sourceColumn: person_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_first_order
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d8c0d687-563e-486e-a99b-42409d4d7492
+		summarizeBy: none
+		sourceColumn: is_first_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column touchpoint_type
+		dataType: string
+		lineageTag: a707da16-ec88-4c9f-9567-de60e463f5b4
+		summarizeBy: none
+		sourceColumn: touchpoint_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column session_key
+		dataType: string
+		lineageTag: 15f38df2-3ae8-43d2-8b67-7d54bbd609ff
+		summarizeBy: none
+		sourceColumn: session_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column touchpoint_number
+		dataType: int64
+		formatString: 0
+		lineageTag: 49a94ee6-1dbf-40b0-98e1-d226a609ae4e
+		summarizeBy: sum
+		sourceColumn: touchpoint_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column touchpoints_in_journey
+		dataType: int64
+		formatString: 0
+		lineageTag: 74077b0a-45e3-4f0a-8729-7fcf620a5c72
+		summarizeBy: sum
+		sourceColumn: touchpoints_in_journey
+
+		annotation SummarizationSetBy = Automatic
+
+	column touchpoint_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c6c23f57-4956-4fd9-9d1b-ea505503152c
+		summarizeBy: none
+		sourceColumn: touchpoint_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column started_at_local
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 48abe0a5-d367-4101-a2a5-1904cbd21199
+		summarizeBy: none
+		sourceColumn: started_at_local
+
+		annotation SummarizationSetBy = Automatic
+
+	column days_before_order
+		dataType: double
+		lineageTag: 84e103ec-a00b-43bf-b25b-6ebb5e852fd2
+		summarizeBy: sum
+		sourceColumn: days_before_order
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column channel_key
+		dataType: string
+		lineageTag: 71c6a1c3-f35e-40e1-b849-de34d6ef9c44
+		summarizeBy: none
+		sourceColumn: channel_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column campaign_key
+		dataType: string
+		lineageTag: adfa8505-016e-4bdb-b928-d3c305ada3ad
+		summarizeBy: none
+		sourceColumn: campaign_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column device_category
+		dataType: string
+		lineageTag: 77dbafb6-fe2b-4970-94f6-7fca8db84985
+		summarizeBy: none
+		sourceColumn: device_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column country_code
+		dataType: string
+		lineageTag: c7b9beac-7496-47cc-8518-638f2e2ad2ef
+		summarizeBy: none
+		sourceColumn: country_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_purchase_session
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b39f509e-5035-4db7-a321-5cdf19968e2b
+		summarizeBy: none
+		sourceColumn: is_purchase_session
+
+		annotation SummarizationSetBy = Automatic
+
+	column weight_first_click
+		dataType: double
+		lineageTag: 269ba9fc-0db4-4877-a467-78420bab115b
+		summarizeBy: sum
+		sourceColumn: weight_first_click
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column weight_last_click
+		dataType: double
+		lineageTag: a32a5bf2-c312-4e9f-9f92-9cf141dacaa6
+		summarizeBy: sum
+		sourceColumn: weight_last_click
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column weight_linear
+		dataType: double
+		lineageTag: 65eb457a-4daa-49ef-a68e-ce114057c0b6
+		summarizeBy: sum
+		sourceColumn: weight_linear
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column weight_position_based
+		dataType: double
+		lineageTag: a2594415-2e85-4d50-b312-4e9f7ae7ce9b
+		summarizeBy: sum
+		sourceColumn: weight_position_based
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'gold fct_order_touchpoints' = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database(pg_server, pg_database),
+				  #"Navigation 1" = Source{[Schema = "gold", Item = "fct_order_touchpoints"]}[Data]
+				in
+				  #"Navigation 1"
+

@@ -1,0 +1,62 @@
+table 'gold dim_channel'
+	lineageTag: d4085e68-3fc6-4ec9-986e-854d067959f9
+
+	column channel_key
+		dataType: string
+		lineageTag: 7d5ea7aa-41d6-4d8d-b2ae-739450064772
+		summarizeBy: none
+		sourceColumn: channel_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column channel_name
+		dataType: string
+		lineageTag: 88dad82c-f297-4472-bb3c-acfdc59799b0
+		summarizeBy: none
+		sourceColumn: channel_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column channel_group
+		dataType: string
+		lineageTag: 7d1994ab-6230-4c46-851a-c24b8196c160
+		summarizeBy: none
+		sourceColumn: channel_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_paid
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 105ed816-2f79-475d-97dc-b955379fd0f4
+		summarizeBy: none
+		sourceColumn: is_paid
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget_channel
+		dataType: string
+		lineageTag: 15b91da1-0e1c-48dc-ba1c-b7e70ef9b2c0
+		summarizeBy: none
+		sourceColumn: budget_channel
+
+		annotation SummarizationSetBy = Automatic
+
+	column sort_order
+		dataType: int64
+		formatString: 0
+		lineageTag: fa73d5c1-b7a1-4277-9872-18bf532f10c9
+		summarizeBy: sum
+		sourceColumn: sort_order
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold dim_channel' = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database(pg_server, pg_database),
+				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_channel"]}[Data]
+				in
+				  #"Navigation 1"
+

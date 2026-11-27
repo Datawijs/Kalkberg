@@ -1,0 +1,131 @@
+table 'gold fct_customer_rfm_monthly'
+	lineageTag: e7d6d127-d9b0-4ac1-a8b6-b82526790ee1
+
+	column person_key
+		dataType: string
+		lineageTag: b2f3846f-a76f-4a1f-abc9-5b5c876fb5e8
+		summarizeBy: none
+		sourceColumn: person_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0d404871-db66-40d8-afd6-9ef122df4bba
+		summarizeBy: none
+		sourceColumn: snapshot_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column month_start
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: cb0170ce-9d84-4599-aa1e-2fdd14e04471
+		summarizeBy: none
+		sourceColumn: month_start
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column recency_days
+		dataType: int64
+		formatString: 0
+		lineageTag: d839878a-89e8-4045-bac0-7eaba7a726e9
+		summarizeBy: sum
+		sourceColumn: recency_days
+
+		annotation SummarizationSetBy = Automatic
+
+	column frequency
+		dataType: double
+		lineageTag: 25c1d0a4-e6b5-4217-aafa-ce03f7606473
+		summarizeBy: sum
+		sourceColumn: frequency
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column monetary
+		dataType: double
+		lineageTag: 9300fe9b-fba1-426c-a325-095c05f0582a
+		summarizeBy: sum
+		sourceColumn: monetary
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column recency_score
+		dataType: int64
+		formatString: 0
+		lineageTag: 81d564d2-e3d5-4c69-a5d4-799129bc99d1
+		summarizeBy: sum
+		sourceColumn: recency_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column frequency_score
+		dataType: int64
+		formatString: 0
+		lineageTag: 48fd62fd-a15a-438a-813c-475f5b7e9861
+		summarizeBy: sum
+		sourceColumn: frequency_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column monetary_score
+		dataType: int64
+		formatString: 0
+		lineageTag: a79bbb74-67ad-405a-8367-20895839e84b
+		summarizeBy: sum
+		sourceColumn: monetary_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column rfm_code
+		dataType: string
+		lineageTag: 28a70083-29c3-415f-bf0a-28daeb11673b
+		summarizeBy: none
+		sourceColumn: rfm_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column segment
+		dataType: string
+		lineageTag: 31184871-e596-4878-8880-e7f5a131a34f
+		summarizeBy: none
+		sourceColumn: segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column segment_sort_order
+		dataType: int64
+		formatString: 0
+		lineageTag: c9d5f749-d082-4ba8-b62d-87307561a2d7
+		summarizeBy: sum
+		sourceColumn: segment_sort_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column previous_segment
+		dataType: string
+		lineageTag: eb195d04-81bb-4b57-bb62-46f7bd527852
+		summarizeBy: none
+		sourceColumn: previous_segment
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold fct_customer_rfm_monthly' = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database(pg_server, pg_database),
+				  #"Navigation 1" = Source{[Schema = "gold", Item = "fct_customer_rfm_monthly"]}[Data]
+				in
+				  #"Navigation 1"
+

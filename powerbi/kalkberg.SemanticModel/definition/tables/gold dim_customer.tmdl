@@ -1,0 +1,301 @@
+table 'gold dim_customer'
+	lineageTag: 9771b915-ad47-4575-a682-d326f0a2f1f9
+
+	column person_key
+		dataType: string
+		lineageTag: c7b2ec00-7133-4ca3-9688-c06696b370e8
+		summarizeBy: none
+		sourceColumn: person_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column person_type
+		dataType: string
+		lineageTag: 8e436d91-d10e-4261-b20f-0e92e5f16ce1
+		summarizeBy: none
+		sourceColumn: person_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_customer
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 64f53677-ecfb-41f4-898a-27b50b230a41
+		summarizeBy: none
+		sourceColumn: is_customer
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_shop_account
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3719cf3f-4b7f-4c00-92c4-2abac8d5f568
+		summarizeBy: none
+		sourceColumn: has_shop_account
+
+		annotation SummarizationSetBy = Automatic
+
+	column shop_accounts
+		dataType: int64
+		formatString: 0
+		lineageTag: 4038ce34-408b-4ba0-a6f3-5377514fb017
+		summarizeBy: sum
+		sourceColumn: shop_accounts
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_subscriber
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 73870f23-155b-4d7f-bbd9-3fe6219e8c4d
+		summarizeBy: none
+		sourceColumn: is_subscriber
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_reachable
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 6a068ce1-141e-4c5a-967f-5a3920a3f280
+		summarizeBy: none
+		sourceColumn: is_reachable
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_email_domain_typo
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 513a80fd-8b4c-449f-87a2-a8578709e0cb
+		summarizeBy: none
+		sourceColumn: has_email_domain_typo
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_marketing_opt_in
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b770ce9b-802a-45d4-abbb-1ae965ecc1f0
+		summarizeBy: none
+		sourceColumn: has_marketing_opt_in
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_opt_in_mismatch
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 1503e95e-b9ca-414b-924b-e3a86e1f038f
+		summarizeBy: none
+		sourceColumn: has_opt_in_mismatch
+
+		annotation SummarizationSetBy = Automatic
+
+	column country_code
+		dataType: string
+		lineageTag: ff6c823b-6ee8-4695-8d2c-db7e77fa7e8f
+		summarizeBy: none
+		sourceColumn: country_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_order_city
+		dataType: string
+		lineageTag: 29e2b8e1-8643-4987-9723-47e033dcc508
+		summarizeBy: none
+		sourceColumn: first_order_city
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_order_postal_code
+		dataType: string
+		lineageTag: da8f7291-e396-4d61-abe8-2f1022ed15a7
+		summarizeBy: none
+		sourceColumn: first_order_postal_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column language
+		dataType: string
+		lineageTag: b30e7209-be0d-47c9-abb1-166adb951f94
+		summarizeBy: none
+		sourceColumn: language
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_order_id
+		dataType: int64
+		formatString: 0
+		lineageTag: c475dac8-2d79-4d61-b0b7-4dcf4d19ee21
+		summarizeBy: sum
+		sourceColumn: first_order_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_order_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0bac2272-8a4d-4301-9f54-5050bfafbd4c
+		summarizeBy: none
+		sourceColumn: first_order_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column cohort_month
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0dab7943-50f8-46bc-80c2-dc5e1eac2ec7
+		summarizeBy: none
+		sourceColumn: cohort_month
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column acquisition_channel_key
+		dataType: string
+		lineageTag: 8d14699c-c177-4589-b0bc-f1c0b31e42b0
+		summarizeBy: none
+		sourceColumn: acquisition_channel_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column acquisition_campaign_key
+		dataType: string
+		lineageTag: 45599fa1-9ab8-4599-bb72-aa0a5eb9e0e8
+		summarizeBy: none
+		sourceColumn: acquisition_campaign_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column acquisition_channel_source
+		dataType: string
+		lineageTag: c72666f2-5bb4-4faa-a1ee-6fa175d1dc6f
+		summarizeBy: none
+		sourceColumn: acquisition_channel_source
+
+		annotation SummarizationSetBy = Automatic
+
+	column acquisition_discount_type
+		dataType: string
+		lineageTag: 7751709c-db52-4964-a105-e114690a8811
+		summarizeBy: none
+		sourceColumn: acquisition_discount_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_order_as_guest
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 78d47c64-7e59-460b-9e1a-14709ef78ec1
+		summarizeBy: none
+		sourceColumn: first_order_as_guest
+
+		annotation SummarizationSetBy = Automatic
+
+	column lifetime_orders
+		dataType: int64
+		formatString: 0
+		lineageTag: 5ce1b062-89ba-49f4-b9eb-84f62befbd3e
+		summarizeBy: sum
+		sourceColumn: lifetime_orders
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_order_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 55bc8969-5c07-427c-9a6a-c9fc7ea96a19
+		summarizeBy: none
+		sourceColumn: last_order_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column lifetime_net_revenue
+		dataType: double
+		lineageTag: efa4c01e-7e1c-42e9-b427-74d5535c1384
+		summarizeBy: sum
+		sourceColumn: lifetime_net_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column orders_first_12m
+		dataType: int64
+		formatString: 0
+		lineageTag: 3013045d-c69a-4e3a-9b14-35a0185c087b
+		summarizeBy: sum
+		sourceColumn: orders_first_12m
+
+		annotation SummarizationSetBy = Automatic
+
+	column clv_12m_net_revenue
+		dataType: double
+		lineageTag: cf16a557-7879-4bff-8d2a-940b20cb13e4
+		summarizeBy: sum
+		sourceColumn: clv_12m_net_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column clv_24m_net_revenue
+		dataType: double
+		lineageTag: 7b8420a0-cbd2-4a51-8d97-de896e32b917
+		summarizeBy: sum
+		sourceColumn: clv_24m_net_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column clv_12m_gross_margin
+		dataType: double
+		lineageTag: 2194641c-24b8-4b70-8e13-624dc2436ca0
+		summarizeBy: sum
+		sourceColumn: clv_12m_gross_margin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column clv_24m_gross_margin
+		dataType: double
+		lineageTag: b4151225-4cbc-4ac4-a7c7-761efd6f4fc6
+		summarizeBy: sum
+		sourceColumn: clv_24m_gross_margin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column is_clv_12m_complete
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b3cfc400-5546-4643-b9ba-2c0fe75f6d03
+		summarizeBy: none
+		sourceColumn: is_clv_12m_complete
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_clv_24m_complete
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 1aab4962-ac46-4c45-8959-33f54bf16e2b
+		summarizeBy: none
+		sourceColumn: is_clv_24m_complete
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold dim_customer' = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database(pg_server, pg_database),
+				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_customer"]}[Data]
+				in
+				  #"Navigation 1"
+

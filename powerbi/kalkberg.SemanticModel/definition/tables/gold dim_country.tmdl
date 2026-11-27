@@ -1,0 +1,37 @@
+table 'gold dim_country'
+	lineageTag: 1e8d3fdd-9581-4904-8cb7-c95f1a4ed1b4
+
+	column country_code
+		dataType: string
+		lineageTag: 3a6eb0c8-5427-4ee7-8beb-d4fc5ba83d15
+		summarizeBy: none
+		sourceColumn: country_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column country_name
+		dataType: string
+		lineageTag: 191e4117-6181-401c-9693-83ffee5a7485
+		summarizeBy: none
+		sourceColumn: country_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_shipping_country
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9b68a5e6-e58c-4f05-a573-21b94720648e
+		summarizeBy: none
+		sourceColumn: is_shipping_country
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold dim_country' = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database(pg_server, pg_database),
+				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_country"]}[Data]
+				in
+				  #"Navigation 1"
+

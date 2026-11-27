@@ -1,0 +1,200 @@
+table 'gold fct_email_sends'
+	lineageTag: 91c039d1-0a13-4645-9beb-11644b589dc0
+
+	column send_key
+		dataType: string
+		lineageTag: b17b976c-05f8-4944-a88b-15b546097b51
+		summarizeBy: none
+		sourceColumn: send_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column job_id
+		dataType: string
+		lineageTag: 1fd34ed2-dc17-4ea4-b6d7-7138b862a19b
+		summarizeBy: none
+		sourceColumn: job_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column subscriber_id
+		dataType: string
+		lineageTag: c9592874-92e9-446e-87b5-fa40dcaaa2df
+		summarizeBy: none
+		sourceColumn: subscriber_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column person_key
+		dataType: string
+		lineageTag: 9aecc293-3873-496f-90dd-db475a7d3705
+		summarizeBy: none
+		sourceColumn: person_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column sent_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a55b622c-f062-41eb-8274-b3e0d6b073e6
+		summarizeBy: none
+		sourceColumn: sent_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column sent_at_local
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 98f3132c-cb4a-4cd7-9aaa-85c84823993d
+		summarizeBy: none
+		sourceColumn: sent_at_local
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_icloud_address
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 36f47c74-c454-469d-b95e-03dc5d798c5a
+		summarizeBy: none
+		sourceColumn: is_icloud_address
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_delivered
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 264b7ea6-be4d-4819-88d3-0ac4c8673e34
+		summarizeBy: none
+		sourceColumn: is_delivered
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_bounced
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 61af7f01-cdf9-40e7-aa81-537c3f917bac
+		summarizeBy: none
+		sourceColumn: is_bounced
+
+		annotation SummarizationSetBy = Automatic
+
+	column bounce_category
+		dataType: string
+		lineageTag: b8e68279-3471-450c-9223-7d7f63bbc79b
+		summarizeBy: none
+		sourceColumn: bounce_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column opens
+		dataType: int64
+		formatString: 0
+		lineageTag: b550f941-1dfb-45a6-8525-7f3d16521ee7
+		summarizeBy: sum
+		sourceColumn: opens
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_opened
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e357aa72-66f8-4372-ba90-870d124d0417
+		summarizeBy: none
+		sourceColumn: is_opened
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_opened_at_local
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a415d596-553e-4052-b883-c7c5e3ada2f7
+		summarizeBy: none
+		sourceColumn: first_opened_at_local
+
+		annotation SummarizationSetBy = Automatic
+
+	column clicks
+		dataType: int64
+		formatString: 0
+		lineageTag: 76408d07-0cf9-4901-9a29-74581e487ade
+		summarizeBy: sum
+		sourceColumn: clicks
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_clicked
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8bd28cfc-0c46-41a1-8c47-c6a80ae2f751
+		summarizeBy: none
+		sourceColumn: is_clicked
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_clicked_at_local
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 67e4c086-d6e7-4a33-ada9-9c8e2089ad66
+		summarizeBy: none
+		sourceColumn: first_clicked_at_local
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_unsubscribed
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d9886943-80c8-49d2-991d-026558e91a7e
+		summarizeBy: none
+		sourceColumn: is_unsubscribed
+
+		annotation SummarizationSetBy = Automatic
+
+	column attributed_orders
+		dataType: int64
+		formatString: 0
+		lineageTag: 0a8010d4-88f0-4758-88e8-f87425229451
+		summarizeBy: sum
+		sourceColumn: attributed_orders
+
+		annotation SummarizationSetBy = Automatic
+
+	column attributed_new_customer_orders
+		dataType: int64
+		formatString: 0
+		lineageTag: 6e2d269a-e0ba-4480-b7e8-6b2fdbae07c4
+		summarizeBy: sum
+		sourceColumn: attributed_new_customer_orders
+
+		annotation SummarizationSetBy = Automatic
+
+	column attributed_revenue
+		dataType: double
+		lineageTag: d42767a0-5433-4459-9bf7-03271f201ae5
+		summarizeBy: sum
+		sourceColumn: attributed_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column attributed_net_revenue
+		dataType: double
+		lineageTag: 76b29d1e-8ae9-4cb5-8219-31f2937c00f0
+		summarizeBy: sum
+		sourceColumn: attributed_net_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'gold fct_email_sends' = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database(pg_server, pg_database),
+				  #"Navigation 1" = Source{[Schema = "gold", Item = "fct_email_sends"]}[Data]
+				in
+				  #"Navigation 1"
+

@@ -1,0 +1,74 @@
+table 'gold dim_campaign'
+	lineageTag: 054bef84-73a4-42e2-86d5-08411c304126
+
+	column campaign_key
+		dataType: string
+		lineageTag: 44745f6c-0151-4f08-8fa4-35268659117a
+		summarizeBy: none
+		sourceColumn: campaign_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column channel_key
+		dataType: string
+		lineageTag: e7f4653c-6a98-485a-9037-6af67666904b
+		summarizeBy: none
+		sourceColumn: channel_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column campaign_name
+		dataType: string
+		lineageTag: 219f4467-9c3a-4982-bf86-152714b14735
+		summarizeBy: none
+		sourceColumn: campaign_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column platform
+		dataType: string
+		lineageTag: f07c6522-f135-4916-8805-4b44c20a3342
+		summarizeBy: none
+		sourceColumn: platform
+
+		annotation SummarizationSetBy = Automatic
+
+	column campaign_type
+		dataType: string
+		lineageTag: b47ea5d9-99e5-463f-b697-b27e91c0e6b3
+		summarizeBy: none
+		sourceColumn: campaign_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 880eb58b-554a-4168-91dd-278f970c5a4e
+		summarizeBy: none
+		sourceColumn: first_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column last_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8d9dd285-7f28-40df-bc46-71c3eae8def7
+		summarizeBy: none
+		sourceColumn: last_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition 'gold dim_campaign' = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database(pg_server, pg_database),
+				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_campaign"]}[Data]
+				in
+				  #"Navigation 1"
+

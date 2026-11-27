@@ -13,7 +13,7 @@ This step covers the tools we use and how to rebuild the project from scratch, f
 | PostgreSQL (incl. `psql`) | The database that holds the bronze, silver and gold layers | 19 |
 | dbt (`dbt-postgres`) | Building the silver and gold layers | dbt Core 1.12, `dbt-postgres` 1.11 |
 | `uv` | Installing the Python version that dbt needs | 0.13 |
-| Power BI Desktop | Budget medallion, semantic model and report | *added in step 5* |
+| Power BI Desktop | Budget medallion, semantic model and report | 2.160.1151.0 64-bit (November 2026) |
 
 ### Why these tools
 
@@ -21,6 +21,7 @@ This step covers the tools we use and how to rebuild the project from scratch, f
 - **`psql` with `\copy`** is the fastest simple way to load large CSV files: about 20 million rows in a few minutes, with no extra Python database driver.
 - **Python** is only used where SQL can't do the job: generating the fictional data, and reading an Excel sheet that `psql` can't open.
 - **dbt** builds silver and gold from plain SQL, and adds the order of building, tests, documentation and lineage. See [step 3](03-silver.md#why-dbt).
+- **Power BI Desktop** is free, and saved as a Power BI Project (`.pbip`) its model and report are text files that git can track. See [decision 0006](decisions/0006-power-bi-project-format.md).
 
 ## How to reproduce the project
 
@@ -97,6 +98,16 @@ dbt build     # seeds, models and tests
 
 `dbt build` creates the `silver` and `gold` schemas and ends with a summary line; every test must pass. See [step 3](03-silver.md#2-building-silver) and [step 4](04-gold.md#1-building-gold).
 
+### 4. Open the Power BI project
+
+Power BI Desktop needs a few general settings before the project is opened; [step 5](05-powerbi-connection.md#1-general-settings-once-per-machine) lists them. Then:
+
+1. Open `powerbi/kalkberg.pbip`. A clone contains no data, so the tables are empty.
+2. **Transform data > Edit parameters**: check `pg_server` and `pg_database`, and set `p_BudgetFile` to the absolute path of `data/budget/marketing_budget.xlsx` on your machine.
+3. **Refresh**. Power BI asks for the PostgreSQL credentials once: choose **Database** and enter the same user as for dbt. They're stored encrypted for your Windows user, not in the project.
+
+See [step 5](05-powerbi-connection.md) for the file settings and how to check the result.
+
 ## Running the tests
 
 Both Python folders have unit tests that don't need a database:
@@ -112,4 +123,5 @@ cd ingestion;  .venv\Scripts\python -m unittest; cd ..
 python generator/generate_data.py               # source systems + bronze (drops the database)
 python ingestion/load_influencer_contracts.py   # budget.influencer_contracts
 cd dbt; dbt build                               # silver + gold
+# Power BI Desktop: open powerbi/kalkberg.pbip and Refresh
 ```

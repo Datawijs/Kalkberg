@@ -1,0 +1,416 @@
+table 'gold fct_orders'
+	lineageTag: e3e68139-e045-4538-a25b-53ab721b692f
+
+	column order_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 38cb51f2-a093-448a-9a72-1f0d3d77e090
+		summarizeBy: sum
+		sourceColumn: order_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_number
+		dataType: string
+		lineageTag: c668d187-a69f-4efa-a9ee-4d895ee4bbc1
+		summarizeBy: none
+		sourceColumn: order_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fd0c44b8-0004-4716-9612-59abd886c70a
+		summarizeBy: none
+		sourceColumn: order_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column created_at_local
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a8866c11-d4a5-4b95-abef-21a2fc26cb86
+		summarizeBy: none
+		sourceColumn: created_at_local
+
+		annotation SummarizationSetBy = Automatic
+
+	column person_key
+		dataType: string
+		lineageTag: d54a54e9-d68c-45c9-ac65-865b0c6abf57
+		summarizeBy: none
+		sourceColumn: person_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_id
+		dataType: int64
+		formatString: 0
+		lineageTag: ad5508ff-7074-4d41-b4ab-0f21fe3b6ade
+		summarizeBy: sum
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_guest_order
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 0d2754b5-cd01-4060-9790-7f8054501c2b
+		summarizeBy: none
+		sourceColumn: is_guest_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column platform
+		dataType: string
+		lineageTag: 3dd8d3ea-84c1-4888-aec7-27c5ab4c9738
+		summarizeBy: none
+		sourceColumn: platform
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: 5569a6d6-e35f-4d91-a81e-a4662376f2b9
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_cancelled
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b6f3e166-2c5e-4567-82bd-086d3dcb9bd0
+		summarizeBy: none
+		sourceColumn: is_cancelled
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_order_number
+		dataType: int64
+		formatString: 0
+		lineageTag: e5b7a0de-e57a-4d70-8467-427709022e0d
+		summarizeBy: sum
+		sourceColumn: customer_order_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_new_customer_order
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 623a4995-4461-48dd-bff6-0e25782df754
+		summarizeBy: none
+		sourceColumn: is_new_customer_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column days_since_previous_order
+		dataType: int64
+		formatString: 0
+		lineageTag: ae9d5025-3023-4453-9fbd-fae7492f3e4b
+		summarizeBy: sum
+		sourceColumn: days_since_previous_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipping_country_code
+		dataType: string
+		lineageTag: 5905d919-4a1c-4314-944f-a90619b04f70
+		summarizeBy: none
+		sourceColumn: shipping_country_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipping_postal_code
+		dataType: string
+		lineageTag: 1d811552-cf7a-466b-b204-27ba989ef0db
+		summarizeBy: none
+		sourceColumn: shipping_postal_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipping_city
+		dataType: string
+		lineageTag: 7f3ab8a1-7224-4855-b4b2-51331f74995d
+		summarizeBy: none
+		sourceColumn: shipping_city
+
+		annotation SummarizationSetBy = Automatic
+
+	column payment_method
+		dataType: string
+		lineageTag: 93dbdc4c-328b-4446-b533-b1c9d35df368
+		summarizeBy: none
+		sourceColumn: payment_method
+
+		annotation SummarizationSetBy = Automatic
+
+	column discount_code
+		dataType: string
+		lineageTag: 7f2464fd-9767-447e-944c-6d2e4abfde72
+		summarizeBy: none
+		sourceColumn: discount_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column discount_type
+		dataType: string
+		lineageTag: 843650af-0a62-462e-8aa2-72ece4179e31
+		summarizeBy: none
+		sourceColumn: discount_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column influencer_creator
+		dataType: string
+		lineageTag: ceb65b31-4092-418a-b3c7-a84a3caca21e
+		summarizeBy: none
+		sourceColumn: influencer_creator
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_channel_key
+		dataType: string
+		lineageTag: 015c3fc2-b10e-4281-ab33-b6395cd7b446
+		summarizeBy: none
+		sourceColumn: code_channel_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_click_channel_key
+		dataType: string
+		lineageTag: bf47ece2-b04b-41bb-bc9a-e63e375176da
+		summarizeBy: none
+		sourceColumn: last_click_channel_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_channel_key
+		dataType: string
+		lineageTag: e51d75e0-4b26-4160-a67f-1265bea16b7b
+		summarizeBy: none
+		sourceColumn: order_channel_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_campaign_key
+		dataType: string
+		lineageTag: efd642e5-07ec-4f65-a029-8026befe9460
+		summarizeBy: none
+		sourceColumn: order_campaign_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_channel_source
+		dataType: string
+		lineageTag: 303c2a7f-73c9-4f31-88d6-7d3c436b7f61
+		summarizeBy: none
+		sourceColumn: order_channel_source
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_tracked_in_ga4
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b1f7789b-d539-4c94-819a-b696a6f6b157
+		summarizeBy: none
+		sourceColumn: is_tracked_in_ga4
+
+		annotation SummarizationSetBy = Automatic
+
+	column sessions_in_journey
+		dataType: int64
+		formatString: 0
+		lineageTag: 3e92dd01-81ca-4f30-9603-9d743c5bb614
+		summarizeBy: sum
+		sourceColumn: sessions_in_journey
+
+		annotation SummarizationSetBy = Automatic
+
+	column channels_in_journey
+		dataType: int64
+		formatString: 0
+		lineageTag: 6ad95ecc-ff44-4480-9e7a-44cd68a05700
+		summarizeBy: sum
+		sourceColumn: channels_in_journey
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_lines
+		dataType: int64
+		formatString: 0
+		lineageTag: 53623057-55b8-4253-bf75-3e1e1aa4c9d7
+		summarizeBy: sum
+		sourceColumn: order_lines
+
+		annotation SummarizationSetBy = Automatic
+
+	column items
+		dataType: int64
+		formatString: 0
+		lineageTag: 97fae3c6-bc8f-4e2b-8a5f-54653a6dae6d
+		summarizeBy: sum
+		sourceColumn: items
+
+		annotation SummarizationSetBy = Automatic
+
+	column gross_amount
+		dataType: double
+		lineageTag: 1ea516a4-a501-45ad-b1cd-c415278c3b7d
+		summarizeBy: sum
+		sourceColumn: gross_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column discount_amount
+		dataType: double
+		lineageTag: 1cd05397-fd10-4cc9-812f-15347dbde804
+		summarizeBy: sum
+		sourceColumn: discount_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column shipping_fee
+		dataType: double
+		lineageTag: 62cef894-2658-4e99-b28f-fcd3ef485fa5
+		summarizeBy: sum
+		sourceColumn: shipping_fee
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column order_total
+		dataType: double
+		lineageTag: a697b97b-2be0-41ae-90f0-3741d07486ca
+		summarizeBy: sum
+		sourceColumn: order_total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column order_total_excl_shipping
+		dataType: double
+		lineageTag: cf099bab-fa0c-4cd4-bf64-35169051338e
+		summarizeBy: sum
+		sourceColumn: order_total_excl_shipping
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column gift_card_amount
+		dataType: double
+		lineageTag: 6b160038-f6e5-4e3a-8fbc-3d8f6e964e0a
+		summarizeBy: sum
+		sourceColumn: gift_card_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column refund_amount
+		dataType: double
+		lineageTag: 0e8458ff-e0e8-4d65-816b-cac81acd16d9
+		summarizeBy: sum
+		sourceColumn: refund_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column net_revenue
+		dataType: double
+		lineageTag: d429d299-4ce7-4b79-98f8-ff5b6de60285
+		summarizeBy: sum
+		sourceColumn: net_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column merchandise_excl_vat
+		dataType: double
+		lineageTag: 0fdae262-4688-4d0f-9a6f-9090f5f9a81a
+		summarizeBy: sum
+		sourceColumn: merchandise_excl_vat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column shipping_fee_excl_vat
+		dataType: double
+		lineageTag: b52f2859-ad2a-44f2-88a8-98c0a373e237
+		summarizeBy: sum
+		sourceColumn: shipping_fee_excl_vat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column refund_amount_excl_vat
+		dataType: double
+		lineageTag: 893d5778-3699-4e13-816e-ff4f83eac08a
+		summarizeBy: sum
+		sourceColumn: refund_amount_excl_vat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cost_amount_after_returns
+		dataType: double
+		lineageTag: 39fc9506-1272-475e-9375-4dc29584e5c5
+		summarizeBy: sum
+		sourceColumn: cost_amount_after_returns
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column gross_margin_before_shipping_cost
+		dataType: double
+		lineageTag: 4fc24ba0-75ca-4a5b-9ea9-d83092bf3a06
+		summarizeBy: sum
+		sourceColumn: gross_margin_before_shipping_cost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column has_estimated_cost
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: dc666af8-b70c-4f5f-8ba7-d02e09b4c04d
+		summarizeBy: none
+		sourceColumn: has_estimated_cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_unknown_cost
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e4c0314f-a2c6-467e-ab89-e1e4748affe0
+		summarizeBy: none
+		sourceColumn: has_unknown_cost
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold fct_orders' = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database(pg_server, pg_database),
+				  #"Navigation 1" = Source{[Schema = "gold", Item = "fct_orders"]}[Data]
+				in
+				  #"Navigation 1"
+

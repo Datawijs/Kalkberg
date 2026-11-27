@@ -1,0 +1,120 @@
+table 'gold dim_subscriber'
+	lineageTag: a4abb17b-6a90-40de-b406-993c5ad21724
+
+	column subscriber_id
+		dataType: string
+		lineageTag: db52240d-75c2-4ab6-befe-679520924752
+		summarizeBy: none
+		sourceColumn: subscriber_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column person_key
+		dataType: string
+		lineageTag: d266e197-02d4-429e-9c49-e7d42243786f
+		summarizeBy: none
+		sourceColumn: person_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column subscriber_key_type
+		dataType: string
+		lineageTag: c92c6a96-8150-4b2a-8965-451b38f6c364
+		summarizeBy: none
+		sourceColumn: subscriber_key_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: 900c3b02-4816-4dd3-8f42-936b1e5e4e7d
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column language
+		dataType: string
+		lineageTag: 25ab5968-c3bc-41b6-bc43-180b80c9918c
+		summarizeBy: none
+		sourceColumn: language
+
+		annotation SummarizationSetBy = Automatic
+
+	column locale_country_code
+		dataType: string
+		lineageTag: 53d261a6-3ed6-444c-b95f-4538e9e8bd88
+		summarizeBy: none
+		sourceColumn: locale_country_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_shop_customer
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: bd5f2170-bbe0-4f48-9363-6bd1928fec01
+		summarizeBy: none
+		sourceColumn: is_shop_customer
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_icloud_address
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: c4390da5-f029-4a68-84a3-33dd7995f128
+		summarizeBy: none
+		sourceColumn: is_icloud_address
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_email_domain_typo
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 7416cf74-4048-47af-89f4-946f93cb2165
+		summarizeBy: none
+		sourceColumn: has_email_domain_typo
+
+		annotation SummarizationSetBy = Automatic
+
+	column joined_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0b64bc34-fde2-417f-a270-7d721d4b6c06
+		summarizeBy: none
+		sourceColumn: joined_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column unsubscribed_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 517b6b4e-de33-4d3a-ac9f-0d47ddbdfccc
+		summarizeBy: none
+		sourceColumn: unsubscribed_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column undeliverable_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 19e4cd80-3c0c-405c-b3f5-37ecefe431d2
+		summarizeBy: none
+		sourceColumn: undeliverable_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition 'gold dim_subscriber' = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database(pg_server, pg_database),
+				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_subscriber"]}[Data]
+				in
+				  #"Navigation 1"
+

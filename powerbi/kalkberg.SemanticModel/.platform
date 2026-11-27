@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "kalkberg"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "bcb73410-46af-413a-9aa0-fe4f685692ca"
+  }
+}

@@ -13,6 +13,7 @@ generator/                          --> Code to generate the data used for this 
 ingestion/                          --> Loads the influencer contracts from the budget workbook into PostgreSQL
 profiling/                          --> SQL to profile the raw data, and the results it produced
 dbt/                                --> dbt project that builds the silver and gold layers
+powerbi/                            --> Power BI project (.pbip): semantic model and report
 docs/                               --> Step-by-step guide on what we did, how and why
 ```
 
@@ -63,3 +64,7 @@ cd dbt
 .venv\Scripts\Activate.ps1
 dbt build
 ```
+
+### 4. Open the Power BI project
+
+Open `powerbi/kalkberg.pbip` in Power BI Desktop, set the parameters (database and budget workbook path) under **Transform data > Edit parameters**, and refresh. [docs/00-setup.md](docs/00-setup.md#4-open-the-power-bi-project) has the details.

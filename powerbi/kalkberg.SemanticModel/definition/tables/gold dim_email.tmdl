@@ -1,0 +1,104 @@
+table 'gold dim_email'
+	lineageTag: c6e5f3fb-3945-422e-9cd6-4dfeb42f8a24
+
+	column job_id
+		dataType: string
+		lineageTag: 413aac91-cea8-4d00-a2af-f13c62e2573b
+		summarizeBy: none
+		sourceColumn: job_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column email_name
+		dataType: string
+		lineageTag: 6929e5b2-c3be-43fa-a261-43e61d82d37a
+		summarizeBy: none
+		sourceColumn: email_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column email_base_name
+		dataType: string
+		lineageTag: 9788c18a-1202-48dc-8030-7ab647326125
+		summarizeBy: none
+		sourceColumn: email_base_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column email_language
+		dataType: string
+		lineageTag: d7d89067-80bb-4dfc-b2b2-07cdc86bc4a3
+		summarizeBy: none
+		sourceColumn: email_language
+
+		annotation SummarizationSetBy = Automatic
+
+	column send_type
+		dataType: string
+		lineageTag: da89cc1a-297c-4ad8-a7cd-12ff13302227
+		summarizeBy: none
+		sourceColumn: send_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column journey_name
+		dataType: string
+		lineageTag: 11e0cb7a-7fc2-40bf-8f9c-a828c66493a0
+		summarizeBy: none
+		sourceColumn: journey_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column journey_step
+		dataType: int64
+		formatString: 0
+		lineageTag: a030fd5a-b777-4b33-b313-33cc0ca49d9d
+		summarizeBy: sum
+		sourceColumn: journey_step
+
+		annotation SummarizationSetBy = Automatic
+
+	column email_subject
+		dataType: string
+		lineageTag: 2eb12716-4124-483b-9284-dbd04a607886
+		summarizeBy: none
+		sourceColumn: email_subject
+
+		annotation SummarizationSetBy = Automatic
+
+	column utm_campaign
+		dataType: string
+		lineageTag: 6550ba47-00bc-4374-b638-3e42ebb8aa56
+		summarizeBy: none
+		sourceColumn: utm_campaign
+
+		annotation SummarizationSetBy = Automatic
+
+	column campaign_key
+		dataType: string
+		lineageTag: 73e9a507-f6e3-4251-8ca7-9c26fb3fcf16
+		summarizeBy: none
+		sourceColumn: campaign_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column delivered_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2ef65386-dfa6-4469-90c8-6dbbf14e35b9
+		summarizeBy: none
+		sourceColumn: delivered_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition 'gold dim_email' = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database(pg_server, pg_database),
+				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_email"]}[Data]
+				in
+				  #"Navigation 1"
+

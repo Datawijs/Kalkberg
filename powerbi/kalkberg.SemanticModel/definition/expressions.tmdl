@@ -1,0 +1,22 @@
+expression pg_server =
+		let
+		    Source = "localhost" meta [IsParameterQuery = true, IsParameterQueryRequired = true, Type = type text]
+		in
+		    Source
+	lineageTag: ddce4165-a924-436f-abc6-c6b6eb3aa216
+	queryGroup: _params
+
+	annotation PBI_ResultType = Text
+
+expression pg_database = "kalkberg" meta [IsParameterQuery = true, IsParameterQueryRequired = true, Type = type text]
+	lineageTag: 6886cc1a-1a82-4b67-9b22-f040aba0a756
+	queryGroup: _params
+
+	annotation PBI_ResultType = Text
+
+expression budget_file = "C:\Users\tvercamer\Projects\kalkberg\data\budget\marketing_budget.xlsx" meta [IsParameterQuery = true, IsParameterQueryRequired = true, Type = type text]
+	lineageTag: 2e9e6f64-c085-4cf6-8483-98ca428554dc
+	queryGroup: _params
+
+	annotation PBI_ResultType = Text
+

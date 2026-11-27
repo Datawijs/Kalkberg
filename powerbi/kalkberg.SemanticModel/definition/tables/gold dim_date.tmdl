@@ -1,0 +1,189 @@
+table 'gold dim_date'
+	lineageTag: 08abdad5-bc15-49b3-9ad5-4e304870c19b
+
+	column date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d37f8d3a-cbdc-4c15-b273-4f97f8cdc8dc
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: bfdee589-8d44-4311-b499-5b248ac9cd3f
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column quarter_number
+		dataType: int64
+		formatString: 0
+		lineageTag: 3da9f0ac-b8ab-4f0f-8707-3a0e236f95af
+		summarizeBy: sum
+		sourceColumn: quarter_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column quarter
+		dataType: string
+		lineageTag: 16687d16-dbd0-4e53-881f-796280232945
+		summarizeBy: none
+		sourceColumn: quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column month_number
+		dataType: int64
+		formatString: 0
+		lineageTag: f072215d-e6c5-4a92-9765-4e4e3bffdc9d
+		summarizeBy: sum
+		sourceColumn: month_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column month_name
+		dataType: string
+		lineageTag: 7c256f0d-c7f8-444b-8836-a92489af8ccd
+		summarizeBy: none
+		sourceColumn: month_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column month_short
+		dataType: string
+		lineageTag: 5cb70223-efd5-43d9-9821-962515d3afaa
+		summarizeBy: none
+		sourceColumn: month_short
+
+		annotation SummarizationSetBy = Automatic
+
+	column month_start
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0913fb8f-c15f-474e-b2af-afaf0b86cb25
+		summarizeBy: none
+		sourceColumn: month_start
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column year_month
+		dataType: string
+		lineageTag: 8caad485-8dd5-41a2-8c96-853fddde1318
+		summarizeBy: none
+		sourceColumn: year_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column iso_year
+		dataType: int64
+		formatString: 0
+		lineageTag: 513ab641-9b27-40f0-adb9-9b6e118c44f9
+		summarizeBy: sum
+		sourceColumn: iso_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column iso_week
+		dataType: int64
+		formatString: 0
+		lineageTag: 5daa5dff-d901-4d8c-968b-12dfb2644020
+		summarizeBy: sum
+		sourceColumn: iso_week
+
+		annotation SummarizationSetBy = Automatic
+
+	column weekday_number
+		dataType: int64
+		formatString: 0
+		lineageTag: 7d5e1b0d-f546-4428-b345-b6d1da5ca319
+		summarizeBy: sum
+		sourceColumn: weekday_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column weekday_name
+		dataType: string
+		lineageTag: de5d05f9-93c7-4258-941b-4796bfcf3e14
+		summarizeBy: none
+		sourceColumn: weekday_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_weekend
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9510934c-6280-44e3-8a18-60c9c20f825c
+		summarizeBy: none
+		sourceColumn: is_weekend
+
+		annotation SummarizationSetBy = Automatic
+
+	column day_of_month
+		dataType: int64
+		formatString: 0
+		lineageTag: dbb5fc8a-dfb5-4937-becf-6408ab93fbbf
+		summarizeBy: sum
+		sourceColumn: day_of_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_in_data_period
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: f335543d-ce76-4270-9ff0-fec7d2d3731f
+		summarizeBy: none
+		sourceColumn: is_in_data_period
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_complete_month
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 1a1ce739-4c0e-47c9-a1e4-7a4a88bfc81a
+		summarizeBy: none
+		sourceColumn: is_complete_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column promotion_name
+		dataType: string
+		lineageTag: 792ffd4e-be7f-46ad-86cf-a7d7a6e14b7c
+		summarizeBy: none
+		sourceColumn: promotion_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column promotion_type
+		dataType: string
+		lineageTag: 121d23ef-8dab-454c-82e9-e6d4150de935
+		summarizeBy: none
+		sourceColumn: promotion_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_promotion_day
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e436f663-9008-4646-863f-3fc43764b18f
+		summarizeBy: none
+		sourceColumn: is_promotion_day
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'gold dim_date' = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database(pg_server, pg_database),
+				  #"Navigation 1" = Source{[Schema = "gold", Item = "dim_date"]}[Data]
+				in
+				  #"Navigation 1"
+

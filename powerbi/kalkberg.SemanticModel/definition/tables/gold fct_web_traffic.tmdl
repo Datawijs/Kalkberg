@@ -1,0 +1,140 @@
+table 'gold fct_web_traffic'
+	lineageTag: 4951e6cf-3777-4b65-b2fd-8660435e4eda
+
+	column traffic_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e3629757-bc97-43f9-99bc-3f833e7e5051
+		summarizeBy: none
+		sourceColumn: traffic_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column channel_key
+		dataType: string
+		lineageTag: bfadd37c-2106-4076-8367-f7071ab72ffd
+		summarizeBy: none
+		sourceColumn: channel_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column campaign_key
+		dataType: string
+		lineageTag: 8448279a-4d68-4a2e-9441-6b97ae8108dd
+		summarizeBy: none
+		sourceColumn: campaign_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column device_category
+		dataType: string
+		lineageTag: 99e10146-4f58-4a8e-b312-9be8cc837ace
+		summarizeBy: none
+		sourceColumn: device_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column country_code
+		dataType: string
+		lineageTag: f27b0d92-cf86-4a51-b4ff-a343d19ac25e
+		summarizeBy: none
+		sourceColumn: country_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_shipping_country
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b50d3007-06c2-4fb0-9752-c2cc9aefebc4
+		summarizeBy: none
+		sourceColumn: is_shipping_country
+
+		annotation SummarizationSetBy = Automatic
+
+	column sessions
+		dataType: int64
+		formatString: 0
+		lineageTag: bd69578b-e607-4e12-8c94-b751de462c52
+		summarizeBy: sum
+		sourceColumn: sessions
+
+		annotation SummarizationSetBy = Automatic
+
+	column users
+		dataType: int64
+		formatString: 0
+		lineageTag: 9666f4b5-8031-4a2c-b798-9e8ada76bf14
+		summarizeBy: sum
+		sourceColumn: users
+
+		annotation SummarizationSetBy = Automatic
+
+	column new_users
+		dataType: int64
+		formatString: 0
+		lineageTag: c7b059f8-0a66-48e4-9f10-fa45f78027ec
+		summarizeBy: sum
+		sourceColumn: new_users
+
+		annotation SummarizationSetBy = Automatic
+
+	column engaged_sessions
+		dataType: int64
+		formatString: 0
+		lineageTag: 335db96b-ff6a-4acb-b430-5a084d97226f
+		summarizeBy: sum
+		sourceColumn: engaged_sessions
+
+		annotation SummarizationSetBy = Automatic
+
+	column add_to_carts
+		dataType: int64
+		formatString: 0
+		lineageTag: 2df1a986-5fdc-4fe9-b712-a8d017aa49cf
+		summarizeBy: sum
+		sourceColumn: add_to_carts
+
+		annotation SummarizationSetBy = Automatic
+
+	column checkouts
+		dataType: int64
+		formatString: 0
+		lineageTag: 13fbb84c-7a90-4c89-bf09-68bf4e99a715
+		summarizeBy: sum
+		sourceColumn: checkouts
+
+		annotation SummarizationSetBy = Automatic
+
+	column purchases
+		dataType: double
+		lineageTag: e1b0b3fe-9126-432d-a805-4f586b93f250
+		summarizeBy: sum
+		sourceColumn: purchases
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column purchase_value
+		dataType: double
+		lineageTag: 600104f1-a846-49c8-b79e-84f911353750
+		summarizeBy: sum
+		sourceColumn: purchase_value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'gold fct_web_traffic' = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database(pg_server, pg_database),
+				  #"Navigation 1" = Source{[Schema = "gold", Item = "fct_web_traffic"]}[Data]
+				in
+				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
+

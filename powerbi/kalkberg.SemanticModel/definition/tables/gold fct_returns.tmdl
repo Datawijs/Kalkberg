@@ -1,0 +1,186 @@
+table 'gold fct_returns'
+	lineageTag: 1b90eac4-43c9-445e-8415-57e4622e0164
+
+	column return_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 1b8fe635-9f09-4209-9a13-d4ecfb0265f3
+		summarizeBy: sum
+		sourceColumn: return_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_line_id
+		dataType: int64
+		formatString: 0
+		lineageTag: f76ae004-16bf-425a-930c-5ac5f06e2dfc
+		summarizeBy: sum
+		sourceColumn: order_line_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ba17910-0226-4180-b44f-d5b24a5a92ef
+		summarizeBy: sum
+		sourceColumn: order_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_number
+		dataType: string
+		lineageTag: 3d90d3ad-a109-4f41-b11e-c60ac7cd61b4
+		summarizeBy: none
+		sourceColumn: order_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6bc7623b-4fa5-4cf5-b016-c6849e5e2002
+		summarizeBy: none
+		sourceColumn: order_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column person_key
+		dataType: string
+		lineageTag: 8010d678-1758-4cf7-b622-7c51754de4e2
+		summarizeBy: none
+		sourceColumn: person_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column variant_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 6534b630-5ce7-4e22-a58f-2b66740d700d
+		summarizeBy: sum
+		sourceColumn: variant_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_id
+		dataType: int64
+		formatString: 0
+		lineageTag: b7944d02-c734-4c56-a684-bca38550b1f4
+		summarizeBy: sum
+		sourceColumn: product_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipping_country_code
+		dataType: string
+		lineageTag: 93b5dcac-d241-4b09-830b-e6a599c4073f
+		summarizeBy: none
+		sourceColumn: shipping_country_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_multi_variant_order
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: bcc35122-39e7-4a95-8327-b16cd5b0de1a
+		summarizeBy: none
+		sourceColumn: is_multi_variant_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column requested_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b91da30f-5231-413b-a436-c766bb05b467
+		summarizeBy: none
+		sourceColumn: requested_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column received_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 3bb4ff52-1e1f-4ff9-89db-5e5faab85cc7
+		summarizeBy: none
+		sourceColumn: received_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column days_order_to_request
+		dataType: int64
+		formatString: 0
+		lineageTag: ada3c51c-fe98-47e3-85db-c7e7dbc65c0c
+		summarizeBy: sum
+		sourceColumn: days_order_to_request
+
+		annotation SummarizationSetBy = Automatic
+
+	column days_order_to_refund
+		dataType: int64
+		formatString: 0
+		lineageTag: 3864a674-25a8-45e0-b95a-67606b894cb1
+		summarizeBy: sum
+		sourceColumn: days_order_to_refund
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: 8cf626c8-9957-49fd-bfe3-8760fa16cadf
+		summarizeBy: sum
+		sourceColumn: quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column reason
+		dataType: string
+		lineageTag: aa114eee-1477-4ab9-a531-5e25c4ea45f6
+		summarizeBy: none
+		sourceColumn: reason
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: 937f2522-57bc-48e7-8eae-5026b0c433fb
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column refund_amount
+		dataType: double
+		lineageTag: 6222e1ff-d9fc-4dfc-a12c-d8d231d8c005
+		summarizeBy: sum
+		sourceColumn: refund_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column refund_amount_excl_vat
+		dataType: double
+		lineageTag: 052a111a-221b-4047-becf-6a7dae0f9eae
+		summarizeBy: sum
+		sourceColumn: refund_amount_excl_vat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'gold fct_returns' = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database(pg_server, pg_database),
+				  #"Navigation 1" = Source{[Schema = "gold", Item = "fct_returns"]}[Data]
+				in
+				  #"Navigation 1"
+
